@@ -1,4 +1,4 @@
-# Grupo 6 
+# Grupo de trabajo 6 
 ## Objetivo
 ```
 Crear los bocetos para un sitio web que admita las funcionalidades básicas de los sitios web e-commerce
@@ -33,3 +33,6 @@ Profesionales del paisajismo
 ## Grupo de trabajo
 @Clonmorfo :smile: :+1:
 @nachoSosa :smile: :+1:
+
+
+Texto de prueba para push y pull
