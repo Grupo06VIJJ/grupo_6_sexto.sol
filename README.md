@@ -5,7 +5,7 @@ Crear los bocetos para un sitio web que admita las funcionalidades básicas de l
 ```
 ## Enfoque
 ```
-EL proyecto se basa en cuatro ejes: La estética, las Funcionalidades, la fluidez en la navegación y la Accesibilidad
+EL proyecto se basa en cuatro ejes: La Estética, las Funcionalidades, la Fluidez en la navegación y la Accesibilidad
 ```
 ## Temática
 ```
