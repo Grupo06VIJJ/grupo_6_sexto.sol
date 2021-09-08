@@ -33,3 +33,6 @@ Profesionales del paisajismo
 @Clonmorfo :smile: :+1:
 @nachoSosa :smile: :+1:
 @valeriaYashan:smile: :+1:
+
+## Trello
+https://trello.com/b/LLyWTIdI/equipo-6
