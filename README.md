@@ -9,7 +9,7 @@ EL proyecto se basa en cuatro ejes: La Estética, las Funcionalidades, la Fluide
 ```
 ## Temática
 ```
-Vivero: venta de plantas, macetas y articulos relacionados con la jardineria
+Vivero: venta de plantas, macetas y artículos relacionados con la jardineria
 ```
 ## wireframe
 ```
@@ -32,3 +32,4 @@ Profesionales del paisajismo
 ## Grupo de trabajo
 @Clonmorfo :smile: :+1:
 @nachoSosa :smile: :+1:
+@valeriaYashan:smile: :+1:
