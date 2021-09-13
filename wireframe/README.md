@@ -1,39 +1,57 @@
 # Grupo 6 
 ## Objetivo
 ```
-Crear los bocetos para un sitio web que admita las funcionalidades básicas de los sitios web e-commerce
+Crear los bocetos para un sitio web que admita las funcionalidades básicas de los sitios web e-commerce.
 ```
 ## Enfoque
 ```
-EL proyecto se basa en cuatro ejes: La Estética, las Funcionalidades, la Fluidez en la navegación y la Accesibilidad
+El proyecto se basa en cuatro ejes: La Estética, las Funcionalidades, la Fluidez en la navegación y la Accesibilidad.
 ```
 ## Temática
 ```
-Vivero: venta de plantas, macetas y artículos relacionados con la jardineria
+Vivero: venta de plantas, macetas y artículos relacionados con la jardineria.
 ```
-## wireframe
+## Wireframe
 ```
-El diseño de los bocetos se realizará en Adobe XD
+El diseño de los bocetos se realizará en Adobe XD.
 ```
 ## Público
 ```
-Consumidores finales aficionados a las plantas
-Empresas que quieran vender su producto en nuestra tienda
-Profesionales del paisajismo
+* Consumidores finales aficionados a las plantas.
+
+* Empresas que quieran vender su producto en nuestra tienda.
+
+* Profesionales del paisajismo.
 ```
 ## Referencias
-(por orden alfabético)
-[1800flowers](https://www.1800flowers.com/ "1800flowers")
-[Amazon](https://www.amazon.com/-/es/ "Amazon")
-[Digital Sport](https://www.digitalsport.com.ar/ "Digital Sport")
-[eBay](https://www.ebay.com/ "eBay")
-[Mercado Libre](https://www.mercadolibre.com.ar/ "Mercdado Libre")
-[Nansense](https://www.nansense.com/ "Nansense")
+```
+Utilizamos estos sitios como referencia con el fin de brindarle a nuestro e-commerce las funcionalidades que más nos gustaron.
+
+Nos enfocamos tanto en sitios pequeños, medianos y grandes a nivel mundial.
+```
+
+* [1800flowers](https://www.1800flowers.com/ "1800flowers")
+
+* [Nansense](https://www.nansense.com/ "Nansense")
+
+* [Digital Sport](https://www.digitalsport.com.ar/ "Digital Sport")
+
+* [Mercado Libre](https://www.mercadolibre.com.ar/ "Mercdado Libre")
+
+* [eBay](https://www.ebay.com/ "eBay")
+
+* [Amazon](https://www.amazon.com/-/es/ "Amazon")
+
+
 ## Grupo de trabajo
-@Clonmorfo :smile: :+1:
-@nachoSosa :smile: :+1:
-@valeriaYashan :smile: :+1:
-@juanmapiredda :smile: :+1:
+
+* Juan Salguero (@Clonmorfo) :smile: :+1::
+
+* Ignacio Sosa (@nachoSosa) :smile: :+1::
+
+* Valeria Yashan (@valeriaYashan) :smile: :+1::
+
+* Juan Manuel Piredda (@juanmapiredda) :smile: :+1:: Tengo 24 años. Vivo en Banfield y soy abogado. Me gusta tocar el piano, bailar y escuchar musica tranqui. Hincha de Racing.
 
 ## Trello
 Para organizar nuestro trabajo de manera colaborativa
