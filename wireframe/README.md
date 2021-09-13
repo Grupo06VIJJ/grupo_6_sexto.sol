@@ -47,7 +47,7 @@ Nos enfocamos tanto en sitios pequeños, medianos y grandes a nivel mundial.
 
 * Juan Salguero (@Clonmorfo) :smile: :+1::
 
-* Ignacio Sosa (@nachoSosa) :smile: :+1::
+* Ignacio Sosa (@nachoSosa) :smile: :+1:: Fanático hincha de Boca, de los Redondos, Hermética y de Gnu-Linux!
 
 * Valeria Yashan (@valeriaYashan) :smile: :+1::
 
