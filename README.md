@@ -30,9 +30,9 @@ Profesionales del paisajismo
 [Mercado Libre](https://www.mercadolibre.com.ar/ "Mercdado Libre")
 [Nansense](https://www.nansense.com/ "Nansense")
 ## Grupo de trabajo
-@Clonmorfo :smile: :+1:
-@nachoSosa :smile: :+1:
-@valeriaYashan:smile: :+1:
+### @Clonmorfo :smile: :+1: 
+### @nachoSosa :smile: :+1:
+### @valeriaYashan:smile: :+1:
 
 ## Trello
 https://trello.com/b/LLyWTIdI/equipo-6
