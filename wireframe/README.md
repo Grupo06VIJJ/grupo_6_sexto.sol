@@ -35,4 +35,5 @@ Profesionales del paisajismo
 ### @valeriaYashan:smile: :+1:
 
 ## Trello
+Para organizar nuestro trabajo de manera colaborativa
 https://trello.com/b/LLyWTIdI/equipo-6
