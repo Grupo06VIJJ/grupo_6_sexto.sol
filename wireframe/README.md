@@ -32,7 +32,8 @@ Profesionales del paisajismo
 ## Grupo de trabajo
 @Clonmorfo :smile: :+1:
 @nachoSosa :smile: :+1:
-@valeriaYashan:smile: :+1:
+@valeriaYashan :smile: :+1:
+@juanmapiredda :smile: :+1:
 
 ## Trello
 Para organizar nuestro trabajo de manera colaborativa
