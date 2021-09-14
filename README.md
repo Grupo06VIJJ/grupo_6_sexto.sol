@@ -50,7 +50,7 @@ Nos enfocamos tanto en sitios pequeños, medianos y grandes a nivel mundial.
 
 * Ignacio Sosa (@nachoSosa) :smile: :+1:: Fanático hincha de Boca, de los Redondos, Hermética y de Gnu-Linux!
 
-* Valeria Yashan (@valeriaYashan) :smile: :+1::
+* Valeria Yashan (@valeriaYashan) :smile: :+1:: Soy ingeniera industrial y PMP, actualmente estudiando Desarrollo Web Full Stack en Digital House.
 
 * Juan Manuel Piredda (@juanmapiredda) :smile: :+1:: Tengo 24 años. Vivo en Banfield y soy abogado. Me gusta tocar el piano, bailar y escuchar musica tranqui. Hincha de Racing.
 
