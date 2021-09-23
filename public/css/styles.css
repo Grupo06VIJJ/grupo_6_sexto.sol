@@ -1,0 +1,152 @@
+/*estilos generales*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: roboto ,Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+h2{
+    font-size: 24px;
+    padding-top: 20px;
+}
+p{
+    font-size: 12px;
+}
+
+/* Header*/
+/*color del fondo*/
+.header {
+    background-color: greenyellow ;
+}
+.search-bar{
+    background-color: #ddaf1865;
+    border:solid 0.5px black ;
+    width: 300px;
+    height: 8px;
+}
+.header nav ul {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.center {
+    text-align: center;
+}
+
+.btn-search{
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+.fa-id-card,.fa-sign-out-alt,.fa-shopping-basket,header ul{
+    color: black;/*color de fuente*/
+}
+
+header a{
+    text-decoration: underline;/*sin bullets*/
+    color: black;
+}
+
+div.burger-menu i {
+    border-radius: 5px;
+    background-color: ;
+    color: white;
+    padding: 10px;
+    margin: 10px 0px 20px 0px;
+    font-size: 20px;
+}
+@media(max-width: 360px){
+    body header nav{
+        display:none;
+    }
+}
+
+/* main */
+main{
+    width: 100vw;
+    
+}
+div img.banner{
+    width: 100vw;
+}
+
+main section article{
+    color: #ebebeb;
+    margin-bottom: 10px;
+    
+}
+main section{
+    background-color: paleturquoise;
+    padding-bottom: 20px;
+}
+
+.prices{
+    font-size: 18px;
+    color:black
+}
+.discounts , .fa-truck{
+    font-size: 16px;
+    color: #39b54a;
+}
+.fa-truck{
+    margin-top: 10px;
+    font-size: 25px;
+}
+.descriptions{
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+
+}
+main section article img{
+    
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+}
+main section article{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 15px;
+    background-color: white;
+
+    
+}
+main section article div{
+        border-top: solid 1px#929232;
+        
+        width: 100%;
+}
+main section article div p{
+    margin: 5px 0px 3px 10px;
+    
+}
+
+@media(max-width: 360px){
+    .descriptions{
+        display: none;
+    }
+}
+@media(min-width: 361px){
+    main section article{
+        box-shadow: 35px 18px 44px -35px rgba(0,0,0,0.64);
+
+    }
+}
+
+/*footer*/
+footer section{
+    text-align: center;
+    margin-bottom: 4px;
+}
+footer section i{
+    font-size: 24px;
+    color: ;
+    margin-bottom: 6px;
+}
+footer p{
+    margin: 10px;
+}
