@@ -23,7 +23,19 @@ p{
 }
 /*Imagen de portada*/
 
-
+body{
+    background-image: url("/images/portada.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 10px 30px;
+}
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 /*Carrousel*/
 @keyframes slide {
 	0% { transform: translateX(0); }
@@ -150,7 +162,7 @@ body {
 /* Header*/
 /*color del fondo*/
 .header {
-    background-color: greenyellow ;
+    background-color:none ;
 }
 .search-bar{
     background-color:#dd188b65;
@@ -217,7 +229,7 @@ main section article{
     
 }
 main section{
-    background-color: paleturquoise;
+    background-color: greenyellow;
     padding-bottom: 20px;
 }
 
