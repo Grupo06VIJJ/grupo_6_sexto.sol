@@ -62,10 +62,10 @@ body {
 }
 
 .slide {
-	width: 100vw;
+	width: 80vw;
 	flex-shrink: 0;
 	animation-name: slide;
-	animation-duration: 20s;
+	animation-duration: 10s;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
 }
@@ -86,8 +86,8 @@ body {
 }
 
 .caption {
-	color: white;
-	text-shadow: 1px 1px black;
+	color: blueviolet;
+	text-shadow: 1px 1px orange;
 	font-size: 8vw;
 	position: absolute;
 	bottom: 8vw;
@@ -137,7 +137,7 @@ body {
 	.caption {
 		font-size: 96px;
 		bottom: 96px;
-		right: 50px;
+		right: 115px;
 	}
 }
 /* Header*/
