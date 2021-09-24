@@ -11,7 +11,12 @@
 h2{
     font-size: 24px;
     padding-top: 20px;
-    color:blueviolet
+    color:black
+}
+h4{
+    font-size: 20px;
+    padding-top: 20px;
+    color: black;
 }
 p{
     font-size: 12px;
@@ -49,7 +54,7 @@ body {
 }
 
 .wrapper {
-	max-width: 1200px;
+	max-width: 1800px;
 	margin: 0 auto;
 }
 
@@ -67,13 +72,13 @@ body {
 	width: 80vw;
 	flex-shrink: 0;
 	animation-name: slide;
-	animation-duration: 10s;
+	animation-duration: 15s;
 	animation-iteration-count: infinite;
-	animation-timing-function: linear;
+	animation-timing-function: ease-out;
 }
 
 .slides:hover .slide {
-	animation-play-state: paused;
+	animation-play-state: running;
 }
 
 .slide img {
@@ -160,13 +165,13 @@ body {
 ul li {
     background:rgb(181, 194, 0);
     margin: 5px;   
+    font-size: 15px;
+    color:black
   }
   
 .center {
     text-align: center;
 }
-
-
 
 .btn-search{
     padding-right: 3px;
@@ -175,17 +180,18 @@ ul li {
 
 .fa-id-card,.fa-sign-out-alt,.fa-shopping-basket,header ul{
     color: black;/*color de fuente*/
+    list-style: none
 }
 
 header a{
-    text-decoration: underliunderline wavy green;/*verde ondulado*/
+    text-decoration: underline wavy green;/*verde ondulado*/
     color: black;
 }
 
 div.burger-menu i {
     border-radius: 5px;
     background-color: ;
-    color: blueviolet;
+    color: black;
     padding: 10px;
     margin: 10px 0px 20px 0px;
     font-size: 20px;
@@ -229,7 +235,6 @@ main section{
     font-size: 16px;
     color: black;
     font-weight: bold;
-
 }
 main section article img{
     
@@ -242,8 +247,6 @@ main section article{
     margin: auto;
     margin-bottom: 15px;
     background-color: white;
-
-    
 }
 main section article div{
         border-top: solid 1px#929232;
