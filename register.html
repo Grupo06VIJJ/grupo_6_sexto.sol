@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos a Sexto Sol-Página de inicio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css">  
+</head>
+
+
+
+
+
+
+
+<main>
+    <form action="/register" method="POST" enctype="multipart/form-data"><!--Enctype se agrega solo si tenemos input de tipo file-->
+        
+        <div class="form-control">
+            <label for="">Nombre y apellido</label>
+            <input type="text" name="fullname">
+        </div>
+
+        <div class="form-control">
+            <label for="">Email</label>
+            <input type="email" name="email">
+        </div>
+
+        <div class="form-control">
+            <label for="">Fecha de nacimiento</label>
+            <input type="date" name="">
+        </div>
+
+        <div class="form-control">
+            <label for="">Perfil de usuario</label>
+            <select name="perfil">
+                <option disabled selected>Seleccioná una opción</option>
+                <option value="comprador">Comprador</option>
+                <option value="vendedor">Vendedor</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <h4>Categorias de interes</h4>
+            <input type="checkbox" name="interes" value="Electro" id="electro">
+            <label for="electro">Electro</label>
+
+            <input type="checkbox" name="interes" value="Moda" id="moda">
+            <label for="moda">Moda</label>
+
+            <input type="checkbox" name="interes" value="healthy" id="healthy">
+            <label for="healthy">Vida sana</label>
+        </div>
+
+        <div class="form-control">
+            <label for="">Avatar</label>
+            <input type="file" name="avatar">
+        </div>
+
+        <div class="form-control">
+            <label for="">Contraseña</label>
+            <input type="password" name="password">
+        </div>
+
+        <div class="form-control">
+            <label for="">Repetir Contraseña</label>
+            <input type="password" name="repassword">
+        </div>
+
+        <button type="submit" class="enviar">Registrate</button>
+        <button type="reset" class="borrar">Borrar</button>
+    </form>
+</main>
+
+<footer>
+    &copy
+</footer>
+
+</body>
+</html>

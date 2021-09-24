@@ -16,7 +16,7 @@ app.get('/register', (req,res)=>{
     res.sendFile(__dirname + '/views/register.html');
 });
 app.post('/register', (req,res)=> {
-    res.send('Ya te registraste campeón');
+    res.send('Ya estás registrado');
 });
 /* Login */
 app.get('/login', (req,res)=>{
