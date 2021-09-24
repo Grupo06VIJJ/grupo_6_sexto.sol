@@ -11,7 +11,20 @@ app.get("/", (req, res)=>{
 app.get("/ofertas", (req, res)=> {
     res.sendFile(path.resolve(__dirname, "./views/index.html"))
 })
-
+/* Register */
+app.get('/register', (req,res)=>{
+    res.sendFile(__dirname + '/views/register.html');
+});
+app.post('/register', (req,res)=> {
+    res.send('Ya te registraste campeón');
+});
+/* Login */
+app.get('/login', (req,res)=>{
+    res.sendFile(__dirname + '/views/login.html');
+});
+app.post('/login', (req,res)=>{
+    res.send('Ya te logueaste campeón');
+});
 app.listen(3000, () =>{
     console.log("Server corriendo en el puerto 3000");
 })
