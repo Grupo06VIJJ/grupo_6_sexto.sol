@@ -235,9 +235,12 @@ main section{
 
 .prices{
     font-size: 18px;
-    color:black
+    color:brown
 }
-
+.discounts{
+    font-size: 18px;
+    color:red
+}
 }
 .fa-truck{
     margin-top: 10px;
@@ -248,39 +251,96 @@ main section{
     color: black;
     font-weight: bold;
 }
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article {
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
 main section article img{
-    
-    width: 100%;
-    margin: auto;
-    margin-top: 10px;
-}
-main section article{
     width: 80%;
-    margin: auto;
-    margin-bottom: 15px;
-    background-color: white;
 }
-main section article div{
-        border-top: solid 1px#929232;
-        
-        width: 100%;
+
+main section article i,
+.discount{
+    color: blueviolet;
 }
-main section article div p{
-    margin: 5px 0px 3px 10px;
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+article div.main-article {
+    width: 80%;
+    border-top: 1px solid #ebebeb;
+    padding: 5px;
+    position: relative;
+}
+.box-price {
+    display: flex;
+}
+.box-price .price {
+    width: 40%;
+}
+.box-price .discount {
+    width: 60%;
+}
+@media (min-width: 361px){
+    header nav{ 
+        display: block;
+    }
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .products article {
+        width: 45%;
+        transition: box-shadow 2s;
+    }
     
-}
+    main section article:hover .description {
+        opacity: 1;
+    }
 
-@media(max-width: 360px){
-    .descriptions{
-        display: none;
+    main section article:hover {
+        box-shadow: 0px 0px 25px rgb(100, 100, 100);
     }
 }
-@media(min-width: 361px){
-    main section article{
-        box-shadow: 35px 18px 44px -35px rgba(0,0,0,0.64);
-
+/*en vista desktop se deben ver los cuatro productos*/
+@media (min-width: 769px){
+    .products article {
+        width: 22%;
     }
 }
+
+  }
+/*para ocultar en vista mobile*/
+@media screen and (max-width: 640px) {
+    header ul li{
+        list-style-type: none;
+        display:none
+            
+          }
 
 /*footer*/
 footer section{
