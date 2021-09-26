@@ -1,0 +1,20 @@
+/*cuando el mouse esté por encima del botón
+de envío del formulario, su color de fondo cambie a #0022AA*/
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s;
+  }
+  div:hover {
+    width: 300px;
+  }
+  div {background:#0022AA ;
+    transition: width 2s, height 4s;
+  }
+
+  /*el ícono del camión de envío gira 90° hacia arriba suavemente cuando
+pasamos el mouse por encima*/
+  #myDiv {
+    transform: rotateZ(90deg);
+  }

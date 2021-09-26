@@ -1,0 +1,43 @@
+form {
+    margin: 15px auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-control {
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 3px;
+    padding: 10px;
+}
+
+.form-control label {
+    width: 100%;
+}
+.form-control input {
+    width: 100%;
+    transition: border 2s;
+}
+.form-control input:focus {
+    border: aqua 5px solid;
+    outline: none;
+}
+.form-control input:hover {
+    border: blue 5px solid;
+}
+
+.enviar {
+    background-color: grey;
+    border-radius: 5px;
+    padding: 5px;
+}
+.enviar:hover {
+    background-color: green;
+    color: indigo;
+}
+
+.borrar {
+    background-color: red;
+}

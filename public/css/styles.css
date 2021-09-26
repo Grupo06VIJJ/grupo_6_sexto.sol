@@ -6,7 +6,8 @@
     font-family: roboto ,Verdana, Geneva, Tahoma, sans-serif;
     margin: 10px;
     padding: 10px;
-    box-sizing: border-box;
+    
+    
 }
 h2{
     font-size: 24px;
@@ -35,6 +36,7 @@ body{
     max-width: 100%;
     height: auto;
     object-fit: cover;
+    box-sizing: border-box;
 }
 /*Carrousel*/
 @keyframes slide {
@@ -62,7 +64,7 @@ body{
 html { scroll-behavior: smooth; }
 
 body {
-	font-family: sans-serif;
+	font-family: roboto
 }
 
 .wrapper {
@@ -165,20 +167,22 @@ body {
     background-color:none ;
 }
 .search-bar{
-    background-color:#dd188b65;
+    background-color:brown;
     border:solid 0.5px black ;
     width: 300px;
     height: 8px;
 }
 .header nav ul {
-    list-style-type: none;
+    list-style-type: none;/*sin bullets*/
     margin-bottom: 10px;
+    
 }
 ul li {
     background:rgb(181, 194, 0);
     margin: 5px;   
     font-size: 15px;
     color:black
+  
   }
   
 .center {
@@ -339,9 +343,14 @@ article div.main-article {
     header ul li{
         list-style-type: none;
         display:none
-            
+        width: 75% content-box;
           }
-
+          @media screen and (max-width: 640px) {
+          @keyframes slidelist-style-type: none;
+          visibility: hidden
+              
+            }
+            
 /*footer*/
 footer section{
     text-align: center;
