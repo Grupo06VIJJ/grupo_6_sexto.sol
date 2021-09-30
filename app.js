@@ -1,7 +1,7 @@
 const express=require('express')
 const path=require('path')
 const app =express();
-app.use(express.static(path.resolve(__dirname, "public")))
+app.use ('/' , express.static(path.resolve(__dirname ,'./public')));
 
 
 app.get("/", (req, res)=>{
@@ -25,6 +25,7 @@ app.get('/login', (req,res)=>{
 app.post('/login', (req,res)=>{
     res.sendFile(__dirname +'/views/index.html');
 });
-app.listen(3000, () =>{
-    console.log("Server corriendo en el puerto 3000");
-})
+app.listen(process.env.PORT || 3000,function () {
+    console.log(`Servidor corriendo en puerto 3000`)
+});
+
