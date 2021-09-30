@@ -23,7 +23,7 @@ app.get('/login', (req,res)=>{
     res.sendFile(__dirname + '/views/login.html');
 });
 app.post('/login', (req,res)=>{
-    res.send('Ya te logueaste campeón');
+    res.sendFile(__dirname +'/views/index.html');
 });
 app.listen(3000, () =>{
     console.log("Server corriendo en el puerto 3000");

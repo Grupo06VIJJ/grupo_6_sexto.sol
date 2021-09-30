@@ -1,50 +1,52 @@
-<<!DOCTYPE html>
+<!----------login html clonmorfo 29/9, renovacion de login------->
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienvenidos a Sexto Sol-Página de inicio</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-rel="stylesheet" />
-    <link rel="stylesheet" href="/css/styles.css">  
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Log in</title>
 </head>
-
-<body>
-       
-    <header class="header" >
-        <img src="/images/Logotipo.png" width="150" alt="Logo de Sexto Sol"> 
-                <ul>
-                    <li><a href="/register">Registrate para ver y comprar <i class="far fa-id-card"></i></a></li>
-                    <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
-                  
-                </ul>
-            </nav>
-            <div class="burger-menu">
-                <i class="fa fa-bars burger"></i>
+<body class="background">
+    
+    <main>
+        <div class="login-box">
+            <img class="logotipo" src="/images/Logotipo.png" alt="">
+            
+            <div>
+                <h1>Inicia sesión</h1>
             </div>
-        </header>
-       
-        <main>
-            <form method="POST">
-                <div class="form-control">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
-                </div>
-                <div class="form-control">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password">
-                </div>
-            </form>
-        </main>
-        <footer>
-            <h2>Nuestras redes</h2> 
-            <div id="cajacookies">
-             <p><button onclick="aceptarCookies()" class="pull-right"><i class="fa fa-times"></i> Aceptar y cerrar éste mensaje</button>
-             Éste sitio web usa cookies, si permanece aquí acepta su uso.
-             Puede leer más sobre el uso de cookies en nuestra <a href="politica.html">política de privacidad</a>.
-             </p>
-             </div>  
-       </footer>
-    </body>
+            <div>
+                <form class="form-box" action="" method="POST">
+                    <div>
+                        <label for="username">Usuario</label>
+                        <input type="text" placeholder="Ingresa tu usuario" required>
+                    </div>
+                    
+                    <div>
+                        <label for="password">contraseña</label>
+                        <input type="password" placeholder="Ingresa contraseña" required>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" value="recordame" name="recordarme" id="recordarme">
+                        <label for="recordarme">Recordarme</label>
+                    </div>
+                    
+                    <div>
+                        <input type="submit" value="Login">
+                    </div>
+
+                    <div>
+                        <a href="#">¿Olvidaste tu contraseña?</a>
+                        <a href="#">¿No tienes una cuenta?</a>
+                    </div>
+
+                </form>                
+            </div>
+        </div>
+    </main>
+</body>
 </html>

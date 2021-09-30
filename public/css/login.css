@@ -1,20 +1,93 @@
-/*cuando el mouse esté por encima del botón
-de envío del formulario, su color de fondo cambie a #0022AA*/
-div {
-    width: 100px;
-    height: 100px;
-    background: red;
-    transition: width 2s;
-  }
-  div:hover {
-    width: 300px;
-  }
-  div {background:#0022AA ;
-    transition: width 2s, height 4s;
-  }
+/*login clonmorfo 29/9, renovacion de login*/
 
-  /*el ícono del camión de envío gira 90° hacia arriba suavemente cuando
-pasamos el mouse por encima*/
-  #myDiv {
-    transform: rotateZ(90deg);
-  }
+*{
+  box-sizing: border-box;
+  font-family: sans-serif;
+
+}
+.background{
+  background-image: url(/images/portada.jpg);
+  width: 100%;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size:cover;
+  background-repeat: no-repeat;    
+}
+
+.logotipo{
+  width: 25%;
+  border-radius: 50%;
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+  left: calc(50% - 30px);   
+}
+.login-box{
+  width: 80vw;
+  min-height: 475px;
+  height: 70vh;
+  background-color: rgba(250, 226, 226, 0.96) ;
+  position: absolute;
+  border-radius: 20px;
+  top: 300px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 70px 30px;
+  padding-top: 10px;
+  margin-top: 8%;
+  max-width: 440px;
+  max-height: 600px;
+}
+.login-box h1{
+  margin: 0px;
+  padding: 0 0 25px;
+  text-align: center;
+}
+.login-box label{
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  font-weight: bold;
+}
+.login-box input{
+  width: 100%;
+  margin-bottom: 15px;    
+}
+.login-box input[type="text"],
+.login-box input[type="password"]{
+  border: none;
+  border-bottom: 1px black solid;
+  background: transparent;
+  outline:none;
+  height: 30px;
+  font-size: 16px;    
+}
+.login-box input[type="submit"]{
+  display: block;
+  border: none;
+  position: relative;
+  top: 20px;
+  outline: none;
+  height: 30px;
+  background-color: #FFC944;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 20px;    
+}
+.login-box input[type="submit"]:hover{
+  background-color: rgb(13, 197, 197);
+}
+.login-box a{
+  position: relative;
+  top: 40px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 520;
+  line-height: 20px;
+  color: rgb(95, 61, 61);
+  display: flex;
+}
+.login-box a:hover{
+  color: black;
+}
+

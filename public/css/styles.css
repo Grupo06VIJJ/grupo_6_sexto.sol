@@ -245,7 +245,7 @@ main section{
     font-size: 18px;
     color:red
 }
-}
+
 .fa-truck{
     margin-top: 10px;
     font-size: 25px;
@@ -337,7 +337,7 @@ article div.main-article {
     }
 }
 
-  }
+  
 /*para ocultar en vista mobile*/
 @media screen and (max-width: 640px) {
     header ul li{
@@ -347,9 +347,12 @@ article div.main-article {
           }
           @media screen and (max-width: 640px) {
           @keyframes slidelist-style-type: none;
-          visibility: hidden
+          visibility: hidden;
               
             }
+
+
+
             
 /*footer*/
 footer section{
@@ -381,3 +384,7 @@ footer p{
   #cajacookies button {
     color: black;
   }
+
+
+
+
