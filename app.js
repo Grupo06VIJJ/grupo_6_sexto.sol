@@ -30,7 +30,7 @@ app.get("/productCart", (req, res)=> {
     res.sendFile(path.resolve(__dirname, "./views/productCart.html"))
 })
 app.post('/productCart', (req,res)=>{
-    res.sendFile(__dirname +'/views/index.html');
+    res.sendFile(__dirname +'/views/productCart.html');
 });
 
 
