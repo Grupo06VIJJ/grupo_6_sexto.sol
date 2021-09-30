@@ -1,0 +1,75 @@
+/*carrito de compra clon 30/9*/
+
+h1{
+    font-size: 40px;
+}
+.background{
+    background-image: url(https://cdn.pixabay.com/photo/2021/09/30/16/52/16-52-53-476_960_720.jpg );
+    width: 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+
+.logotipo{
+    width: 110px;
+    height: 100%;
+    
+}
+.header-box{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+.header-box ul{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    flex-grow: 0.7;
+    justify-content: space-evenly;
+}
+.header-box li{
+    align-self: center;
+}
+.hidden-item{
+    display: none;
+}
+.cart-box{
+    width: 80vw;
+    min-height: 475px;
+    height: 70vh;
+    background-color: rgba(250, 226, 226, 0.96);
+    position: absolute;
+    border-radius: 20px;
+    left: 50%;
+    transform: translate(-50%, -8%);
+    padding: 70px 30px;
+    padding-top: 10px;
+    margin-top: 8%;
+    max-width: 800px;
+
+}
+.cart-box article{
+    background-color: violet;
+    display: flex;
+    justify-content: space-between;
+    margin-top:  15px;
+}
+.buy-btn{
+    display: block;
+    border: none;
+    position: absolute;
+    bottom: 85px;
+    right: 60px;
+    width: 25%;
+    outline: none;
+    height: 10%;
+    background-color: #FFC944;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 20px;
+    
+}

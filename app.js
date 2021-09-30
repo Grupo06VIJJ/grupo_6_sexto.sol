@@ -18,13 +18,27 @@ app.get('/register', (req,res)=>{
 app.post('/register', (req,res)=> {
     res.send('Ya estás registrado');
 });
+
+
 /* Login */
 app.get('/login', (req,res)=>{
     res.sendFile(__dirname + '/views/login.html');
 });
 app.post('/login', (req,res)=>{
+    res.sendFile(__dirname +'/views/productCart.html');
+});
+
+
+/*Productos del carrito*/
+app.get('/productCart', (req,res)=>{
+    res.sendFile(__dirname + '/views/productCart.html');
+});
+app.post('/productCart', (req,res)=>{
     res.sendFile(__dirname +'/views/index.html');
 });
+
+
+/*eapertura del puerto*/
 app.listen(process.env.PORT || 3000,function () {
     console.log(`Servidor corriendo en puerto 3000`)
 });

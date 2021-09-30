@@ -1,35 +1,60 @@
-!DOCTYPE html>
+<!--Carrito de compra clon 30/9-->
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienvenidos a Sexto Sol-Página de inicio</title>
+    <link rel="stylesheet" href="/css/stylesheet.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
 rel="stylesheet" />
-    <link rel="stylesheet" href="/css/styles.css">  
+    <link rel="stylesheet" href="/css/cart.css">
+    <title>Log in</title>
 </head>
+<body class="background">
+    <header class="header-box">
+        <a href="/"><img class ="logotipo"src="/images/Logotipo.png" alt=""> </a>
+        <ul >
+            <li>Tienda ▼</li>
+            <li>Jardín ▼</li>
+            <li>Cursos ▼</li>
+        </ul>
 
-<body>
-       
-    <header class="header" >
-        <img src="/images/Logotipo.png" width="150" alt="Logo de Sexto Sol"> 
+        <ul >
+            <li><i class="fas fa-user-circle">Usuario</i></li>
+            <li><i class="fas fa-shopping-cart"></i></li>
+            <li><i class="far fa-bell"></i></li>
+        </ul>
+    </header>
 
+    <main>
+        <div >
+            <section class="cart-box">
+                <h1>Verfica tu pedido.</h1>
+                <article>
+                    <p>decripcion </p>
+                    <p>precio</p>
+                    <p>cantidad</p>
+                    <p>total</p>
+                </article>
 
-
-
-<!--Carrito de la compra-->
-<div id="divTotal" class="divsNo">
-    <p><b>Carrito de la compra, si querés hacer alguna modificación aún esta a tiempo:</b></p>
-    <table id="tablaTotal"></table>
-    </div>
-
-    <footer>
-        <h2>Nuestras redes</h2> 
-        <div id="cajacookies">
-         <p><button onclick="aceptarCookies()" class="pull-right"><i class="fa fa-times"></i> Aceptar y cerrar éste mensaje</button>
-         Éste sitio web usa cookies, si permanece aquí acepta su uso.
-         Puede leer más sobre el uso de cookies en nuestra <a href="politica.html">política de privacidad</a>.
-         </p>
-         </div>  
-   </footer>
+                <article>
+                    <p>Rosa</p>
+                    <p>$80</p>
+                    <select name="select">
+                        <option value="value1">1 unidad</option>
+                        <option value="value2" selected>2 unidades</option>
+                        <option value="value3">3 unidades</option>
+                    </select>
+                    <p>$960</p>
+                    <i class="fas fa-trash"></i>
+                </article>
+                <form method="POST">
+                    <input class="buy-btn" type="submit" value="Comprar"></input>
+                </form>
+                
+            </section>
+        </div>
+    </main>
+</body>
