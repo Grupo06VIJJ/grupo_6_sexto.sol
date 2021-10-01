@@ -1,0 +1,113 @@
+<!--Carrito de compra clon 30/9-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/stylesheet.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/cart.css">
+    <title>
+        cart
+    </title>
+</head>
+
+<body class="background">
+
+    <!-- header -->
+    <header class="header">
+
+        <!-- logo -->
+        <img src="/img/logo.png" width="150" alt="Logo de Sexto Sol">
+        <!-- logo -->
+
+        <!-- navegacion -->
+        <nav>
+
+            <ul>
+                <!-- register -->
+                <li>
+                    <!-- <a href="http://localhost:3000/register"> -->
+                    <a href="">
+                        <a href="https://sexto-sol.herokuapp.com/register">
+                            <i class="far fa-id-card"></i>Creá tu cuenta
+                        </a>
+                </li>
+                <!-- register -->
+
+                <!-- login -->
+                <li>
+                    <a href="https://sexto-sol.herokuapp.com/login">
+                        <i class="fas fa-sign-in-alt"></i>Ingresá
+                    </a>
+                </li>
+                <!-- login -->
+
+                <!-- cart -->
+                <li>
+                    <a href="https://sexto-sol.herokuapp.com/cart">
+                        <i class="fas fa-shopping-basket"></i>Tus compras
+                    </a>
+                </li>
+                <!-- cart -->
+
+            </ul>
+
+        </nav>
+        <!-- navegacion -->
+
+    </header>
+    <!-- header -->
+
+    <div>
+        <header class="header-box">
+            <a href="/"><img class="logotipo" src="/images/Logotipo.png" alt=""> </a>
+            <ul>
+                <li>Tienda ▼</li>
+                <li>Jardín ▼</li>
+                <li>Cursos ▼</li>
+            </ul>
+
+            <ul>
+                <li><i class="fas fa-user-circle">Usuario</i></li>
+                <li><i class="fas fa-shopping-cart"></i></li>
+                <li><i class="far fa-bell"></i></li>
+            </ul>
+        </header>
+
+        <main>
+            <div>
+                <section class="cart-box">
+                    <h1>Verfica tu pedido.</h1>
+                    <article>
+                        <p>decripcion </p>
+                        <p>precio</p>
+                        <p>cantidad</p>
+                        <p>total</p>
+                    </article>
+
+                    <article>
+                        <p>Rosa</p>
+                        <p>$80</p>
+                        <select name="select">
+                            <option value="value1">1 unidad</option>
+                            <option value="value2" selected>2 unidades</option>
+                            <option value="value3">3 unidades</option>
+                        </select>
+                        <p>$960</p>
+                        <i class="fas fa-trash"></i>
+                    </article>
+                    <form>
+                        <button class="buy-btn" type="submit" value="Comprar">Comprar</button>
+                    </form>
+
+                </section>
+            </div>
+        </main>
+    </div>
+
+
+</body>
