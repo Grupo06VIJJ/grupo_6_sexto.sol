@@ -1,10 +1,8 @@
                 /*estilos generales*/
             @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-            /*carrito de compras clon 30/9*/
 
 *{  box-sizing: border-box;
     font-family: sans-serif;
-
   }
   .background{
     background-image: url(https://cdn.pixabay.com/photo/2021/09/30/16/52/16-52-53-476_960_720.jpg );
@@ -127,6 +125,8 @@
                 text-decoration: underline wavy green;
                 /*verde ondulado*/
                 color: black;
+                font-size: 12px;
+                font-weight: bold;
             }
             
          
@@ -193,13 +193,6 @@
                 color: brown
             }
             
-            .discounts {
-                font-size: 18px;
-                color: red
-            }
-            
-            
-            
             .descriptions {
                 font-size: 16px;
                 color: black;
@@ -212,18 +205,15 @@
             }
             
             main section article {
-                background-color: #fff;
+                background-color:greenyellow;
                 margin: 10px 0px;
             }
             
             main section article img {
                 width: 80%;
+                
             }
             
-            main section article i,
-            .discount {
-                color: blueviolet;
-            }
             
             main section article i {
                 display: block;
@@ -258,9 +248,6 @@
                 width: 40%;
             }
             
-            .box-price .discount {
-                width: 60%;
-            }
             
             @media (min-width: 361px) {
                 header nav {
