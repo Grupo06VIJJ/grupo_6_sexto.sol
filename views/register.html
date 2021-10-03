@@ -1,3 +1,5 @@
+<!--Carrito de compra clon 02/10-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,24 +7,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="/css/stylesheet.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/cart.css">
     <title>
-        register
+        cart
     </title>
 </head>
 
-<body>
+    <body class="background">
 
-    <!-- logo -->
-    <div class="logo">
-        <a class="logo-link" href="https://sexto-sol.herokuapp.com/">
-            <img src="/img/logo.png" width="150" alt="Logo de Sexto Sol">
-        </a>
-    </div>
-    <!-- logo -->
-
+        <!-- logo -->
+        <div class="logo">
+            <a class="logo-link" href="https://sexto-sol.herokuapp.com/">
+                <img src="/img/logo.png" width="150" alt="Logo de Sexto Sol">
+            </a>
+        </div>
+        <!-- logo -->
+    
+        <div>
 
     <main>
         <form action="/register" method="POST" enctype="multipart/form-data">
@@ -73,7 +76,15 @@
             <button type="submit" class="enviar">Registrate</button>
             <button type="reset" class="borrar">Borrar</button>
         </form>
-    </main>
+
+        <div class="form-control">
+            <label for="">Suscribite a nuestro Newsletter</label>
+            <input type="mail" name="mail">
+        </div>
+
+    </form>
+    
+  </main>
 
     <footer>
         <h2>Nuestras redes</h2>
