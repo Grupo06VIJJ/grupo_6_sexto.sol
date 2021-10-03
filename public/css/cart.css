@@ -4,76 +4,27 @@
     margin: 0px;
     box-sizing: border-box;
 }
-h1{
-    font-size: 40px;
-}
-.background{
-    background-image: url(https://cdn.pixabay.com/photo/2021/09/30/16/52/16-52-53-476_960_720.jpg );
-    width: 100%;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;    
-}
 
-.cart-box{
-    width: 80vw;
-    min-height: 475px;
-    height: 70vh;
-    background-color: rgba(250, 226, 226, 0.96);
-    position: absolute;
-    border-radius: 20px;
-    left: 50%;
-    transform: translate(-50%, -8%);
-    padding: 70px 30px;
-    padding-top: 10px;
-    margin-top: 8%;
-    max-width: 800px;
-}
-.cart-box article{
-    border: 2px red dotted;
-    display: flex;
-    position: relative;
-    
-}
-.index-cart >p{
-    border: 2px red dotted;
-    display: inline-block;
-    padding: 0px 15px;
-    font-size: 2em;
-}
-
-.buy-btn{
-    display: block;
-    border: none;
-    position: absolute;
-    bottom: 85px;
-    right: 60px;
-    width: 25%;
-    outline: none;
-    height: 10%;
-    background-color: #FFC944;
-    font-size: 24px;
-    font-weight: bold;
-    border-radius: 20px;
-    
-}
 /*header*/
-.header-box{
-    
+.header-box{    
     margin: auto;
     width:90%;
-    display:flex;
+    display:none;
     justify-content: space-between;
     align-items: center;
     font-size: 1.5em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;  
 }
 .link-to-home, .logotipo{
     width: 100px;
     height: 100px;
-    border-radius: 50%;
+    border-radius: 50%;   
 }
+.logotipo{
+    align-items:center;
+    justify-content:center
+}
+
 ul , ol{
     list-style: none;
 }
@@ -116,6 +67,81 @@ ul , ol{
 
 
 #user >li{
-    padding: 5px 15px;
+    padding: 5px 10px;
+}
+
+
+@media (min-width:851px){
+    .header-box{
+        display: flex;
+      }  
 }
 /*header*/
+
+/*cartbox*/
+.background{
+    background-image: url(https://cdn.pixabay.com/photo/2021/09/30/16/52/16-52-53-476_960_720.jpg );
+    width: 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+
+.cart-box{
+    border: 2px black dotted;
+    border-radius: 10px;
+    width: 80vw;
+    height: 60vh;
+    background-color: rgba(176, 212, 90, 0.932);
+    margin: 80px auto;
+    padding: 0px 0px 0px 0px;
+    
+}
+.cart-box .title{
+    font-weight: 600;
+    text-align: left;
+    font-size: 24px;;
+    padding: 10px 15px;
+}
+.cart-box img{
+    width: 124px;
+    height: 124px;
+}
+.cart-box article{
+    border-top: 1px black solid;
+    
+    padding:10px 0px;
+}
+
+.cart-box .product-picture-detail{
+    display: flex;
+    align-items: flex-start;
+}
+.cart-box .product-detail > div{
+    display: block;
+    padding: 10px 5px;
+}
+.cart-box .product-action ul{
+    padding: 15px 20px;    
+}
+.cart-box .product-action ul li{
+    display: inline;    
+}
+
+.buy-btn{
+    display: block;
+    border: none;
+    position: absolute;
+    bottom: 85px;
+    right: 60px;
+    width: 25%;
+    outline: none;
+    height: 10%;
+    background-color: #FFC944;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+/*cart box*/
