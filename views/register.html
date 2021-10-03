@@ -10,35 +10,29 @@
     <link rel="stylesheet" href="/css/stylesheet.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/cart.css">
-    <title>
-       registro
-    </title>
+    <title>Registro</title>
 </head>
-
     <body class="background">
-
         <!-- logo -->
         <div class="logo">
             <a class="logo-link" href="https://sexto-sol.herokuapp.com/">
                 <img src="/img/logo.png" width="150" alt="Logo de Sexto Sol">
             </a>
         </div>
-        
-
-    <main>
+   
         <main>
             <div class="login-box">
                 <a href="/">
                     <img class="logotipo" src="https://lh3.googleusercontent.com/CY5_VoafpO45S3BDEqCC-Lh2bkktkSqqmkJEfxnP9MXDO4n0K0gfZiiZIjU-dzio4ii902w=s85" alt="">
                 </a>
-        <div>
-            <section class="register-box"> <div>
+            </div>
+            <div>
+        <section class="register-box"> </section>
               
-                   
-                </article>
         <form action="/register" method="POST" enctype="multipart/form-data">
             <!--Enctype se agrega solo si tenemos input de tipo file-->
             <form action="resultado.html" method="POST">
+               
                 <label for="pregunta">
                     <h2>¿Sos cliente?<h2>
                 </label>
@@ -50,60 +44,39 @@
                         <label for="">Ya compraste?Envianos tu comprobante de pago</label>
                         <input type="file" name="Comprobante de pago">
                     </div>
-
-            <div class="form-control">
-                <label for="">Nombre y apellido</label>
-                <input type="text" name="fullname">
-            </div>
-
-            <div class="form-control">
-                <label for="">Email</label>
-                <input type="email" name="email">
-            </div>
-
-            <div class="form-control">
-                <label for="">Fecha de nacimiento</label>
-                <input type="date" name="">
-            </div>
-
-            <div class="form-control">
-                <h4>Categorias de interes</h4>
-                <input type="checkbox" name="regalos" value="regalos" id="regalos">
-                <label for="electro">Regalos</label>
-
-                <input type="checkbox" name="personalizados" value="personalizados" id="personalizados">
-                <label for="moda">Plantas en macetas Personalizadas</label>
-
-                <input type="checkbox" name="semillas" value="semillas" id="semillas">
-                <label for="healthy">Semillas</label>
-            </div>
-
-            <div class="form-control">
-                <label for="">Contraseña</label>
-                <input type="password" name="password">
-            </div>
-
-            <div class="form-control">
-                <label for="">Repetir Contraseña</label>
-                <input type="password" name="repassword">
-            </div>
-
-            <button type="submit" class="enviar">Registrate</button>
-            <button type="reset" class="borrar">Borrar</button>
-        </form>
-
+                         <div>
+                     <form>
+                          <label for="fname">Nombre y apellido</label>
+                          <input type="text" name="fullname">
+                          <label for="">Email</label>
+                        <input type="email" name="email">
+                        <label for="">Fecha de nacimiento</label>
+                        <input type="date" name="">
+                        <h4>Categorias de interes</h4>
+                        <input type="checkbox" name="regalos" value="regalos" id="regalos">
+                        <label for="electro">Regalos</label>
         
-
-    </form>
-    
+                        <input type="checkbox" name="personalizados" value="personalizados" id="personalizados">
+                        <label for="moda">Plantas en macetas Personalizadas</label>
+        
+                        <input type="checkbox" name="semillas" value="semillas" id="semillas">
+                        <label for="healthy">Semillas</label>
+                        <label for="">Contraseña</label>
+                        <input type="password" name="password">
+                        <label for="">Repetir Contraseña</label>
+                        <input type="password" name="repassword">
+                        </form>
+                    </div> 
+<div>
+    <button type="submit" class="enviar">Registrate</button>
+    <button type="reset" class="borrar">Borrar</button>
+</div>
+       
   </main>
 
   <footer>
 
-   
-    <footer>
-       
-       
+    
     </footer>
 
 </body>

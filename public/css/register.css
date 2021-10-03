@@ -26,11 +26,12 @@
 .link-to-home, .logotipo{
     width: 100px;
     height: 100px;
-    border-radius: 50%;
+    border-radius: 50%;   
 }
-.registrate-boton{
+
+.registrate-btn{
     display: block;
-    border: none;
+    border:blue;
     position: absolute;
     bottom: 85px;
     right: 60px;
@@ -42,10 +43,7 @@
     font-weight: bold;
     border-radius: 20px;
 
-.cliente-box{
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
+    
 }
 .header-box ul{
     margin: 0px;
@@ -62,11 +60,28 @@
 .hidden-item{
     display: none;
 }
-.register-box{
+/*ver como armar el recuadro rosa*/
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+  padding: 0; 
+  margin: 0;
+}
+
+textarea {
+  overflow: auto;
+} 
+
+.form-control{
     width: 80vw;
     min-height: 475px;
     height: 70vh;
-    background-color: rgba(250, 226, 226, 0.96);
+    background-color: greenyellow
     position: absolute;
     border-radius: 20px;
     left: 50%;
@@ -75,9 +90,12 @@
     padding-top: 10px;
     margin-top: 8%;
     max-width: 800px;
-
 }
-/*ver como armar el recuadro rosa*/
+.form-control{
+    display: flex;
+    justify-content: space-between;
+    background-color: greenyellow;
+
 .register-box{
     width: 80vw;
     min-height: 475px;
@@ -101,12 +119,10 @@
 
 .form-control label {
     width: 100%;
-    
 }
 .form-control input {
     width: 100%;
     transition: border 2s;
-  
 }
 .form-control input:focus {
     border: aqua 5px solid;
@@ -129,3 +145,14 @@
 .borrar {
     background-color: red;
 }
+@media (min-width:851px){
+    .logo-mobile{
+      display: none;
+    }
+    .login-box h1{
+      margin: 30px;
+    }
+    .login-box{
+      top:350px;
+    }
+  }
