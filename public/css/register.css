@@ -38,7 +38,7 @@ h1{
 .hidden-item{
     display: none;
 }
-.cart-box{
+.register-box{
     width: 80vw;
     min-height: 475px;
     height: 70vh;
@@ -53,31 +53,6 @@ h1{
     max-width: 800px;
 
 }
-.cart-box article{
-    background-color: violet;
-    display: flex;
-    justify-content: space-between;
-    margin-top:  15px;
-}
-.buy-btn{
-    display: block;
-    border: none;
-    position: absolute;
-    bottom: 85px;
-    right: 60px;
-    width: 25%;
-    outline: none;
-    height: 10%;
-    background-color: #FFC944;
-    font-size: 24px;
-    font-weight: bold;
-    border-radius: 20px;
-    
-}
-
-
-  /*anterior*/
-
 
 .form-control {
     width: 100%;
