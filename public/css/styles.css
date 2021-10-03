@@ -1,12 +1,11 @@
                 /*estilos generales*/
-            
             @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
             /*carrito de compras clon 30/9*/
 
 *{
     box-sizing: border-box;
     font-family: sans-serif;
-  
+
   }
   .background{
     background-image: url(https://cdn.pixabay.com/photo/2021/09/30/16/52/16-52-53-476_960_720.jpg );
@@ -71,14 +70,7 @@
             }
             /*Imagen de portada*/
             
-            body {
-                background-image: url("/img/portada.jpg");
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                background-position: 10px 30px;
-            }
+           
             
             .responsive-img {
                 max-width: 100%;

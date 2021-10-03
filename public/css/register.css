@@ -1,17 +1,20 @@
 
 /*carrito de compra clon 30/9*/
 
-h1{
-    font-size: 40px;
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+  
 }
 .background{
     background-image: url(https://cdn.pixabay.com/photo/2021/09/30/16/52/16-52-53-476_960_720.jpg );
     width: 100%;
-    background-position: center center;
+    background-position: center top;
     background-attachment: fixed;
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;    
-}
+  }  
+
 
 .logotipo{
     width: 110px;
@@ -53,7 +56,22 @@ h1{
     max-width: 800px;
 
 }
+/*ver como armar el recuadro rosa*/
+.register-box{
+    width: 80vw;
+    min-height: 475px;
+    height: 70vh;
+    background-color: rgba(250, 226, 226, 0.96);
+    position: absolute;
+    border-radius: 20px;
+    left: 50%;
+    transform: translate(-50%, -8%);
+    padding: 70px 30px;
+    padding-top: 10px;
+    margin-top: 8%;
+    max-width: 800px;
 
+}
 .form-control {
     width: 100%;
     flex-direction: column;
