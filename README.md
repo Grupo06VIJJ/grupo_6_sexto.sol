@@ -64,3 +64,6 @@ Utilizamos estos sitios como referencia con el fin de brindarle a
 ## Trello
 Para organizar nuestro trabajo de manera colaborativa
 https://trello.com/b/LLyWTIdI/equipo-6
+
+## heroku
+https://sexto-sol.herokuapp.com/

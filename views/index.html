@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -7,188 +7,255 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/styles.css">
+    <title>
+        Sexto Sol
+    </title>
+
+    <style>
+        .barra {
+            border: 2px solid black;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .form-search {
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .form-search input[type="text"] {
+            margin: 0;
+            padding: 1em;
+            width: 100%;
+            background-color: red;
+            border: none;
+            outline: none;
+            color: black;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+        
+        .form-search .submit,
+        .fa-search {
+            padding: 1em;
+            background-color: #FFF;
+            border: none;
+            color: #666;
+            width: 10%;
+            height: 40px;
+            background-color: salmon;
+        }
+    </style>
 </head>
 
-
 <body>
-    <header class="header">
-        <img src="/img/logo.png" width="150" alt="Logo de Sexto Sol">
-        <nav>
-            <ul>
-                <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
-                <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
-                <li><a href="/productCart">Tus compras <i class="fas fa-shopping-basket"></i></a></li>
-            </ul>
-        </nav>
-        <marquee>
-            <h1>¡Bienvenidos a Sexto Sol!</h1>
-        </marquee>
-        <p>
-            <div class="search-bar"> <input type="search" name="q" value="" placeholder="Buscá aquí..." aria-label="Buscá aquí..."></div>
-        </p>
-
+    <!--
+        BARRA DE BUSQUEDA
+    <div>
+        <div class="barra">
+            <form class="form-search" action="" method="GET">
+                <input type="text" placeholder="Buscar productos, marcas y más...">
+                <button class="submit" type>
+                    <i class="fa fa-search"></i>
+                </button>
+            </form>
+        </div>
         <div>
-            <p class="Quienes somos">
-                <h2>Quienes somos</h2>
+            <p>
+                <i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito
+            </p>
         </div>
-        <title>Formularios</title>
-        <form action="resultado.html" method="POST">
-            <label for="pregunta">
-        <h2>¿Sos cliente?<h2>
-      </label>
-            <input type="radio" name="clientes" value="Sí">Si
-            <input type="radio" name="clientes" value="No">No
-            <div>
-                <p class="imagen de Portada">
-            </div>
-            <div style="float:right">EL MEJOR LUGAR PARA DECORAR TU JARDIN</div>
-            </div>
-            <div style="clear:both"></div>
+    </div>
+-->
 
-            <nav>
-                <h2>Plantas sin flores-Variedades</h2>
-                <ul class="sin">
-                    <img src="/img/planta.jpg" width="100" alt="Plantas sin Flores-Variedades">
+    <!-- header -->
+    <header class="header">
 
-                    <li><a href="/Plantas">Fittonia verschaffeltii</a></li>
-                    <li><a href="/Plantas">Cycas revoluta</a></li>
-                    <li><a href="/Plantas">Diffenbachia Compacta</a></li>
-                </ul>
-                <h2>Plantas con flores-Variedades</h2>
-                <ul class="con">
-                    <img src="/img/flor.jpg" width="100" alt="Plantas sin Flores-Variedades">
-                    <p>Hacé click para elegirla en la maceta que más te guste</p>
-                    <li><a href="/Flores">Bromelia</a></li>
-                    <li><a href="/Plantas">Caléndula</a></li>
-                    <li><a href="/Plantas">Azalea</a></li>
-                    <li><a href="/Plantas">Anturio</a></li>
-                </ul>
-            </nav>
-</body>
-<main>
-    <section>
-        <marquee>
-            <h1>No te vayas, mirá todo lo que podemos ofrecerte</h1>
-        </marquee>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <section></section>
-        <article>
-            <img src="/img/rosas.jpg" width="10" alt="Rosas chinas">
-            <div>
-                <p><i class="fas fa-truck"></i></p>
-                <p class="prices">$500</p>
-                <p class="discounts">10% off</p>
-                <p class="descriptions">Rosas chinas</p>
-            </div>
-        </article>
-
-        <article>
-            <img src="/img/potus.jpg" width="10" alt="Rosas chinas">
-            <div>
-                <p><i class="fas fa-truck"></i></p>
-                <p class="prices">$800</p>
-                <p class="discounts">5% off</p>
-                <p class="descriptions">Potus"</p>
-            </div>
-        </article>
-
-    </section>
-    <div class="wrapper">
-        <div class="slider" id="slider">
-            <ul class="slides">
-                <li class="slide" id="slide1">
-                    <a href="#">
-                        <p class="caption"></p>
-                        <img src="/img/photo1.jpg" width="20" alt="20">
-                    </a>
-                </li>
-                <li class="slide" id="slide2">
-                    <a href="#">
-                        <p class="caption"></p>
-                        <img src="/img/photo2.jpg" width="20" alt="20">
-                    </a>
-                </li>
-                <li class="slide" id="slide3">
-                    <a href="#">
-                        <p class="caption"></p>
-                        <img src="/img/photo3.jpg" width="20" alt="20">
-                    </a>
-                </li>
-                <li class="slide" id="slide4">
-                    <a href="#">
-                        <p class="caption"></p>
-                        <img src="/img/photo4.jpg" width="20" alt="20">
-                    </a>
-                </li>
-                <li class="slide" id="slide5">
-                    <a href="#">
-                        <p class="caption"></p>
-                        <img src="/img/photo5.jpg" width="20" alt="20">
-                    </a>
-                </li>
-                <li class="slide">
-                    <a href="#">
-                        <p class="caption">Visitanos</p>
-                        <img src="flor.jpg" alt="photo 1">
-                    </a>
-                </li>
-            </ul>
-            <ul class="slider-controler">
-                <li><a href="#slide1">&bullet;</a></li>
-                <li><a href="#slide2">&bullet;</a></li>
-                <li><a href="#slide3">&bullet;</a></li>
-                <li><a href="#slide4">&bullet;</a></li>
-                <li><a href="#slide5">&bullet;</a></li>
-            </ul>
+        <!-- logo -->
+        <div class="logo">
+            <a class="logo-link" href="https://sexto-sol.herokuapp.com/">
+                <img src="/img/logo.png" width="150" alt="Logo de Sexto Sol">
+            </a>
         </div>
-        <article>
-            <img src="/img/planta.jpg" alt="Los más vendidos">
-            <div>
-                <p><i class="fas fa-truck"></i></p>
-                <p class="prices">$300</p>
-            </div>
-            <p class="descripción">Verano 2021</p>
-        </article>
-        <article>
-            <img src="/img/flor.jpg" alt="Santa Rita" class="product_img">
-            <div class="main-article">
-                <i class="fas fa-truck"></i>
-                <div class="box-price">
-                    <p class="price">$800</p>
-                    <p class="discount">5% off</p>
-                </div>
-                <h4 class="description">Santa Rita en maceta de cerámica</h4>
-        </article>
-        <div class="mail">
-            <div>Escribinos:sextosol@gmail.com</div>
-            <div class="teléfono">
+        <!-- logo -->
+
+        <!-- navegacion -->
+        <nav>
+
+            <ul>
+                <!-- register -->
+                <li>
+                    <!-- <a href="http://localhost:3000/register"> -->
+                    <a href="">
+                        <a href="https://sexto-sol.herokuapp.com/register">
+                            <i class="far fa-id-card"></i>Creá tu cuenta
+                        </a>
+                </li>
+                <!-- register -->
+
+                <!-- login -->
+                <li>
+                    <a href="https://sexto-sol.herokuapp.com/login">
+                        <i class="fas fa-sign-in-alt"></i>Ingresá
+                    </a>
+                </li>
+                <!-- login -->
+
+                <!-- cart -->
+                <li>
+                    <a href="https://sexto-sol.herokuapp.com/cart">
+                        <i class="fas fa-shopping-basket"></i>Tus compras
+                    </a>
+                </li>
+                <!-- cart -->
+
+            </ul>
+
+        </nav>
+        <!-- navegacion -->
+
+    </header>
+    <!-- header -->
+
+    <marquee>
+        <h1>¡Bienvenidos a Sexto Sol!</h1>
+    </marquee>
+
+    <p>
+        <div class="search-bar"> <input type="search" name="q" value="" placeholder="Buscá aquí..." aria-label="Buscá aquí..."></div>
+    </p>
+
+    <div>
+        <p class="Quienes somos">
+            <h2>Quienes somos</h2>
+    </div>
+
+    <title>Formularios</title>
+
+    <form action="resultado.html" method="POST">
+        <label for="pregunta">
+            <h2>¿Sos cliente?<h2>
+        </label>
+        <input type="radio" name="clientes" value="Sí">Si
+        <input type="radio" name="clientes" value="No">No
+        <div>
+            <p class="imagen de Portada">
+        </div>
+        <div style="float:right">EL MEJOR LUGAR PARA DECORAR TU JARDIN</div>
+        </div>
+        <div style="clear:both"></div>
+    </form>
+
+    <nav>
+        <h2>Plantas sin flores-Variedades</h2>
+        <ul class="sin">
+            <img src="/img/planta.jpg" width="100" alt="Plantas sin Flores-Variedades">
+
+            <li><a href="/Plantas">Fittonia verschaffeltii</a></li>
+            <li><a href="/Plantas">Cycas revoluta</a></li>
+            <li><a href="/Plantas">Diffenbachia Compacta</a></li>
+        </ul>
+        <h2>Plantas con flores-Variedades</h2>
+        <ul class="con">
+            <img src="/img/lor.jpg" width="100" alt="Plantas sin Flores-Variedades">
+            <p>Hacé click para elegirla en la maceta que más te guste</p>
+            <li><a href="/Flores">Bromelia</a></li>
+            <li><a href="/Plantas">Caléndula</a></li>
+            <li><a href="/Plantas">Azalea</a></li>
+            <li><a href="/Plantas">Anturio</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <section>
+            <marquee>
+                <h1>No te vayas, mirá todo lo que podemos ofrecerte</h1>
+            </marquee>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <section></section>
+            <article>
+                <img src="/img/rosas.jpg" width="10" alt="Rosas chinas">
                 <div>
-                    <h2>Comunicate con nosotros:(5411)353-0009</h2>
+                    <p><i class="fas fa-truck"></i></p>
+                    <p class="prices">$500</p>
+                    <p class="discounts">10% off</p>
+                    <p class="descriptions">Rosas chinas</p>
                 </div>
-                <div class="dirección">
+            </article>
+
+            <article>
+                <img src="/img/potus.jpg" width="10" alt="Rosas chinas">
+                <div>
+                    <p><i class="fas fa-truck"></i></p>
+                    <p class="prices">$800</p>
+                    <p class="discounts">5% off</p>
+                    <p class="descriptions">Potus"</p>
+                </div>
+            </article>
+
+        </section>
+        <div class="wrapper">
+           
+                            <p class="caption">Visitanos</p>
+                            <img src="img/flor.jpg" alt="photo 1">
+                        </a>
+                    </li>
+                </ul>
+                <ul class="slider-controler">
+                    <li><a href="#slide1">&bullet;</a></li>
+                    <li><a href="#slide2">&bullet;</a></li>
+                    <li><a href="#slide3">&bullet;</a></li>
+                    <li><a href="#slide4">&bullet;</a></li>
+                    <li><a href="#slide5">&bullet;</a></li>
+                </ul>
+            </div>
+            <article>
+                <img src="/img/planta.jpg" alt="Los más vendidos">
+                <div>
+                    <p><i class="fas fa-truck"></i></p>
+                    <p class="prices">$300</p>
+                </div>
+                <p class="descripción">Verano 2021</p>
+            </article>
+            <article>
+                <img src="/img/flor.jpg" alt="Santa Rita" class="product_img">
+                <div class="main-article">
+                    <i class="fas fa-truck"></i>
+                    <div class="box-price">
+                        <p class="price">$800</p>
+                        <p class="discount">5% off</p>
+                    </div>
+                    <h4 class="description">Santa Rita en maceta de cerámica</h4>
+            </article>
+            <div class="mail">
+                <h3>Escribinos:sextosol@gmail.com</h3>
+                <div class="teléfono">
                     <div>
-                        <h2>Encontranos en:(Calle sin número )Salta
-                            <h2>
+                        <h3>Comunicate con nosotros:(5411)353-0009</h3>
                     </div>
-                    <div style="float:left">
-                        <h1>VISITANOS PRONTO
-                            <h1>
-                    </div>
-</main>
-<footer>
-    <h2>Nuestras redes</h2>
-    <p>Seguinos en
-        <a href="https://www.instagram.com/">Instagram</a>.
-    </p>
-    <div id="cajacookies">
-        </i> Aceptar y cerrar este mensaje</button>
-        <p><button onclick="aceptarCookies()" class="pull-right"><i class="fa fa-times"></i>
-        Éste sitio web usa cookies, si permanece aquí acepta su uso.
-        <h4>Puede leer más sobre el uso de cookies en nuestra </h4>
-        <a href="politica.html">política de privacidad</a>.
-    </p>
-  </div>
-</footer>
+                    <div class="dirección">
+                        <div>
+                            <h3>Encontranos en:(Calle sin número )Salta<h2>
+                        </div>
+                        <div style="float:left">
+                            <marquee><h1>VISITANOS PRONTO<h1></marquee>
+                        </div>
+    </main>
+
+    <footer>
+        <Seguinos>Nuestras redes: <br>Seguinos en<a href="https://www.instagram.com/"> Instagram</a> </h2>
+        
+        <h3>Éste sitio web usa cookies, si permanece aquí acepta su uso.</h3>
+                    <div>
+                        <h4>Puede leer más sobre el uso de cookies en nuestra 
+                            <a href="politica.html">Política de privacidad</a>.</h4>
+        </div>
+    </footer>
+
 </body>
 
 </html>
