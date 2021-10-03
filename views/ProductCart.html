@@ -14,25 +14,33 @@ rel="stylesheet" />
 </head>
 <body class="background">
     <header class="header-box">
-        <a href="/"><img class ="logotipo"src="/images/Logotipo.png" alt=""> </a>
-        <ul >
-            <li>Tienda ▼</li>
-            <li>Jardín ▼</li>
-            <li>Cursos ▼</li>
+        <a class="link-to-home"href="/"><img class ="logotipo" src="https://www.jardineriaon.com/wp-content/uploads/2018/04/flores-decorativas-y-vistosas.jpg" alt=""> </a>
+        <ul class="nav">
+            <li><a href="#">Tienda ▼</a></li>
+            <li><a href="#">Jardín ▼</a>
+                <ul class="submenu">
+                    <li><a href="#">submenu1</a></li>
+                    <li><a href="#">submenu2</a></li>
+                    <li><a href="#">submenu3</a></li>
+                    <li><a href="#">submenu4</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Cursos ▼</a></li>
         </ul>
 
-        <ul >
+        <ul class="nav" id="user" >
             <li><i class="fas fa-user-circle">Usuario</i></li>
             <li><i class="fas fa-shopping-cart"></i></li>
             <li><i class="far fa-bell"></i></li>
         </ul>
     </header>
 
+
     <main>
-        <div >
-            <section class="cart-box">
+        <div class="cart-box">
+            <section >
                 <h1>Verfica tu pedido.</h1>
-                <article>
+                <article class="index-cart">
                     <p>decripcion </p>
                     <p>precio</p>
                     <p>cantidad</p>
@@ -58,3 +66,6 @@ rel="stylesheet" />
         </div>
     </main>
 </body>
+</html>
+
+    
