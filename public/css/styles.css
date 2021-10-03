@@ -68,7 +68,12 @@
                 font-size: 12px;
             }
             /*Imagen de portada*/
-            
+            .img {
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+                box-sizing: border-box;
+            }
             /* Header*/
             /*color del fondo*/
             
@@ -107,7 +112,9 @@
             .fas fa-warehouse,
             .fas fa-envelope-square,
             .fas fa-shopping-basket{
-                background: green
+                    margin-top: 10px;
+                    font-size: 25px;
+                }
             }
 
             header ul {
@@ -122,15 +129,8 @@
                 color: black;
             }
             
-            div.burger-menu i {
-                border-radius: 5px;
-                background-color: ;
-                color: black;
-                padding: 10px;
-                margin: 10px 0px 20px 0px;
-                font-size: 20px;
-            }
-            .responsive-img {
+         
+            .img {
                 max-width: 100%;
                 height: auto;
                 object-fit: cover;
@@ -171,9 +171,6 @@
                 }
             }
            
-            
-           
-            
             @media(max-width: 360px) {
                 body header nav {
                     display: none;
@@ -191,7 +188,6 @@
             }
             
             
-            
             .prices {
                 font-size: 18px;
                 color: brown
@@ -202,10 +198,7 @@
                 color: red
             }
             
-            .fa-truck {
-                margin-top: 10px;
-                font-size: 25px;
-            }
+            
             
             .descriptions {
                 font-size: 16px;

@@ -21,6 +21,15 @@
     height: 100%;
     
 }
+
+/*para volver al inicio*/
+.link-to-home, .logotipo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
 .cliente-box{
     display: flex;
     justify-content: space-between;
