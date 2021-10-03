@@ -18,7 +18,7 @@ h1{
     height: 100%;
     
 }
-.header-box{
+.cliente-box{
     display: flex;
     justify-content: space-between;
     background-color: white;
