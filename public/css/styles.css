@@ -103,9 +103,13 @@
                 padding-left: 3px;
             }
             
-            .fa-id-card,
-            .fa-sign-out-alt,
-            .fa-shopping-basket,
+            .fa-fas fa-phone,
+            .fas fa-warehouse,
+            .fas fa-envelope-square,
+            .fas fa-shopping-basket{
+                background: green
+            }
+
             header ul {
                 color: black;
                 /*color de fuente*/
