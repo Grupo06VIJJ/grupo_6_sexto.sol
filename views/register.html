@@ -33,7 +33,13 @@
                 </article>
         <form action="/register" method="POST" enctype="multipart/form-data">
             <!--Enctype se agrega solo si tenemos input de tipo file-->
-
+            <form action="resultado.html" method="POST">
+                <label for="pregunta">
+                    <h2>¿Sos cliente?<h2>
+                </label>
+                <input type="radio" name="clientes" value="Sí">Si
+                <input type="radio" name="clientes" value="No">No
+                <div>
             <div class="form-control">
                 <label for="">Nombre y apellido</label>
                 <input type="text" name="fullname">

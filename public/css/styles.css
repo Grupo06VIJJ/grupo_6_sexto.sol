@@ -2,8 +2,7 @@
             @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
             /*carrito de compras clon 30/9*/
 
-*{
-    box-sizing: border-box;
+*{  box-sizing: border-box;
     font-family: sans-serif;
 
   }
@@ -70,59 +69,18 @@
             }
             /*Imagen de portada*/
             
-           
-            
-            .responsive-img {
-                max-width: 100%;
-                height: auto;
-                object-fit: cover;
-                box-sizing: border-box;
-            }
-            
-            
-            * {
-                box-sizing: border-box;
-            }
-            
-            html {
-                scroll-behavior: smooth;
-            }
-            
-            body {
-                font-family: roboto
-            }
-            
-            .wrapper {
-                max-width: 1800px;
-                margin: 0 auto;
-            }
-            
-          /*@media*/
-            
-            @media only screen and (min-width: 1200px) {
-                .slide {
-                    width: 1200px;
-                }
-                .caption {
-                    font-size: 96px;
-                    bottom: 96px;
-                    right: 115px;
-                }
-            }
             /* Header*/
             /*color del fondo*/
             
             .header {
-                background-color: none;
+                background-color: greenyellow;
             }
             
-            .search-bar {
-                background-color: brown;
+            .barra {
                 border: solid 0.5px black;
                 width: 300px;
                 height: 8px;
             }
-            
             .header nav ul {
                 list-style-type: none;
                 /*sin bullets*/
@@ -168,6 +126,49 @@
                 margin: 10px 0px 20px 0px;
                 font-size: 20px;
             }
+            .responsive-img {
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+                box-sizing: border-box;
+            }
+            
+            
+            * {
+                box-sizing: border-box;
+            }
+            
+            html {
+                scroll-behavior: smooth;
+            }
+            
+            body {
+                font-family: roboto
+            }
+            main section {
+                background-color: greenyellow;
+                padding-bottom: 20px;
+            }
+            .wrapper {
+                max-width: 1800px;
+                margin: 0 auto;
+            }
+            
+          /*@media*/
+            
+            @media only screen and (min-width: 1200px) {
+                .slide {
+                    width: 1200px;
+                }
+                .caption {
+                    font-size: 96px;
+                    bottom: 96px;
+                    right: 115px;
+                }
+            }
+           
+            
+           
             
             @media(max-width: 360px) {
                 body header nav {
@@ -180,19 +181,12 @@
                 width: 100vw;
             }
             
-            div img.banner {
-                width: 100vw;
-            }
-            
             main section article {
                 color: #ebebeb;
                 margin-bottom: 10px;
             }
             
-            main section {
-                background-color: greenyellow;
-                padding-bottom: 20px;
-            }
+            
             
             .prices {
                 font-size: 18px;
@@ -309,6 +303,9 @@
                     @keyframes slidelist-style-type: none;
                     visibility: hidden;
                 }
+
+
+
                 /*footer*/
                 footer section {
                     text-align: center;
