@@ -40,13 +40,6 @@ app.post('/register', (req, res) => {
 app.get('/cart', (req, res) => {
     res.sendFile(path.join(__dirname, '/views/cart.html'));
 });
-/* Shopping-cart */
-app.get("/productCart", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "./views/productCart.html"))
-})
-app.get('/productCart', (req,res)=>{
-    res.sendFile(__dirname + '/views/productCart.html');
-})
 
 // logged
 app.post('/register', (req, res) => {

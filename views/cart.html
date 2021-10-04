@@ -2,75 +2,144 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/stylesheet.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+rel="stylesheet" />
     <link rel="stylesheet" href="/css/cart.css">
-    <title>
-        cart
-    </title>
+    <title>Log in</title>
 </head>
-
 <body class="background">
 
-    <!-- logo -->
-    <div class="logo">
-        <a class="logo-link" href="https://sexto-sol.herokuapp.com/">
-            <img src="/img/logo.png" width="150" alt="Logo de Sexto Sol">
-        </a>
-    </div>
-    <!-- logo -->
 
-    <div>
-        <header class="header-box">
-            <a href="/"><img class="logotipo" src="/images/Logotipo.png" alt=""> </a>
-            <ul>
-                <li>Tienda ▼</li>
-                <li>Jardín ▼</li>
-                <li>Cursos ▼</li>
-            </ul>
+    <!-- header -->
+    <header class="header-box">
+        <a class="link-to-home"href="/"><img class ="logotipo" src="https://www.jardineriaon.com/wp-content/uploads/2018/04/flores-decorativas-y-vistosas.jpg" alt=""> </a>
+        <ul class="nav">
+            <li><a href="#">Tienda ▼</a></li>
+            <li><a href="#">Jardín ▼</a>
+                <ul class="submenu">
+                    <li><a href="#">submenu1</a></li>
+                    <li><a href="#">submenu2</a></li>
+                    <li><a href="#">submenu3</a></li>
+                    <li><a href="#">submenu4</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Cursos ▼</a></li>
+        </ul>
 
-            <ul>
-                <li><i class="fas fa-user-circle">Usuario</i></li>
-                <li><i class="fas fa-shopping-cart"></i></li>
-                <li><i class="far fa-bell"></i></li>
-            </ul>
-        </header>
+        <ul class="nav" id="user" >
+            <li><i class="fas fa-user-circle">Usuario</i></li>
+            <li><a href="/Cart"><i class="fas fa-shopping-cart"></i></a></li>
+            <li><i class="far fa-bell"></i></li>
+        </ul>
+    </header>
+    <!-- header -->
 
-        <main>
+    <main>
+    <!--Cuadrado de compra-->
+        <div class="cart-box">
+        <!--Titulo-->
             <div>
-                <section class="cart-box">
-                    <h1>Verfica tu pedido.</h1>
-                    <article>
-                        <p>decripcion </p>
-                        <p>precio</p>
-                        <p>cantidad</p>
-                        <p>total</p>
-                    </article>
-
-                    <article>
-                        <p>Rosa</p>
-                        <p>$80</p>
-                        <select name="select">
-                            <option value="value1">1 unidad</option>
-                            <option value="value2" selected>2 unidades</option>
-                            <option value="value3">3 unidades</option>
-                        </select>
-                        <p>$960</p>
-                        <i class="fas fa-trash"></i>
-                    </article>
-                    <form>
-                        <button class="buy-btn" type="submit" value="Comprar">Comprar</button>
-                    </form>
-
-                </section>
+                <h2 class="title">Tu Carrito(2)</h2>
             </div>
-        </main>
-    </div>
+        <!--Titulo-->
+            
+        <!--Item 1-->
+            <div>
+            <!--Caja del item 1-->
+                <div>
+                <!--Detalles del item 1-->
+                    <article>
+                        <div class="product-picture-detail">
+                            <img src="https://emtic.educarex.es/crea/biologia/el_fascinante_mundo_de_las_plantas/icon_flower.png" alt="">            
+                            <div class="product-detail">
+                                <div>Detalle del producto</div>
+                                <div>
+                                    <form action="">
+                                        <select name="cantidades" id="">
+                                            <option value="" name="cant1">1 Unidad</option>
+                                            <option value="" name="cant2">2 Unidad</option>
+                                            <option value="" name="cant3">3 Unidad</option>
+                                            <option value="" name="cant4">4 Unidad</option>
+                                        </select>
+                                    </form>
+                                </div>
+                                <div>Precio</div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="product-action">
+                            <ul>
+                                <a href="#"><li>Eliminar</li></a>
+                                <a href="#"><li>Comprar ahora</li></a>
+                            </ul>
+                        </div>
+                    </article>
+                <!--Detalles del item 1-->
+                </div>
+            <!--Caja del item 1-->                
+            </div>
+        <!--Item 1-->
 
 
+        <!--Item 1-->
+        <div>
+            <!--Caja del item 1-->
+                <div>
+                <!--Detalles del item 1-->
+                    <article>
+                        <div class="product-picture-detail">
+                            <img src="https://emtic.educarex.es/crea/biologia/el_fascinante_mundo_de_las_plantas/icon_flower.png" alt="">            
+                            <div class="product-detail">
+                                <div>Detalle del producto</div>
+                                <div>
+                                    <form action="">
+                                        <select name="cantidades" id="">
+                                            <option value="" name="cant1">1 Unidad</option>
+                                            <option value="" name="cant2">2 Unidad</option>
+                                            <option value="" name="cant3">3 Unidad</option>
+                                            <option value="" name="cant4">4 Unidad</option>
+                                        </select>
+                                    </form>
+                                </div>
+                                <div>Precio</div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="product-action">
+                            <ul>
+                                <li><a href="#">Eliminar</a></li>
+                                <li><a href="#">Comprar ahora</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                <!--Detalles del item 1-->
+                </div>
+            <!--Caja del item 1-->                
+            </div>
+        <!--Item 1-->
+
+
+        <!--Botones de accion-->
+            <footer style="border-top: 1px solid black;">
+                <form class="cart-button" action="">
+                    <button><a href="#">Seguir comprando</a></button>
+                    <button><a href="#">Finalizar compra</a></button>
+                </form>
+                
+            </footer>
+        <!--Botones de accion-->
+        </div>
+        
+    <!--Cuadrado de compra-->
+    </main>
 </body>
+</html>
+
+    
