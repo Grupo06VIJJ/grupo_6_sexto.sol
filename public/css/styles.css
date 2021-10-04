@@ -192,10 +192,13 @@
                 margin: 0 auto;
             }
 
-            main section article {background-color: #fff;
+            main section article {background-color: #fff7fc;
+                padding: 5px;
+                border-radius: 8px;
             }
             
             main section article img {width: 100%;
+                border-radius: 8px;
                 height: 60%;
             }
             
