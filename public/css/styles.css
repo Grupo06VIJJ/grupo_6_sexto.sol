@@ -177,13 +177,25 @@
             
             /* main */
             
+            main section h2 {
+                margin: 20px 0px;
+            }
+            
+            main section h2,.description {color: brown;
+            }            
+
+
             main section {
-                background-color: #db91ca;
-                padding-bottom: 20px;
+                background-color: #f0b3e1;
+                padding-bottom: 20px;    
             }
 
-            main {width: 90%;
+            main {width: 100%;
                 margin: 0 auto;
+            }
+
+            main section article {background-color: #fff;
+                margin: 10px 0px;
             }
             
             main section article img {width: 100%;
@@ -229,9 +241,6 @@
                 font-weight: normal;
             }
             
-            h3,.description {color: #666;
-            }            
-
             /* main */
         
             
@@ -291,4 +300,3 @@
                 footer p {
                     margin: 10px;
                 }
-                
