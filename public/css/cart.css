@@ -4,6 +4,9 @@
     margin: 0px;
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+}
 
 /*header*/
 .header-box{    
@@ -34,9 +37,8 @@ ul , ol{
 }
 .nav >li > a {
     display: block;
-    padding: 15px 20px;
+    padding: 15px 15px;
     color: #353535;
-    text-decoration: none;
 }
 .nav li a:hover{
     background-color: grey;
@@ -56,21 +58,16 @@ ul , ol{
     padding: 15px;
     position: relative;
     color: white;
-    text-decoration: none;
+    
        
 }
 .nav li:hover .submenu{
     visibility: visible;
     opacity: 1;
 }
-
-
-
 #user >li{
     padding: 5px 10px;
 }
-
-
 @media (min-width:851px){
     .header-box{
         display: flex;
@@ -79,6 +76,7 @@ ul , ol{
 /*header*/
 
 /*cartbox*/
+
 .background{
     background-image: url(https://cdn.pixabay.com/photo/2021/09/30/16/52/16-52-53-476_960_720.jpg );
     width: 100%;
@@ -89,6 +87,7 @@ ul , ol{
 }
 
 .cart-box{
+    position: relative;
     border: 2px black dotted;
     border-radius: 10px;
     width: 80vw;
@@ -128,20 +127,19 @@ ul , ol{
 .cart-box .product-action ul li{
     display: inline;    
 }
-
-.buy-btn{
-    display: block;
-    border: none;
-    position: absolute;
-    bottom: 85px;
-    right: 60px;
-    width: 25%;
-    outline: none;
-    height: 10%;
-    background-color: #FFC944;
-    font-size: 24px;
-    font-weight: bold;
-    border-radius: 20px;
+.cart-button{
+    display: flex;
+}
+.cart-button button{
+    background-color: rgb(228, 49, 49);
+    border-radius: 5px;
+    font-size: 1.5em;
+}
+.cart-button button:hover{
+    background-color: green;
+}
+.cart-button a{
+    color:black;
 }
 
 /*cart box*/
