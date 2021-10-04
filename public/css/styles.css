@@ -178,15 +178,12 @@
             /* main */
             
             main section h2 {
-                margin: 20px 0px;
+                margin: 15px 0px;
+                color: brown;
             }
-            
-            main section h2,.description {color: brown;
-            }            
-
-
+                   
             main section {
-                background-color: #f0b3e1;
+                background-color: #f1cae8;
                 padding-bottom: 20px;    
             }
 
@@ -195,7 +192,6 @@
             }
 
             main section article {background-color: #fff;
-                margin: 10px 0px;
             }
             
             main section article img {width: 100%;
