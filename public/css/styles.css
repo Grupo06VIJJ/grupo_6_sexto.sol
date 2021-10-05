@@ -225,6 +225,10 @@
             }
             
             .price {font-size: 18px;
+                font-weight: bold;
+            }
+
+            .discount {font-size: 18px;
             }
             
             .box-price {
@@ -236,11 +240,13 @@
             }
             
             .box-price .discount {
+                font-weight: bold;
                 width: 70%;
             }
-            
-            .discount,.description {font-size: 16px;
-                font-weight: normal;
+
+            .description {
+                font-weight: bold;
+                font-size: 17px;
             }
             
             /* main */
