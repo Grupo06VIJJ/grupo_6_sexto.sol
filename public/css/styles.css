@@ -4,6 +4,8 @@
 *{  box-sizing: border-box;
     font-family: sans-serif;
   }
+
+
   .background{
     background-image: url(https://cdn.pixabay.com/photo/2021/09/30/16/52/16-52-53-476_960_720.jpg );
     width: 100%;
@@ -147,7 +149,8 @@
             }
             
             body {
-                font-family: roboto
+                font-family: roboto;
+                color: red; 
             }
             
             .wrapper {
@@ -287,12 +290,10 @@
             @media screen and (max-width: 640px) {
                 header ul li {
                     list-style-type: none;
-                    display: none width: 75% content-box;
+                    display: none;
+                    width: 75% content-box;
                 }
-                @media screen and (max-width: 640px) {
-                    @keyframes slidelist-style-type: none;
-                    visibility: hidden;
-                }
+                
 
 
                 /*footer*/
@@ -308,3 +309,4 @@
                 footer p {
                     margin: 10px;
                 }
+            }

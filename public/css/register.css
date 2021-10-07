@@ -4,8 +4,11 @@
 *{
     box-sizing: border-box;
     font-family: sans-serif;
-  
+  }
+ body{
+    color: red;
 }
+
 .background{
     background-image: url(https://cdn.pixabay.com/photo/2021/09/30/16/52/16-52-53-476_960_720.jpg );
     width: 100%;
@@ -81,7 +84,7 @@ textarea {
     width: 80vw;
     min-height: 475px;
     height: 70vh;
-    background-color: greenyellow
+    background-color: greenyellow;
     position: absolute;
     border-radius: 20px;
     left: 50%;
@@ -95,7 +98,7 @@ textarea {
     display: flex;
     justify-content: space-between;
     background-color: greenyellow;
-
+}
 .register-box{
     width: 80vw;
     min-height: 475px;
