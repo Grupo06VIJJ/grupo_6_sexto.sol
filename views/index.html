@@ -7,62 +7,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/styles.css">
-    <title>
-        Sexto Sol
-    </title>
+    <link rel="stylesheet" href="/css/cart.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <title>Sexto Sol</title>
 
-    <style>
-        .barra {
-            border: 2px solid black;
-            padding: 0;
-            margin: 0;
-        }
-       
-    </style>
 </head>
 
 <body>
-    <!--
-        BARRA DE BUSQUEDA
-    <div>
-        <div class="barra">
-            <form class="form-search" action="" method="GET">
-                <input type="text" placeholder="Buscar productos, marcas y más...">
-                <button class="submit" type>
-                    <i class="fa fa-search"></i>
-                </button>
-            </form>
-        </div>
 
-    < !-- header -->
+    <!-- header -->
+    <!--header temporal-->
+    <header class="header-box">
+        <a class="link-to-home"href="/"><img class ="logotipo" src="https://www.jardineriaon.com/wp-content/uploads/2018/04/flores-decorativas-y-vistosas.jpg" alt=""> </a>
+        <ul class="nav">
+            <li><a href="#">Tienda ▼</a></li>
+            <li><a href="#">Jardín ▼</a>
+                <ul class="submenu">
+                    <li><a href="#">submenu1</a></li>
+                    <li><a href="#">submenu2</a></li>
+                    <li><a href="#">submenu3</a></li>
+                    <li><a href="#">submenu4</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Cursos ▼</a></li>
+        </ul>
+
+        <ul class="nav" id="user" >
+            <li><i class="fas fa-user-circle">Usuario</i></li>
+            <li><a href="/products/cart"><i class="fas fa-shopping-cart"></i></a></li>
+            <li><i class="far fa-bell"></i></li>
+        </ul>
+    </header>
+    <!--header temporal-->
+    
     <header class="header">
-        <h1><font color="green"><marquee>Bienvenidos a Sexto Sol</marquee></font></h1>
-        <!-- logo -->
-        <div class="logo">
-            <a href="http://localhost:3000"></a>
-            <!--<a class="logo-link" href="https://sexto-sol.herokuapp.com/">-->
-                <img src="/img/logo.png" width="150" alt="Logo de Sexto Sol">
-            </a>
-        </div>
-        <!-- logo -->
-
         <!-- navegacion -->
         <nav>
 
             <ul>
                 <!-- register -->
                 <li>
-                    <a href="http://localhost:3000/users/register">
-                <!--<a href="https://sexto-sol.herokuapp.com/users/register">-->
+                <!--<a href="http://localhost:3000/users/register">-->    
+                    <a href="https://sexto-sol.herokuapp.com/users/register">
                         <i class="far fa-id-card"></i>Creá tu cuenta
-                        </a>
+                    </a>
                 </li>
                 <!-- register -->
 
                 <!-- login -->
                 <li>
-                    <a href="http://localhost:3000/users/login">
-                <!--<a href="https://sexto-sol.herokuapp.com/users/login">-->
+                <!--<a href="http://localhost:3000/users/login">-->
+                    <a href="https://sexto-sol.herokuapp.com/users/login">
                         <i class="fas fa-sign-in-alt"></i>Ingresá
                     </a>
                 </li>
@@ -70,8 +65,8 @@
 
                 <!-- cart -->
                 <li>
-                    <a href="http://localhost:3000/products/cart">
-                <!--<a href="https://sexto-sol.herokuapp.com/products/cart">-->
+                    <!--<a href="http://localhost:3000/products/cart">-->
+                    <a href="https://sexto-sol.herokuapp.com/products/cart">
                         <i class="fas fa-shopping-basket"></i>Tus compras
                     </a>
                 </li>
@@ -79,36 +74,14 @@
 
             </ul>
            
-            <div>
-                <p class="Quienes somos">
-                    <li><a href="#">Quienes somos ▼</a></li>
-                    <li><a href="#">Zonas de entrega ▼</a></li>
-                </ul>
         </nav>
-        <!-- navegacion -->
-      
-    </div>
-    <p>
-        <div class="barra"> <input type="search" name="q" value="Buscá aquí" placeholder="Buscá aquí..." aria-label="Buscá aquí..."></div>
-    </p>
-
     </header>
-
+        <!-- navegacion -->
     <!-- header -->
-    
-    <title>Formularios</title>
 
-            <p class="imagen de Portada">
-        </div>
-        <div style="float:right"></div><marquee><h1><font color="brown">EL MEJOR LUGAR PARA DECORAR TU JARDIN</font></h1></marquee></div>
-        </div>
-        <div style="clear:both"></div>
-    </form>
-
-<!-- main -->
-
-<!-- plantas sin flor -->
+    <!-- main -->   
     <main>
+        <!-- plantas sin flor -->
         <section>
             <h2>Plantas sin flor</h2>
             <div class='products'>
@@ -132,6 +105,7 @@
                             <p class='discount'>15% off</p>
                         </div>
                         <h3 class='description'>Arbol de Jade</h3>
+                    </div>
                 </article>
                 <article>
                     <img src='/img/cola-de-tigre.jpg' width='360' alt='Cola de Tigre'>
@@ -157,16 +131,15 @@
                 </article>
             </div>
         </section>
+        <!-- plantas sin flor -->
 
-<!-- plantas sin flor -->
 
-<!-- plantas con flor -->
-
+        <!-- plantas con flor -->
         <section>
             <h2>Plantas con flor</h2>      
             <div class='products'>
                 <article>
-                <img src='/img/begonia.jpg' width='360' alt='Begonia'>
+                    <img src='/img/begonia.jpg' width='360' alt='Begonia'>
                     <div class='main-article'>
                         <i class='fas fa-truck'></i>
                         <div class='box-price'>
@@ -211,39 +184,9 @@
                 </article>
             </div>
         </section>
-
         <!-- plantas con flor -->
-
     </main>
-
     <!-- main -->
-
-    <section>
-        <marquee><h1>No te vayas, mirá todo lo que podemos ofrecerte</h1> </marquee>
-    </section>
-    <footer>
-        <div class="mail">
-            <h3>Escribinos:sextosol@gmail.com<i class="fas fa-envelope-square"></i></h3>
-            <div class="teléfono">
-                <div>
-                   
-                    <h3>Comunicate con nosotros:(5411)353-0009<i class="fas fa-phone"></i></h3>
-                </div>
-                <div class="dirección">
-                    <div>
-                        <h3>Encontranos en:(Calle sin número )Salta<i class="fas fa-warehouse"></i><h3>
-                    </div>
-                    <div style="float:left">
-                        <marquee><h1>VISITANOS PRONTO<h1></marquee>
-        <Seguinos>Nuestras redes: <br>Seguinos en<a href="https://www.instagram.com/"> Instagram</a> </h2>
-        
-        <h3>Éste sitio web usa cookies, si permanece aquí acepta su uso.</h3>
-                    <div>
-                        <h4>Puede leer más sobre el uso de cookies en nuestra 
-                            <a href="politica.html">Política de privacidad</a>.</h4>
-        </div>
-    </footer>
-
 </body>
 
 </html>
