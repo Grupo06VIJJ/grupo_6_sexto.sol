@@ -1,13 +1,11 @@
-const path = require('path');
 const express = require("express");
 const router = express.Router();
+const mainController = require("../controllers/mainController.js")
 
 
 /* INDEX -------------------------------- */
 // Home
-router.get("/", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "../views/index.html"))
-})
+router.get("/", mainController.home)
 
 
 

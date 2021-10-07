@@ -1,28 +1,21 @@
 const express = require("express");
 const router = express.Router();
-const path = require('path');
+const usersController = require("../controllers/usersController")
+
 /* LOGIN -------------------------------- */
 // login
-router.get('/login', (req, res) => {
-    res.sendFile(path.join(__dirname, '../views/login.html'));
-});
+router.get('/login', usersController.login);
 
 // logged
-router.post('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../views/logged.html'));
-});
-
+router.post('/', usersController.logged);
 
 /* REGISTER -------------------------------- */
 // register
-router.get('/register', (req, res) => {
-    res.sendFile(path.join(__dirname, '../views/register.html'));
-});
+router.get('/register', usersController.register);
 
 // logged
-router.post('/register', (req, res) => {
-    res.sendFile(path.join(__dirname, '../views/registered.html'));
-});
+router.post('/register', usersController.registered); 
+
 
 
 module.exports = router;
