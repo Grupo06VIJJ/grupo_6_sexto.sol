@@ -41,6 +41,7 @@
     color: white;
     font-size: 1rem;
     background-color: var(--rojo);
+    border: 2px solid var(--rojo);
     padding: 15px 20px;
     border-radius: 5px;
     cursor: pointer;
