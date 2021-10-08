@@ -44,35 +44,35 @@ main section article i {
     border-radius: 50%;
 }
 
-article div.main-article {
+main article div.main-article {
     width: 100%;
     border-top: 1px solid #ebebeb;
     padding: 15px;
 }
 
-.price {
+main .price {
     font-size: 18px;
     font-weight: bold;
 }
 
-.discount {
+main .discount {
     font-size: 18px;
 }
 
-.box-price {
+main .box-price {
     display: flex;
 }
 
-.box-price .price {
+main .box-price .price {
     width: 30%;
 }
 
-.box-price .discount {
+main .box-price .discount {
     font-weight: bold;
     width: 70%;
 }
 
-.description {
+main .description {
     font-weight: bold;
     font-size: 17px;
 }
@@ -81,12 +81,12 @@ article div.main-article {
 /* main */
 
 @media (min-width: 361px) {
-    .products {
+    main .products {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
     }
-    .products article {
+    main .products article {
         width: 45%;
     }
     main section article .description {
@@ -101,7 +101,7 @@ article div.main-article {
 /*en vista desktop se deben ver los cuatro productos*/
 
 @media (min-width: 769px) {
-    .products article {
+    main .products article {
         width: 22%;
     }
 }
