@@ -51,6 +51,7 @@
     background-color: white;
     color: tomato;
     font-weight: bold;
+    border: 2px solid var(--rojo);
 }
 
 .formularioLogin p {
@@ -60,10 +61,13 @@
 .formularioLogin .enlace {
     text-decoration: none;
     color: var(--texto);
+    transition: all 350ms;
 }
 
 .formularioLogin .enlace:hover {
     color: var(--texto);
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .footerLogin {
@@ -73,9 +77,8 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 1em;
+    padding: .5em;
     text-align: center;
-    border: 2px solid var(--rojo);
 }
 
 @media (min-width:768px) {
