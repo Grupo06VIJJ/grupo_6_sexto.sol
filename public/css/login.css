@@ -41,8 +41,8 @@
     color: white;
     font-size: 1rem;
     background-color: var(--rojo);
-    border: 2px solid var(--rojo);
-    padding: 15px 20px;
+    /*border: 2px solid var(--rojo);*/
+    padding: 11px 20px;
     border-radius: 5px;
     cursor: pointer;
     transition: all 350ms;
@@ -50,7 +50,7 @@
 
 .formularioLogin .boton:hover {
     background-color: white;
-    color: tomato;
+    color: var(--rojo);
     font-weight: bold;
     border: 2px solid var(--rojo);
 }
