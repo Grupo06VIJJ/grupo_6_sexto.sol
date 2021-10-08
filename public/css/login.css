@@ -1,0 +1,71 @@
+.formularioLogin {
+    background: transparent;
+}
+
+.formularioLogin .contenedor {
+    width: 100%;
+    padding: .3em;
+}
+
+.formularioLogin .titulo {
+    color: var(--texto);
+    font-size: 1rem;
+}
+
+.formularioLogin input[type="text"],
+.formularioLogin input[type="email"],
+.formularioLogin input[type="password"] {
+    background-color: transparent;
+    width: 82%;
+    padding: 10px;
+    border: none;
+}
+
+.formularioLogin .input-contenedor {
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+}
+
+.formularioLogin .icon {
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+}
+
+.formularioLogin .boton {
+    outline: none;
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 1rem;
+    background-color: var(--rojo);
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formularioLogin .boton:hover {
+    background-color: tomato;
+}
+
+.formularioLogin p {
+    text-align: center;
+}
+
+.formularioLogin .enlace {
+    text-decoration: none;
+    color: var(--texto);
+    font-weight: 600;
+}
+
+.formularioLogin .enlace:hover {
+    color: var(--texto);
+}
+
+@media (min-width:768px) {
+    .formularioLogin {
+        margin: 0 auto;
+        width: 500px;
+        border-radius: 2%;
+    }
+}
