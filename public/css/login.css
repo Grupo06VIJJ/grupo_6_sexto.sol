@@ -75,6 +75,7 @@
     width: 100%;
     padding: 1em;
     text-align: center;
+    border: 2px solid var(--rojo);
 }
 
 @media (min-width:768px) {
