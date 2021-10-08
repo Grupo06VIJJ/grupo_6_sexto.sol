@@ -81,9 +81,6 @@ article div.main-article {
 /* main */
 
 @media (min-width: 361px) {
-    header nav {
-        display: block;
-    }
     .products {
         display: flex;
         flex-wrap: wrap;
@@ -113,11 +110,6 @@ article div.main-article {
 /*para ocultar en vista mobile*/
 
 @media screen and (max-width: 640px) {
-    header ul li {
-        list-style-type: none;
-        display: none;
-        width: 75% content-box;
-    }
     /*footer*/
     footer section {
         text-align: center;
