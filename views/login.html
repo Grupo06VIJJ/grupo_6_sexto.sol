@@ -8,39 +8,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/stylesheet.css">
     <link rel="stylesheet" href="/css/cart.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/login.css">
     <title>
         login
     </title>
 </head>
 
-<body class="background">
+<body>
 
-    <!-- header + logo -->
-    <header class="header-box">
-            <a class="link-to-home"href="/"><img class ="logotipo" src="https://www.jardineriaon.com/wp-content/uploads/2018/04/flores-decorativas-y-vistosas.jpg" alt=""> </a>
-            <ul class="nav">
-                <li><a href="#">Tienda ▼</a></li>
-                <li><a href="#">Jardín ▼</a>
-                    <ul class="submenu">
-                        <li><a href="#">submenu1</a></li>
-                        <li><a href="#">submenu2</a></li>
-                        <li><a href="#">submenu3</a></li>
-                        <li><a href="#">submenu4</a></li>
-                    </ul>
+    <!-- header -->
+    <header class="header">
+        <nav>
+            <ul>
+
+                <!-- register -->
+                <li>
+                    <!-- <a href="http://localhost:3000/users/register"> -->
+                    <a href="https://sexto-sol.herokuapp.com/users/register">
+                        <i class="far fa-id-card"></i>Creá tu cuenta
+                    </a>
                 </li>
-                <li><a href="#">Cursos ▼</a></li>
+                <!-- register -->
+
+                <!-- login -->
+                <li>
+                    <!--<a href="http://localhost:3000/users/login">-->
+                    <a href="https://sexto-sol.herokuapp.com/users/login">
+                        <i class="fas fa-sign-in-alt"></i>Ingresá
+                    </a>
+                </li>
+                <!-- login -->
+
+                <!-- cart -->
+                <li>
+                    <!--<a href="http://localhost:3000/products/cart">-->
+                    <a href="https://sexto-sol.herokuapp.com/products/cart">
+                        <i class="fas fa-shopping-basket"></i>Tus compras
+                    </a>
+                </li>
+                <!-- cart -->
+
             </ul>
-    
-            <ul class="nav" id="user" >
-                <li><i class="fas fa-user-circle">Usuario</i></li>
-                <li><a href="/products/cart"><i class="fas fa-shopping-cart"></i></a></li>
-                <li><i class="far fa-bell"></i></li>
-            </ul>
+        </nav>
     </header>
-    <!-- header + logo -->
+    <!-- header -->
+
 
     <main>
         <div class="login-box">
