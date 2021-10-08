@@ -1,126 +1,28 @@
-/* main */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('/css/header.css');
+@import url('/css/main.css');
+@import url('/css/login.css');
+@import url('/css/register.css');
 
-main section h2 {
-    margin: 15px 0px;
-    padding-left: 15px;
-    color: brown;
+/* ROOT */
+
+:root {
+    --rojo: rgb(255, 82, 82);
+    --texto: rgb(30, 30, 30);
 }
 
-main section {
-    background-color: #f1cae8;
-    padding-bottom: 20px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-main {
-    width: 100%;
-    margin: 0 auto;
-}
-
-main section article {
-    background-color: #fff7fc;
-    padding: 5px;
-    border-radius: 8px;
-    border: 5px #ffe0e0 solid;
-}
-
-main section article img {
-    width: 100%;
-    border-radius: 8px;
-    height: 60%;
-}
-
-main section article i,
-.discount {
-    color: #39b54a;
-}
-
-main section article i {
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-}
-
-main article div.main-article {
-    width: 100%;
-    border-top: 1px solid #ebebeb;
-    padding: 15px;
-}
-
-main .price {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-main .discount {
-    font-size: 18px;
-}
-
-main .box-price {
-    display: flex;
-}
-
-main .box-price .price {
-    width: 30%;
-}
-
-main .box-price .discount {
-    font-weight: bold;
-    width: 70%;
-}
-
-main .description {
-    font-weight: bold;
-    font-size: 17px;
-}
-
-
-/* main */
-
-@media (min-width: 361px) {
-    main .products {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    main .products article {
-        width: 45%;
-    }
-    main section article .description {
-        display: block;
-    }
-    main section article {
-        box-shadow: 0px 0px 14px rgb(100, 100, 100);
-    }
-}
-
-
-/*en vista desktop se deben ver los cuatro productos*/
-
-@media (min-width: 769px) {
-    main .products article {
-        width: 22%;
-    }
-}
-
-
-/*para ocultar en vista mobile*/
-
-@media screen and (max-width: 640px) {
-    /*footer*/
-    footer section {
-        text-align: center;
-        margin-bottom: 4px;
-    }
-    footer section i {
-        font-size: 24px;
-        color: blueviolet;
-        margin-bottom: 6px;
-    }
-    footer p {
-        margin: 10px;
-    }
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: var(--gama-1);
+    color: var(--texto);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
