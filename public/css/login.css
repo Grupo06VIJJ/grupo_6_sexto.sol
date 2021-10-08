@@ -12,13 +12,12 @@
     font-size: 1rem;
 }
 
-.formularioLogin input[type="text"],
 .formularioLogin input[type="email"],
 .formularioLogin input[type="password"] {
-    background-color: transparent;
+    border: none;
+    outline: none;
     width: 80%;
     padding: 10px;
-    border: none;
     margin: 0 auto;
 }
 
@@ -69,11 +68,13 @@
 
 .footerLogin {
     background-color: var(--rojo);
-    color: var(--texto);
+    color: white;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
+    padding: 1em;
+    text-align: center;
 }
 
 @media (min-width:768px) {
