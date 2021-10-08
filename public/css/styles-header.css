@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('/css/body.css');
+@import url('/css/nav.css');
+
+/* ROOT */
+
+:root {
+    --rojo: rgb(255, 82, 82);
+    --texto: rgb(30, 30, 30);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: var(--gama-1);
+    color: var(--texto);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navegacion {
+    background-color: transparent;
+}
+
+.navegacion .lista {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navegacion .logo a {
+    display: inline-block;
+    font-family: 'Parisienne', cursive;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.navegacion a {
+    display: block;
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--texto);
+}
+
+.navegacion .item {
+    width: 100%;
+    text-align: center;
+    order: 5;
+    display: none;
+    padding: 1em;
+}
+
+.navegacion .icon-menu {
+    order: 2;
+}
+
+.navegacion .hamburguesa {
+    width: 4em;
+    color: var(--texto);
+    order: 1;
+    cursor: pointer;
+    text-align: center;
+}
+
+.navegacion a:hover,
+.navegacion .icon-menu:hover,
+.navegacion .hamburguesa:hover {
+    color: var(--rojo);
+    transition: 200ms;
+}
+
+.item.active {
+    display: block;
+}
+
+
+/* tablet */
+
+@media all and (min-width:568px) {
+    .navegacion .lista {
+        justify-content: center;
+    }
+    .navegacion .logo {
+        flex: 1;
+    }
+    .navegacion .item {
+        background: none;
+    }
+    .navegacion .icon-menu {
+        order: 1;
+        display: block;
+        border-bottom: none;
+        text-align: center;
+        width: 4em;
+    }
+    .navegacion .hamburguesa {
+        display: block;
+        border-bottom: none;
+        text-align: center;
+        width: 4em;
+    }
+    .navegacion .icon-menu a {
+        text-decoration: none;
+    }
+    .navegacion .icon-menu .palabra {
+        display: none;
+    }
+    .navegacion .carrito .palabra {
+        display: none;
+    }
+    .navegacion .carrito {
+        order: 1;
+    }
+    .navegacion .hamburguesa {
+        order: 1;
+    }
+}
+
+
+/* desktop */
+
+@media all and (min-width:768px) {
+    .navegacion .item {
+        display: block;
+        width: auto;
+        order: 2;
+    }
+    .navegacion .hamburguesa {
+        display: none;
+    }
+    .navegacion .logo {
+        order: 0;
+    }
+    .navegacion .icon-menu {
+        order: 3;
+    }
+    .navegacion .icon-menu,
+    .navegacion .hamburguesa {
+        width: 4em;
+    }
+}
