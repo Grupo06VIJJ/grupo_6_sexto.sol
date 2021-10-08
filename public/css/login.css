@@ -9,6 +9,7 @@
 .formularioLogin .titulo {
     color: var(--texto);
     font-size: 1.2rem;
+    margin-bottom: .5em;
 }
 
 .formularioLogin input[type="email"],
@@ -16,8 +17,10 @@
     border: none;
     outline: none;
     width: 80%;
-    padding: .5em;
-    margin: 0 auto;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: .5em;
 }
 
 .formularioLogin .input-contenedor {
@@ -39,6 +42,7 @@
     width: 100%;
     color: white;
     font-size: 1rem;
+    font-weight: bold;
     background-color: var(--rojo);
     border: 2px solid var(--rojo);
     padding: .5em;
