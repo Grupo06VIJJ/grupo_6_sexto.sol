@@ -33,6 +33,12 @@
     border-radius: 5px;
 }
 
+.input-contenedor-check {
+    border: none;
+    outline: none;
+    margin-bottom: .5em;
+}
+
 .formulario-de-registro .icon {
     min-width: 50px;
     text-align: center;
