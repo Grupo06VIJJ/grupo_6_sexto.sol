@@ -3,11 +3,10 @@
 main section h2 {
     margin: 15px 0px;
     padding-left: 15px;
-    color: brown;
+    color: var(--texto);
 }
 
 main section {
-    /*background-color: #f1cae8;*/
     padding-bottom: 20px;
 }
 
@@ -17,7 +16,7 @@ main {
 }
 
 main section article {
-    background-color: #fff7fc;
+    background-color: white;
     padding: 5px;
     border-radius: 8px;
     border: 5px #ffe0e0 solid;
@@ -40,7 +39,7 @@ main section article i {
     width: 30px;
     height: 30px;
     border: 1px solid #39b54a;
-    background-color: #FFF;
+    background-color: white;
     border-radius: 50%;
 }
 

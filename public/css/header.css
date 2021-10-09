@@ -48,8 +48,10 @@
 .navegacion a:hover,
 .navegacion .icon-menu:hover,
 .navegacion .hamburguesa:hover {
-    color: var(--rojo);
+    background: none;
+    color: var(--primario);
     transition: 200ms;
+    background-color: transparent;
 }
 
 .item.active {
