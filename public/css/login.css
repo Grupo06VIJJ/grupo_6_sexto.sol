@@ -77,7 +77,7 @@
     cursor: pointer;
 }
 
-.footer-login-register {
+.footer-login {
     background-color: var(--primario);
     color: white;
     position: fixed;
