@@ -1,19 +1,19 @@
-.formularioLogin {
+.formulario-de-login {
     background: transparent;
 }
 
-.formularioLogin .contenedor {
+.formulario-de-login .contenedor {
     width: 100%;
 }
 
-.formularioLogin .titulo {
+.formulario-de-login .titulo {
     color: var(--texto);
     font-size: 1.5rem;
     margin-bottom: 1em;
 }
 
-.formularioLogin input[type="email"],
-.formularioLogin input[type="password"] {
+.formulario-de-login input[type="email"],
+.formulario-de-login input[type="password"] {
     font-family: 'Roboto', sans-serif;
     border: none;
     outline: none;
@@ -24,7 +24,7 @@
     margin-right: auto;
 }
 
-.formularioLogin .input-contenedor {
+.formulario-de-login .input-contenedor {
     border: none;
     outline: none;
     margin-bottom: .5em;
@@ -32,13 +32,13 @@
     border-radius: 5px;
 }
 
-.formularioLogin .icon {
+.formulario-de-login .icon {
     min-width: 50px;
     text-align: center;
     color: #999;
 }
 
-.formularioLogin .boton {
+.formulario-de-login .boton {
     outline: none;
     border: none;
     width: 100%;
@@ -53,31 +53,31 @@
     transition: all 350ms;
 }
 
-.formularioLogin .boton:hover {
+.formulario-de-login .boton:hover {
     background-color: white;
     color: var(--primario);
     font-weight: bold;
     border: 2px solid var(--primario);
 }
 
-.formularioLogin .crear-cuenta {
+.formulario-de-login .crear-cuenta {
     text-align: center;
     padding: 1em;
 }
 
-.formularioLogin .enlace {
+.formulario-de-login .enlace {
     text-decoration: none;
     color: var(--texto);
     transition: all 350ms;
 }
 
-.formularioLogin .enlace:hover {
+.formulario-de-login .enlace:hover {
     color: var(--texto);
     text-decoration: underline;
     cursor: pointer;
 }
 
-.footerLogin {
+.footer-login-register {
     background-color: var(--primario);
     color: white;
     position: fixed;
@@ -90,7 +90,7 @@
 }
 
 @media (min-width:768px) {
-    .formularioLogin {
+    .formulario-de-login {
         margin: 0 auto;
         width: 500px;
         border-radius: 2%;

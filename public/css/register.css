@@ -1,0 +1,98 @@
+.formulario-de-registro {
+    background: transparent;
+}
+
+.formulario-de-registro .contenedor {
+    width: 100%;
+}
+
+.formulario-de-registro .titulo {
+    color: var(--texto);
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+}
+
+.formulario-de-registro input[type="email"],
+.formulario-de-registro input[type="password"] {
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    outline: none;
+    width: 80%;
+    padding: .5em;
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formulario-de-registro .input-contenedor {
+    border: none;
+    outline: none;
+    margin-bottom: .5em;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.formulario-de-registro .icon {
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+}
+
+.formulario-de-registro .boton {
+    outline: none;
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--primario);
+    border: 2px solid var(--primario);
+    padding: .5em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 350ms;
+}
+
+.formulario-de-registro .boton:hover {
+    background-color: white;
+    color: var(--primario);
+    font-weight: bold;
+    border: 2px solid var(--primario);
+}
+
+.formulario-de-registro .crear-cuenta {
+    text-align: center;
+    padding: 1em;
+}
+
+.formulario-de-registro .enlace {
+    text-decoration: none;
+    color: var(--texto);
+    transition: all 350ms;
+}
+
+.formulario-de-registro .enlace:hover {
+    color: var(--texto);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-login-register {
+    background-color: var(--primario);
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: .2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media (min-width:768px) {
+    .formulario-de-registro {
+        margin: 0 auto;
+        width: 500px;
+        border-radius: 2%;
+    }
+}

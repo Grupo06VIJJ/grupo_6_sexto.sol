@@ -111,63 +111,61 @@
     </header>
     <!-- HEADER -->
 
-    <main>
-        <div class="login-box">
-            <a href="/">
-                <img class="logotipo" src="https://lh3.googleusercontent.com/CY5_VoafpO45S3BDEqCC-Lh2bkktkSqqmkJEfxnP9MXDO4n0K0gfZiiZIjU-dzio4ii902w=s85" alt="">
-            </a>
+    <!-- FORMULARIO -->
+    <form class="formulario-de-registro" method="POST" action="/register" autocomplete="off">
+
+        <h1 class="titulo">
+            Crea una cuenta
+        </h1>
+
+        <!-- contenedor -->
+        <div class="contenedor">
+
+            <!-- input-contenedor -->
+            <div class="input-contenedor">
+                <i class="fas fa-user icon"></i>
+                <input type="text" placeholder="Nombre y apellido" />
+            </div>
+            <!-- input-contenedor -->
+
+            <!-- input-contenedor -->
+            <div class="input-contenedor">
+                <i class="fas fa-envelope icon"></i>
+                <input type="email" placeholder="Correo electrónico" />
+            </div>
+            <!-- input-contenedor -->
+
+            <!-- input-contenedor -->
+            <div class="input-contenedor">
+                <i class="fas fa-key icon"></i>
+                <input type="password" placeholder="Contraseña" />
+            </div>
+            <!-- input-contenedor -->
+
+            <input class="boton" type="submit" value="Enviar">
+
+            <!-- pregunta-link -->
+            <div>
+                <p class="crear-cuenta">
+                    Lorem ipsum
+                    <a class="enlace" href="https://sexto-sol.herokuapp.com/users/register">
+                        Consectetur adipisicing elit
+                    </a>
+                </p>
+            </div>
+            <!-- pregunta-link -->
+
         </div>
+        <!-- contenedor -->
 
-        <div>
-            <section class="register-box"> </section>
+    </form>
+    <!-- FORMULARIO -->
 
-            <form action="/register" method="POST" enctype="multipart/form-data">
-
-                <form action="resultado.html" method="POST">
-
-                    <label for="pregunta">
-                        <h2>¿Sos cliente?<h2>
-                    </label>
-                    <input type="radio" name="clientes" value="Sí">Si
-                    <input type="radio" name="clientes" value="No">No
-
-        </div>
-
-        <div class="form-control">
-            <label for="">Ya compraste?Envianos tu comprobante de pago</label>
-            <input type="file" name="Comprobante de pago">
-        </div>
-
-        <div>
-            <form>
-                <label for="fname">Nombre y apellido</label>
-                <input type="text" name="fullname">
-                <label for="">Email</label>
-                <input type="email" name="email">
-                <label for="">Fecha de nacimiento</label>
-                <input type="date" name="">
-                <h4>Categorias de interes</h4>
-                <input type="checkbox" name="regalos" value="regalos" id="regalos">
-                <label for="electro">Regalos</label>
-
-                <input type="checkbox" name="personalizados" value="personalizados" id="personalizados">
-                <label for="moda">Plantas en macetas Personalizadas</label>
-
-                <input type="checkbox" name="semillas" value="semillas" id="semillas">
-                <label for="healthy">Semillas</label>
-                <label for="">Contraseña</label>
-                <input type="password" name="password">
-                <label for="">Repetir Contraseña</label>
-                <input type="password" name="repassword">
-            </form>
-        </div>
-
-        <div>
-            <button type="submit" class="enviar">Registrate</button>
-            <button type="reset" class="borrar">Borrar</button>
-        </div>
-
-    </main>
+    <!-- FOOTER -->
+    <footer class="footer-register">
+        <small>&#169; 2021 elvivero Grupo 6</small>
+    </footer>
+    <!-- FOOTER -->
 
 </body>
 
