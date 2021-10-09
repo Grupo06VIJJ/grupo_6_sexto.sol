@@ -29,13 +29,13 @@
     outline: none;
     margin-bottom: .5em;
     border: 1px solid #aaa;
+    border-radius: 5px;
 }
 
 .formularioLogin .icon {
     min-width: 50px;
     text-align: center;
     color: #999;
-    border-radius: 5px;
 }
 
 .formularioLogin .boton {
@@ -84,7 +84,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: .5em;
+    padding: .2em;
     text-align: center;
     font-weight: bold;
 }
