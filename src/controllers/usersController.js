@@ -3,7 +3,7 @@ let usersController = {
     /*login*/
     // pantalla de login
     login: (req, res) => {
-        res.sendFile(path.join(__dirname, '../views/login.ejs'));
+        res.render('views/users/login');
     },
     //pantalla desp de loguearse
     logged: (req, res) => {
@@ -12,7 +12,7 @@ let usersController = {
     /*registro*/
     //formulario de registro
     register: (req, res) => {
-        res.sendFile(path.join(__dirname, '../views/register.ejs'));
+        res.render('views/users/register');
     },
     //pantalla desp del registro
     registered: (req, res) => {
