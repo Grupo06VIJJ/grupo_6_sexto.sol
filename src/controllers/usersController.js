@@ -3,20 +3,20 @@ let usersController = {
     /*login*/
     // pantalla de login
     login: (req, res) => {
-        res.sendFile(path.join(__dirname, '../views/login.html'));
+        res.sendFile(path.join(__dirname, '../views/login.ejs'));
     },
     //pantalla desp de loguearse
     logged: (req, res) => {
-        res.sendFile(path.join(__dirname, '../views/logged.html'));
+        res.render('/views/users/logged');
     },
     /*registro*/
     //formulario de registro
     register: (req, res) => {
-        res.sendFile(path.join(__dirname, '../views/register.html'));
+        res.sendFile(path.join(__dirname, '../views/register.ejs'));
     },
     //pantalla desp del registro
     registered: (req, res) => {
-        res.sendFile(path.join(__dirname, '../views/registered.html'));
+        res.render('/views/users/registered');
     },
 }
 module.exports = usersController;
