@@ -12,7 +12,13 @@ app.set('views', './src/views')
 app.use(express.urlencoded({ extended:false}));
 app.use(express.json( ));
 
-app.use('/', express.static(path.resolve(__dirname, '../public'))); /*estilos*/
+
+
+/*estilos*/
+app.use('/', express.static(path.resolve(__dirname, '../public'))); 
+
+
+
 /*View engine setup*/
 app.use("/users", routesUsers);
 
