@@ -3,7 +3,7 @@ let usersController = {
     /*login*/
     // pantalla de login
     login: (req, res) => {
-        res.render('c:/Users/Clonmorfo/Desktop/Curso De Desarrollo Web/grupo_6_sexto.sol/src/views/users/login.ejs');
+        return res.render('login');
     },
 
     //pantalla desp de loguearse
