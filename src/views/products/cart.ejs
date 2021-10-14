@@ -1,119 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link rel="stylesheet" href="/css/styles.css" type="text/css">
-    <title>
-        Carrito de compras
-    </title>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-        $(function() {
-            $(".hamburguesa").on("click", function() {
-
-                if ($(".item").hasClass("active")) {
-                    $(".item").removeClass("active");
-                } else {
-                    $(".item").addClass("active");
-                }
-            })
-        });
-    </script>
-
-</head>
+<%- include("./partials/head.ejs")%>
 
 <body>
 
-    <!-- HEADER -->
-    <header class="cabecera">
-
-        <!-- navegacion -->
-        <nav class="navegacion">
-
-            <!-- lista -->
-            <ul class="lista">
-
-                <!-- logo -->
-                <li class="logo">
-                    <a href="https://sexto-sol.herokuapp.com/">
-                        <span>
-                            &nbsp;Logotipo
-                        </span>
-                    </a>
-                </li>
-                <!-- logo -->
-
-                <li class="item">
-                    <a href="https://sexto-sol.herokuapp.com/">
-                        <span>
-                            &nbsp;Tienda
-                        </span>
-                    </a>
-                </li>
-
-                <li class="item">
-                    <a href="https://sexto-sol.herokuapp.com/">
-                        <span>
-                            &nbsp;Herramientas
-                        </span>
-                    </a>
-                </li>
-
-                <li class="item">
-                    <a href="https://sexto-sol.herokuapp.com/">
-                        <span>
-                            &nbsp;Cursos
-                        </span>
-                    </a>
-                </li>
-
-                <!-- acceder -->
-                <li class="item icon-menu">
-                    <a href="https://sexto-sol.herokuapp.com/users/login">
-                        <i class="fas fa-user"></i>
-                        <span class="palabra">
-                            &nbsp;Acceder
-                        </span>
-                    </a>
-                </li>
-                <!-- acceder -->
-
-                <!-- acceder -->
-                <li class="item icon-menu">
-                    <a href="https://sexto-sol.herokuapp.com/products/cart">
-                        <i class="fas fa-shopping-cart"></i>
-                        <span class="palabra">
-                            &nbsp;&nbsp;Compras
-                        </span>
-                    </a>
-                </li>
-                <!-- acceder -->
-
-                <!-- Hamburguesa -->
-                <li class="hamburguesa">
-                    <i class="icon fas fa-bars"></i>
-                </li>
-                <!-- Hamburguesa -->
-
-            </ul>
-            <!-- contendor flexible -->
-        </nav>
-        <!-- navegacion -->
-
-    </header>
-    <!-- HEADER -->
+    <%- include("./partials/header.ejs") %>
 
 
     <h1>
         Carrito de compras
     </h1>
 
-
+    <%- include("./partials/footer.ejs") $>
 </body>
 
 </html>
