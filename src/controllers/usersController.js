@@ -3,9 +3,9 @@ let usersController = {
     /*login*/
     // pantalla de login
     login: (req, res) => {
-        res.render('../users/login.ejs');
+        res.render('c:/Users/Clonmorfo/Desktop/Curso De Desarrollo Web/grupo_6_sexto.sol/src/views/users/login.ejs');
     },
-    
+
     //pantalla desp de loguearse
     logged: (req, res) => {
         res.render('/views/users/logged');
