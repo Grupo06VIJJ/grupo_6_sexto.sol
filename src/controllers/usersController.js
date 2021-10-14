@@ -3,21 +3,20 @@ let usersController = {
     /*login*/
     // pantalla de login
     login: (req, res) => {
-        res.render('login');
+        res.render('./users/login.ejs');
     },
-
     //pantalla desp de loguearse
     logged: (req, res) => {
-        res.render('/views/users/logged');
+        res.render('./users/logged.ejs');
     },
     /*registro*/
     //formulario de registro
     register: (req, res) => {
-        res.render('views/users/register');
+        res.render('./users/register.ejs');
     },
     //pantalla desp del registro
     registered: (req, res) => {
-        res.render('/views/users/registered');
+        res.render('./users/registered.ejs');
     },
 }
 module.exports = usersController;

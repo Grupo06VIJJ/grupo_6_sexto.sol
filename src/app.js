@@ -2,12 +2,12 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const routesUsers = require("./routes/usersRoutes.js");
-const routesProducts = require("./routes/productsRoutes.js");
-const routesMain = require("./routes/mainRoutes.js");
+const usersRoutes = require("./routes/usersRoutes.js");
+const productsRoutes = require("./routes/productsRoutes.js");
+const mainRoutes = require("./routes/mainRoutes.js");
 
 app.set('view engine', 'ejs');
-app.set('views', './src/views');
+//app.set('views', './src/views');
 
 /*app.use(express.urlencoded({ extended:false}));
 app.use(express.json( ));*/
@@ -16,17 +16,17 @@ app.use(express.json( ));*/
 
 /*estilos*/
 app.use('/', express.static(path.resolve(__dirname, '../public'))); 
-app.use('/', express.static(path.resolve(__dirname, '../src/views'))); 
 
 
-/*View engine setup*/
-app.use("/users", routesUsers);
+
+/*Usuarios*/
+app.use("/users", usersRoutes);
 
 //Productos
-app.use("/products", routesProducts);
+app.use("/products", productsRoutes);
 
 //Home y variados
-app.use("/", routesMain);
+app.use("/", mainRoutes);
 
 
 
