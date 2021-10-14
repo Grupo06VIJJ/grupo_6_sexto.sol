@@ -7,7 +7,7 @@ const productsRoutes = require("./routes/productsRoutes.js");
 const mainRoutes = require("./routes/mainRoutes.js");
 
 app.set('view engine', 'ejs');
-//app.set('views', './src/views');
+app.set('views', path.resolve(__dirname, 'views'));
 
 /*app.use(express.urlencoded({ extended:false}));
 app.use(express.json( ));*/
