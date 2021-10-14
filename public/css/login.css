@@ -1,3 +1,9 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .formulario-de-login {
     background: transparent;
 }
@@ -30,6 +36,7 @@
     margin-bottom: .5em;
     border: 1px solid #aaa;
     border-radius: 5px;
+    background-color: white;
 }
 
 .formulario-de-login .icon {
@@ -66,7 +73,6 @@
 }
 
 .formulario-de-login .enlace {
-    text-decoration: none;
     color: var(--texto);
     transition: all 350ms;
 }

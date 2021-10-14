@@ -15,67 +15,22 @@
     font-weight: normal;
     color: black;
     border-top: solid 5px brown;
-    padding-bottom: 80px;
-
+    padding-bottom: 50px;
 }
 
 .items{
     margin: 5px 0px;
 }
 
-.nosotros{
+.nosotros,.visitanos,.redes,.contacto{
     display: block;
 }
 
-.visitanos{
-    display: block;
-}
-
-.redes{
-    display: block;
-}
-
-.instagram{
+.instagram,.facebook,.twitter,.sobre,.telefono{
     display: flex;
 }
 
-.texto-instagram{
-    margin-left: 6px;
-}
-
-.facebook{
-    display: flex;
-}
-
-.texto-facebook{
-    margin-left: 6px;
-}
-
-.twitter{
-    display: flex;
-}
-
-.texto-twitter{
-    margin-left: 6px;
-}
-
-.contacto{
-    display: block;
-}
-
-.sobre{
-    display: flex;
-}
-
-.email{
-    margin-left: 6px;
-}
-
-.telefono{
-    display: flex;
-}
-
-.numero-telefono{
+.texto-instagram,.texto-facebook,.texto-twitter,.email,.numero-telefono{
     margin-left: 6px;
 }
 
