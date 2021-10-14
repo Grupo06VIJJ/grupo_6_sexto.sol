@@ -7,7 +7,6 @@
     "dev": "nodemon app.js",
     "start": "node src/app.js"
   },
- 
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Grupo06VIJJ/Grupo_6_.git"
