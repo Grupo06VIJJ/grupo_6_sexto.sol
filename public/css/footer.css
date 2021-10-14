@@ -1,0 +1,88 @@
+/* FOOTER */
+
+.footer h3{
+    font-size: 23px;
+    margin-bottom: 15px;
+    color:brown;
+}
+
+.footer{
+    background-color: rgb(255, 203, 203);
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    text-decoration: none;
+    font-weight: normal;
+    color: black;
+    border-top: solid 5px brown;
+    padding-bottom: 80px;
+
+}
+
+.items{
+    margin: 5px 0px;
+}
+
+.nosotros{
+    display: block;
+}
+
+.visitanos{
+    display: block;
+}
+
+.redes{
+    display: block;
+}
+
+.instagram{
+    display: flex;
+}
+
+.texto-instagram{
+    margin-left: 6px;
+}
+
+.facebook{
+    display: flex;
+}
+
+.texto-facebook{
+    margin-left: 6px;
+}
+
+.twitter{
+    display: flex;
+}
+
+.texto-twitter{
+    margin-left: 6px;
+}
+
+.contacto{
+    display: block;
+}
+
+.sobre{
+    display: flex;
+}
+
+.email{
+    margin-left: 6px;
+}
+
+.telefono{
+    display: flex;
+}
+
+.numero-telefono{
+    margin-left: 6px;
+}
+
+.cierre{
+    background-color: rgb(255, 176, 176);
+    text-align: center;
+    padding: 15px 0px;
+}
+
+/* FOOTER */
