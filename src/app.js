@@ -7,10 +7,10 @@ const routesProducts = require("./routes/productsRoutes.js");
 const routesMain = require("./routes/mainRoutes.js");
 
 app.set('view engine', 'ejs');
-app.set('views', './src/views')
+app.set('views', './src/views');
 
-app.use(express.urlencoded({ extended:false}));
-app.use(express.json( ));
+/*app.use(express.urlencoded({ extended:false}));
+app.use(express.json( ));*/
 
 
 
@@ -27,10 +27,7 @@ app.use("/products", routesProducts);
 
 //Home y variados
 app.use("/", routesMain);
-/*error*/
-app.use((req,res,next)=>{res.status(404).render('404-page');
-next( );
-});
+
 
 
 
