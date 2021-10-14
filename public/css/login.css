@@ -5,7 +5,12 @@ body {
 }
 
 .formulario-de-login {
-    background: transparent;
+    background-color: #ffdbdb;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    padding: 25px;
+    box-shadow: 0px 0px 14px rgb(80 2 46);
+
 }
 
 .formulario-de-login .contenedor {
