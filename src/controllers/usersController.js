@@ -3,7 +3,7 @@ let usersController = {
     /*login*/
     // pantalla de login
     login: (req, res) => {
-        res.render('users/login.ejs');
+        res.render('users/login');
     },
     //pantalla desp de loguearse
     logged: (req, res) => {
