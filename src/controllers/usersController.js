@@ -3,7 +3,7 @@ let usersController = {
     /*login*/
     // pantalla de login
     login: (req, res) => {
-        return res.render('/users/login');
+        res.render('login');
     },
 
     //pantalla desp de loguearse

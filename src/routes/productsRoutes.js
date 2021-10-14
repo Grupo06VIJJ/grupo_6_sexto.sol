@@ -22,6 +22,8 @@ const multerDiskStorage = multer.diskStorage({
 
 const uploadFile = multer({ storage: multerDiskStorage });
 */
+
+
 router.get('/newproduct',productsController.newproduct);
 
 /*CARGAR PRODUCTO (Nuevo) */ 

@@ -16,7 +16,7 @@ app.use(express.json( ));*/
 
 /*estilos*/
 app.use('/', express.static(path.resolve(__dirname, '../public'))); 
-
+app.use('/', express.static(path.resolve(__dirname, '../src/views'))); 
 
 
 /*View engine setup*/
