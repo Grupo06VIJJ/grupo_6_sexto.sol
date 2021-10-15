@@ -24,9 +24,14 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--gama-1);
     color: var(--texto);
-    width: 90%;
     margin-left: auto;
     margin-right: auto;
     background-color: rgb(255, 227, 230);
     height: 100vh;
+}
+
+.banner-top,.banner-bottom,main {
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
 }

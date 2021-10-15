@@ -3,6 +3,7 @@
 
 section.banner-top{
     text-align: center;
+    margin-top: 110px;
 }
 
 section.banner-top img {
@@ -120,6 +121,38 @@ section.banner-bottom img {
 
 /* BANNER BOTTOM */
 
+/* MENSAJE */
+
+.mensaje {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 90px;
+    height: 90px;
+    border: 5px solid brown;
+    background-color: rgb(255, 182, 182);
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0px 0px 14px rgb(100, 100, 100);
+    transition: all 0.4s;
+}
+
+body div.mensaje i {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+
+.mensaje:hover {
+    box-shadow: 0 0 5px rgb(230, 47, 47);
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+/* MENSAJE */
+
 @media (min-width: 361px) {
     main .products {
         display: flex;
@@ -138,7 +171,6 @@ section.banner-bottom img {
     }
 }
 
-
 /*en vista desktop se deben ver los cuatro productos*/
 
 @media (min-width: 769px) {
@@ -146,7 +178,6 @@ section.banner-bottom img {
         width: 22%;
     }
 }
-
 
 /*para ocultar en vista mobile*/
 
