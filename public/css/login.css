@@ -6,11 +6,11 @@ body {
 
 .formulario-de-login {
     background-color: #ffdbdb;
-    margin-bottom: 100px;
+    margin-top: 45px;
     border-radius: 30px;
     padding: 25px;
     align-self: center;
-    box-shadow: 0px 0px 14px rgb(80 2 46);
+    box-shadow: 0px 0px 14px rgb(78 11 11);
 }
 
 .formulario-de-login .contenedor {
@@ -80,6 +80,7 @@ body {
 .formulario-de-login .enlace {
     color: var(--texto);
     transition: all 350ms;
+    text-decoration: none;
 }
 
 .formulario-de-login .enlace:hover {
