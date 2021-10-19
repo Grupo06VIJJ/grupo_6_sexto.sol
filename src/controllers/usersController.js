@@ -14,7 +14,7 @@ let usersController = {
         res.render('users/logged');
     },
     userList: (req,res) =>{
-        let userListJSON = fs.readFileSync("../public/usuarios.json", {encoding: "utf-8"});
+        let userListJSON = fs.readFileSync("usuarios.json", {encoding: "utf-8"});
         let userList = JSON.parse(userListJSON);
         res.render('users/list', {"userList" : userList});
     },
@@ -30,7 +30,7 @@ let usersController = {
             email : req.body.email,
             password : req.body.password
         }
-        let userListJSON = fs.readFileSync("../public/usuarios.json", {encoding: "utf-8"});
+        let userListJSON = fs.readFileSync("usuarios.json", {encoding: "utf-8"});
         let userList = [];
 
         if (userListJSON == ""){
@@ -41,7 +41,7 @@ let usersController = {
         
         userList.push(user);
         userJSON = JSON.stringify(userList);
-        fs.writeFileSync("../public/usuarios.json", userJSON)
+        fs.writeFileSync("usuarios.json", userJSON)
         res.redirect('/users/list');
     },
 }
