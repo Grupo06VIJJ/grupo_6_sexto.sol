@@ -31,7 +31,7 @@ let usersController = {
             email : req.body.email,
             password : req.body.password
         };
-        let userListJSON = fs.readFileSync(path.resolve("../public/usuarios.json"), {encoding: "utf-8"});
+        let userListJSON = fs.readFileSync(path.resolve(__dirname,"../../public/usuarios.json"), {encoding: "utf-8"});
         let userList = [];
 
         if (userListJSON == ""){
@@ -42,7 +42,7 @@ let usersController = {
         
         userList.push(user);
         userJSON = JSON.stringify(userList);
-        fs.writeFileSync(path.resolve("../public/usuarios.json"), userJSON);
+        fs.writeFileSync(path.resolve(__dirname,"../../public/usuarios.json"), userJSON);
         res.redirect('/users/list');
     },
 }
