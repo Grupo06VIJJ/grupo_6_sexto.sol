@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const usersController = require("../controllers/usersController.js");
 
-/* LOGIN -------------------------------- */
+/* Vista login*/
 router.get("/login", usersController.login);
 
 /* LOGGED -------------------------------- */
