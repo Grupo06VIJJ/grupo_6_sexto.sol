@@ -18,8 +18,6 @@ let usersController = {
         let userList = JSON.parse(userListJSON);
         res.render('./users/list.ejs', {"userList" : userList});
     },
-
-
     /*registro*/
     //formulario de registro
     register: (req, res) => {
@@ -33,21 +31,18 @@ let usersController = {
             password : req.body.password
         }
         let userListJSON = fs.readFileSync("usuarios.json", {encoding: "utf-8"});
-        let userList;
+        let userList = [];
+        
         if (userListJSON == ""){
             userList = [];
         }else{
             userList = JSON.parse(userListJSON);
-        }
-
+        };
+        
         userList.push(user);
-
-
-
-
-        let userJSON = JSON.stringify(userList);
+        userJSON = JSON.stringify(userList);
         fs.writeFileSync("usuarios.json", userJSON)
-        res.redirect('./users/list.ejs');
+        res.redirect('/users/list');
     },
 }
 module.exports = usersController;

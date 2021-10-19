@@ -10,11 +10,9 @@ router.post('/', usersController.logged);
 
 /* REGISTER -------------------------------- */
 router.get('/register', usersController.register);
-
-/* REGISTERED -------------------------------- */
 router.post('/register', usersController.create);
 
 /* LIST*/
-router.get("/list", usersController.usersList);
+router.get("/list", usersController.userList);
 
 module.exports = router;
