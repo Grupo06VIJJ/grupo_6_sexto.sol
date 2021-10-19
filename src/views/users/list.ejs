@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<%- include("../partials/head.ejs")%>
+
+<body>
+
+    <%- include("../partials/header.ejs") %>
+
+    <main>
+        <ul>
+            <% for (let i = 0; i< userList.length; i++) {%>
+                <li>
+                    <%= userList[i].name %>
+                </li>
+            <% } %>
+        </ul>
+
+
+
+
+
+
+
+    </main>
+
+    <%- include("../partials/footer.ejs") $>
+    
+</body>
+
+</html>

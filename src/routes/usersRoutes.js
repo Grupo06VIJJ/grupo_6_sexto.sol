@@ -12,6 +12,9 @@ router.post('/', usersController.logged);
 router.get('/register', usersController.register);
 
 /* REGISTERED -------------------------------- */
-router.post('/', usersController.registered);
+router.post('/register', usersController.create);
+
+/* LIST*/
+router.get("/list", usersController.usersList);
 
 module.exports = router;
