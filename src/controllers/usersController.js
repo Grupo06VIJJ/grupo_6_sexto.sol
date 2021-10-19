@@ -1,7 +1,8 @@
+
+const fs = require("fs");
 const { json } = require('express');
 const path = require('path');
 const { stringify } = require('querystring');
-const fs = require("fs");
 
 let usersController = {
     /*login*/
@@ -14,7 +15,7 @@ let usersController = {
         res.render('users/logged');
     },
     userList: (req,res) =>{
-        let userListJSON = fs.readFileSync("usuarios.json", {encoding: "utf-8"});
+        let userListJSON = fs.readFileSync("../public/usuarios.json", {encoding: "utf-8"});
         let userList = JSON.parse(userListJSON);
         res.render('users/list', {"userList" : userList});
     },
@@ -29,8 +30,8 @@ let usersController = {
             name : req.body.name,
             email : req.body.email,
             password : req.body.password
-        }
-        let userListJSON = fs.readFileSync("usuarios.json", {encoding: "utf-8"});
+        };
+        let userListJSON = fs.readFileSync("../public/usuarios.json", {encoding: "utf-8"});
         let userList = [];
 
         if (userListJSON == ""){
@@ -41,7 +42,7 @@ let usersController = {
         
         userList.push(user);
         userJSON = JSON.stringify(userList);
-        fs.writeFileSync("usuarios.json", userJSON)
+        fs.writeFileSync("../public/usuarios.json", userJSON);
         res.redirect('/users/list');
     },
 }
