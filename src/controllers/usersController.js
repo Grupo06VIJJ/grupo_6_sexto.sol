@@ -15,7 +15,7 @@ let usersController = {
         res.render('users/logged');
     },
     userList: (req,res) =>{
-        let userListJSON = fs.readFileSync(path.resolve("../public/usuarios.json"), {encoding: "utf-8"});
+        let userListJSON = fs.readFileSync(path.resolve(__dirname,"../../public/usuarios.json"), {encoding: "utf-8"});
         let userList = JSON.parse(userListJSON);
         res.render('users/list', {"userList" : userList});
     },
