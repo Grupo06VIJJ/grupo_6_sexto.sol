@@ -14,5 +14,6 @@ router.post('/register', usersController.create);
 
 /* LIST*/
 router.get("/list", usersController.userList);
+router.delete("/delete/:id", usersController.delete);
 
 module.exports = router;

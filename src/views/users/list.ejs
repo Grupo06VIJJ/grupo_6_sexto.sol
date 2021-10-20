@@ -8,21 +8,27 @@
     <%- include("../partials/header.ejs") %>
 
     <main>
-        <ul>
-            <% for (let i = 0; i< userList.length; i++) {%>
-                <li>
-                    <%= userList[i].name %>
-                    <%= userList[i].email %>
-                    <%= userList[i].password %>
-                </li>
+        <% if (userList == "") { %>
+            <h1>
+                <p>No hay nadie ingresado. </p> 
+                <a href="/users/register">Sé el primero!</a>
+            </h1>
+        <% } else{ %>  
+                <ul>
+                    <% for (let i = 0; i< userList.length; i++) {%>
+                        <li>
+                            <%= userList[i].name %>
+                            <%= userList[i].email %>
+                            <%= userList[i].password %>
+                        </li>
+                        <form action="/users/delete/<%=userList[i].name %>?_method=delete" method="POST">
+                            <button name="delete" type="submit">
+                                Eliminar
+                            </button>
+                        </form>
+                    <% } %>
+                </ul>
             <% } %>
-        </ul>
-
-
-
-
-
-
 
     </main>
 

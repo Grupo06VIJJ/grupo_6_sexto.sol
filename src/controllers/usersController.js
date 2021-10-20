@@ -5,7 +5,6 @@ const path = require('path');
 const { stringify } = require('querystring');
 
 let usersController = {
-    /*login*/
     // pantalla de login
     login: (req, res) => {
         res.render('users/login');
@@ -14,17 +13,23 @@ let usersController = {
     logged: (req, res) => {
         res.render('users/logged');
     },
+    //listado de todos los usuarios
     userList: (req,res) =>{
+
         let userListJSON = fs.readFileSync(path.resolve(__dirname,"../../public/usuarios.json"), {encoding: "utf-8"});
-        let userList = JSON.parse(userListJSON);
-        res.render('users/list', {"userList" : userList});
+        if (userListJSON != ""){
+            let userList = JSON.parse(userListJSON);
+            res.render('users/list', {"userList" : userList});
+        }else{
+            
+            res.render('users/list',{"userList" : ""});
+        }
+        
     },
-    /*registro*/
     //formulario de registro
     register: (req, res) => {
         res.render('users/register');
     },
-    //pantalla desp del registro
     create: (req, res) => {
         let user= {
             name : req.body.name,
@@ -33,17 +38,32 @@ let usersController = {
         };
         let userListJSON = fs.readFileSync(path.resolve(__dirname,"../../public/usuarios.json"), {encoding: "utf-8"});
         let userList = [];
-
         if (userListJSON == ""){
             userList = [];
         }else{
             userList = JSON.parse(userListJSON);
-        };
-        
+        };        
         userList.push(user);
         userJSON = JSON.stringify(userList);
         fs.writeFileSync(path.resolve(__dirname,"../../public/usuarios.json"), userJSON);
         res.redirect('/users/list');
     },
+    delete: (req,res) =>{
+        let userListJSON = fs.readFileSync(path.resolve(__dirname,"../../public/usuarios.json"), {encoding: "utf-8"}); 
+        userList = JSON.parse(userListJSON);
+
+        for(let i =0; i < userList.length; i++){
+            if(userListJSON[i].name == req.query.id){
+                userList.splice(i,1);
+            }
+        }
+        
+        userListJSON = JSON.stringify(userList)
+        fs.writeFileSync(path.resolve(__dirname,"../../public/usuarios.json"), userListJSON);
+
+        res.redirect('/users/list');
+    } 
+
+    
 }
 module.exports = usersController;
