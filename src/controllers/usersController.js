@@ -51,9 +51,8 @@ let usersController = {
     delete: (req,res) =>{
         let userListJSON = fs.readFileSync(path.resolve(__dirname,"../../public/usuarios.json"), {encoding: "utf-8"}); 
         userList = JSON.parse(userListJSON);
-
         for(let i =0; i < userList.length; i++){
-            if(userListJSON[i].name == req.query.id){
+            if(userList[i].name == req.params.id){
                 userList.splice(i,1);
             }
         }
