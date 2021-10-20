@@ -13,6 +13,7 @@ let usersController = {
     logged: (req, res) => {
         res.render('users/logged');
     },
+    
     //listado de todos los usuarios
     userList: (req,res) =>{
 
@@ -55,13 +56,26 @@ let usersController = {
             if(userList[i].name == req.params.id){
                 userList.splice(i,1);
             }
+        }        
+        userListJSON = JSON.stringify(userList)
+        fs.writeFileSync(path.resolve(__dirname,"../../public/usuarios.json"), userListJSON);
+        res.redirect('/users/list');
+    },
+    update: (req, res) =>{
+        let userListJSON = fs.readFileSync(path.resolve(__dirname,"../../public/usuarios.json"), {encoding: "utf-8"}); 
+        userList = JSON.parse(userListJSON);
+        for(let i =0; i < userList.length; i++){
+            if(userList[i].email == req.params.id){
+                userList[i].name = req.body.name;
+                
+            }
         }
         
         userListJSON = JSON.stringify(userList)
         fs.writeFileSync(path.resolve(__dirname,"../../public/usuarios.json"), userListJSON);
 
         res.redirect('/users/list');
-    } 
+    }
 
     
 }

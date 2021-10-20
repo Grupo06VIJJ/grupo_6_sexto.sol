@@ -26,9 +26,15 @@
                                 Eliminar
                             </button>
                         </form>
+                        <form action="/users/update/<%=userList[i].email %>?_method=put" method="POST">
+                            <button type="submit">
+                                Modificar
+                            </button>
+                        </form>
                     <% } %>
                 </ul>
             <% } %>
+            <a href="/users/register">volver</a>
 
     </main>
 

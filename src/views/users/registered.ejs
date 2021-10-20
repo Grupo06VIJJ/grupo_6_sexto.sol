@@ -7,13 +7,55 @@
 
     <%- include("../partials/header.ejs") %>
 
-    <h1>
-        Te registraste con éxito
-    </h1>
+    <!-- FORMULARIO -->
+    <form class="formulario-de-registro" method="POST" action="/users/register" autocomplete="off">
+
+        <h1 class="titulo">
+            Crea una cuenta
+        </h1>
+
+        <!-- contenedor -->
+        <div class="contenedor">
+
+            <!-- input-contenedor -->
+            <div class="input-contenedor">
+                <i class="fas fa-user icon"></i>
+                <input type="text" placeholder= <%=userList.name %> name= "name"/>
+            </div>
+            <!-- input-contenedor -->
+
+            <!-- input-contenedor -->
+            <div class="input-contenedor">
+                <i class="fas fa-envelope icon"></i>
+                <input type="email" placeholder="Correo electrónico" name ="email"/>
+            </div>
+            <!-- input-contenedor -->
+
+            <!-- input-contenedor -->
+            <div class="input-contenedor">
+                <i class="fas fa-key icon"></i>
+                <input type="password" placeholder="Contraseña" name= "password"/>
+            </div>
+            <!-- input-contenedor -->
+
+            <!-- input-contenedor -->
+            <div class="input-contenedor-check">
+                <p class="crear-cuenta">
+                    <input type="checkbox" />&nbsp;Aceptar términos y condiciones
+                </p>
+            </div>
+            <!-- input-contenedor -->
+
+            <input class="boton" type="submit" value="Enviar">
+
+        </div>
+        <!-- contenedor -->
+
+    </form>
+    <!-- FORMULARIO -->
 
     <%- include("../partials/footer.ejs") %>
+
 </body>
-
-
 
 </html>

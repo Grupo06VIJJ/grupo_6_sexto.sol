@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<%- include("../partials/head.ejs")%>
+
+<body>
+
+    <%- include("../partials/header.ejs") %>
+
+    <main>
+        
+        <% if (productList == "") { %>
+            <h1>
+                <p>No hay productos ingresados </p> 
+                <a href="/products/newProduct">Rapido, sube alguno!</a>
+            </h1>
+        <% } else{ %>  
+            <h1>Listado de productos</h1>
+                <ul>
+                    <% for (let i = 0; i< productList.length; i++) {%>
+                        <li>
+                            <%= productList[i].name %>
+                            <%= productList[i].desc %>
+                            <%= productList[i].category %>
+                            <% productList[i].img %>
+                            <%= productList[i].size %>
+                            <%= productList[i].price %>
+                        </li>
+                        <form action="/products/delete/<%=productList[i].name %>?_method=delete" method="POST">
+                            <button type="submit">
+                                Eliminar
+                            </button>
+                        </form>
+                        <form action="/products/update/<%=productList[i].email %>?_method=put" method="POST">
+                            <button type="submit">
+                                Modificar
+                            </button>
+                        </form>
+                    <% } %>
+                </ul>
+            <% } %>
+            <a href="/products/newProduct">volver</a>
+
+    </main>
+
+    <%- include("../partials/footer.ejs") %>
+    
+</body>
+
+</html>

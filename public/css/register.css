@@ -1,5 +1,10 @@
 .formulario-de-registro {
     background: transparent;
+    box-shadow: 0px 0px 14px rgb(78 11 11);
+    padding: 25px;
+    background-color: #ffdbdb;
+    border-radius: 40px;
+    align-self: center;
 }
 
 .formulario-de-registro .contenedor {
@@ -31,8 +36,9 @@
     margin-bottom: .5em;
     border: 1px solid #aaa;
     border-radius: 5px;
+    background-color: white;
+    
 }
-
 .input-contenedor-check {
     border: none;
     outline: none;
@@ -100,6 +106,5 @@
     .formulario-de-registro {
         margin: 0 auto;
         width: 500px;
-        border-radius: 2%;
     }
 }

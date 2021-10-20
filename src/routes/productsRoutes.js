@@ -1,6 +1,5 @@
 const express = require("express");
 const router = express.Router();
-const path = require ('path');
 const productsController = require("../controllers/productsController.js");
 
 //carrito de compras
@@ -9,35 +8,13 @@ router.get('/cart', productsController.cart);
 //detalle del producto
 router.get("/detail", productsController.detail);
 
+//nuevo producto
+router.get("/newProduct", productsController.newProductView);
+router.post("/newProduct", productsController.newProductSave);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//listado de productos
+router.get("/list", productsController.productList);
+router.delete("/delete/:id", productsController.productDelete);
 
 /* Imagenes*/
 /*const multer = require('multer'); 
@@ -55,13 +32,7 @@ const multerDiskStorage = multer.diskStorage({
 const uploadFile = multer({ storage: multerDiskStorage });
 */
 
-/*CARGAR PRODUCTO (Nuevo) */ 
-router.get('/newproduct',productsController.newproduct);
-/*router.post('/newproduct', uploadFile.single('imgProducto'), productsController.newproduct);*/
 
-/*EDITAR PRODUCTO (Actualizar) */ 
-router.get('/updateproduct/:id?',productsController.edicion);
-/*router.put('/updateproduct/:id',uploadFile.single('imgProducto'),productsController.actualizar);*/
 
 
 
