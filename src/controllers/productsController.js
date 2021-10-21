@@ -74,7 +74,7 @@ let productsController = {
         for(i= 0;i < boxValue.length; i++){
             if (boxValue[i].id == req.params.id){
                 let id = boxValue[i].id -1;
-                res.render("products/updateProduct",{"boxValue" : boxValue, "id": id,});
+                res.render("/products/updateProduct",{"boxValue" : boxValue, "id": id,});
             }            
         }
     },
