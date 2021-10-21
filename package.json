@@ -2,7 +2,7 @@
   "name": "grupo-6",
   "version": "1.0.0",
   "description": "Crear los bocetos para un sitio web que admita las funcionalidades básicas de los sitios web e-commerce\r ```\r ## Enfoque\r ```\r EL proyecto se basa en cuatro ejes: La Estética, las Funcionalidades, la Fluidez en la navegación y la Accesibilidad\r ```\r ## Temática\r ```\r Vivero: venta de plantas, macetas y artículos relacionados con la jardineria\r ```\r ## wireframe\r ```\r El diseño de los bocetos se realizará en Adobe XD\r ```\r ## Público\r ```\r Consumidores finales aficionados a las plantas\r Empresas que quieran vender su producto en nuestra tienda\r Profesionales del paisajismo\r ```\r ## Referencias\r (por orden alfabético)\r [1800flowers](https://www.1800flowers.com/ \"1800flowers\")\r [Amazon](https://www.amazon.com/-/es/ \"Amazon\")\r [Digital Sport](https://www.digitalsport.com.ar/ \"Digital Sport\")\r [eBay](https://www.ebay.com/ \"eBay\")\r [Mercado Libre](https://www.mercadolibre.com.ar/ \"Mercdado Libre\")\r [Nansense](https://www.nansense.com/ \"Nansense\")\r ## Grupo de trabajo\r ### @Clonmorfo :smile: :+1: \r ### @nachoSosa :smile: :+1:\r ### @valeriaYashan:smile: :+1:",
-  "main": "app.js",
+  "main": "./src/app.js",
   "scripts": {
     "dev": "src/app.js",
     "start": "node src/app.js"

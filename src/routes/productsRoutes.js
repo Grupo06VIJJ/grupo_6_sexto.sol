@@ -14,7 +14,7 @@ router.post("/newProduct", productsController.productSave);
 
 //listado de productos + borrado
 router.get("/list", productsController.productList);
-router.delete("/delete/:id", productsController.productDelete);
+router.delete("/:id/delete", productsController.productDelete);
 
 //vista de la pantalla de actualizacion + guardado
 router.get("/:id/update",productsController.productUpdateView);

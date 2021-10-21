@@ -26,7 +26,8 @@
                             <%= productList[i].size %>
                             <%= productList[i].price %>
                         </li>
-                        <form action="/products/delete/<%=productList[i].name %>?_method=delete" method="POST">
+                        
+                        <form action="/products/<%=productList[i].id %>/delete?_method=delete" method="POST">
                             <button type="submit">
                                 Eliminar
                             </button>
@@ -39,7 +40,8 @@
                     <% } %>
                 </ul>
             <% } %>
-            <a href="./products/newProduct">Crear nuevo producto</a>
+            <a href="/products/newProduct">Crear nuevo producto</a>
+            <a href="/">volver</a>
 
     </main>
 

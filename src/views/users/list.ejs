@@ -20,6 +20,7 @@
                             <%= userList[i].name %>
                             <%= userList[i].email %>
                             <%= userList[i].password %>
+                            <% console.log %>
                         </li>
                         <form action="/users/delete/<%=userList[i].name %>?_method=delete" method="POST">
                             <button type="submit">
@@ -34,7 +35,8 @@
                     <% } %>
                 </ul>
             <% } %>
-            <a href="/users/register">volver</a>
+            <a href="/users/register">Nuevo Usuario</a>
+            <a href="/">Volver</a>
 
     </main>
 

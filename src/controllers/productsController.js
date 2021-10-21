@@ -56,9 +56,9 @@ let productsController = {
         for(let i =0; i < productList.length; i++){
             if(productList[i].id == req.params.id){
                 for(j=i; j<productList.length; j++){
-                    productList[j].id = productList[j].id -1
+                    productList[j].id = productList[j].id-1
                 }
-                productList.splice(i,1);
+                productList.splice(i ,1);
                 
             }
         };
