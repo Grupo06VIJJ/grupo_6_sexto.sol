@@ -17,7 +17,7 @@ let usersController = {
     //listado de todos los usuarios
     userList: (req,res) =>{
 
-        let userListJSON = fs.readFileSync(path.resolve(__dirname,"../../public/usuarios.json"), {encoding: "utf-8"});
+        let userListJSON = fs.readFileSync(path.resolve(__dirname,"../db/usuarios.json"), {encoding: "utf-8"});
         if (userListJSON != ""){
             let userList = JSON.parse(userListJSON);
             res.render('users/list', {"userList" : userList});
@@ -37,7 +37,7 @@ let usersController = {
             email : req.body.email,
             password : req.body.password
         };
-        let userListJSON = fs.readFileSync(path.resolve(__dirname,"../../public/usuarios.json"), {encoding: "utf-8"});
+        let userListJSON = fs.readFileSync(path.resolve(__dirname,"../db/usuarios.json"), {encoding: "utf-8"});
         let userList = [];
         if (userListJSON == ""){
             userList = [];
@@ -46,11 +46,11 @@ let usersController = {
         };        
         userList.push(user);
         userJSON = JSON.stringify(userList);
-        fs.writeFileSync(path.resolve(__dirname,"../../public/usuarios.json"), userJSON);
+        fs.writeFileSync(path.resolve(__dirname,"../db/usuarios.json"), userJSON);
         res.redirect('/users/list');
     },
     delete: (req,res) =>{
-        let userListJSON = fs.readFileSync(path.resolve(__dirname,"../../public/usuarios.json"), {encoding: "utf-8"}); 
+        let userListJSON = fs.readFileSync(path.resolve(__dirname,"../db/usuarios.json"), {encoding: "utf-8"}); 
         userList = JSON.parse(userListJSON);
         for(let i =0; i < userList.length; i++){
             if(userList[i].name == req.params.id){
@@ -58,11 +58,11 @@ let usersController = {
             }
         }        
         userListJSON = JSON.stringify(userList)
-        fs.writeFileSync(path.resolve(__dirname,"../../public/usuarios.json"), userListJSON);
+        fs.writeFileSync(path.resolve(__dirname,"../db/usuarios.json"), userListJSON);
         res.redirect('/users/list');
     },
     update: (req, res) =>{
-        let userListJSON = fs.readFileSync(path.resolve(__dirname,"../../public/usuarios.json"), {encoding: "utf-8"}); 
+        let userListJSON = fs.readFileSync(path.resolve(__dirname,"../db/usuarios.json"), {encoding: "utf-8"}); 
         userList = JSON.parse(userListJSON);
         for(let i =0; i < userList.length; i++){
             if(userList[i].email == req.params.id){
@@ -72,7 +72,7 @@ let usersController = {
         }
         
         userListJSON = JSON.stringify(userList)
-        fs.writeFileSync(path.resolve(__dirname,"../../public/usuarios.json"), userListJSON);
+        fs.writeFileSync(path.resolve(__dirname,"../db/usuarios.json"), userListJSON);
 
         res.redirect('/users/list');
     }

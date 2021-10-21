@@ -14,7 +14,15 @@ let productsController = {
     newProductView: (req, res) => {
         res.render('products/newProduct');
     },
-    newProductSave: (req, res) =>{
+    productSave: (req, res) =>{
+        
+        let productListJSON = fs.readFileSync(path.resolve(__dirname,"../db/products.json"), {encoding: "utf-8"});
+        let productList = [];
+        if (productListJSON == ""){
+            productList = [];
+        }else{
+            productList = JSON.parse(productListJSON);
+        };
         let product = {
             name: req.body.productName,
             desc: req.body.productDescription,
@@ -22,22 +30,16 @@ let productsController = {
             category: req.body.productCategory,
             size: req.body.productSize,
             price: req.body.productPrice,
-        };
-        let productListJSON = fs.readFileSync(path.resolve(__dirname,"../../public/products.json"), {encoding: "utf-8"});
-        let productList = [];
-        if (productListJSON == ""){
-            productList = [];
-        }else{
-            productList = JSON.parse(productListJSON);
-        };        
+            id: productList.length +1,
+        };       
         productList.push(product);
         productJSON = JSON.stringify(productList);
-        fs.writeFileSync(path.resolve(__dirname,"../../public/products.json"), productJSON);
+        fs.writeFileSync(path.resolve(__dirname,"../db/products.json"), productJSON);
         res.redirect('/products/list');
     },
     //Listado de los productos existentes
     productList: (req,res)=>{
-        let productListJSON = fs.readFileSync(path.resolve(__dirname,"../../public/products.json"), {encoding: "utf-8"});
+        let productListJSON = fs.readFileSync(path.resolve(__dirname,"../db/products.json"), {encoding: "utf-8"});
         if (productListJSON != ""){
             let productList = JSON.parse(productListJSON);
             res.render('products/list', {"productList" : productList});
@@ -49,17 +51,57 @@ let productsController = {
     },
     //Eliminacion de productos
     productDelete: (req,res) =>{
-        let productListJSON = fs.readFileSync(path.resolve(__dirname,"../../public/products.json"), {encoding: "utf-8"}); 
-        productList = JSON.parse(productListJSON);
+        let productListJSON = fs.readFileSync(path.resolve(__dirname,"../db/products.json"), {encoding: "utf-8"}); 
+        let productList = JSON.parse(productListJSON);
         for(let i =0; i < productList.length; i++){
-            if(productList[i].name == req.params.id){
+            if(productList[i].id == req.params.id){
+                for(j=i; j<productList.length; j++){
+                    productList[j].id = productList[j].id -1
+                }
                 productList.splice(i,1);
+                
             }
         };
         productListJSON = JSON.stringify(productList)
-        fs.writeFileSync(path.resolve(__dirname,"../../public/products.json"), productListJSON);
+        fs.writeFileSync(path.resolve(__dirname,"../db/products.json"), productListJSON);
 
         res.redirect('/products/list');
+    },
+    //Actualizar producto
+    productUpdateView: (req, res) => {
+        let productListJSON = fs.readFileSync(path.resolve(__dirname,"../db/products.json"), {encoding: "utf-8"});
+        let boxValue = JSON.parse(productListJSON);
+        for(i= 0;i < boxValue.length; i++){
+            if (boxValue[i].id == req.params.id){
+                let id = boxValue[i].id -1;
+                res.render("products/updateProduct",{"boxValue" : boxValue, "id": id,});
+            }            
+        }
+    },
+    productUpdate: (req, res) =>{
+        let product = {
+            name: req.body.productName,
+            desc: req.body.productDescription,
+            img: req.body.productFile,
+            category: req.body.productCategory,
+            size: req.body.productSize,
+            price: req.body.productPrice,
+            id: req.body.id,
+        };
+        let productListJSON = fs.readFileSync(path.resolve(__dirname,"../db/products.json"), {encoding: "utf-8"});
+        
+
+        let productList = JSON.parse(productListJSON); 
+
+        for(let i =0; i < productList.length; i++){
+            if(productList[i].id == product.id){
+                productList.splice(i,1,product);
+            }
+        };
+        productListJSON = JSON.stringify(productList);
+        fs.writeFileSync(path.resolve(__dirname,"../db/products.json"), productListJSON);
+        res.redirect('/products/list');
+
     },
 
 }

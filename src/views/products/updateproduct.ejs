@@ -1,64 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+    <%- include("../partials/head.ejs")%>
+<body>
+    <%- include("../partials/header.ejs")%>
     <main>
-        <h3 class="updateedit">ACTUALIZAR PRODUCTO</h3>
-<form action="/actualizarproducto" method="POST" enctype="multipart/form-data" class="update-edit">
-    
-        <div class="content">
-            <h2 class="logo">Carga de <span class="logo2"> nuevos productos </span></h2>
-        <div class="formulario_entero">
-            <div class="formulario_de_carga_edicion">
-                <h1> Planta categoría 1 </h1>
-                <form name="cargaProducto" method="POST" action="cargaProducto" enctype="multipart/form-data">
-                    <p>
-                        <label for="numeros">Material de la maceta (cerámica, plástico, porcelana)</label>
-                        <input type="text" name="cantidad-de-flores" required>
-                    </p>
-                    <p>
-                        <label for="texto">Diámetro-de-maceta</label>
-                        <input type="text" name="diámetro">
-                    </p>
-                    <p>
-                        <label for="precio">Precio</label>
-                        <input type="text" name="precio">
-                    </p>
-                    <p>
-                        <label for="medidas">Información Adicional</label>
-                        <input type="texto" name="adicional">
-                    </p>
-                    <label for="imagenProducto" class="form-label">Imagen</label>
-                    <input type="file" name="imagenProducto" />
-                        <button type="submit">ENVIAR</button>
-                    </p>
-                </form>
-            </div>
-            <div class="formulario_de_info">
-                <div class="Categoría1">
-                    <img src="/image/products/xxxxx.jpg" alt="xxx" class="xxxx">
-                    <h3>Producto</h3>
-                    <span>Material de la maceta (cerámica, plástico, porcelana)</span> <br>
-                    <span>Diámetro-de-maceta</span> <br>
-                    <span>Precio </span> <br>
-                    <span>Información Adicional </span> <br>
-                    <span><a href="/carrito"><img src="/image/xxxxx.png" alt="" class="btn-precio "></a></span>
-                </div>
-    <div class="buttons">
-    <a href="#"><button type="submit" class="enviar">ACTUALIZAR</button></a>
-    <button type="reset" class="borrar">BORRAR</button> </div>
-</div>  
-
-</form>
-
-
-
-
-   </main>
+        <div>
+            <h2>Actualice el producto</h2>
+            <form action="/products/:<%= boxValue[id].id %>/update?_method=PUT" method="POST">
+                <label>Nombre del producto</label>
+                <input type="text" name ="productName" value="<%= boxValue[id].name %>">
+                <br>
+                <label>Descripcion del producto</label>
+                <input type="text" name ="productDescription" value="<%= boxValue[id].desc %>">
+                <br>    
+                <label>Imagen del producto</label>
+                <input type="file" name ="productFile" value="<%= boxValue[id].img %>">
+                <br>
+                <label>Categoria</label>
+                <input type="text" name ="productCategory" value="<%= boxValue[id].category %>">
+                <br>
+                <label>Talle del producto</label>
+                <input type="text" name ="productSize" value="<%= boxValue[id].size %>">
+                <br>
+                <label>Precio del producto</label>
+                <input type="text" name ="productPrice" value="<%= boxValue[id].price %>">
+                <input type="hidden" name="id" value="<%= boxValue[id].id %>">
+                <br>
+                <button type="submit">Actualizar</button>           
+            </form>
+        </div>
+    </main>
+    <%- include("../partials/footer.ejs")%>
 </body>
+
+
 
 </html>

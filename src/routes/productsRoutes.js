@@ -10,11 +10,18 @@ router.get("/detail", productsController.detail);
 
 //nuevo producto
 router.get("/newProduct", productsController.newProductView);
-router.post("/newProduct", productsController.newProductSave);
+router.post("/newProduct", productsController.productSave);
 
-//listado de productos
+//listado de productos + borrado
 router.get("/list", productsController.productList);
 router.delete("/delete/:id", productsController.productDelete);
+
+//vista de la pantalla de actualizacion + guardado
+router.get("/:id/update",productsController.productUpdateView);
+router.put("/:id/update",productsController.productUpdate);
+
+
+
 
 /* Imagenes*/
 /*const multer = require('multer'); 

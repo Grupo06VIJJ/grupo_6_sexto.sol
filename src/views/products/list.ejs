@@ -31,7 +31,7 @@
                                 Eliminar
                             </button>
                         </form>
-                        <form action="/products/update/<%=productList[i].email %>?_method=put" method="POST">
+                        <form action="/products/<%=productList[i].id %>/update" method="GET">
                             <button type="submit">
                                 Modificar
                             </button>
@@ -39,7 +39,7 @@
                     <% } %>
                 </ul>
             <% } %>
-            <a href="/products/newProduct">volver</a>
+            <a href="/products/newProduct">Crear nuevo producto</a>
 
     </main>
 
