@@ -7,7 +7,6 @@
 
     <%- include("../partials/header.ejs") %>
 
-
     <h1>
         Carrito de compras
     </h1>
@@ -19,15 +18,8 @@
                 <input type="text" name="search" class="form-search" placeholder="Buscar productos">
                 </form>
                 <div><i class="fas fa-search"></i></div>
-            </div></div>
-            
-        <nav class="main-navbar">
-            <ul class="left-navbar" >
-                <li><a href="/productos">Plantas con Flores</a></li>
-                <li><a href="/productos">Plantas sin Flores</a></li> 
-            </ul>
+            </div>
             <ul class="right-navbar">
-                <li><a href="/login">Usuario <i class="fas fa-user"></i></a></li>
                 <li><a href="#">Lista de deseos<i class="fas fa-heart"></i></a></li>
                 <li><a href="/cart">Agregar al carro<i class="fas fa-shopping-basket" ></i></a></li>
             </ul>
@@ -44,14 +36,14 @@
         <div class= "all-products-cart">
             <article class="product-cart">
                 <div>
-                    <img src= "images\xxx.jpg" alt = "Santa Rita" class="product-img-carrito">
+                    <img src= "images\xxx.jpg" alt = "Santa Rita" class="product-img-cart">
                 </div>
                 <div class= "product-box-cart">
                     <h4 class="cart-description">Planta sin flores mediana</h4>
                     <h4 class="cart-description">$1550,00</h4>
                     <div class="cart-description">
                         <i class="fas fa-minus"></i>
-                        <h4 class="cantidad">2</h4>
+                        <h4 class="quantity">2</h4>
                         <i class="fas fa-plus"></i>
                     </div>
                     <div class="total">
@@ -69,14 +61,14 @@
                 <div class= "cart-description">
                     <h4 class="cart-description">planta con espinas</h4>
                     <h4 class="cart-description">$55670,00</h4>
-                    <div class="cantidad-producto">
+                    <div class="quantity-product">
                         <i class="fas fa-minus"></i>
                         <h4 class="cantidad">2</h4>
                         <i class="fas fa-plus"></i>
                     </div>
                     <div class="total">
-                        <h4 class="descripcion-carrito">Total</h4>
-                        <h4 class="descripcion-carrito">$1100,00</h4>
+                        <h4 class="cart-description">Total</h4>
+                        <h4 class="cart-description">$1100,00</h4>
                     </div>
                     <i class="fas fa-trash"></i>
                 </div> 
@@ -100,16 +92,20 @@
                     </div>
                     <i class="fas fa-trash"></i>
                 </div> 
-         
-            <div class="pagar">
-                <div>
-                    <h4 class="cart-description"> Has comprado " " Productos</h4>
+                <div> <h4 class="cart-description"> Has comprado " " Productos</h4>
                     <h4 class="cart-description">Total a pagar</h4>
                     <h4 class="cart-description">$3300,00</h4>
                 </div>
-                <div class="cart-button">
+                <div class="cart-button2">
                     <h4 class="cart-description">Compra finalizada</h4>
                 </div>
+                <div class="cart-button1">
+                    <h4 class="cart-description">Pagar</h4>
+                </div>
+            <div class="pagar">
+            </div>
+            
+                
 
     <%- include("../partials/footer.ejs") %>
 </body>

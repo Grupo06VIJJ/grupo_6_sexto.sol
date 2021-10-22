@@ -1,13 +1,3 @@
-/*carrito de compra clon 30/9*/
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-}
-a{
-    text-decoration: none;
-}
-
 
 /*header*/
 .header-box{    
@@ -29,22 +19,30 @@ a{
     justify-content:center
 }
 
+    .main-navbar{
+        margin-left: 10px;
+display:flex;
+    }
+
+    .right-navbar{
+        padding-top: 30px;
+display: inline-block;
+    };
+
 ul , ol{
     list-style: none;
 }
-.nav > li {
+.nav , li {
     position: relative;
-    display: inline-block;
+   
+   
 }
-.nav >li > a {
-    display: block;
+.nav ,li , a {
+    display:inline-block;
     padding: 15px 15px;
     color: #353535;
 }
-.nav li a:hover{
-    background-color: grey;
-    transition: all 0.3s;
-}
+    
 .submenu{
     position: absolute;
     width: 120%;
@@ -59,13 +57,10 @@ ul , ol{
     padding: 15px;
     position: relative;
     color: white;
-    
+    text-decoration: none
        
 }
-.nav li:hover .submenu{
-    visibility: visible;
-    opacity: 1;
-}
+
 #user >li{
     padding: 5px 10px;
 }
@@ -74,18 +69,9 @@ ul , ol{
         display: flex;
       }  
 }
-/*header*/
+
 
 /*cartbox*/
-
-.background{
-    background-image: url(https://cdn.pixabay.com/photo/2021/09/30/16/52/16-52-53-476_960_720.jpg );
-    width: 100%;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;    
-}
 
 .cart-box{
     position: relative;
@@ -128,10 +114,11 @@ ul , ol{
 .cart-box .product-action ul li{
     display: inline;    
 }
+
+
+/*botones*/
 .cart-button{
     display: flex;
-}
-.cart-button button{
     background-color: rgb(228, 49, 49);
     border-radius: 5px;
     font-size: 1.5em;
@@ -142,7 +129,28 @@ ul , ol{
 .cart-button a{
     color:black;
 }
-
+.cart-button1 {
+    display:inline-block;
+    background-color: #f49f46;
+    color: white;
+    border-radius: 45px;
+    font-family: "Roboto";
+    height: 2.5rem;
+    width: auto;
+    padding: 2% 10%;
+    border: none;
+  }
+  .cart-button2 {
+    display:inline-block;
+    background-color: #f4a04600;
+    color: #ca771e;
+    border-radius: 45px;
+    font-family: "Roboto";
+    height: 2.5rem;
+    width: auto;
+    padding: 2% 10%;
+    border: 2px solid #ca771e;
+  }
 /*cart box*/
 .footer-cart {
     background-color: var(--primario);
