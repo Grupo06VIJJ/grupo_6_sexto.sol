@@ -12,7 +12,7 @@ let productsController = {
     },
     //Pantalla de creacion de productos + logica de guardado
     newProductView: (req, res) => {
-        res.render('products/cart');
+        res.render('products/create');
     },
     productSave: (req, res) =>{
         
