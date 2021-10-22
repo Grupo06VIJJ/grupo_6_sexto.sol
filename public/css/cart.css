@@ -115,7 +115,14 @@ ul , ol{
     display: inline;    
 }
 
-
+.resumen {
+    justify-content: center;
+    width: 40vw;
+    margin: 25px;
+    padding: 20px;
+  }
+  
+  
 /*botones*/
 .cart-button{
     display: flex;
@@ -129,6 +136,10 @@ ul , ol{
 .cart-button a{
     color:black;
 }
+.resumen button {
+    margin: 10px;
+    width: 100%;
+  }
 .cart-button1 {
     display:inline-block;
     background-color: #f49f46;
@@ -151,6 +162,9 @@ ul , ol{
     padding: 2% 10%;
     border: 2px solid #ca771e;
   }
+
+  
+  
 /*cart box*/
 .footer-cart {
     background-color: var(--primario);
