@@ -9,8 +9,8 @@ router.get('/cart', productsController.cart);
 router.get("/detail", productsController.detail);
 
 //nuevo producto
-router.get("/newProduct", productsController.newProductView);
-router.post("/newProduct", productsController.productSave);
+router.get("/create", productsController.newProductView);
+router.post("/create", productsController.productSave);
 
 //listado de productos + borrado
 router.get("/list", productsController.productList);
