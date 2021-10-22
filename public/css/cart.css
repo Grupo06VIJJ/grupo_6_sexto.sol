@@ -144,3 +144,14 @@ ul , ol{
 }
 
 /*cart box*/
+.footer-cart {
+    background-color: var(--primario);
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: .2em;
+    text-align: center;
+    font-weight: bold;
+}
