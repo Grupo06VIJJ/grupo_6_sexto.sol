@@ -1,4 +1,3 @@
-<!-- recuperar contraseña -->
-        <div class="otros-accesos">
-           <a href='./users/profileAdmin'>Olvide mi contraseña</a>  
-            <!-- recuperar contraseña -->
+let validateRegister=[]
+const validateRegister=[check('name').notEmpty.withMessage('Debes completar el nombre').bail()]
+
