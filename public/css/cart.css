@@ -1,5 +1,12 @@
 
 /*header*/
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
 .header-box{    
     margin: auto;
     width:90%;
@@ -114,6 +121,29 @@ ul , ol{
 .cart-box .product-action ul li{
     display: inline;    
 }
+
+/*formulario*/
+.entrega {
+    text-align: center;
+    padding: 1em;
+}
+
+.entrega .enlace {
+    color: var(--texto);
+    transition: all 350ms;
+    text-decoration: none;
+}
+
+.entrega .enlace:hover {
+    color: var(--texto);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+
+
 
 .resumen {
     justify-content: center;
