@@ -89,16 +89,21 @@ body {
     cursor: pointer;
 }
 
+.otros-accesos{
+    font-size: .8rem;
+}
+
 .footer-login {
     background-color: var(--primario);
     color: white;
-    position: fixed;
+    position:absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     padding: .2em;
     text-align: center;
     font-weight: bold;
+    box-sizing:border-box;
 }
 
 @media (min-width:768px) {
