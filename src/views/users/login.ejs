@@ -15,7 +15,7 @@
         </h1>
 
         <!-- contenedor -->
-        <div class="contenedor">
+        <form class="contenedor">
 
             <!-- input-contenedor -->
             <div class="input-contenedor">
@@ -43,13 +43,14 @@
                     <a class="enlace" href="/users/register">
                         Crear una
                     </a>
+                    <input type="checkbox" name="remember" id="remember">
+                    <label for="remember">Recordarme</label>  
                 </p>
             </div>
+        </form>
+
             <!-- recordame-->
-            <div>
-                <input type="checkbox" name="remember" id="remember">
-                <label for="remember">Recordame</label>     
-        </div>
+            
         <!-- contenedor -->
         <%- include("../partials/footer.ejs")%>
 
