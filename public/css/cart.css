@@ -67,10 +67,16 @@ ul , ol{
     text-decoration: none
        
 }
+.product-cart{
+    margin-left: 30px;
 
-#user >li{
-    padding: 5px 10px;
 }
+
+.precio-cantidad{ font-weight: bold;
+
+}
+
+
 @media (min-width:851px){
     .header-box{
         display: flex;
@@ -123,7 +129,7 @@ ul , ol{
 }
 
 /*formulario*/
-/*.entrega {
+*.entrega {
     text-align: center;
     padding: 1em;
 }
