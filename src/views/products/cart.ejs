@@ -19,86 +19,71 @@
                 </form>
                 <div><i class="fas fa-search"></i></div>
             </div>
+            <section>
+                <div class="header-box">
+                    <img src="/images/.jpg" class="head-cart-image">
+                    <div class="product-cart"> Carrito de compras</div>
+                </div>
+            </section>
             <ul class="right-navbar">
                 <li><a href="#">Lista de deseos<i class="fas fa-heart"></i></a></li>
-                <li><a href="/cart">Agregar al carro<i class="fas fa-shopping-basket" ></i></a></li>
+                <li><a href="/cart">Agregar al carrito<i class="fas fa-shopping-basket" ></i></a></li>
             </ul>
+            <div class="articulos">
+                <article>
+                    <img src="/images/producto1.png" alt="PlantaA">
+                    <div class="contenedor-producto">
+                        <div class="detalles-carrito">
+                            <div class="descripcion-producto">
+                                <h2>Producto 1</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+
+                            <div class="cantidad-producto">
+                                <p class="boton-eliminar"><i class="fas fa-trash-alt"></i><a href="#">Eliminar</a></p>
+                                <div class="precio-cantidad">
+                                    <div class="botones-cantidad">
+            
+                                        <button class="minus">-</button>
+                                        <input type="text" value="1" readonly="readonly">
+                                        <button class="plus">+</button> </div>
+                                    <p class="precio">$11320,00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <img src="/images/producto2.png" alt="Imagen Producto 2">
+                    <div class="contenedor-producto">
+                        <div class="detalles-carrito">
+                            <div class="descripcion-producto">
+                                <h2>Producto 2</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <div class="cantidad-producto">
+                                <p class="boton-eliminar"><i class="fas fa-trash-alt"></i><a href="#">Eliminar</a></p>   
+                                <div class="precio-cantidad">
+                                    <div class="botones-cantidad">
+                                        <button class="minus">-</button>
+                                        <input type="text" value="1" readonly="readonly">
+                                        <button class="plus">+</button>
+                                    </div>
+                                    <p class="precio">$20,00</p>
+                                </div>        
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+            <!-- Precio total -->
+            <p class="text-right">Total: <span id="total"></span>&euro;</p>
+            <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+        </aside>
         </nav>
         </div>    
-        <!-- Formulario carrito -->
-    <section>
-        <div class="header-box">
-            <img src="/images/.jpg" class="head-cart-image">
-            <div class="product-cart"> Carrito de compras</div>
-        </div>
-    </section>
-
-    <section class="section-product-cart">
-        <div class= "all-products-cart">
-            <article class="product-cart">
-                <div>
-                    <img src= "images\xxx.jpg" alt = "Santa Rita" class="product-img-cart">
-                </div>
-                <div class= "product-box-cart">
-                    <h4 class="cart-description">Planta sin flores mediana</h4>
-                    <h4 class="cart-description">$1550,00</h4>
-                    <div class="cart-description">
-                        <i class="fas fa-minus"></i>
-                        <h4 class="quantity">2</h4>
-                        <i class="fas fa-plus"></i>
-                    </div>
-                    <div class="total">
-                        <h4 class="cart-description">Total</h4>
-                        <h4 class="cart-description">$1100,00</h4>
-                    </div>
-                    <i class="fas fa-trash"></i>
-                </div> 
-            </article>
-
-            <article class="product-cart">
-                <div>
-                    <img src= "images\nnnn.jpg" alt = "jjjk," class="product-img-carrito">
-                </div>
-                <div class= "cart-description">
-                    <h4 class="cart-description">planta con espinas</h4>
-                    <h4 class="cart-description">$55670,00</h4>
-                    <div class="quantity-product">
-                        <i class="fas fa-minus"></i>
-                        <h4 class="cantidad">2</h4>
-                        <i class="fas fa-plus"></i>
-                    </div>
-                    <div class="total">
-                        <h4 class="cart-description">Total</h4>
-                        <h4 class="cart-description">$1100,00</h4>
-                    </div>
-                    <i class="fas fa-trash"></i>
-                </div> 
-            </article>
-
-            <article class="product-img-cart">
-                <div>
-                    <img src= "images\nnnn.jpg" alt = "ccc" class="product-img-carrito">
-                </div>
-                <div class= "cart-description">
-                    <h4 class="cart-description">maceta pintada grande</h4>
-                    <h4 class="cart-description">$580,00</h4>
-                    <div class="product-quantity">
-                        <i class="fas fa-minus"></i>
-                        <h4 class="cantidad">2</h4>
-                        <i class="fas fa-plus"></i>
-                    </div>
-                    <div class="total">
-                        <h4 class="cart-description">Total</h4>
-                        <h4 class="cart-description">$100,00</h4>
-                    </div>
-                    <i class="fas fa-trash"></i>
-                </div> 
-                <div> <h4 class="cart-description"> Has comprado " " Productos</h4>
-                    <h4 class="cart-description">Total a pagar</h4>
-                    <h4 class="cart-description">$3300,00</h4>
-                </div>
-                <!-- Formulario carrito -->
-<!-- Copiado ver si se puede adaptar al carro-->
+        <!-- Copiado ver si se puede adaptar al carro-->
 <div class="container">
     <div class="row">
         <!-- Elementos generados a partir del JSON -->
@@ -109,13 +94,17 @@
             <!-- Elementos del carrito -->
             <ul id="carrito" class="list-group"></ul>
             <hr>
-            <!-- Precio total -->
-            <p class="text-right">Total: <span id="total"></span>&euro;</p>
-            <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
-        </aside>
+            
     </div>
 </div>
 <!-- Copiado -->
+        <!-- Formulario carrito -->
+    
+    
+                <!-- Formulario carrito -->
+
+
+        
                   <!-- Finalizar compra -->
                 <section class="resumen">
                     <div class="resumen-background">
@@ -157,185 +146,7 @@
                 </p>
             </div>
             <!-- pregunta-link -->
-            <script> 
-            // Variables
-                const baseDeDatos = [
-                    {
-                        id: 1,
-                        nombre: 'Patata',
-                        precio: 1,
-                        imagen: 'patata.jpg'
-                    },
-                    {
-                        id: 2,
-                        nombre: 'Cebolla',
-                        precio: 1.2,
-                        imagen: 'cebolla.jpg'
-                    },
-                    {
-                        id: 3,
-                        nombre: 'Calabacin',
-                        precio: 2.1,
-                        imagen: 'calabacin.jpg'
-                    },
-                    {
-                        id: 4,
-                        nombre: 'Fresas',
-                        precio: 0.6,
-                        imagen: 'fresas.jpg'
-                    }
-                
-                ];
-                
-                let carrito = [];
-                let total = 0;
-                const DOMitems = document.querySelector('#items');
-                const DOMcarrito = document.querySelector('#carrito');
-                const DOMtotal = document.querySelector('#total');
-                const DOMbotonVaciar = document.querySelector('#boton-vaciar');
-                
-                // Funciones
-                
-                /**
-                 * Dibuja todos los productos a partir de la base de datos. No confundir con el carrito
-                 */
-                function renderizarProductos() {
-                    baseDeDatos.forEach((info) => {
-                        // Estructura
-                        const miNodo = document.createElement('div');
-                        miNodo.classList.add('card', 'col-sm-4');
-                        // Body
-                        const miNodoCardBody = document.createElement('div');
-                        miNodoCardBody.classList.add('card-body');
-                        // Titulo
-                        const miNodoTitle = document.createElement('h5');
-                        miNodoTitle.classList.add('card-title');
-                        miNodoTitle.textContent = info.nombre;
-                        // Imagen
-                        const miNodoImagen = document.createElement('img');
-                        miNodoImagen.classList.add('img-fluid');
-                        miNodoImagen.setAttribute('src', info.imagen);
-                        // Precio
-                        const miNodoPrecio = document.createElement('p');
-                        miNodoPrecio.classList.add('card-text');
-                        miNodoPrecio.textContent = info.precio + '€';
-                        // Boton 
-                        const miNodoBoton = document.createElement('button');
-                        miNodoBoton.classList.add('btn', 'btn-primary');
-                        miNodoBoton.textContent = '+';
-                        miNodoBoton.setAttribute('marcador', info.id);
-                        miNodoBoton.addEventListener('click', anyadirProductoAlCarrito);
-                        // Insertamos
-                        miNodoCardBody.appendChild(miNodoImagen);
-                        miNodoCardBody.appendChild(miNodoTitle);
-                        miNodoCardBody.appendChild(miNodoPrecio);
-                        miNodoCardBody.appendChild(miNodoBoton);
-                        miNodo.appendChild(miNodoCardBody);
-                        DOMitems.appendChild(miNodo);
-                    });
-                }
-                
-                /**
-                 * Evento para añadir un producto al carrito de la compra
-                 */
-                function anyadirProductoAlCarrito(evento) {
-                    // Anyadimos el Nodo a nuestro carrito
-                    carrito.push(evento.target.getAttribute('marcador'))
-                    // Calculo el total
-                    calcularTotal();
-                    // Actualizamos el carrito 
-                    renderizarCarrito();
-                
-                }
-                
-                /**
-                 * Dibuja todos los productos guardados en el carrito
-                 */
-                function renderizarCarrito() {
-                    // Vaciamos todo el html
-                    DOMcarrito.textContent = '';
-                    // Quitamos los duplicados
-                    const carritoSinDuplicados = [...new Set(carrito)];
-                    // Generamos los Nodos a partir de carrito
-                    carritoSinDuplicados.forEach((item) => {
-                        // Obtenemos el item que necesitamos de la variable base de datos
-                        const miItem = baseDeDatos.filter((itemBaseDatos) => {
-                            // ¿Coincide las id? Solo puede existir un caso
-                            return itemBaseDatos.id === parseInt(item);
-                        });
-                        // Cuenta el número de veces que se repite el producto
-                        const numeroUnidadesItem = carrito.reduce((total, itemId) => {
-                            // ¿Coincide las id? Incremento el contador, en caso contrario no mantengo
-                            return itemId === item ? total += 1 : total;
-                        }, 0);
-                        // Creamos el nodo del item del carrito
-                        const miNodo = document.createElement('li');
-                        miNodo.classList.add('list-group-item', 'text-right', 'mx-2');
-                        miNodo.textContent = `${numeroUnidadesItem} x ${miItem[0].nombre} - ${miItem[0].precio}€`;
-                        // Boton de borrar
-                        const miBoton = document.createElement('button');
-                        miBoton.classList.add('btn', 'btn-danger', 'mx-5');
-                        miBoton.textContent = 'X';
-                        miBoton.style.marginLeft = '1rem';
-                        miBoton.dataset.item = item;
-                        miBoton.addEventListener('click', borrarItemCarrito);
-                        // Mezclamos nodos
-                        miNodo.appendChild(miBoton);
-                        DOMcarrito.appendChild(miNodo);
-                    });
-                }
-                
-                /**
-                 * Evento para borrar un elemento del carrito
-                 */
-                function borrarItemCarrito(evento) {
-                    // Obtenemos el producto ID que hay en el boton pulsado
-                    const id = evento.target.dataset.item;
-                    // Borramos todos los productos
-                    carrito = carrito.filter((carritoId) => {
-                        return carritoId !== id;
-                    });
-                    // volvemos a renderizar
-                    renderizarCarrito();
-                    // Calculamos de nuevo el precio
-                    calcularTotal();
-                }
-                
-                /**
-                 * Calcula el precio total teniendo en cuenta los productos repetidos
-                 */
-                function calcularTotal() {
-                    // Limpiamos precio anterior
-                    total = 0;
-                    // Recorremos el array del carrito
-                    carrito.forEach((item) => {
-                        // De cada elemento obtenemos su precio
-                        const miItem = baseDeDatos.filter((itemBaseDatos) => {
-                            return itemBaseDatos.id === parseInt(item);
-                        });
-                        total = total + miItem[0].precio;
-                    });
-                    // Renderizamos el precio en el HTML
-                    DOMtotal.textContent = total.toFixed(2);
-                }
-                
-                /**
-                 * Varia el carrito y vuelve a dibujarlo
-                 */
-                function vaciarCarrito() {
-                    // Limpiamos los productos guardados
-                    carrito = [];
-                    // Renderizamos los cambios
-                    renderizarCarrito();
-                    calcularTotal();
-                }
-                
-                // Eventos
-                DOMbotonVaciar.addEventListener('click', vaciarCarrito);
-                
-                // Inicio
-                renderizarProductos();
-                </script>
+           
 
     <%- include("../partials/footer.ejs") %>
 </body>

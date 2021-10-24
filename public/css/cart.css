@@ -56,8 +56,8 @@ ul , ol{
     visibility: hidden;
     background-color: #333333;
     opacity: 0;
-    transition: opacity 1s; 
-    z-index: 5;
+  /*  transition: opacity 1s; 
+    z-index: 5;*/
 }
 .submenu li a{
     display: block;
@@ -123,7 +123,7 @@ ul , ol{
 }
 
 /*formulario*/
-.entrega {
+/*.entrega {
     text-align: center;
     padding: 1em;
 }
@@ -138,7 +138,7 @@ ul , ol{
     color: var(--texto);
     text-decoration: underline;
     cursor: pointer;
-}
+}*/
 
 
 
