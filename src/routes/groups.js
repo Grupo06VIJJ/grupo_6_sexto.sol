@@ -3,7 +3,7 @@ const router = express.Router();
 const multer = require('multer');
 const path = require('path');
 const controller = require('../controllers/groupsController');
-// guardar en multer
+
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
         cb(null, path.join(__dirname, '../public/img/groups'));
@@ -17,7 +17,7 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage });
 
-// Todos los grupos crud
+// Todos los grupos
 router.get('/', controller.index);
 
 // Formulario de creación

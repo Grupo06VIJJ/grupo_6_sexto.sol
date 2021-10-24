@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const jsonTable = require('../database/jsonTable');
+const jsonTable = require('../db/jsonTable');
 
 const groupsModel = jsonTable('groups');
 
