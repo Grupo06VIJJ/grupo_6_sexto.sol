@@ -30,7 +30,7 @@ app.use("/products", productsRoutes);
 app.use("/", mainRoutes);
 app.use(session({secret:"secreto"}));
 /* rutas Crud*/
-/*app.use("/groups", groupsRoutes);*/
+app.use("/groups", groupsRoutes);
 
 app.listen(process.env.PORT || 3000, function() {
     console.log(`Servidor corriendo en puerto 3000`);

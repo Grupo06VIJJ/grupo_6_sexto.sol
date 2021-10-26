@@ -1,9 +1,10 @@
 const express = require("express");
 const router = express.Router();
 /*get home page*/
-router.get= require('/',req,res, next) {
+router.get= require('/',req,res, next) 
+{
     res.render('index', {title: 'Express'});
-};
+}
 
 router.get('/ pruebaSession', function (req,res){
  if (req.session.numeroVisitas==undefined) {

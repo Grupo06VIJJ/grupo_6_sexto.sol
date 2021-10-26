@@ -176,6 +176,7 @@ body div.mensaje i {
 @media (min-width: 769px) {
     main .products article {
         width: 22%;
+        height: auto;/*ver si hace que no se deforme imagen vale*/
     }
 }
 
