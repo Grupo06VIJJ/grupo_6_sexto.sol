@@ -35,7 +35,7 @@ body {
     margin-right: auto;
 }
 
-.formulario-de-login .input-contenedor {
+.formulario-de-login,.input-contenedor {
     border: none;
     outline: none;
     margin-bottom: .5em;
