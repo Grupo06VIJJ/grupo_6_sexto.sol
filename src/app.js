@@ -7,6 +7,7 @@ const usersRoutes = require("./routes/usersRoutes.js");
 const productsRoutes = require("./routes/productsRoutes.js");
 const mainRoutes = require("./routes/mainRoutes.js");
 const groupsRoutes=require('./routes/groupsRoutes.js');
+var session= require( "express-session");
 
 app.set('view engine', 'ejs');
 app.set('views', path.resolve(__dirname, 'views'));
@@ -27,7 +28,7 @@ app.use("/products", productsRoutes);
 
 //Home y variados
 app.use("/", mainRoutes);
-
+app.use(session({secret:"secreto"}));
 /* rutas Crud*/
 /*app.use("/groups", groupsRoutes);*/
 
