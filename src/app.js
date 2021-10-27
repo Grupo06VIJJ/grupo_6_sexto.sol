@@ -28,9 +28,9 @@ app.use("/products", productsRoutes);
 
 //Home y variados
 app.use("/", mainRoutes);
-app.use(session({secret:"secreto"}));
+/*app.use(session({secret:"secreto"}));*/
 /* rutas Crud*/
-app.use("/groups", groupsRoutes);
+app.use("/groups", groupsRoutes);/*esta carpeta deberia tener edit...)*/
 
 app.listen(process.env.PORT || 3000, function() {
     console.log(`Servidor corriendo en puerto 3000`);
