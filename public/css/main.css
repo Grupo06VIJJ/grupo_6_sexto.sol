@@ -79,7 +79,7 @@ main section article i:hover {
 /*HOVER CAMIONCITO*/
 
 main .box-price {
-    display: flex;
+    display:flex;
 }
 
 main .price {
@@ -169,6 +169,10 @@ body div.mensaje i {
     main section article {
         box-shadow: 0px 0px 14px rgb(100, 100, 100);
     }
+}
+.description{
+    color:#39b54a;
+   
 }
 
 /*en vista desktop se deben ver los cuatro productos*/

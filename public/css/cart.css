@@ -2,7 +2,7 @@
 /*header*/
 body{
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     justify-content: space-between;
 }
 
@@ -135,7 +135,6 @@ ul , ol{
     padding: 20px;
   }
   
-  
 /*botones*/
 .cart-button{
     display: flex;
@@ -143,12 +142,7 @@ ul , ol{
     border-radius: 5px;
     font-size: 1.5em;
 }
-.cart-button button:hover{
-    background-color: green;
-}
-.cart-button a{
-    color:black;
-}
+
 .resumen button {
     margin: 10px;
     width: 100%;
