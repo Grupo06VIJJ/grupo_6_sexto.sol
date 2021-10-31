@@ -69,14 +69,33 @@ ul , ol{
 }
 .product-cart{
     margin-left: 30px;
+   
+}
 
+.cantidad-producto{ 
+    font-size: 1.2em;
+
+}
+
+.boton-eliminar{
+    font-weight: bold;
+    color: brown
 }
 
 .precio-cantidad{ font-weight: bold;
 
 }
 
+.total{ border-radius: 5px;
+    font-weight: bold;
+    background-color:#bdecb6;
+    height: 1.3em;
 
+}
+.enlace{
+    text-decoration: underline;
+    color:green
+}
 @media (min-width:851px){
     .header-box{
         display: flex;
@@ -147,7 +166,7 @@ ul , ol{
     margin: 10px;
     width: 100%;
   }
-.cart-button1 {
+.boton-pagar {
     display:inline-block;
     background-color: #f49f46;
     color: white;
@@ -158,7 +177,7 @@ ul , ol{
     padding: 2% 10%;
     border: none;
   }
-  .cart-button2 {
+  .boton-compraFinalizada {
     display:inline-block;
     background-color: #f4a04600;
     color: #ca771e;

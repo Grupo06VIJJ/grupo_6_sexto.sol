@@ -29,7 +29,9 @@
 .instagram,.facebook,.twitter,.sobre,.telefono{
     display: flex;
 }
-
+.instagram{
+    color:brown;
+}
 .texto-instagram,.texto-facebook,.texto-twitter,.email,.numero-telefono{
     margin-left: 6px;
 }
