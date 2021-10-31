@@ -7,16 +7,17 @@
 }
 
 .footer{
-    margin-top:15px ;
+    margin-left: 10px;
+    margin-top:10px ;
     background-color: rgb(255, 203, 203);
     display: flex;
-    padding: 20px;
+    padding: 15px;
     justify-content: space-around;
     text-decoration: none;
     font-weight: normal;
     color: black;
     border-top: solid 5px brown;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .items{
@@ -25,17 +26,19 @@
 
 .nosotros,.visitanos,.redes,.contacto{
     display: block;
-    font-size: 0.6em;
+    font-size: 1em;
 }
 
 .instagram,.facebook,.twitter,.sobre,.telefono{
     display:flex;
+    text-align: center;
 }
 .fa-instagram{
 color: #bc1888;
 }
 .texto-instagram,.texto-facebook,.texto-twitter,.email,.numero-telefono{
     margin-left: 6px;
+    font-size: 0.8em;
 }
 
 .cierre{
