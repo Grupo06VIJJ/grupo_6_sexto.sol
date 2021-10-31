@@ -7,6 +7,7 @@
 }
 
 .footer{
+    margin-top:15px ;
     background-color: rgb(255, 203, 203);
     display: flex;
     padding: 20px;
@@ -39,7 +40,7 @@ color: #bc1888;
 .cierre{
     background-color: rgb(255, 176, 176);
     text-align: center;
-    padding: 15px 0px;
+    padding: 10px 0px;
 }
 
 /* FOOTER */

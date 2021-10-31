@@ -1,23 +1,13 @@
-/*completar para la tienda*/
 
-/*header*/
+/*son los botones de crear nuevo producto y volver*/
+.header-list {
+    color: green;
+    font-size: 1.2em;
+}
 body{
     margin-top: auto;
     padding-top: 30px;
-    display:flexbox;
+    display:flex;
     flex-direction:column;
     justify-content: space-between;
-}
-
-/*header*/
-.footer-cart {
-    background-color: var(--primario);
-    color: white;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: .2em;
-    text-align: center;
-    font-weight: bold;
 }

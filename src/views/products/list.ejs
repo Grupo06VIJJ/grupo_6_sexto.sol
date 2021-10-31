@@ -11,7 +11,7 @@
      
             <% if (productList == "") { %>
             
-                
+                < h1 class="header-list">
                     <p>No hay productos ingresados </p> 
                        <a href="/products/create">Rapido, sube alguno!</a>
                    </h1>
@@ -32,7 +32,7 @@
                                 Eliminar
                             </button>
                         </form>
-                        
+                       
                         <form action="/products/<%=productList[i].id %>/update" method="GET">
                             <button type="submit">
                                 Modificar
@@ -41,9 +41,12 @@
                     <% } %>
                 </ul>
             <% } %>
-            <a href="/products/create">Crear nuevo producto</a>
-            <a href="/">volver</a>
-
+            
+            
+<h1 class="header-list">
+    <a href="/products/create">Crear nuevo producto</a>
+    <a href="/">volver</a>
+</h1>
     </main>
 
     <%- include("../partials/footer.ejs") %>

@@ -6,10 +6,19 @@ body{
     justify-content: space-between;
 }
 
-
+/*header*/
+.header-cart {
+    background-color: var(--primario);
+    color: white;
+    position: fixed;
+    width: 100%;
+    padding: .2em;
+    text-align: center;
+    font-weight: bold;
+}
 .header-box{    
     margin: auto;
-    width:90%;
+    width:100%;
     display:none;
     justify-content: space-between;
     align-items: center;
