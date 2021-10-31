@@ -1,4 +1,4 @@
-const express = require('express');
+/*const express = require('express');
 const router = express.Router();
 const multer = require('multer');
 const path = require('path');
@@ -29,4 +29,4 @@ router.post('/', upload.single('group-image'), controller.store);
 // Detalle de un grupo
 router.get('/:id', controller.show);
 
-module.exports = router;
+module.exports = router;*/

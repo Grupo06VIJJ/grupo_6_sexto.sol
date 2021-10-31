@@ -6,8 +6,8 @@ const methoOverride = require("method-override");
 const usersRoutes = require("./routes/usersRoutes.js");
 const productsRoutes = require("./routes/productsRoutes.js");
 const mainRoutes = require("./routes/mainRoutes.js");
-const groupsRoutes=require('./routes/groupsRoutes.js');
-var session= require( "express-session");
+/*const groupsRoutes=require('./routes/groupsRoutes.js');*/
+/*var session= require( "express-session");*/
 
 app.set('view engine', 'ejs');
 app.set('views', path.resolve(__dirname, 'views'));
@@ -30,7 +30,7 @@ app.use("/products", productsRoutes);
 app.use("/", mainRoutes);
 /*app.use(session({secret:"secreto"}));*/
 /* rutas Crud*/
-app.use("/groups", groupsRoutes);/*esta carpeta deberia tener edit...)*/
+/*app.use("/groups", groupsRoutes);/*esta carpeta deberia tener edit...)*/
 
 app.listen(process.env.PORT || 3000, function() {
     console.log(`Servidor corriendo en puerto 3000`);
