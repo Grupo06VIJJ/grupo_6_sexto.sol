@@ -9,7 +9,7 @@ let usersController = {
     login: (req, res) => {
         res.render('users/login');
     },
-    //pantalla desp de loguearse
+    /*pantalla desp de loguearse, falta el if si ya se logueó*/
     logged: (req, res) => {
         res.render('users/logged');
     },
