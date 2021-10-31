@@ -18,17 +18,20 @@ body {
 }
 
 .formulario-de-login .titulo {
+    margin-top: 20px;
     color: var(--texto);
     font-size: 1.5rem;
     margin-bottom: 1em;
 }
 
 .formulario-de-login input[type="email"],
-.formulario-de-login input[type="password"] {
+.formulario-de-login input[type="password"],
+.formulario-de-login input[type="password-repeat"] {
     font-family: 'Roboto', sans-serif;
     border: none;
     outline: none;
     width: 80%;
+    padding-top: 1em;
     padding: .5em;
     font-size: 1rem;
     margin-left: auto;
@@ -76,9 +79,12 @@ body {
     text-align: center;
     padding: 1em;
 }
-
+.enlace{
+font-weight: bold;
+}
 .formulario-de-login .enlace {
-    color: var(--texto);
+    
+    color: green;
     transition: all 350ms;
     text-decoration: none;
 }

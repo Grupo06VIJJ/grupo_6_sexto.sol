@@ -2,14 +2,14 @@
 
 /*header*/
 body{
-    display: flex;
-    flex-direction: column;
+    margin-top: auto;
+    padding-top: 30px;
+    display:flexbox;
+    flex-direction:column;
     justify-content: space-between;
 }
 
-
-  
-
+/*header*/
 .footer-cart {
     background-color: var(--primario);
     color: white;
