@@ -168,6 +168,7 @@ ul , ol{
   }
 .boton-pagar {
     display:inline-block;
+    align-content: center;
     background-color: #f49f46;
     color: white;
     border-radius: 45px;
@@ -179,6 +180,7 @@ ul , ol{
   }
   .boton-compraFinalizada {
     display:inline-block;
+    text-align: center;
     background-color: #f4a04600;
     color: #ca771e;
     border-radius: 45px;

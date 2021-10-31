@@ -15,7 +15,7 @@
     font-weight: normal;
     color: black;
     border-top: solid 5px brown;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 .items{
@@ -27,10 +27,10 @@
 }
 
 .instagram,.facebook,.twitter,.sobre,.telefono{
-    display: flex;
+    display:flex;
 }
-.instagram{
-    color:brown;
+.fa-instagram{
+color: #bc1888;
 }
 .texto-instagram,.texto-facebook,.texto-twitter,.email,.numero-telefono{
     margin-left: 6px;

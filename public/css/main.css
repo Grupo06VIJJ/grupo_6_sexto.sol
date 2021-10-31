@@ -51,16 +51,16 @@ main article div.main-article {
 }
 
 main section article img {
-    width: 100%;
+    width: 170px;
     border-radius: 8px;
-    height: 320px;
+    height: 200px;
 }
 
 main section article i {
     font-size: 16px;
     padding: 5px;
     width: 30px;
-    height: 30px;
+    height: 20px;
     border: 1px solid #39b54a;
     background-color: white;
     border-radius: 50%;
