@@ -8,7 +8,7 @@ section.banner-top{
 
 section.banner-top img {
     width: 85%;
-    height: 200px;
+    height: 150px;
     border: 5px #fdd3d3 solid;
     box-shadow: 0px 0px 14px rgb(100, 100, 100);
     margin-bottom: 25px;
@@ -68,7 +68,8 @@ main section article i {
     transition: 0.7s;
 }
 .search bar{
-    display: flex;
+    display: block;
+    height: 35px;
 }
 /*HOVER CAMIONCITO*/
 
@@ -133,7 +134,7 @@ section.banner-bottom img {
     bottom: 30px;
     right: 30px;
     width: 90px;
-    height: 90px;
+    height: 70px;
     border: 5px solid brown;
     background-color: rgb(255, 182, 182);
     border-radius: 50%;
@@ -150,7 +151,7 @@ body div.mensaje i {
 .mensaje:hover {
     box-shadow: 0 0 5px rgb(230, 47, 47);
     cursor: pointer;
-    transform: scale(1.15);
+    transform: scale(0.90);
 }
 
 /* MENSAJE */
