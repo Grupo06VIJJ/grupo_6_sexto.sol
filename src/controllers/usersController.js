@@ -78,4 +78,6 @@ let usersController = {
         res.redirect('/users/list');
     }
 }
+
+/*multer*/
 module.exports = usersController;

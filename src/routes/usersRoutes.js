@@ -4,8 +4,8 @@ const usersController = require("../controllers/usersController");
 const path = require('path');
 /*const {check, body, validationResult} = require('express-validator');
 const guestMiddleware = require ('../middlewares/guestMiddleware');
-const logMiddleware = require ('../middlewares/logMiddleware');
-const multer = require('multer');*/
+const logMiddleware = require ('../middlewares/logMiddleware');*/
+const multer = require('multer');
 
 
 
@@ -52,7 +52,7 @@ router.delete("/delete/:id", usersController.delete);
     return true;
   })];
 
-//Configuramos carpeta para guardar imagenes de usuarios
+/*Configuramos carpeta para guardar imagenes de usuarios*/
 const multerDiskStorage = multer.diskStorage({
     destination: (req, file, callback) =>{
         let folder = path.join(__dirname, `../../public/img/users`);
@@ -63,9 +63,9 @@ const multerDiskStorage = multer.diskStorage({
         const imageName = `img-${userName.toLowerCase().replace(/ /g, '-')}-${Date.now().toString().slice(8)}${path.extname(file.originalname)}`;
         callback(null,imageName);
     }
-})*/
+})
 
-// de que el archivo recibido es una imagen
+/* de que el archivo recibido es una imagen*/
 /*const fileUpload = multer({
     storage: multerDiskStorage,
     fileFilter: function (req, file, callback) {
