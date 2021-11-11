@@ -3,6 +3,8 @@ const fs = require("fs");
 const { json } = require('express');
 const path = require('path');
 const { stringify } = require('querystring');
+const bcrypt = require('bcrypt');
+const { validationResult } = require('express-validator');
 
 let usersController = {
     // pantalla de login
@@ -67,7 +69,6 @@ let usersController = {
         for(let i =0; i < userList.length; i++){
             if(userList[i].email == req.params.id){
                 userList[i].name = req.body.name;
-                
             }
         }
         
@@ -76,7 +77,5 @@ let usersController = {
 
         res.redirect('/users/list');
     }
-
-    
 }
 module.exports = usersController;
