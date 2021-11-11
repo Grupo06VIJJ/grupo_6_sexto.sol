@@ -1,4 +1,4 @@
-const fs = require('fs');
+/*const fs = require('fs');
 const path = require('path');
 const usersPath = path.join(__dirname, '../db/usuarios.json');
 
@@ -10,6 +10,6 @@ const remember = (req, res, next) => {
         req.session.user = loggedUser;
     }
     next();
-}
+}*/
 
 module.exports = router;

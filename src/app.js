@@ -3,7 +3,7 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const methoOverride = require("method-override");
-const session= require( "express-session");
+/*const session= require( "express-session");
 const cookieParser = require('cookie-parser');
 
 /*requerir rutas*/
@@ -33,7 +33,7 @@ app.use("/products", productsRoutes);
 
 //Home y variados
 app.use("/", mainRoutes);
-app.use(session({secret:"secreto"}));
+/*app.use(session({secret:"secreto"}));
 
 //Configuración de session
 /*app.use(session({
@@ -43,7 +43,7 @@ app.use(session({secret:"secreto"}));
 }));*/
 
 //Configuración de cookies
-app.use(cookieParser());
+/*app.use(cookieParser());
 
 //Verificando si hay cookie con usuario
 /*app.use(recordarUsuario);*/

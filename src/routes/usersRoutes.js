@@ -2,10 +2,10 @@ const express = require("express");
 const router = express.Router();
 const usersController = require("../controllers/usersController");
 const path = require('path');
-const {check, body, validationResult} = require('express-validator');
+/*const {check, body, validationResult} = require('express-validator');
 const guestMiddleware = require ('../middlewares/guestMiddleware');
 const logMiddleware = require ('../middlewares/logMiddleware');
-const multer = require('multer');
+const multer = require('multer');*/
 
 
 
@@ -33,7 +33,7 @@ router.delete("/delete/:id", usersController.delete);
 //Validaciones
  //de formulario de registro
 
-const validateRegister = [
+/*const validateRegister = [
     body('user')
         .isLength({min: 4}).withMessage('Debes colocar un nombre válido'),
     body('lastname')
@@ -44,7 +44,7 @@ const validateRegister = [
         .isStrongPassword({minSymbols: 0, minLength: 8}).withMessage('Escribe una contraseña válido')    
 ];
 //Validar que la contraseña y la confirmacion de la contraseña coincidan
- const validatePassword = [ 
+ /*const validatePassword = [ 
      body('passwordConfirm').custom(( value, { req }) => {
         if (value !== req.body.password) {
             throw new Error('Las contraseñas introducidas no coinciden');
@@ -63,10 +63,10 @@ const multerDiskStorage = multer.diskStorage({
         const imageName = `img-${userName.toLowerCase().replace(/ /g, '-')}-${Date.now().toString().slice(8)}${path.extname(file.originalname)}`;
         callback(null,imageName);
     }
-})
+})*/
 
 // de que el archivo recibido es una imagen
-const fileUpload = multer({
+/*const fileUpload = multer({
     storage: multerDiskStorage,
     fileFilter: function (req, file, callback) {
         const errors = validationResult(req)
@@ -80,7 +80,7 @@ const fileUpload = multer({
             callback(null, true)
         }
     }
-})
+})*/
 
 
 
