@@ -1,50 +1,77 @@
-/* FOOTER */
-
-.footer h3{
-    font-size: 4empx;
-    margin-bottom: 10px;
-    color:brown;
-}
-
-.footer{
-    margin-left: 10px;
-    margin-top:10px ;
-    background-color: rgb(255, 203, 203);
+.main-footer {
+    background-color: #1a1a1a;
     display: flex;
-    padding: 15px;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: solid 5px tomato;
+    padding: 1em;
+    color: white;
+    text-align: center;
+}
+
+.main-footer .item-footer {
+    margin-bottom: 2em;
+    padding: 1em;
+}
+
+.main-footer .titulo-footer {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+.main-footer .enlace-redes-footer {
+    color: white;
+    font-size: .9rem;
+}
+
+.main-footer .item-footer .sobre-nosotros a {
+    color: white;
     text-decoration: none;
+}
+
+.main-footer .item-footer .sobre-nosotros a:hover {
+    color: tomato;
+}
+
+.main-footer .item-footer .redes-sociales a {
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+}
+
+.main-footer .item-footer .redes-sociales a:hover {
+    color: tomato;
+}
+
+.main-footer .item-footer .footer-visitanos {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+.main-footer .item-footer .texto-visitanos {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
     font-weight: normal;
-    color: black;
-    border-top: solid 5px brown;
-    padding-bottom: 10px;
 }
 
-.items{
-    margin: 5px 0px;
+.main-footer .item-footer .footer-visitanos .fas {
+    font-size: 1.5rem;
 }
 
-.nosotros,.visitanos,.redes,.contacto{
-    display: block;
-    font-size: 1em;
-}
-
-.instagram,.facebook,.twitter,.sobre,.telefono{
-    display:flex;
+.copy-footer {
+    background-color: #1a1a1a;
+    padding: 1em;
+    color: white;
     text-align: center;
 }
-.fa-instagram{
-color: #bc1888;
-}
-.texto-instagram,.texto-facebook,.texto-twitter,.email,.numero-telefono{
-    margin-left: 6px;
-    font-size: 0.8em;
-}
 
-.cierre{
-    background-color: rgb(255, 176, 176);
-    text-align: center;
-    padding: 10px 0px;
-}
 
-/* FOOTER */
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 992px) {
+    .main-footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

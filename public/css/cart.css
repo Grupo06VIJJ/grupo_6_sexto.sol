@@ -1,12 +1,14 @@
-
-/*header*/
+/*header
 body{
     display: flex;
     flex-direction:column;
     justify-content: space-between;
 }
+*/
+
 
 /*header*/
+
 .header-cart {
     background-color: var(--primario);
     color: white;
@@ -16,105 +18,115 @@ body{
     text-align: center;
     font-weight: bold;
 }
-.header-box{    
+
+.header-box {
     margin: auto;
-    width:100%;
-    display:none;
+    width: 100%;
+    display: none;
     justify-content: space-between;
     align-items: center;
     font-size: 1.5em;
-    font-family: Arial, Helvetica, sans-serif;  
+    font-family: Arial, Helvetica, sans-serif;
 }
-.link-to-home, .logotipo{
+
+.link-to-home,
+.logotipo {
     width: 100px;
     height: 100px;
-    border-radius: 50%;   
-}
-.logotipo{
-    align-items:center;
-    justify-content:center
+    border-radius: 50%;
 }
 
-    .main-navbar{
-        margin-left: 10px;
-display:flex;
-    }
+.logotipo {
+    align-items: center;
+    justify-content: center
+}
 
-    .right-navbar{
-        padding-top: 30px;
-display: inline-block;
-    };
+.main-navbar {
+    margin-left: 10px;
+    display: flex;
+}
 
-ul , ol{
+.right-navbar {
+    padding-top: 30px;
+    display: inline-block;
+}
+
+;
+ul,
+ol {
     list-style: none;
 }
-.nav , li {
+
+.nav,
+li {
     position: relative;
-   
-   
 }
-.nav ,li , a {
-    display:inline-block;
+
+.nav,
+li,
+a {
+    display: inline-block;
     padding: 15px 15px;
     color: #353535;
 }
-    
-.submenu{
+
+.submenu {
     position: absolute;
     width: 120%;
     visibility: hidden;
     background-color: #333333;
     opacity: 0;
-  /*  transition: opacity 1s; 
+    /*  transition: opacity 1s; 
     z-index: 5;*/
 }
-.submenu li a{
+
+.submenu li a {
     display: block;
     padding: 15px;
     position: relative;
     color: white;
     text-decoration: none
-       
 }
-.product-cart{
+
+.product-cart {
     margin-left: 30px;
-   
 }
 
-.cantidad-producto{ 
+.cantidad-producto {
     font-size: 1.2em;
-
 }
 
-.boton-eliminar{
+.boton-eliminar {
     font-weight: bold;
     color: brown
 }
 
-.precio-cantidad{ font-weight: bold;
-
-}
-
-.total{ border-radius: 5px;
+.precio-cantidad {
     font-weight: bold;
-    background-color:#bdecb6;
-    height: 1.3em;
+}
 
+.total {
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #bdecb6;
+    height: 1.3em;
 }
-.enlace{
+
+.enlace {
     text-decoration: underline;
-    color:green
+    color: green
 }
-@media (min-width:851px){
-    .header-box{
+
+@media (min-width:851px) {
+    .header-box {
         display: flex;
-      }  
+    }
 }
 
 
 /*cartbox*/
 
-.cart-box{
+.cart-box {
     position: relative;
     border: 2px black dotted;
     border-radius: 10px;
@@ -123,37 +135,42 @@ ul , ol{
     background-color: rgba(176, 212, 90, 0.932);
     margin: 80px auto;
     padding: 0px 0px 0px 0px;
-    
 }
-.cart-box .title{
+
+.cart-box .title {
     font-weight: 600;
     text-align: left;
-    font-size: 24px;;
+    font-size: 24px;
+    ;
     padding: 10px 15px;
 }
-.cart-box img{
+
+.cart-box img {
     width: 124px;
     height: 124px;
 }
-.cart-box article{
+
+.cart-box article {
     border-top: 1px black solid;
-    
-    padding:10px 0px;
+    padding: 10px 0px;
 }
 
-.cart-box .product-picture-detail{
+.cart-box .product-picture-detail {
     display: flex;
     align-items: flex-start;
 }
-.cart-box .product-detail > div{
+
+.cart-box .product-detail>div {
     display: block;
     padding: 10px 5px;
 }
-.cart-box .product-action ul{
-    padding: 15px 20px;    
+
+.cart-box .product-action ul {
+    padding: 15px 20px;
 }
-.cart-box .product-action ul li{
-    display: inline;    
+
+.cart-box .product-action ul li {
+    display: inline;
 }
 
 .resumen {
@@ -161,10 +178,12 @@ ul , ol{
     width: 40vw;
     margin: 25px;
     padding: 20px;
-  }
-  
+}
+
+
 /*botones*/
-.cart-button{
+
+.cart-button {
     display: flex;
     background-color: rgb(228, 49, 49);
     border-radius: 5px;
@@ -174,9 +193,10 @@ ul , ol{
 .resumen button {
     margin: 10px;
     width: 100%;
-  }
+}
+
 .boton-pagar {
-    display:inline-block;
+    display: inline-block;
     align-content: center;
     background-color: #f49f46;
     color: white;
@@ -186,9 +206,10 @@ ul , ol{
     width: auto;
     padding: 2% 10%;
     border: none;
-  }
-  .boton-compraFinalizada {
-    display:inline-block;
+}
+
+.boton-compraFinalizada {
+    display: inline-block;
     text-align: center;
     background-color: #f4a04600;
     color: #ca771e;
@@ -198,11 +219,11 @@ ul , ol{
     width: auto;
     padding: 2% 10%;
     border: 2px solid #ca771e;
-  }
+}
 
-  
-  
+
 /*cart box*/
+
 .footer-cart {
     background-color: var(--primario);
     color: white;
