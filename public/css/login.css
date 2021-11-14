@@ -23,7 +23,11 @@ body {
     font-size: 1.5rem;
     margin-bottom: 1em;
 }
-
+.formulario-de-registro .campo-obligatorio{ 
+    font-weight: lighter;
+    font-size: 0.2;
+    color:red
+}
 .formulario-de-login input[type="email"],
 .formulario-de-login input[type="password"],
 .formulario-de-login input[type="password-repeat"] {
