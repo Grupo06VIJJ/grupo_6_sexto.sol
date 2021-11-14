@@ -102,6 +102,16 @@ font-weight: bold;
 .otros-accesos{
     font-size: .8rem;
 }
+/*facebook y google*/
+.alt-login{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+.media-login{
+    display: flex;
+    justify-content: space-evenly;
+}
 
 .footer-login {
     background-color: var(--primario);
