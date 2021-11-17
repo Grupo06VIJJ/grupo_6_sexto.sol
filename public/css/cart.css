@@ -1,14 +1,3 @@
-/*header
-body{
-    display: flex;
-    flex-direction:column;
-    justify-content: space-between;
-}
-*/
-
-
-/*header*/
-
 .header-cart {
     background-color: var(--primario);
     color: white;

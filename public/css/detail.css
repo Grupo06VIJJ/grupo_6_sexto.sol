@@ -1,0 +1,13 @@
+.mi-btn-detail,
+.mi-btn-detail:visited {
+    width: 300px;
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    outline: none;
+    transition: all 350ms;
+}
+
+.mi-btn-detail:hover {
+    background-color: tomato;
+}

@@ -1,12 +1,15 @@
 .main-footer {
     background-color: #1a1a1a;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-top: solid 5px tomato;
     padding: 1em;
     color: white;
     text-align: center;
+    margin-top: 5em;
+}
+
+.flex-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .main-footer .item-footer {
@@ -61,7 +64,6 @@
 
 .copy-footer {
     background-color: #1a1a1a;
-    padding: 1em;
     color: white;
     text-align: center;
 }
@@ -70,7 +72,7 @@
 /* MEDIA QUERIES */
 
 @media only screen and (min-width: 992px) {
-    .main-footer {
+    .flex-cont {
         flex-direction: row;
         justify-content: space-between;
     }

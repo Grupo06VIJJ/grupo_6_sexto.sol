@@ -7,12 +7,14 @@
 @import url('/css/register.css');
 @import url('/css/cart.css');
 @import url('/css/list.css');
+@import url('/css/detail.css');
 
 /* ROOT */
 
 :root {
-    --primario: rgb(255, 82, 82);
+    --primario: rgb(255, 99, 71);
     --texto: rgb(30, 30, 30);
+    --fondo: rgb(245, 245, 245)
 }
 
 * {
@@ -23,18 +25,9 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: var(--gama-1);
+    background-color: var(--fondo);
     color: var(--texto);
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(255, 227, 230);
-    height: 100vh;
+    min-height: 100vh;
 }
-
-.banner-top,.banner-bottom,main {
-    width:90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-

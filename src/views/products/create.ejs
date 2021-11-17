@@ -1,44 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <%- include("../partials/head.ejs")%>
-<body>
-    <%- include("../partials/header.ejs")%>
-    <main>
-        <section>
-            <div>
-                &nbsp;
-                <h2 clas= form-ingreso>Ingrese un producto nuevo</h2>
-                <form action="/products/create" method="POST">
-    
-                    <label>Nombre del producto</label>
-                    <input type="text" name ="productName">
-                    <br>
-                    <label>Descripcion del producto</label>
-                    <input type="text" name ="productDescription">
-                    <br>    
-                    <label>Imagen del producto</label>
-                    <input type="file" name ="productFile">
-                    <br>
-                    <label>Categoria</label>
-                    <input type="text" name ="productCategory">
-                    <br>
-                    <label>Talle del producto</label>
-                    <input type="text" name ="productSize">
-                    <br>
-                    <label>Precio del producto</label>
-                    <input type="text" name ="productPrice">
-                    <br>
-                    <button type="submit">Cargar</button>
-                    <button type="reset">Reset</button>
-                </form>
-            </div>
-        </section>
-      
-        
-    </main>
-    <%- include("../partials/footer.ejs")%>
-</body>
+<%- include("../partials/head.ejs")%>
+
+    <body>
+        <%- include("../partials/header.ejs")%>
+            <main>
+                <section>
+                    <div>
+                        &nbsp;
+                        <h2 clas=form-ingreso>Ingrese un producto nuevo</h2>
+                        <form action="/products/create" method="POST">
+
+                            <label>Nombre</label>
+                            <input type="text" name="productName">
+                            <br>
+                            <label>Descripcion</label>
+                            <input type="text" name="productDescription">
+                            <br>
+                            <label>Imagen</label>
+                            <input type="file" name="productFile">
+                            <br>
+                            <label>Categoria</label>
+                            <input type="text" name="productCategory">
+                            <br>
+                            <label>Talle</label>
+                            <input type="text" name="productSize">
+                            <br>
+                            <label>Precio</label>
+                            <input type="text" name="productPrice">
+                            <br>
+                            <button type="submit">Cargar</button>
+                            <button type="reset">Reset</button>
+                        </form>
+                    </div>
+                </section>
+
+
+            </main>
+            <%- include("../partials/footer.ejs")%>
+    </body>
 
 
 

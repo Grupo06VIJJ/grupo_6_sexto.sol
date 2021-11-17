@@ -1,13 +1,33 @@
-
-/*son los botones de crear nuevo producto y volver*/
-.header-list {
-    color: green;
-    font-size: 1.2em;
+* {
+    margin: 0;
+    padding: 0;
 }
-body{
-    margin-top: auto;
-    padding-top: 30px;
-    display:flex;
-    flex-direction:column;
-    justify-content: space-between;
+
+.btn-accion {
+    border: none;
+    background-color: transparent;
+}
+
+.btn-accion-icono {
+    color: #212529;
+    transition: all 300ms;
+}
+
+.btn-accion-icono:hover {
+    color: tomato;
+}
+
+.mi-btn,
+.mi-btn:visited {
+    width: 300px;
+    background-color: #1a1a1a;
+    color: white;
+    outline: none;
+    border: none;
+    transition: all 350ms;
+    outline: none;
+}
+
+.mi-btn:hover {
+    background-color: tomato;
 }

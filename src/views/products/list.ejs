@@ -1,56 +1,166 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<%- include("../partials/head.ejs")%>
+<%- include("../partials/head-b.ejs")%>
 
-<body>
+    <body>
+        <%- include("../partials/header.ejs")%>
+            <!-- contenedor -->
+            <div class="container">
 
-    <%- include("../partials/header.ejs") %>
+                <!-- fila -->
+                <div class="row">
 
-    <main>
-     
-            <% if (productList == "") { %>
-            
-                < h1 class="header-list">
-                    <p>No hay productos ingresados </p> 
-                       <a href="/products/create">Rapido, sube alguno!</a>
-                   </h1>
-               <% } else{ %>  
-                   <h1>Listado de productos</h1>
-                       <ul>
-                           <% for (let i = 0; i< productList.length; i++) {%>
-                               <li>
-                                   <%= productList[i].name %>
-                                   <%= productList[i].desc %>
-                                   <%= productList[i].category %>
-                                   <% productList[i].img %>
-                                   <%= productList[i].size %>
-                                   <%= productList[i].price %>
-                        
-                        <form action="/products/<%=productList[i].id %>/delete?_method=delete" method="POST">
-                            <button type="submit">
-                                Eliminar
-                            </button>
-                        </form>
-                       
-                        <form action="/products/<%=productList[i].id %>/update" method="GET">
-                            <button type="submit">
-                                Modificar
-                            </button>
-                        </form>
-                    <% } %>
-                </ul>
-            <% } %>
-            
-            
-<h1 class="header-list">
-    <a href="/products/create">Crear nuevo producto</a>
-    <a href="/">volver</a>
-</h1>
-    </main>
+                    <!-- col -->
+                    <div class="col-12">
 
-    <%- include("../partials/footer.ejs") %>
-    
-</body>
+                        <h1 class="my-5">
+                            Listado de productos
+                        </h1>
+
+                    </div>
+
+                    <!-- col -->
+                    <div class="col-12 mb-5">
+
+                        <% if (productList=="" ) { %>
+
+                            <div class="col-12">
+                                <a type="button" class="mi-btn btn btn-primary btn-lg mb-5" href="/products/create">
+                                    Crear producto
+                                </a>
+                            </div>
+
+                            <% } else{ %>
+
+                                <div class="col-12">
+                                    <a type="button" class="mi-btn btn btn-primary btn-lg mb-5" href="/products/create">
+                                        Añadir producto
+                                    </a>
+                                </div>
+
+                                <% for (let i=0; i< productList.length; i++) {%>
+
+                                    <!-- Tabla -->
+                                    <div class="table-responsive">
+
+                                        <table class="table table-striped table-borderless">
+
+                                            <thead class="text-center">
+                                                <tr>
+                                                    <th scope="col">
+                                                        ID
+                                                    </th>
+                                                    <th scope="col">
+                                                        Nombre
+                                                    </th>
+                                                    <th scope="col">
+                                                        Descripción
+                                                    </th>
+                                                    <th scope="col">
+                                                        Imagen
+                                                    </th>
+                                                    <th scope="col">
+                                                        Categpria
+                                                    </th>
+                                                    <th scope="col">
+                                                        Talle
+                                                    </th>
+                                                    <th scope="col">
+                                                        Precio
+                                                    </th>
+                                                    <th scope="col">
+                                                        Editar
+                                                    </th>
+                                                    <th scope="col">
+                                                        Borrar
+                                                    </th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody class="text-center">
+                                                <tr>
+                                                    <th scope="row">
+                                                        <%= productList[i].id %>
+                                                    </th>
+                                                    <td>
+                                                        <%= productList[i].name %>
+                                                    </td>
+                                                    <td>
+                                                        <%= productList[i].desc %>
+                                                    </td>
+                                                    <td>
+                                                        <% productList[i].img %>
+                                                    </td>
+                                                    <td>
+                                                        <% productList[i].category %>
+                                                    </td>
+                                                    <td>
+                                                        <%= productList[i].size %>
+                                                    </td>
+
+                                                    <td>
+                                                        <%= productList[i].price %>
+                                                    </td>
+
+                                                    <td>
+                                                        <form action="/products/<%=productList[i].id %>/update" method="GET">
+                                                            <button type="submit" class="btn-accion">
+                                                                <i class="btn-accion-icono fas fa-edit"></i>
+                                                            </button>
+                                                        </form>
+                                                    </td>
+
+                                                    <td>
+                                                        <form action="/products/<%=productList[i].id %>/delete?_method=delete" method="POST">
+                                                            <button type="submit" class="btn-accion">
+                                                                <i class="btn-accion-icono fas fa-trash-alt"></i>
+                                                            </button>
+                                                        </form>
+                                                    </td>
+                                                    <% } %>
+
+                                                </tr>
+
+                                            </tbody>
+
+                                        </table>
+
+                                    </div>
+                                    <!-- Tabla -->
+                                    <% } %>
+                    </div>
+                    <!-- col -->
+
+
+
+
+
+                </div>
+                <!-- fila -->
+
+                <div class="col-12">
+                    <a type="button" class="mi-btn btn btn-primary btn-lg mb-5" href="/">
+                        Inicio
+                    </a>
+                </div>
+
+
+
+                <!-- fila -->
+                <div class="row">
+
+
+
+                </div>
+                <!-- fila -->
+
+            </div>
+            <!-- contenedor -->
+
+            <%- include("../partials/footer.ejs")%>
+
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
 
 </html>
