@@ -18,8 +18,9 @@ app.use('/', express.static(path.resolve(__dirname, '../public')));
 app.use("/users", usersRoutes);
 app.use("/products", productsRoutes);
 app.use("/", mainRoutes);
+
 //hashear contraseña
-/*app.use('/login', (req, res)=>{
+/*app.use('/users/login', (req, res)=>{
     const user=req.body.user;
     const password=req.body.password;
     if (user=='admin'&& password ='12345'{
