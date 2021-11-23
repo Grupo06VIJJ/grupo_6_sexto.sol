@@ -2,14 +2,14 @@ const express = require("express");
 const router = express.Router();
 const usersController = require("../controllers/usersController");
 const path = require('path');
-/*const {check, body, validationResult} = require('express-validator');
+const {check, body, validationResult} = require('express-validator');
 const guestMiddleware = require ('../middlewares/guestMiddleware');
-const logMiddleware = require ('../middlewares/logMiddleware');*/
+const logMiddleware = require ('../middlewares/logMiddleware');
 const multer = require('multer');
 
-
-
-
+/*----Middlewares---*/
+/*const fileUpload=require("../middlewares/multerMiddlewares");*/
+/*const validations=require("../middlewares/validateRegisterMiddlewares");*/
 /*----Rutas para vista de formulario de login----*/
 router.get("/login", usersController.login);
 router.post('/', usersController.logged);
@@ -18,6 +18,8 @@ router.post('/', usersController.logged);
 router.get('/register', usersController.register);
 router.post('/register', usersController.create);
 
+/*----Procesar el registro-----*/
+/*router.post('/register', fileUpload.single('avatar'),validations,usersController.processRegister);*/
 /* LIST*/
 router.get("/list", usersController.userList);
 router.delete("/delete/:id", usersController.delete);
@@ -44,13 +46,13 @@ router.delete("/delete/:id", usersController.delete);
         .isStrongPassword({minSymbols: 0, minLength: 8}).withMessage('Escribe una contraseña válido')    
 ];
 //Validar que la contraseña y la confirmacion de la contraseña coincidan
- /*const validatePassword = [ 
+ const validatePassword = [ 
      body('passwordConfirm').custom(( value, { req }) => {
         if (value !== req.body.password) {
             throw new Error('Las contraseñas introducidas no coinciden');
     }
     return true;
-  })];
+  })];*/
 
 /*Configuramos carpeta para guardar imagenes de usuarios*/
 const multerDiskStorage = multer.diskStorage({
@@ -80,8 +82,8 @@ const multerDiskStorage = multer.diskStorage({
             callback(null, true)
         }
     }
-})*/
-
+})
+*/
 
 
 

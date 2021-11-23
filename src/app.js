@@ -1,12 +1,13 @@
 const express = require('express');
 const path = require('path');
 const app = express();
+const session=require ('express-session');
 const bcrypt =require ('bcrypt');
 const methoOverride = require("method-override");
 const usersRoutes = require("./routes/usersRoutes.js");
 const productsRoutes = require("./routes/productsRoutes.js");
 const mainRoutes = require("./routes/mainRoutes.js");
-const res = require('express/lib/response');
+/*const res = require('express/lib/response');*/
 
 app.set('view engine', 'ejs');
 app.set('views', path.resolve(__dirname, 'views'));
