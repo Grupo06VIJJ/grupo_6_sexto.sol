@@ -1,9 +1,10 @@
-function adminMiddleware(req,res,next){
-    if(req.session.user.category == 'admin'){
-    next();
-    }else{
-    res.redirect('/');
-    }
+/*function adminMiddleware(req,res,next){
+        if (!req.session.userLogged) {
+            return res.redirect('/users/login');
+        }
+        next();
     }
     
-    module.exports = adminMiddleware;
+  
+    
+    module.exports = adminMiddleware;*/

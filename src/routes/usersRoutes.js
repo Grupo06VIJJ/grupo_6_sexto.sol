@@ -3,8 +3,8 @@ const router = express.Router();
 const usersController = require("../controllers/usersController");
 
 // Middlewares
-/*const uploadFile = require('../middlewares/multerMiddleware');
-const validations = require('../middlewares/validateRegisterMiddleware');
+const uploadFile = require('../middlewares/multerMiddleware');
+/*const validations = require('../middlewares/validateRegisterMiddleware');
 const guestMiddleware = require('../middlewares/guestMiddleware');
 const administradorMiddleware = require('../middlewares/administradorMiddleware');
 const logMiddleware = require('../middlewares/logMiddleware');
@@ -22,15 +22,18 @@ const logMiddleware = require('../middlewares/logMiddleware');
 
 
 // Perfil de Usuario
-/*router.get('/profile/', authMiddleware, usersController.profile);*/
+/*router.get('/profile', administradorMiddleware, usersController.profile);*/
 
 // Logout
 /*router.get('/logout/', usersController.logout);*/
+
 /*----Rutas para vista de formulario de login----*/
 router.get("/login", usersController.login);
 router.post('/', usersController.logged);
+
 // Procesar el login
 /*router.post('/login', usersController.loginProcess);*/
+
 /*----Rutas para vista de formulario de registro----*/
 router.get('/register', usersController.register);
 router.post('/register', usersController.create);
