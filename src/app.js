@@ -1,8 +1,8 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const session=require ('express-session');
-const bcrypt =require ('bcrypt');
+const session = require('express-session');
+const bcrypt = require('bcrypt');
 const methoOverride = require("method-override");
 const usersRoutes = require("./routes/usersRoutes.js");
 const productsRoutes = require("./routes/productsRoutes.js");
@@ -46,6 +46,10 @@ if (compare){
     res.json ('No son iguales');
 }
 });*/
+
+app.use((req, res, next) => {
+    res.status(404).render("pagina-no-encontrada")
+});
 
 app.listen(process.env.PORT || 3000, function() {
     console.log(`Servidor corriendo en puerto 3000`);
