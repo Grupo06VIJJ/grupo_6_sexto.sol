@@ -6,7 +6,7 @@ router.get= require('/',req,res, next)
     res.render('index', {title: 'Express'});
 }
 
-router.get('/ pruebaSession', function (req,res){
+/*router.get('/ pruebaSession', function (req,res){
  if (req.session.numeroVisitas==undefined) {
   req.session.numeroVisitas=0;
 }
@@ -14,4 +14,4 @@ router.get('/ pruebaSession', function (req,res){
   
 res.send ("session tiene el numero " + req.session.numeroVisitas)
 });
-module.exports = router;
+module.exports = router;*/
