@@ -77,9 +77,7 @@ let usersController = {
 
         res.redirect('/users/list');
     },
-    service: (req, res) => {
-        res.render('service')
-    },
+   
     // Login (POST) - Session de usuario
    /* processLogin: (req, res) => {
 

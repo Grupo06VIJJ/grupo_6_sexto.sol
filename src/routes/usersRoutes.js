@@ -44,6 +44,6 @@ router.post('/register', usersController.create);
 router.get("/list", usersController.userList);
 router.delete("/delete/:id", usersController.delete);
 
-router.get ("/service",usersController.service);
+
 
 module.exports = router;
