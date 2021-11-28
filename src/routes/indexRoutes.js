@@ -1,7 +1,7 @@
-/*const express = require("express");
+const express = require("express");
 const router = express.Router();
 /*get home page*/
-/*router.get= require('/',req,res, next) 
+router.get= require('/',req,res, next) 
 {
     res.render('index', {title: 'Express'});
 }
@@ -14,4 +14,4 @@ router.get('/ pruebaSession', function (req,res){
   
 res.send ("session tiene el numero " + req.session.numeroVisitas)
 });
-module.exports = router;*/
+module.exports = router;
