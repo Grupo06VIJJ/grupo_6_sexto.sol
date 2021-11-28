@@ -6,11 +6,22 @@
 <body>
 
     <%- include("../partials/header.ejs") %>
+    
     <a class="enlace" href="/views/preguntasfrecuentes">
         Preguntas Frecuentes
     </a>
     <h2>Cuánto demora el envío?</h2>
-            
+    
+    <div class="container">
+
+        <form>
+          <div class="form-floating mt-3 mb-3"> 
+            <textarea class="form-control" id="comentarios" name="comentarios" placeholder="comentarios"  style="height: 200px"></textarea>
+            <label for="comentarios">Deje aquí sus comentarios</label>        
+          </div> 
+          <button type="submit" class="btn btn-primary">Enviar</button>      
+        </form>   
+      </div>
         <!-- contenedor -->
         <%- include("../partials/footer.ejs")%>
 
