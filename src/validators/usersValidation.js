@@ -1,4 +1,4 @@
-/*const {check } = require ('express-validator'); //chequear campos de formulario loggin
+const {check } = require ('express-validator'); //chequear campos de formulario loggin
 const path = require('path');
 const { user } = require('../../db/users');
  
@@ -31,4 +31,4 @@ module.exports = {
             .isLength( {min: 8} ).withMessage("La contraseña debe tener 8 caracteres como mínimo"),
         ]
         
-}*/
+}
