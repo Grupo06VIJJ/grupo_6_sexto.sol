@@ -3,7 +3,7 @@ const fs = require("fs");
 const { json } = require('express');
 const path = require('path');
 const { stringify } = require('querystring');
-/*const bcrypt = require('bcrypt');*/
+const bcrypt = require('bcrypt');
 const { validationResult } = require('express-validator');
 
 let usersController = {
@@ -77,7 +77,6 @@ let usersController = {
 
         res.redirect('/users/list');
     },
-   
     // Login (POST) - Session de usuario
    /* processLogin: (req, res) => {
 

@@ -14,7 +14,6 @@
                 <input type="text" name="search" class="form-search" placeholder="Buscar productos">
                 </form>
                 <div><i class="fas fa-search"></i></div>
-                <a href="/">Regresar a inicio para seguir mirando</a>
             </div>
             <section>
                 <div class="header-box">
@@ -27,7 +26,6 @@
                 <li><a href="#">Vaciar el carrito<i class="fas fa-eraser"></i></a></li>
                 <li><a href="#">Pedidos guardados<i class="fas fa-cart-arrow-down"></i></a></li>
             </ul>
-        
             <div class="articulos">
                 <article>
                     <img src="/images/producto1.png" alt="PlantaA">
@@ -82,7 +80,20 @@
         </aside>
         </nav>
         </div>    
-
+        <!-- Copiado ver si se puede adaptar al carro-->
+<div class="container">
+    <div class="row">
+        <!-- Elementos generados a partir del JSON -->
+        <main id="items" class="col-sm-8 row"></main>
+        <!-- Carrito -->
+        <aside class="col-sm-4">
+            <h2>Detalles de tu compra</h2>
+            <!-- Elementos del carrito -->
+            <ul id="carrito" class="list-group"></ul>
+            <hr>
+            
+    </div>
+</div>
                   <!-- Finalizar compra -->
                 <section class="resumen">
                     <div class="resumen-background">
@@ -90,6 +101,18 @@
                         <div class="descuentos detalles-compra">
                             <p class="detalle-precio">Descuentos</p>
                             <p class="precio">$200,00</p>
+                        </div>
+                        <div class="detalles-compra">
+                            <p class="detalle-precio">Subtotal</p>
+                            <p class="precio">$11340,00</p>
+                        </div>
+                        <div class="detalles-compra">
+                            <p class="detalle-precio">Costo del envío</p>
+                            <p class="precio">$150,00</p>
+                        </div>
+                        <div class="total detalles-compra">
+                            <p class="detalle-precio">Total</p>
+                            <p class="precio">$11290,00</p>
                         </div>
                         
                 </section>

@@ -1,4 +1,4 @@
-function adminMiddleware(req,res,next){
+/*function adminMiddleware(req,res,next){
         if (!req.session.userLogged) {
             return res.redirect('/users/login');
         }
@@ -7,4 +7,4 @@ function adminMiddleware(req,res,next){
     
   
     
-    module.exports = adminMiddleware;
+    module.exports = adminMiddleware;*/

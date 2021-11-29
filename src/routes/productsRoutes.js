@@ -24,7 +24,7 @@ router.put("/:id/update",productsController.productUpdate);
 
 
 /* Imagenes*/
-const multer = require('multer'); 
+/*const multer = require('multer'); 
 
 const multerDiskStorage = multer.diskStorage({
     destination: function(req, file, cb) {       
@@ -37,7 +37,7 @@ const multerDiskStorage = multer.diskStorage({
 });
 
 const uploadFile = multer({ storage: multerDiskStorage });
-
+*/
 
 
 
