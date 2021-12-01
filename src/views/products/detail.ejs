@@ -1,66 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <%- include("../partials/head.ejs")%>
 
     <body>
-
         <%- include("../partials/header.ejs") %>
-
-            <!-- Contenedor -->
             <div class="container">
-
-                <div class="col-12 mt-5">
-                    <h1 class="h2">
-                        Detalle de producto
-                    </h1>
-                </div>
-
-                <!-- Fila -->
-                <di class="row">
-
-                    <!-- Col -->
-                    <div class="col-12 col-lg-6 my-5">
-                        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            </div>
-
-                            <div class="carousel-inner">
-
-                                <div class="carousel-item active" data-bs-interval="10000">
-                                    <img src="/img/carrusel-detalle-producto/aloe-vera.png" class="d-block w-100" alt="#">
-                                </div>
-
-                                <div class="carousel-item" data-bs-interval="2000">
-                                    <img src="/img/carrusel-detalle-producto/arbol-jade.png" class="d-block w-100" alt="#">
-
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="/img/carrusel-detalle-producto/begonia.png" class="d-block w-100" alt="#">
-                                </div>
-
-                            </div>
-
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            </button>
-
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            </button>
-                        </div>
-                    </div>
-                    <!-- Col -->
-
-                    <!-- Col -->
-                    <div class="col-12 col-lg-6">
-                        <h1 class="h3">
-                            Nombre del Producto
+                <div class="row">
+                    <div class="col-12 mt-5">
+                        <h1 class="h2">
+                            Detalle de producto
                         </h1>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-12 col-md-6 my-5">
+                        <img src="/images/products/img-cola-de-tigre.jpg" class="d-block w-100" alt="#">
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <h1 class="h3">Nombre del Producto</h1>
                         <div>
                             <i class="far fa-star"></i>
                             <i class="far fa-star"></i>
@@ -93,25 +52,18 @@
                         </div>
 
                         <div class="mt-5">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam est suscipit inventore vero accusantium, assumenda minima saepe ut vel placeat cumque veniam, quaerat ipsam, iste architecto ipsum non fugiat?
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam est suscipit inventore vero accusantium, assumenda minima saepe ut vel placeat cumque veniam, quaerat ipsam, iste architecto ipsum non fugiat?
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam est suscipit inventore vero accusantium, assumenda minima saepe ut vel placeat cumque veniam, quaerat ipsam, iste architecto ipsum non fugiat?
-                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam est suscipit inventore vero accusantium, assumenda minima saepe ut vel placeat cumque veniam, quaerat ipsam, iste architecto ipsum non fugiat?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam est suscipit inventore vero accusantium, assumenda minima saepe ut vel placeat cumque veniam, quaerat ipsam, iste architecto ipsum non fugiat?</p>
                         </div>
 
+
+
+
+
                     </div>
-                    <!-- Col -->
 
+                </div>
             </div>
-            <!-- Fila -->
-
-            </div>
-            <!-- Contenedor -->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
             <%- include("../partials/footer.ejs") %>
     </body>
