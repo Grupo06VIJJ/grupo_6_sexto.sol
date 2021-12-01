@@ -24,6 +24,7 @@
     display: block;
     text-decoration: none;
     color: white;
+    padding: 1em;
 }
 
 .navegacion .item {

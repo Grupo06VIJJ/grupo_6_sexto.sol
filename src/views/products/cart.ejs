@@ -3,141 +3,172 @@
 
 <%- include("../partials/head.ejs")%>
 
-<body>
+    <body>
 
-    <%- include("../partials/header.ejs") %>
-
-    <main>
-    <header class="header">
-            <div class="search-bar">
-                <form action="search">
-                <input type="text" name="search" class="form-search" placeholder="Buscar productos">
-                </form>
-                <div><i class="fas fa-search"></i></div>
-            </div>
-            <section>
-                <div class="header-box">
-                    <img src="/images/.jpg" class="head-cart-image">
-                    <div class="product-cart"> Carrito de compras</div>
+        <%- include("../partials/header.ejs") %>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 my-5">
+                        <h1>Carrito de Compras</h1>
+                    </div>
                 </div>
-            </section>
-            <ul class="right-navbar">
-                <li><a href="#">Lista de deseos<i class="fas fa-heart"></i></a></li>
-                <li><a href="#">Vaciar el carrito<i class="fas fa-eraser"></i></a></li>
-                <li><a href="#">Pedidos guardados<i class="fas fa-cart-arrow-down"></i></a></li>
-            </ul>
-            <div class="articulos">
-                <article>
-                    <img src="/images/producto1.png" alt="PlantaA">
-                    <div class="contenedor-producto">
-                        <div class="detalles-carrito">
-                            <div class="descripcion-producto">
-                                <h2>Producto 1</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                <div class="row my-5">
+                    <div class="col-12 col-lg-4">
+
+                        <div class="row">
+                            <!-- Articulo -->
+                            <div class="col-12 mt-3">
+                                <h2>Nombre del producto</h2>
                             </div>
 
-                            <div class="cantidad-producto">
-                                <p class="boton-eliminar"><i class="fas fa-trash-alt"></i><a href="#">Eliminar</a></p>
-                                <div class="precio-cantidad">
-                                    <div class="botones-cantidad">
-            
-                                        <button class="minus">-</button>
-                                        <input type="text" value="1" readonly="readonly">
-                                        <button class="plus">+</button> </div>
-                                    <p class="precio">$11320,00</p>
+                            <div class="col-12 mt-1">
+                                <p>
+                                    Descripción:
+                                    <br>Lorem ipsum dolor sit amet consectetur adipisicing elit
+                                </p>
+                            </div>
+
+                            <div class="col-12 mb-3">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="/img/aloe-vera.jpg" alt="producto" width="50%">
+                                    </div>
+                                    <div class="col-2">
+                                        <button>-</button>
+                                    </div>
+                                    <div class="col-2">
+                                        <button>+</button>
+                                    </div>
+                                    <div class="col-2">
+                                        <button>
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <p>
+                                            $1.500,00
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- Articulo -->
+
                         </div>
+
                     </div>
-                </article>
-                <article>
-                    <img src="/images/producto2.png" alt="Imagen Producto 2">
-                    <div class="contenedor-producto">
-                        <div class="detalles-carrito">
-                            <div class="descripcion-producto">
-                                <h2>Producto 2</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                    <div class="col-12 col-lg-4">
+
+                        <div class="row">
+                            <!-- Articulo -->
+                            <div class="col-12 mt-3">
+                                <h2>Nombre del producto</h2>
                             </div>
-                            <div class="cantidad-producto">
-                                <p class="boton-eliminar"><i class="fas fa-trash-alt"></i><a href="#">Eliminar</a></p>   
-                                <div class="precio-cantidad">
-                                    <div class="botones-cantidad">
-                                        <button class="minus">-</button>
-                                        <input type="text" value="1" readonly="readonly">
-                                        <button class="plus">+</button>
+
+                            <div class="col-12 mt-1">
+                                <p>
+                                    Descripción:
+                                    <br>Lorem ipsum dolor sit amet consectetur adipisicing elit
+                                </p>
+                            </div>
+
+                            <div class="col-12 mb-3">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="/img/aloe-vera.jpg" alt="producto" width="50%">
                                     </div>
-                                    <p class="precio">$20,00</p>
-                                </div>        
+                                    <div class="col-2">
+                                        <button>-</button>
+                                    </div>
+                                    <div class="col-2">
+                                        <button>+</button>
+                                    </div>
+                                    <div class="col-2">
+                                        <button>
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <p>
+                                            $1.500,00
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
+                            <!-- Articulo -->
+
                         </div>
+
                     </div>
-                </article>
-            </div>
-        </section>
-            <!-- Precio total -->
-            <p class="total">Total: <span id="total"></span><i class="fas fa-dollar-sign"></i>;</p>
-            <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
-        </aside>
-        </nav>
-        </div>    
-        <!-- Copiado ver si se puede adaptar al carro-->
-<div class="container">
-    <div class="row">
-        <!-- Elementos generados a partir del JSON -->
-        <main id="items" class="col-sm-8 row"></main>
-        <!-- Carrito -->
-        <aside class="col-sm-4">
-            <h2>Detalles de tu compra</h2>
-            <!-- Elementos del carrito -->
-            <ul id="carrito" class="list-group"></ul>
-            <hr>
-            
-    </div>
-</div>
-                  <!-- Finalizar compra -->
-                <section class="resumen">
-                    <div class="resumen-background">
-                        <h1>Resumen</h1>
-                        <div class="descuentos detalles-compra">
-                            <p class="detalle-precio">Descuentos</p>
-                            <p class="precio">$200,00</p>
+
+                    <div class="col-12 col-lg-4">
+
+                        <div class="row">
+                            <!-- Articulo -->
+                            <div class="col-12 mt-3">
+                                <h2>Nombre del producto</h2>
+                            </div>
+
+                            <div class="col-12 mt-1">
+                                <p>
+                                    Descripción:
+                                    <br>Lorem ipsum dolor sit amet consectetur adipisicing elit
+                                </p>
+                            </div>
+
+                            <div class="col-12 mb-3">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="/img/aloe-vera.jpg" alt="producto" width="50%">
+                                    </div>
+                                    <div class="col-2">
+                                        <button>-</button>
+                                    </div>
+                                    <div class="col-2">
+                                        <button>+</button>
+                                    </div>
+                                    <div class="col-2">
+                                        <button>
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <p>
+                                            $1.500,00
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Articulo -->
+
                         </div>
-                        <div class="detalles-compra">
-                            <p class="detalle-precio">Subtotal</p>
-                            <p class="precio">$11340,00</p>
-                        </div>
-                        <div class="detalles-compra">
-                            <p class="detalle-precio">Costo del envío</p>
-                            <p class="precio">$150,00</p>
-                        </div>
-                        <div class="total detalles-compra">
-                            <p class="detalle-precio">Total</p>
-                            <p class="precio">$11290,00</p>
-                        </div>
-                        
-                </section>
-                <div class="boton-compraFinalizada">
-                    <h4 class="cart-description">Compra finalizada</h4>
+
+                    </div>
                 </div>
-                <div class="boton-pagar">
-                    <h4 class="cart-description">Pagar</h4>
+
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        Cantidad = 0
+                    </div>
+                    <div class="col-12">
+                        Subtotal = $0.00
+                    </div>
+                    <div class="col-12">
+                        <strong>
+                            Total = $0.00
+                        </strong>
+                    </div>
                 </div>
-            <div class="pagar">
             </div>
-              <!-- Finalizar compra -->
-               <!-- pregunta-link -->
-               <div>
-                <p class="entrega">
-                    ¿Querés que te enviemos tu pedido?
-                    <a class="enlace" href="/users/registered">
-                        Calcular el costo de envío
-                    </a>
-                </p>
-            </div>
-            <!-- pregunta-link -->
-           
-    <%- include("../partials/footer.ejs") %>
-</body>
+
+
+
+            <%- include("../partials/footer.ejs") %>
+    </body>
+
 
 </html>
-

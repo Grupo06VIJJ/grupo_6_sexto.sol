@@ -41,6 +41,7 @@
     font-size: 1.8rem;
     color: white;
     text-decoration: none;
+    margin: .5em;
 }
 
 .main-footer .item-footer .redes-sociales a:hover {
@@ -49,7 +50,6 @@
 
 .main-footer .item-footer .footer-visitanos {
     margin-top: .5em;
-    margin-bottom: .5em;
 }
 
 .main-footer .item-footer .texto-visitanos {
@@ -62,18 +62,12 @@
     font-size: 1.5rem;
 }
 
-.copy-footer {
-    background-color: #1a1a1a;
-    color: white;
-    text-align: center;
-}
-
 
 /* MEDIA QUERIES */
 
 @media only screen and (min-width: 992px) {
     .flex-cont {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 }
