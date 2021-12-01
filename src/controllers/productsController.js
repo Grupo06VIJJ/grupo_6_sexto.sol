@@ -2,15 +2,14 @@ const path = require('path');
 const fs = require("fs");
 
 let productsController = {
-    /*Carrito de compras*/
-    // carrito
+
     cart: (req, res) => {
         res.render('products/cart');
     },
     detail: (req, res) => {
         res.render('products/detail');
     },
-    //Pantalla de creacion de productos + logica de guardado
+
     newProductView: (req, res) => {
         res.render('products/create');
     },
