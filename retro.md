@@ -16,7 +16,7 @@ Hacer menos: escribir el código y probar cómo funciona antes de decidir qué q
 Dejar de hacer: no destinar tiempos fijos para practicar y hacer la actividad.
 ```
 
-# Retro 3/4
+# Retro 3 y 4
 ```
 Ignacio:
 
@@ -35,3 +35,4 @@ Investigar y ejercitar con Node
 Hacer menos
 Subidas sin que los demás lo sepan
 Avisar antes de reliazar cambios en el repo
+```

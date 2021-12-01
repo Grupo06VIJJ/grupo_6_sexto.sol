@@ -8,6 +8,8 @@
     padding: .5em;
     font-size: 1.2rem;
     border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
 }
 
 .mi-btn:hover {
