@@ -1,0 +1,29 @@
+.actualizar-producto {
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.actualizar-producto .titulo {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.actualizar-producto .elemento {
+    margin-bottom: 1.5em;
+}
+
+.actualizar-producto label {
+    display: block;
+}
+
+.actualizar-producto input {
+    width: 100%;
+    padding: .5em;
+}
+
+.actualizar-producto .centrado {
+    text-align: center;
+}

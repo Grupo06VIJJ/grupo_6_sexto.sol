@@ -1,15 +1,29 @@
 .mi-btn,
 .mi-btn:visited {
     width: 300px;
-    background-color: #1a1a1a;
+    background-color: var(--texto);
     color: white;
     border: none;
-    outline: none;
     transition: all 350ms;
     padding: .5em;
     font-size: 1.2rem;
+    border-radius: 5px;
 }
 
 .mi-btn:hover {
-    background-color: tomato;
+    background-color: var(--primario);
+}
+
+.btn-crud {
+    border: none;
+}
+
+.btn-crud-editar-borrar {
+    color: var(--texto);
+    font-size: 1.3rem;
+    transition: all 350ms;
+}
+
+.btn-crud-editar-borrar:hover {
+    color: var(--primario);
 }

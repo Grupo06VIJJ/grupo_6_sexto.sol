@@ -3,13 +3,17 @@ const fs = require("fs");
 
 let productsController = {
 
+    // Carrito de compras
     cart: (req, res) => {
         res.render('products/cart');
     },
+
+    // Detalle de producto
     detail: (req, res) => {
         res.render('products/detail');
     },
 
+    // Añadir producto
     newProductView: (req, res) => {
         res.render('products/create');
     },
@@ -17,27 +21,31 @@ let productsController = {
 
         let productListJSON = fs.readFileSync(path.resolve(__dirname, "../db/products.json"), { encoding: "utf-8" });
         let productList = [];
+
         if (productListJSON == "") {
             productList = [];
         } else {
             productList = JSON.parse(productListJSON);
         };
-        let product = {
-            id: productList.length + 1,
-            name: req.body.productName,
-            desc: req.body.productDescription,
-            img: req.body.productFile,
-            category: req.body.productCategory,
-            size: req.body.productSize,
-            price: req.body.productPrice,
 
+        let product = {
+            id: productList.length,
+            name: req.body.productName,
+            category: req.body.productCategory,
+            img: req.body.productFile,
+            price: req.body.productPrice,
+            desc: req.body.productDescription,
         };
+
         productList.push(product);
+
         productJSON = JSON.stringify(productList);
+
         fs.writeFileSync(path.resolve(__dirname, "../db/products.json"), productJSON);
+
         res.redirect('/products/list');
     },
-    //Listado de los productos existentes
+
     productList: (req, res) => {
         let productListJSON = fs.readFileSync(path.resolve(__dirname, "../db/products.json"), { encoding: "utf-8" });
         if (productListJSON != "") {

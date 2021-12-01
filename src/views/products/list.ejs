@@ -64,9 +64,6 @@
                                                         Categoría
                                                     </th>
                                                     <th scope="col">
-                                                        Tamaño de la maceta
-                                                    </th>
-                                                    <th scope="col">
                                                         Precio
                                                     </th>
                                                     <th scope="col">
@@ -96,25 +93,21 @@
                                                         <% productList[i].category %>
                                                     </td>
                                                     <td>
-                                                        <%= productList[i].size %>
-                                                    </td>
-
-                                                    <td>
                                                         <%= productList[i].price %>
                                                     </td>
 
                                                     <td>
                                                         <form action="/products/<%=productList[i].id %>/update" method="GET">
-                                                            <button type="submit" class="btn-accion">
-                                                                <i class="btn-accion-icono fas fa-edit"></i>
+                                                            <button type="submit" class="btn-crud">
+                                                                <i class="btn-crud-editar-borrar fas fa-edit"></i>
                                                             </button>
                                                         </form>
                                                     </td>
 
                                                     <td>
                                                         <form action="/products/<%=productList[i].id %>/delete?_method=delete" method="POST">
-                                                            <button type="submit" class="btn-accion">
-                                                                <i class="btn-accion-icono fas fa-trash-alt"></i>
+                                                            <button type="submit" class="btn-crud">
+                                                                <i class="btn-crud-editar-borrar fas fa-trash-alt"></i>
                                                             </button>
                                                         </form>
                                                     </td>

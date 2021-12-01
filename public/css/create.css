@@ -1,0 +1,29 @@
+.crear-producto {
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.crear-producto .titulo {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.crear-producto .elemento {
+    margin-bottom: 1.5em;
+}
+
+.crear-producto label {
+    display: block;
+}
+
+.crear-producto input {
+    width: 100%;
+    padding: .5em;
+}
+
+.crear-producto .centrado {
+    text-align: center;
+}
