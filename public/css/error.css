@@ -1,0 +1,33 @@
+main{
+    position: relative;
+}
+.back-404{
+    background-image: url('/img/404-image.png');
+    display: block;
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.3;
+}
+.error-info{
+    position: absolute;
+    width: 100%;
+    opacity: 1;
+    top: 50px;
+    left: 0;
+    padding: 20px;
+}
+.error-info a{
+    display: block;
+    text-align: center;
+    background-color: var(--gold);
+    width: 30%;
+    min-width: 200px;
+    padding: 10px;
+    color: var(--light);
+    font-weight: bold;
+    border-radius: 20px;
+    margin: 0 auto;
+}
