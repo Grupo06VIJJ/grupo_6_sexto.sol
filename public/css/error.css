@@ -11,6 +11,13 @@ main{
     background-size: cover;
     opacity: 0.3;
 }
+h1 {
+    color: brown
+}
+h2{
+    color:green
+}
+
 .error-info{
     position: absolute;
     width: 100%;
