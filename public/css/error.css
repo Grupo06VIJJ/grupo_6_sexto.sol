@@ -2,7 +2,7 @@ main{
     position: relative;
 }
 .back-404{
-    background-image: url('/img/404-image.png');
+    background-image: url('/images/error.png');
     display: block;
     width: 100%;
     height: 400px;
