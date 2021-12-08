@@ -23,11 +23,11 @@ app.use('/', express.static(path.resolve(__dirname, '../public')));
 
 // rutas
 const userRoutes = require("./routes/userRoutes.js");
-const productsRoutes = require("./routes/productsRoutes.js");
+const productRoutes = require("./routes/productRoutes.js");
 const mainRoutes = require("./routes/mainRoutes.js");
 
 app.use("/users", userRoutes);
-app.use("/products", productsRoutes);
+app.use("/products", productRoutes);
 app.use("/", mainRoutes);
 
 // error
