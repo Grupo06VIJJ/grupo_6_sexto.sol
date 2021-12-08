@@ -1,0 +1,209 @@
+@import url("general.css");
+@import url("main.css");
+/* Carrusel*/
+.container-01{
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    z-index: -1;
+}
+.slider{
+    width: 400vw;
+    display: flex;
+    flex-wrap: nowrap;
+    animation: banner 10s 5s linear infinite normal;
+}
+.slider > div{
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 218px;
+}
+.slide-1{
+    background-image: url('../img/cola-de-tigre.jpg');
+}
+.slide-2{
+    background-image: url('../img/begonia.jpg');
+}
+.slide-3{
+    background-image: url('../img/flor.jpg');
+}
+
+@keyframes banner {
+    16%{
+        transform: translateX(-100vw);
+    }
+    32%{
+        transform: translateX(-100vw);
+    }
+    50%{
+        transform: translateX(-200vw);
+    }
+    66%{
+        transform: translateX(-200vw);
+    }
+    83%{
+        transform: translateX(-300vw);
+    }
+    100%{
+        transform: translateX(-300vw);
+    }
+}
+/*Texto inicio*/
+.container-02{
+    width: 100%;
+    padding: 10px;
+}
+h1.titulo{
+    font-weight:bold;
+    font-style: italic;
+    font-size: 26px;
+    text-align: center;
+}
+.container-02 p{
+    font-size: 20px;
+}
+
+/*Enlace productos*/
+.container-03{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.container-03 .card{
+    width: 100%;
+    background-color: var(--light);
+    margin: 20px 0px 40px 0px;
+    max-width: 500px;
+    border-radius: 10px;
+}
+.container-03 .card .face{
+    width: 100%;
+}
+.content img{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+}
+.face1 .content h3{
+    margin: 1px 0 0;
+    padding-bottom: 3px;
+    color: var(--gold);
+    text-align: center;
+    font-size: 1.5em;
+}
+.face.face2 .content p{
+    padding: 10px 20px;
+    max-height: 80px;
+    overflow-y: hidden;
+    color:var(--light);
+}
+.face.face2 .content a{
+    display: block;
+    width: 35%;
+    text-align: center;
+    margin: 10px 20px;
+    text-decoration: none;
+    font-weight: 900;
+    color: var(--gold);
+    padding: 5px;
+    background-color: var(--light);
+    border-radius: 5px;
+} 
+.container-03 .card .face.face2 .content a:hover{
+    background: var(--gold);
+    color: var(--light);
+}
+.container-04{
+    width: 100%;
+    position: relative;
+    padding-top: 15px;
+    margin-bottom: 40px;
+}
+.container-04 h1{   
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: -25px;
+}
+.products-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+.products-container a:hover{
+    transform: scale(1);
+}
+
+
+@media(min-width: 768px){
+    main{
+        margin-top: 0;
+    }
+    
+    .container-04{
+        border-top: 0.5px solid var(--light-border);
+    }
+    .container-04 h1{
+        width: auto;
+        left: 0;
+        background-color: white;
+        padding: 0 10px;
+    }
+    .products-container{
+       grid-template-columns: repeat(2,1fr);
+       gap: 10px;
+    }
+}
+@media(min-width: 1025px){
+    .container-03{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .container-03 .card{
+        width: 30%;
+        position: relative;
+    }
+    .container-03 .card .face.face1 .content{
+        width: 100%;
+    }
+    .container-03 .card .face.face1{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-03 .card .face.face2{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color:rgba(72, 117, 46, 0.6);
+        border-radius: 20px;
+        transition: opacity 0.5s linear;
+    }
+    .container-03 .card:hover .face.face2{
+        opacity: 1;
+    }
+    .face.face2 .content p{
+        text-align: center;
+    }
+    .face.face2 .content a{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .products-container{
+        grid-template-columns: repeat(4,1fr);
+    }
+
+}

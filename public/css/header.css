@@ -24,13 +24,12 @@
     display: block;
     text-decoration: none;
     color: white;
-    padding: 1em;
 }
 
 .navegacion .item {
     width: 100%;
     text-align: center;
-    order: 5;
+    order: 6;
     display: none;
 }
 

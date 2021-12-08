@@ -78,4 +78,3 @@ router.get('/:id/profile', logMiddleware, userController.profile);
 router.put('/logoff', userController.logoff);
 
 module.exports = router;
-

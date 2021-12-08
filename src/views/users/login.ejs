@@ -1,80 +1,38 @@
 <!DOCTYPE html>
-<html lang="es">
-
-<%- include("../partials/head.ejs")%>
-
+<html lang="en">
+<head>
+    <%- include('../partials/head.ejs') %>
+    <link rel="stylesheet" href="/css/login.css">
+    <title>Login</title>
+</head>
 <body>
-
-    <%- include("../partials/header.ejs") %>
-    <a href="/">Regresar al home</a>
-    <!-- FORMULARIO -->
-    <form class="formulario-de-login" method="POST" action="/register" autocomplete="off">
-
-        <h1 class="titulo">
-            Iniciar sesión
-        </h1>
-     
-        <!-- contenedor -->
-        <form class="contenedor">
-
-            <!-- input-contenedor -->
-            <div class="input-contenedor">
-                <i class="fas fa-envelope icon"></i>
-                <input type="email"  name="Correo electrónico" placeholder="Correo electrónico" />
-            </div>
-                <div>
-                    <p class="campo-obligatorio">* Campo obligatorio</p>
+    <%- include('../partials/header') %>
+    <main>
+        <div class="login">
+            <section class="login-title">
+                <h1>iniciar sesión</h1>
+                <p>Ingresá tu email y tu contraseña</p>
+            </section>
+            <form class="login-form" action="/user" method="POST">
+                <% if(locals.msg) { %>
+                    <p class="error"><%=msg %></p>
+                <% } %>
+                <input type="email" name="email" class="email-input" id="login-email" placeholder="Correo electrónico">
+                <input type="password" name="password" class="pass-input" id="login-password" placeholder="Contraseña">
+                <div class="remember">
+                    <input type="checkbox" class="remember-input" id="login-remember" name="remember">
+                    <label for="login-remember">Recordarme</label>
                 </div>
-                
-           
-            <!-- input-contenedor -->
-
-            <!-- input-contenedor -->
-            <div class="input-contenedor">
-                <i class="fas fa-key icon"></i>
-                <input type="password" name="Contraseña" placeholder="Contraseña" />
-                <p class="campo-obligatorio"></p>
-            </div>
-        <div>
-            <p class="campo-obligatorio">* Colocar 6 caracteres, con al menos 1 número y 1 mayúscula</p>
-        </div>
-            <div class="input-contenedor">
-                <i class="fas fa-redo-alt"></i>
-                <input type="password-repeat" name="Repetí tu contraseña" placeholder="Repetí tu contraseña"/>
-            </div>
-                
-            <!-- input-contenedor -->
-            <p class="otros-accesos">
-                <a href='./users/guardados'>Olvidé mi contraseña</a>  
-           <!-- recuperar contraseña -->
-        </p>
-            <input class="boton" type="submit" value="Enviar">
-
-            <!-- pregunta-link -->
-            <div>
-                <p class="crear-cuenta">
-                    ¿Tenés cuenta?
-                    <a class="enlace" href="/users/register">
-                        Crear una
-                    </a>
-                    <section class="alt-login">
-                        <p>También podés niciar sesión con:</p>
-                        <div class="media-login">
-                            <a href="/login"><i class="fab fa-facebook-f"></i></a>
-                            <a href="/login"><i class="fab fa-google"></i></a>
-                        </div>
-                    </section>
-                    <input type="checkbox" name="remember" id="remember">
-                    <label for="remember">Recordarme</label>  
-                </p>
-            </div>
-        </form>
-
-            <!-- recordame-->
-            
-        <!-- contenedor -->
-        <%- include("../partials/footer.ejs")%>
-
+                <button class="submit" type="submit">Ingresar</button>
+            </form>
+            <a href="/">¿Olvidaste tu contraseña?</a>
+            <section class="alt-login">
+                <p>Tambien podés iniciar sesión con:</p>
+                <div class="media-login">
+                    <a href="/login"><i class="fab fa-facebook-f"></i></a>
+                    <a href="/login"><i class="fab fa-google"></i></a>
+                </div>
+            </section>          
+    </main>
 </body>
-
 </html>

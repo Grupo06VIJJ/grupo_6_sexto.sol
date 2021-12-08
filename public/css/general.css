@@ -1,0 +1,153 @@
+
+/*Estilos generales*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    /*Colores principales*/
+    --dark: #000000;
+    --light: #ffffff;
+    --gold: #c5ac28;
+    --light-border: #817a7a;
+    --soft: #ebebeb;
+    --red: #DB4437;
+    --blue: #4267B2;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    position: relative;
+}
+main{
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+input, textarea{
+    border-radius: 5px;
+    border: 1px solid var(--light-border);
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px;
+}
+label{
+    font-weight: bold;
+}
+h1,h2,h3,h4{
+    margin: 10px 0;
+    text-align: center;
+}
+h1{
+    font-size: 30px;
+}
+h2{
+    font-size: 24px;
+}
+h3{
+    font-size: 22px;
+}
+/*Estilos principales de botón*/
+button.submit{
+    height: 30px;
+    color: var(--gold);
+    background-color: transparent;
+    font-weight: bold;
+    border: none;
+    display: block;
+    position: relative;
+}
+button.submit:focus{
+    border: 2px solid var(--light-border);
+    box-shadow: 3px 3px 10px var(--light-border) ;
+}
+button.submit::after, button.submit::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border: 3px solid;
+    transition: all 0.6s linear;
+    border-radius: 2px;
+}
+button.submit::after{
+    bottom: 0;
+    right: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: var(--gold);
+    border-right-color: var(--gold);
+}
+button.submit::before{
+    top: 0;
+    left: 0;
+    border-top-color: var(--gold);
+    border-left-color: var(--gold);
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+}
+button.submit:hover:after, button.submit:hover:before{
+    width: 100%;
+    height: 100%;
+}
+
+/*Estilos principales de etiquetas ancla*/
+a{
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: var(--dark);
+}
+a:hover{
+    transform: scale(1.2);
+}
+
+/*Estilos de cards de productos*/
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 95%;
+    height: 100%;
+    padding: 5px;
+    border-radius: 15px;
+    max-width: 380px;
+    background-color: var(--light);
+}
+.product-image{
+    display: flex;
+    position: relative;
+    padding: 5px;
+    flex-grow: 1;
+}
+.product-image .pic{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+.product-image .back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.product-info{
+    text-align: center;
+    width: 100%;
+}
+.product-info p{
+    padding: 5px 0;
+}
+.product:hover{
+    box-shadow: 0 0 10px rgb(100, 100, 100);
+    transform: scale(1);
+}
+.product:hover .back{
+    opacity: 1;
+}

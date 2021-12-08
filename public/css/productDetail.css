@@ -1,0 +1,285 @@
+@import url("general.css");
+
+/* Estilos de visualizacion del producto */
+
+.selector-imagenes{
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 10px 10px;
+}
+
+.selector-imagenes button{
+   border: none;
+    background-color: transparent;
+    width: 25px;
+    transition: transform 500ms; 
+}
+
+.selector-imagenes button:hover{
+    transform: scale(1.5);
+}
+
+.selector-imagenes .fas{
+    font-size: 30px;
+}
+
+.selector-imagenes .img-container{
+    width: 25%;
+    transition: transform 500ms;
+}
+ 
+.selector-imagenes .img-container:hover{
+    transform: scale(1.2);
+}
+
+.img-container img{
+    width: 100%;
+}
+ /* Estilos de los detalles del producto */
+
+ .nombre-producto{
+     font-size: 22px;
+     margin-bottom: 10px;
+ }
+
+ .descripcion-producto{
+     font-size: 16px;
+     margin:  auto;
+     max-width: 950px;
+     display: flex;
+     flex-wrap: wrap;
+     margin-bottom: 20px;
+ }
+.descripcion-producto > div{
+    margin-top: 30px;
+}
+ .datos-compra{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+ }
+.datos-compra  .resalta-campo span{
+    font-weight: normal;
+}
+.resalta-campo{
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 10px;
+}
+.resalta-campo p{
+    margin-top: 20px;
+}
+.resalta-campo span{
+    padding-left: 20px;
+}
+.resalta-campo label{
+    display: inline-block;
+    width: 100px;
+}
+/* Estilos del boton */
+.contenedor-btn{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    width: 90%;
+    max-width: 250px;
+}
+
+/* Escalamiento de imagenes */
+
+.imagen-principal{
+    display: block;
+    max-width: 535px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+/* Estilos para antes del media querie */
+
+.imagenes{
+    width: 100%;
+}
+/*Área de comentarios*/
+.comment-section{
+    margin: 20px 0;
+}
+.add-comment{
+    margin-bottom: 20px;
+}
+.add-comment label{
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px;
+}
+.add-comment .comment-title{
+    display: block;
+    width: 100%;
+    max-width: 750px;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px auto;
+}
+.add-comment textarea{
+    display: block;
+    width: 100%;
+    max-width: 750px;
+    height: 150px;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px auto;
+}
+.comment-buttons{
+    display: flex;
+    justify-content: flex-end;
+}
+.comment-buttons button{
+    padding: 5px;
+    font-size: 16px;
+    margin-left: 15px;
+    width: 30%;
+}
+.comment-box{
+    display: grid;
+    gap: 5px;
+    margin: 15px auto;
+    padding: 10px;
+    border-top: 1px solid var(--light-border) ;
+}
+.comment-box .user-img{
+    justify-self: center;
+    font-size: 36px;
+}
+.com-title, .com-date, .com-name{
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+.com-title{
+    font-size: 18px;
+}
+.com-content{
+    text-align: justify;
+    font-size: 14px;
+}
+
+.user-options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+.user-options a, .user-options form{
+    width: 100%;
+}
+.user-options button{
+    width: 50%;
+    margin: 10px auto;
+    display: block;
+    height: 30px;
+}
+
+.editar-btn, .borrar-btn{
+    background-color:var(--dark);
+    color:var(--gold);
+    border: none;
+}
+
+.editar-btn:hover, .borrar-btn:hover{
+    background-color:var(--gold);
+    color:var(--dark); 
+}
+
+.editar:hover{
+transform:scale(1);
+}
+
+.see-comments{
+    padding-bottom: 15px;
+}
+
+/*Estilos para media querie*/
+@media(min-width: 768px) {
+
+    .descripcion-producto{
+        justify-content: space-evenly;
+    }
+    .descripciones > div{
+        min-height: 30%;
+    }
+    .imagenes{
+        width: 50%;
+    }
+    .descripciones{
+        width: 50%;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .datos-compra form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .datos-producto h1{
+        margin-bottom: 30px;
+    }
+    .nombre-producto{
+        font-size: 20px;
+    }
+    .descripcion-producto{
+        font-size: 18px;
+    }
+
+    .resalta-campo{
+        font-size: 18px; 
+    }
+    .btn{
+        margin-top: 20px;
+        width: 80%;
+        font-size: 18px;
+    }
+    .comment-buttons{
+        justify-content: space-around;
+        max-width: 750px;
+        margin: 0 auto;
+    }
+    .comment-buttons button{
+        margin-left: 0;
+    }
+    .comment-box{
+        grid-template-columns: 20% 80%;
+        grid-template-rows: repeat(4,auto);
+        grid-template-areas: "foto name"
+                             "foto date"
+                             "title title"
+                             "content content";
+    }
+    .user-img{
+        grid-area: foto;
+        align-self: center;
+    }
+    .com-name{
+        grid-area: name;
+        text-align: left;
+    }
+    .com-title{
+        grid-area: title;
+        text-align: left;
+        align-self: center;
+    }
+    .com-date{
+        grid-area: date;
+        text-align: left;
+        align-self: center;
+    }
+    .com-content{
+        grid-area: content;
+    }
+    .user-options{
+        flex-direction: row;
+    }
+}

@@ -1,17 +1,12 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-
-//
 const ejs = require('ejs');
-
-//
 const session = require('express-session');
-const bcrypt = require('bcrypt');
-
-//
+/*const bcrypt = require('bcrypt');*/
+const cookieParser = require('cookie-parser');
+/* formularios */
 const methodOverride = require("method-override");
-
 // 
 app.set('view engine', 'ejs');
 
@@ -27,11 +22,11 @@ app.use(methodOverride("_method"))
 app.use('/', express.static(path.resolve(__dirname, '../public')));
 
 // rutas
-const usersRoutes = require("./routes/usersRoutes.js");
+const userRoutes = require("./routes/userRoutes.js");
 const productsRoutes = require("./routes/productsRoutes.js");
 const mainRoutes = require("./routes/mainRoutes.js");
 
-app.use("/users", usersRoutes);
+app.use("/users", userRoutes);
 app.use("/products", productsRoutes);
 app.use("/", mainRoutes);
 

@@ -1,29 +1,473 @@
+@import url("general.css");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
-@import url('/css/create.css');
-@import url('/css/edit.css');
-@import url('/css/footer.css');
-@import url('/css/listado-productos.css');
-@import url('/css/login.css');
-@import url('/css/mi-btn.css');
-@import url('/css/navegacion.css');
-@import url('/css/register.css');
-@import url('/css/servicio.css');
-@import url('/css/error.css');
-/* ROOT */
 
-:root {
-    --primario: rgb(255, 99, 71);
-    --texto: rgb(30, 30, 30);
-    --fondo: rgb(245, 245, 245)
+/*---------Maquetado del header----------*/
+header{
+    position: relative;
+    background-color: rgb(184, 174, 181);
+    min-width: 320px;
+}
+.navegacion {
+    background-color: #1a1a1a;
+    margin-bottom: 1em;
+    width: 100%;
 }
 
-* {
-    box-sizing: border-box;
+.navegacion .lista {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-body {
+.navegacion .logo a {
+    display: inline-block;
+    color: white;
+    font-family: 'Parisienne', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navegacion a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.navegacion .item {
+    width: 100%;
+    text-align: center;
+    order: 6;
+    display: none;
+}
+.navegacion .item icon-registro {
+    order: 1;
+}
+
+.navegacion .icon-menu {
+    order: 3;
+}
+.navegacion .icon-servicio {
+    order: 5;
+}
+.navegacion .hamburguesa {
+    width: 4em;
+    color: white;
+    order: 1;
+    cursor: pointer;
+    text-align: center;
+}
+
+.navegacion a:hover,
+.navegacion .icon-menu:hover,
+.navegacion .hamburguesa:hover {
+    background: none;
+    color: var(--primario);
+    transition: 200ms;
+    background-color: transparent;
+}
+
+.item.active {
+    display: block;
+}
+
+
+/* tablet */
+
+@media all and (min-width:568px) {
+    .navegacion .lista {
+        justify-content: center;
+    }
+    .navegacion .logo {
+        flex: 1;
+    }
+    .navegacion .item {
+        background: none;
+    }
+    .navegacion .icon-menu {
+        order: 1;
+        display: block;
+        border-bottom: none;
+        text-align: center;
+        width: 4em;
+    }
+    .navegacion .hamburguesa {
+        display: block;
+        border-bottom: none;
+        text-align: center;
+        width: 4em;
+    }
+    .navegacion .icon-menu a {
+        text-decoration: none;
+    }
+    .navegacion .icon-menu .palabra {
+        display: none;
+    }
+    .navegacion .carrito .palabra {
+        display: none;
+    }
+    .navegacion .carrito {
+        order: 1;
+    }
+    .navegacion .hamburguesa {
+        order: 1;
+    }
+}
+
+
+/* desktop */
+
+@media all and (min-width:768px) {
+    .navegacion .item {
+        display: block;
+        width: auto;
+        order: 2;
+    }
+    .navegacion .hamburguesa {
+        display: none;
+    }
+    .navegacion .logo {
+        order: 0;
+    }
+    .navegacion .icon-menu {
+        order: 3;
+    }
+    .navegacion .icon-menu,
+    .navegacion .hamburguesa {
+        width: 4em;
+    }
+}
+/*Logo*/
+.main-logo{
+    display: flex;
+    justify-content: center;
+    /* padding-top: 20px; */
+}
+.main-logo a{
+    background-image: url('../img/JFL-logo-sin-texto.svg');
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*Barra de navegación*/
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    min-height: 200px;
+}
+.navbar i {
+    color: var(--light);
+    display: block;
+}
+.main-menu i:hover ~ .main-list, .main-list:hover {
+    z-index: 1;
+    opacity: 1;
+    transform: translateY(150px);
+    transition: transform 1s, z-index 0s 0.4s, opacity 0.8s;
+}
+.main-list{
+    position: absolute;
+    z-index: -10;
+    opacity: 0;
+    transition: all 1s 0.5s;
+    top: 0;
+    left: 0;
+    background-color: var(--dark);
+    width: 35%;
+    text-align: center;
+}
+.main-list_element{
+    padding: 10px 0;
+}
+.main-list .main-list_element a, .main-list p{
+    color: white;
+}
+.products-menu p:hover ~ .products-list, .products-list:hover {
+    z-index: 1;
+    opacity: 1;
+    transform: translateX(100%);
+    transition: transform 1.5s, z-index 0s 1.3s, opacity 1s;
+}
+.products-list{
+    z-index: -10;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    transition: transform 1.5s, z-index 0s 0.3s, opacity 1s;
+    top: 0;
+    background-color: var(--dark);
+    width: 100%;
+}
+.products-list a{
+    padding: 10px 0;
+}
+.products-menu{
+    position: relative;
+}
+.products-menu p:hover {
+    cursor: pointer;
+}
+.search-menu form{
+    position: absolute;
+    z-index: -10;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    background-color: var(--dark);
+    width: 100%;
+    transition: all 0.5s linear 0.8s;
+}
+.search-menu i:hover ~ form, .search-menu form:hover{
+    z-index: 1;
+    opacity: 1;
+    transform: translateY(150px);
+    transition: transform 1s, z-index 0s 0.4s, opacity 0.8s;
+}
+.search-menu .search-bar {
+    width: 85%;
+    margin: 10px auto;
+    background-color: var(--light);
+    border-radius: 10px;
+    display: flex;
+    padding: 3px;
+    max-width: 500px;
+}
+.search-bar input {
+    width: 90%;
+    outline: none;
+    border: none;
+    background-color: var(--soft);
+}
+.search-bar button {
+    width: 10%;
+    background-color: var(--soft);
+    border-radius: 5px;
+    border: 1px solid var(--light-border);
+}
+.search-bar button i{
+    color: var(--light-border);
+}
+.user-pages{
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    z-index: -10;
+    background-color: var(--dark);
+    width: 60%;
+    max-width: 250px;
+    text-align: center;
+    transition: all 1s 0.5s;
+}
+.user-pages p, .user-pages a{
+    color: var(--light);
+}
+.user-menu i:hover ~ .user-pages, .user-pages:hover{
+    z-index: 10;
+    opacity: 1;
+    transform: translateY(120px);
+    transition: transform 0.9s, z-index 0s 0.4s, opacity 0.8s;
+}
+.user-pages_element{
+    padding: 10px 0;
+}
+.user-menu i.logged, .user-pages p{
+    color: var(--gold);
+}
+.user-pages_element button {
+    background-color: transparent;
+    border: none;
+    color: var(--light);
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+.user-pages_element button:hover{
+    cursor: pointer;
+}
+
+/*--------Maquetado del footer-------*/
+.main-footer {
+    background-color: #1a1a1a;
+    padding: 1em;
+    color: white;
+    text-align: center;
+    margin-top: 5em;
+}
+
+.flex-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-footer .item-footer {
+    margin-bottom: 2em;
+    padding: 1em;
+}
+
+.main-footer .titulo-footer {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+.main-footer .enlace-redes-footer {
+    color: white;
+    font-size: .9rem;
+}
+
+.main-footer .item-footer .sobre-nosotros a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-footer .item-footer .sobre-nosotros a:hover {
+    color: tomato;
+}
+
+.main-footer .item-footer .redes-sociales a {
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+}
+
+.main-footer .item-footer .redes-sociales a:hover {
+    color: tomato;
+}
+
+.main-footer .item-footer .footer-visitanos {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+.main-footer .item-footer .texto-visitanos {
     font-family: 'Roboto', sans-serif;
-    background-color: var(--fondo);
-    color: var(--texto);
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.main-footer .item-footer .footer-visitanos .fas {
+    font-size: 1.5rem;
+}
+
+.copy-footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 992px) {
+    .flex-cont {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/*-------------------Media querie para tablet-------------------*/
+@media(min-width: 768px){
+/*-----Header------*/
+    .navbar{
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .main-logo{
+        order: -1;
+        width: 15%;
+    }
+    .main-menu{
+        width: 100%;
+        order: 1;
+    }
+    .main-menu i{
+        display: none;
+    }
+    .main-menu .main-list {
+        position: relative;
+        z-index: 10;
+        opacity: 1;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .main-list:hover {
+        transform: none;
+    }
+    .main-list_element{
+        width: 33%;
+    }
+    .search-menu {
+        width: 60%;
+        position: relative;
+        height: 70px;
+        display: flex;
+    }
+    .search-menu > i{
+        display: none;
+    }
+    .search-menu form{
+        z-index: 1;
+        opacity: 1;
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    .search-menu form:hover{
+        transform: none;
+    }
+    .search-menu .search-bar {
+        max-width: none;
+    }
+    .products-menu p:hover ~ .products-list, .products-list:hover {
+        transform: translateY(90px);
+        transition: transform 0.8s, z-index 0s 0.3s, opacity 0.6s 0.4s;
+    }
+    .products-list{
+        top: -50px;
+        transition: all 1s 0.4s;
+    }
+    /*Maquetación del footer*/
+    footer{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 5px 0;
+
+    }
+    .footer-options{
+        width: 35%;
+        margin-bottom: 0;
+    }
+    .footer-media{
+        width: 40%;
+    }
+    
+}
+
+/*-------------------Media querie para desktop-------------------*/
+@media(min-width: 1025px){
+    /*--------Footer-------*/
+    .footer-options{
+        width: 60%;
+    }
+    .footer-options ul{
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .footer-media{
+        width: 35%;
+    }
 }

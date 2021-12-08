@@ -1,116 +1,125 @@
-.formulario-de-registro {
-    background: transparent;
-    box-shadow: 0px 0px 14px rgb(78 11 11);
-    padding-top: 60px;
-    background-color: #ffdbdb;
-    border-radius: 40px;
-    align-self: center;
-}
+@import url("general.css");
 
-.formulario-de-registro .contenedor {
-    width: 100%;
+.register{
+    margin-top: 30px;
+    padding: 10px;
+    background-color: var(--light);
+    border-radius: 20px;
 }
-
-.formulario-de-registro .titulo {
-    color: var(--texto);
-    font-size: 1.5rem;
-    margin-bottom: 1em;
+.register-title{
+    padding: 30px 15px;
+    text-align: center;
 }
-
-.formulario-de-login .campo-obligatorio{ 
-    font-weight: lighter;
-    font-size: 0.2;
-    color:red
+.register-title h1{
+    font-size: 26px;
 }
-.formulario-de-registro input[type="select"],
-.formulario-de-registro input[type="text"],
-.formulario-de-registro input[type="email"],
-.formulario-de-registro input[type="password"] {
-    font-family: 'Roboto', sans-serif;
-    border: none;
-    outline: none;
-    width: 80%;
-    padding: .5em;
-    font-size: 1rem;
-    margin-left: auto;
-    margin-right: auto;
+.register-errors {
+    width: 70%;
+    margin: 0 auto 20px auto;
+    background-color: #ffaaaa;
+    color: red;
+    font-size: 12px;
+    text-align: left;
+    border-radius: 20px;
 }
-
-.formulario-de-registro .input-contenedor {
-    border: none;
-    outline: none;
-    margin-bottom: .5em;
-    border: 1px solid #aaa;
-    border-radius: 5px;
-    background-color: white;
+.register-errors p{
+    padding: 5px;
     
 }
-.input-contenedor-check {
-    border: none;
+
+.tec-inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.tec-inputs > input {
+    width: 70%;
+    max-width: 400px;
+    margin-bottom: 25px;
+    height: 30px;
+    padding-left: 10px;
+    border: 1px solid var(--light-border);
     outline: none;
-    margin-bottom: .5em;
 }
-
-.formulario-de-registro .icon {
-    min-width: 50px;
+.tec-inputs p.label{
+    width: 70%;
+    max-width: 400px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    text-align: justify;
+}
+.tec-inputs > div{
+    width: 50%;
+}
+.checkitems .submit-input{
+    width: 60%;
+    margin: 20px auto;
+}
+.tec-inputs input:focus{
+    border: 2px solid var(--light-border);
+    box-shadow: 3px 3px 10px var(--light-border) ;
+}
+.tec-inputs .checkitems{
+    width: 70%;
+}
+.check{
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+    max-width: 400px;
+    margin: 10px auto;
+}
+.check input{
+    /* width: 30px;
+    height: 30px; */
+    margin-right: 25px;
+}
+.register p{
     text-align: center;
-    color: #999;
 }
-
-.formulario-de-registro .boton {
-    outline: none;
-    border: none;
-    width: 100%;
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    background-color: var(--primario);
-    border: 2px solid var(--primario);
-    padding: .5em;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 350ms;
-}
-
-.formulario-de-registro .boton:hover {
-    background-color: white;
-    color: var(--primario);
-    font-weight: bold;
-    border: 2px solid var(--primario);
-}
-
-.formulario-de-registro .crear-cuenta {
-    text-align: center;
-    padding: 1em;
-}
-
-.formulario-de-registro .enlace {
+main p a{
     text-decoration: none;
-    color: var(--texto);
-    transition: all 350ms;
-}
-
-.formulario-de-registro .enlace:hover {
-    color: var(--texto);
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.footer-register {
-    background-color: var(--primario);
-    color: white;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: .2em;
-    text-align: center;
+    color: var(--dark);
     font-weight: bold;
 }
-
-@media (min-width:768px) {
-    .formulario-de-registro {
-        margin: 0 auto;
-        width: 500px;
+/*-------------------Media querie para tablet---------------------*/
+@media(min-width: 768px){
+    .register{
+        width: 80%;
+        margin: 20px auto;
+        border: 1px solid var(--light-border);
+        max-width: 800px;
     }
+    .tec-inputs {
+        flex-direction: column;
+    }
+    .tec-inputs input, .tec-inputs div{
+        /* width: 35%; */
+        max-width: 400px;
+    }
+}
+/*-------------------Media querie para desktop---------------------*/
+@media(min-width: 1025px){
+    main{
+        background-image: url('../img/login-image.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 0.5px;
+    }
+    .register-form{
+        display: flex;
+        flex-direction: row;
+    }
+    .register-title{
+        width: 100%;
+    }
+    .tec-inputs{
+    width: 50%;
+}
+.checkitems{
+    width: 50%;
+    align-self: center;
+}
 }

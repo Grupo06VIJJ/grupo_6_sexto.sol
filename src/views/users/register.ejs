@@ -1,81 +1,62 @@
 <!DOCTYPE html>
-<html lang="es">
-
-<%- include("../partials/head.ejs")%>
-
+<html lang="en">
+<head>
+    <%- include('../partials/head.ejs') %>
+    <link rel="stylesheet" href="/css/register.css">
+    <title>Registro</title>
+</head>
 <body>
-
-    <%- include("../partials/header.ejs") %>
-    <a href="/">Regresar al home</a>
-    <!-- FORMULARIO -->
-    <form class="formulario-de-registro" method="POST" action="/users/register" autocomplete="off">
-
-        <h1 class="titulo">
-            Crea una cuenta
-        </h1>
-        
+    <%- include('../partials/header') %>
+    <main>
         <!-- contenedor -->
         <div class="contenedor">
 
-            <!-- input-contenedor -->
+        <div class="register">
+            <section class="register-title">
+                <h1>Registrate</h1>
+                 <!-- input-contenedor -->
             <section>
                 <div class="input-contenedor">
-                    <input type="select" name="seleccionar" placeholder= "Como nos conociste/seleccionar"/>
+                    <input type="select" name="seleccionar" placeholder= "¿Como nos conociste?"/>
                     <select name="conociste" size="1">
                         <option>Instagram</option>
                         <option>Amigos</option> 
                         <option>Otros</option>
                         </select>   
                 </div>
+                <p>Completá los siguientes campos para registrarte</p>
             </section>
-            
-            <div class="input-contenedor">
-                <i class="fas fa-user icon"></i>
-                <input type="text" name="Nombre y apellido" placeholder= "Nombre y apellido"/>
-            <p class="campo-obligatorio">* Campo obligatorio</p>
+            </section>
+            <section class="register-errors">
+                <%if (locals.errors) { %>
+                    <% errors.forEach(error => {%>
+        
+                        <p> <%=error.msg %></p>
+        
+                    <% })%>
+                <% }%>
+            </section>
+            <p>¿Ya tenés una cuenta?, <a href="/user/login">Inicia sesión</a></p>
+            <form class= "register-form" action="/user/register" method="POST" enctype="multipart/form-data">
+                <div class="tec-inputs">
+                    <input type="text" placeholder="Nombre(s)" name="user" class="user-input" value="<%=locals.old && old.user ? old.user : '' %>">
+                    <input type="text" placeholder="Apellido(s)" name="lastname" class="last-name-input" value="<%=locals.old && old.lastname ? old.lastname : '' %>">
+                    <input type="email" placeholder="Correo electrónico" name="email" class="email-input" value="<%=locals.old && old.email ? old.email : '' %>">
+                    <input type="password" placeholder="Contraseña" name="password" class="pass-input">
+                    <input type="password" placeholder="Confirmar contraseña" name="passwordConfirm" class="pass-confirm-input ">
+                    <p class="label">La contraseña debe contener al menos 8 caracteres, una mayúscula, una minúscula y un número</p>
+
+                    <label for="imagenUsuario" >Imagen de perfil: </label>
+                    <input type="file" name="imagenUsuario">
+                </div>
+               
+                    <div>
+                        <button type="submit" name="register" class="submit submit-input">Crear cuenta</button>
+                    </div>
+                </div> 
+            </form>
+                
         </div>
-            <!-- input-contenedor -->
-
-            <!-- input-contenedor -->
-            <div class="input-contenedor">
-                <i class="fas fa-envelope icon"></i>
-                <input type="email" name="Correo electrónico" placeholder ="email"/>
-                <p class="campo-obligatorio">* Campo obligatorio</p>
-            </div>
-            <!-- input-contenedor -->
-
-            <!-- input-contenedor -->
-            <div class="input-contenedor">
-                <i class="fas fa-key icon"></i>
-                <input type="password" name="Contraseña" placeholder= "password"/>
-                <p class="campo-obligatorio">* Colocar 6 caracteres, con al menos 1 número y 1 mayúscula</p>
-            </div>
-            <!-- input-contenedor -->
-        </div>
-            <!-- input-contenedor -->
-            <div class="input-contenedor-imagen">
-                <form action="/register" method="POST" enctype="multipart/form-data"></form>
-                <p class="avatar">
-                    <i class="fas fa-images"></i>
-                    <input type="file" /><p>Cargar imagen</p>
-                    <div class="agregar-imagen">
-                            
-
-                    <p class="aceptacion">
-                    <input type="checkbox" /><p>Aceptar términos y condiciones</p>
-                </p>
-            </div>
-            <!-- input-contenedor -->
-            <input class="boton" type="submit" value="Enviar">
-
-        </div>
-        <!-- contenedor -->
-
-    </form>
-    <!-- FORMULARIO -->
-
-    <%- include("../partials/footer.ejs") %>
-
+    </main>
 </body>
-
 </html>

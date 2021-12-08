@@ -1,10 +1,14 @@
 #titulo_h{
     margin-bottom: 40px;
+    text-decoration:underline;
 }
 #titulo_p{
     text-align: center;
     font-size: 20px;
     margin-bottom: 40px;
+}
+a{
+    color:blue
 }
 .box{
     border: 2px solid var(--gold);
@@ -24,9 +28,9 @@
 .box i{
     font-size: 80px;
 }
+
 @media(min-width: 760px) {
     .cajas{
         display: flex;
     }
 }
-

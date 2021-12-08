@@ -1,0 +1,60 @@
+@import url('../general.css');
+
+.product-banner{
+    position: relative;
+}
+.product-banner img{
+    width: 100%;
+    max-height: 200px;
+    
+    object-fit: cover;
+    opacity: 0.75;
+}
+.sinflor{
+    object-position: 0 30%;
+}
+.conflor{
+    object-position: 0 60%;
+}
+.product-banner h1{
+    position: absolute;
+    top: calc(50% - 30px);
+    width: 100%;
+    color: var(--light);
+}
+.products-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-items: center;
+    margin: 15px 0;
+    gap: 10px;
+}
+.pages-number{
+    display: flex;
+    margin: 10px auto;
+    padding-bottom: 25px;
+    justify-content: center;
+}
+.pages-number a{
+    color: blue;
+    text-decoration: underline;
+    padding-right: 10px;
+}
+
+@media(min-width: 768px){
+    .product-banner h1{
+        /* object-position: 0 -220px; */
+        font-size: 48px;
+    }
+    .products-container{
+        grid-template-columns: repeat(2,45%);
+        justify-content: space-evenly
+    }
+}
+
+@media (min-width: 1025px){
+    .products-container{
+        grid-template-columns: repeat(4,1fr);
+        
+    }
+}

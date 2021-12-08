@@ -1,0 +1,26 @@
+@import url('./general.css');
+
+.view-products{
+    margin-top: 50px;
+}
+.products-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+.products-container a:hover{
+    transform: scale(1);
+}
+
+@media(min-width: 768px){
+    .products-container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+     }
+}
+
+@media(min-width: 1025px){
+    .products-container{
+        grid-template-columns: repeat(4,1fr);
+    }
+}

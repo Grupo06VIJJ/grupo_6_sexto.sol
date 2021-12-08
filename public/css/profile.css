@@ -1,0 +1,93 @@
+@import url('general.css');
+
+.info-card{
+    text-align: center;
+}
+.info-element{
+    padding: 5px;
+}
+.info-card img {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    max-width: 350px;
+}
+.edit{
+    max-width: 500px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+
+.edit button{
+    height: 40px;
+    width: 130px;
+}
+
+/* Estilos para ventana emergente */
+.ventana{
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* visibility: hidden; */
+}
+
+.ventanaEmergente{
+    width: 80%;
+    border: solid 2px var(--gold);
+    border-radius: 10px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgb(100,100,100);
+    background-color: white;
+}
+
+.texto-ventana{
+    width: 100%;
+}
+
+.botones-ventana{
+    width: 100%;
+}
+
+.confirmar-btn{
+    background-color:white;
+    border: solid 2px var(--gold);
+    padding: 10px;
+    cursor: pointer;  
+}
+
+.perfil-btn{
+    background-color:white;
+    border: solid 2px var(--gold);
+    cursor: pointer;
+}
+
+@media(min-width: 768px){
+    .info-card {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-height: 350px;
+    }
+    .info-card img{
+        flex-grow: 1
+    }
+    .fields{
+        flex-grow: 1;
+    }
+    .ventanaEmergente{
+        width: 30%;
+    }
+}

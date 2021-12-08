@@ -1,104 +1,122 @@
-.formulario-de-login {
-    background-color: #ffdbdb;
-    margin-top: 45px;
-    border-radius: 30px;
-    padding: 25px;
-    align-self: center;
-    box-shadow: 0px 0px 14px rgb(78 11 11);
-}
+@import url("general.css");
 
-.formulario-de-login .contenedor {
-    width: 100%;
+.login{
+    margin: 15px auto;
+    max-width: 600px;
 }
-
-.formulario-de-login .titulo {
-    margin-top: 20px;
-    color: var(--texto);
-    font-size: 1.5rem;
-    margin-bottom: 1em;
-}
-
-.formulario-de-registro .campo-obligatorio {
-    font-weight: lighter;
-    font-size: 0.2;
-    color: red
-}
-
-.formulario-de-login input[type="email"],
-.formulario-de-login input[type="password"],
-.formulario-de-login input[type="password-repeat"] {
-    font-family: 'Roboto', sans-serif;
-    border: none;
-    outline: none;
-    width: 80%;
-    padding-top: 1em;
-    padding: .5em;
-    font-size: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.formulario-de-login,
-.input-contenedor {
-    border: none;
-    outline: none;
-    margin-bottom: .5em;
-    border: 1px solid #aaa;
-    border-radius: 5px;
-    background-color: white;
-}
-
-.formulario-de-login .icon {
-    min-width: 50px;
-    text-align: center;
-    color: #999;
-}
-
-.formulario-de-login .boton {
-    outline: none;
-    border: none;
-    width: 100%;
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    background-color: var(--primario);
-    border: 2px solid var(--primario);
-    padding: .5em;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 350ms;
-}
-
-.formulario-de-login .boton:hover {
-    background-color: white;
-    color: var(--primario);
-    font-weight: bold;
-    border: 2px solid var(--primario);
-}
-
-.formulario-de-login .crear-cuenta {
-    text-align: center;
-    padding: 1em;
-}
-
-.formulario-de-login .enlace {
-    font-weight: bold;
-}
-
-.formulario-de-login .enlace {
-    color: green;
-    transition: all 350ms;
+.login a{
     text-decoration: none;
 }
-
-.formulario-de-login .enlace:hover {
-    color: var(--texto);
-    text-decoration: underline;
-    cursor: pointer;
+.login-title{
+    padding: 15px;
+    text-align: center;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.login-form input{
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 25px;
+    height: 30px;
+    padding-left: 10px;
+    border: 1px solid var(--light-border);
+    outline: none;
+}
+.error{
+    margin: 10px auto;
+    font-size: 12px;
+    color: red;
+}
+.login-form input:focus{
+    border: 2px solid var(--light-border);
+    box-shadow: 3px 3px 10px var(--light-border) ;
+}
+.login-form label{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 25px;
+    width: 70%;
+    max-width: 350px;
+}
+.login-form .remember{
+    display: flex;
+    width: 100%;
+    max-width: 350px;
+}
+.login-form .remember-input{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+.login-form button{
+    width: 60%;
+    max-width: 200px;
+}
+.login > p{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.login > a{
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+    color: var(--dark);
+    font-weight: bold;
+}
+.login p a{
+    color: var(--dark);
+    font-weight: bold;
+}
+.alt-login{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+.media-login{
+    display: flex;
+    justify-content: space-evenly;
+}
+.media-login i{
+    width: 50px;
+    height: 50px;
+    margin: 20px 0;
+    font-size: 25px;
+    padding: 10px;
+    background-color: var(--soft);
+    border-radius: 10px;
+}
+.fa-facebook-f{
+    color: var(--blue);
+}
+.fa-google{
+    color: var(--red);
 }
 
-@media (min-width:768px) {
-    .formulario-de-login {
-        width: 500px;
+/*-------------------Media querie para tablet---------------------*/
+@media(min-width: 768px) {
+    .login{
+        border: 1px solid var(--light-border);
+        border-radius: 20px;
+    }
+}
+@media(min-width: 1025px){
+    main{
+        background-image: url('../img/login-image.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 0.5px;
+    }
+    .login{
+        width: 40%;
+        /* margin: 50px 0 50px 10px; */
+        margin-left: 10px;
+        background-color: var(--light);
     }
 }
