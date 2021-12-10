@@ -154,19 +154,18 @@
  },
  {
   "id": 10,
+  "category": "sinflor",
   "name": "Santa Rita",
   "description": "Este tipo de flores ",
   "price": 982,
-  "discount": 20,
-  "category": "conflor",
   "size": {
    "S": 20,
-   "M": 20,
+   "M": 21,
    "L": 20
   },
   "images": [
    "img-rosas-rojas.jpg"
   ],
-  "material": "cerámica"
+  "material": "plástico"
  }
 ]

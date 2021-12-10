@@ -71,7 +71,8 @@
                             <label for="conflor">Plantas con flor</label>
                         </div>
                     </section>
-
+                    
+                    <p><strong>Material de maceta:</strong></p>
                     <section class="materials">
                         <label for="materials">Material: </label>
                         <div class="mat-opcion">
@@ -89,7 +90,8 @@
                     </section>
     
                     <section class="tallas">
-                        <p><strong>Tamaño de maceta:</strong></p>
+
+                        <p><strong>Tamaño de maceta y cantidad de cada una:</strong></p>
                             
                             <div class="tallas-text">
                                 <div class="quant">
@@ -106,6 +108,8 @@
                                 </div>
                             </div>
                     </section>
+
+                            <!-- imagenes de plantas y macetas -->
                     <section class="agregar-img">
                         <p><strong>Imágenes:</strong></p>
                         <div class="imagenes">
@@ -116,10 +120,13 @@
                                 <li>
                                     <input type="file" name="image2" id="image"><label>Imagen 2</label>
                                 </li>
+                                <li>
+                                    <input type="file" name="image2" id="image"><label>Imagen maceta</label>
+                                </li>
                             </ul> 
                         </div>
                     </section>                   
-    
+      <!-- botones -->
                     <section class="botones">
                         <button>Cancelar</button>
                         <button  type="reset">Borrar todo</button>
@@ -129,5 +136,10 @@
         </div>
         
     </main>
+
+    <%- include("../partials/footer.ejs")%>
 </body>
+
+
+
 </html>
