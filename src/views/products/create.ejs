@@ -1,39 +1,116 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+<head>
+    <%- include('../partials/head.ejs') %>
+    <link rel="stylesheet" href="/css/addProduct.css">
+    <title>Agregar productos</title>
+</head>
+<body>
+    <%- include('../partials/header') %>
+    <main>
+        <h1>Agregar producto</h1>
+        <div class="agregar-product">
+                <form action="/products" method="POST" enctype="multipart/form-data">
+    
+                    <section class="nombre">
+                        <label for="nombre">Nombre del producto: </label>
+                        <input type="text" name ="name" id="nombre" placeholder="Nombre">
+                    </section>
+    
+                    <section class="categoria">
+                    <label for="categoria">Categoría: </label>
+                    <div class="cat-opcion">
+                        <input type="radio" name="category" id = "sinflor" value="sinflor" checked>
+                        <label for="sinflor">Plantas sin flor</label>
+                        <div class="cat-opcion">
+                            <input type="radio" name="category" id = "conflor" value="conflor"> 
+                            <label for="conflor">Plantas con flor</label>
+                        </div>
+                    </section>
 
-<%- include("../partials/head.ejs")%>
+                    <section class="descripcion">  
+                        <label for="descripcion">Descripción:</label>
+                        <textarea name ="description" id="descripcion" rows="5" placeholder="Escribe una breve descripción"></textarea>
+                    </section>
+    
+                    <section class="precio">
+                        <label for="precio">Precio: $</label>
+                        <input type="text" name ="price" id="precio">
+                    </section>
 
-    <body>
-        <%- include("../partials/header.ejs")%>
-            <main>
-                <section>
-                    <div>
-                        &nbsp;
-                        <h2 clas=form-ingreso>Ingrese un producto nuevo</h2>
-                        <form action="/products/create" method="POST">
-                            <label>Categoria</label>
-                            <input type="text" name="productCategory">
-                            <br>
-                            <label>Nombre</label>
-                            <input type="text" name="productName">
-                            <br>
-                            <label>Descripcion</label>
-                            <input type="text" name="productDescription">
-                            <br>
-                            <label>Imagen</label>
-                            <input type="file" name="productFile">
-                            <br>
-                            <label>Tamaño</label>
-                            <input type="text" name="productSize">
-                            <br>
-                            <label>Precio</label>
-                            <input type="text" name="productPrice">
-                            <br>
-                            <button type="submit">Cargar</button>
-                            <button type="reset">Reset</button>
-                        </form>
-                    </div>
-                </section>
+                   
+                       
+                        
+                    <section class="materials">
+                        <label for="materials">Material: </label>
+                        <div class="mat-opcion">
+                            <input type="radio" name="materials" id = "porcelana" value="porcelana" checked>
+                            <label for="Porcelana">Porcelana</label>
+                        </div>
+                        <div class="mat-opcion">
+                            <input type="radio" name="materials" id = "cerámica" value="cerámica"> 
+                            <label for="Cerámica">Cerámica</label>
+                        </div>
+                        <div class="mat-opcion">
+                            <input type="radio" name="materials" id = "plástico" value="plástico">
+                            <label for="Plástico"> Plástico</label>
+                        </div>
+                    </section>
+    
+                    <section class="tallas">
+                        <p><strong>Tallas:</strong></p>
+                            <div class="tallas-check">
+                                <div class="check">
+                                    <input type="checkbox" name="tamaño" id ="chica" value="C">
+                                    <label for="tamaño-C">C</label>
+                                </div>
+                                <div class="check">
+                                    <input type="checkbox" name="tamaño" id ="mediana" value="M">
+                                    <label for="tamaño-M">M</label>
+                                </div>
+                                <div class="check">
+                                    <input type="checkbox" name="tamaño" id ="grande" value="G">
+                                    <label for="tamaño-G">G</label>
+                                </div>
+                            </div>
+                            <div class="tallas-text">
+                                <div class="quant">
+                                    <label for="cant-S">Cantidad:</label>
+                                    <input type="number" name ="quantityS" id="cant-S">
+                                </div>
+                                <div class="quant">
+                                    <label for="cant-M">Cantidad:</label>
+                                    <input type="number" name ="quantityM" id="cant-M">
+                                </div>
+                                <div class="quant">
+                                    <label for="cant-L">Cantidad:</label>
+                                    <input type="number" name ="quantityL" id="cant-L">
+                                </div>
+                            </div>
+                    </section>
+                    <section class="agregar-img">
+                        <p><strong>Imágenes:</strong></p>
+                        <div class="imagenes">
+                            <ul>
+                                <li>
+                                    <input type="file" name="image1" id="image" placeholder="Subir"><label>Imagen 1</label>
+                                </li>
+                                <li>
+                                    <input type="file" name="image2" id="image"><label>Imagen 2</label>
+                                </li>
+                            </ul> 
+                        </div>
+                    </section>                   
+                    <section class="botones">
+                        <button>Cancelar</button>
+                        <button  type="reset">Borrar todo</button>
+                        <button type="submit">Guardar cambios</button>
+                    </section>
+                </form>
+        </div>
+    </main>
+</body>
+
 
 
             </main>

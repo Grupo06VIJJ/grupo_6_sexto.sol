@@ -134,7 +134,7 @@ const productController = {
         const products = JSON.parse(fs.readFileSync(productsPath, 'utf-8'));
         const productID = req.params.id;
         const productToEdit = products.find( product => product.id == productID)
-        res.render('./admin/editProduct', {product: productToEdit, user: req.session.user ? req.session.user : undefined });
+        res.render('./products/editProduct', {product: productToEdit, user: req.session.user ? req.session.user : undefined });
     },
     update: (req,res) => {
         const products = JSON.parse(fs.readFileSync(productsPath, 'utf-8'));

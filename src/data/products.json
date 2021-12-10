@@ -167,5 +167,39 @@
    "img-rosas-rojas.jpg"
   ],
   "material": "plástico"
+ },
+ {
+  "id": 11,
+  "category": "sinflor",
+  "name": "prueba",
+  "description": "lalala",
+  "price": 8000,
+  "size": {
+   "S": 1,
+   "M": 0,
+   "L": 0
+  },
+  "images": [
+   "default-image.svg",
+   "default-image.svg"
+  ],
+  "material": "porcelana"
+ },
+ {
+  "id": 12,
+  "category": "conflor",
+  "name": "prueba 2",
+  "description": "juja",
+  "price": 1000,
+  "size": {
+   "S": 0,
+   "M": 0,
+   "L": 0
+  },
+  "images": [
+   "default-image.svg",
+   "default-image.svg"
+  ],
+  "material": "porcelana"
  }
 ]
