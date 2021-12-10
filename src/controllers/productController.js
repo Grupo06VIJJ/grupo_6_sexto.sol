@@ -206,9 +206,7 @@ const productController = {
         res.redirect('/');
 
     },
-    finalizaCompra : (req, res) => {
-        res.render('./products/finalizaCompra', {user: req.session.user ? req.session.user : undefined});
-    },
+   
     productos: (req,res) => {
         const allProducts = JSON.parse(fs.readFileSync(productsPath, 'utf-8'));
         res.render('./products/products', { products: allProducts, user: req.session.user ? req.session.user : undefined });
