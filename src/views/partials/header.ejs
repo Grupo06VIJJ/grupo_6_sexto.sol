@@ -1,94 +1,92 @@
 <header>
-   <!-- HEADER -->
-<header class="cabecera">
-
-    <!-- navegacion -->
-    <nav class="navegacion">
-
-        <!-- lista -->
-        <ul class="lista">
-<!-- logo -->
-<li class="logo">
-    <a href="/">
-        <span>
-            &nbsp;Logotipo
-        </span>
-    </a>
-</li>
-<!-- logo -->
-<li class="item">
-    <a href="/">
-        <span>
-            &nbsp;Home
-        </span>
-    </a>
-            <li class="item">
-                <a href="/products/list">
-                    <span>
-                        &nbsp;CRUD
-                    </span>
-                </a>
-            </li>
-               <!-- Hamburguesa -->
-            <li class="hamburguesa">
-                <i class="icon fas fa-bars"></i>
-            </li>
-            <!-- Hamburguesa -->
-                <ul class="item icon-categoria">
-                    <li><a href="/products/sinflor">Categoría:Sin flor
-                    <li><a href="/products/conflor"> Categoría:Con flor</a></li>
-                </ul> 
-                            
-            <a href="/"><i class="fas fa-arrow-left"></i>Volver</a></li>
-            <li class="item icon-registro">
-                <% if(locals.user) { %>
-                <i class="far fa-user logged"></i>
-                <% } else { %>
-                    <i class="far fa-user"></i>
-                <% } %>  
-                <ul class="item icon-registro">
-                    <% if(locals.user) { %>
-                    <li>Hola <%=user.first_name%></li>
-                    <li><a href="/user/<%=user.id%>/profile">Ir a perfil</a></li>
-                        <% if(user.category == "admin") { %>
-                    <li><a href="/products/product/create">Crear producto</a></li>
-                        <% } %>
-                    <li>
-                        <form action="/user/logoff?_method=PUT" method="post">
-                            <a href="#"><button type="submit">Cerrar sesión</button></a>
-                        </form>
-                    </li>
-                    <% } else { %>
-                    <li><a href="/user/login"><i class="fas fa-user"></i>Iniciar sesión</a></li>
-                    <li><a href="/user/register">Registrarse</a></li>
-                    <% } %>
-                </ul>
-            </li>
-              <!-- carrito -->
-            <li class="item icon-menu"></li>
-              <!--<li><a href="/products/productCart"><i class="fas fa-shopping-cart"></i></a></li>-->
-                <a href="/products/cart"><i class="fas fa-shopping-cart"></i>
-                    <span class="palabra">
-                        &nbsp;&nbsp;Compras
-                    </span>
-                </a>
-            </li>
-            <!-- carrito -->
-            <!-- acceder -->
-  <li class="item icon-servicio">
-    <a href="/service">
-        <i class="fas fa-hands-helping"></i>
-        <span class="palabra">
-            &nbsp;&nbsp;Servicio al cliente
-        </span>
-    </a>
-</li>
-<!-- acceder -->
-        </ul>
-    </nav>
-</header>
-
-
-      
-© 2021 GitHub, Inc.
-Te
+    <!-- HEADER -->
+ <header class="cabecera">
+ 
+     <!-- navegacion -->
+     <nav class="navegacion">
+ 
+         <!-- lista -->
+         <ul class="lista">
+ <!-- logo -->
+ <li class="logo">
+     <a href="/">
+         <span>
+             &nbsp;Logo
+         </span>
+     </a>
+ </li>
+ <!-- logo -->
+ <li class="item">
+     <a href="/">
+         <span>
+             &nbsp;Home
+         </span>
+     </a>
+             <li class="item">
+                 <a href="/products/list">
+                     <span>
+                         &nbsp;CRUD
+                     </span>
+                 </a>
+             </li>
+                <!-- Hamburguesa -->
+             <li class="hamburguesa">
+                 <i class="icon fas fa-bars"></i>
+             </li>
+             <!-- Hamburguesa -->
+                 <ul class="item icon-categoria">
+                     <li><a href="/products/sinflor">Categoría:Sin flor
+                     <li><a href="/products/conflor"> Categoría:Con flor</a></li>
+                 </ul> 
+                             
+             <a href="/"><i class="fas fa-arrow-left"></i>Volver</a></li>
+             <li class="item icon-registro">
+                 <% if(locals.user) { %>
+                 <i class="far fa-user logged"></i>
+                 <% } else { %>
+                     <i class="far fa-user"></i>
+                 <% } %>  
+                 <ul class="item icon-registro">
+                     <% if(locals.user) { %>
+                     <li>Hola <%=user.first_name%></li>
+                     <li><a href="/user/<%=user.id%>/profile">Ir a perfil</a></li>
+                         <% if(user.category == "admin") { %>
+                     <li><a href="/products/product/create">Crear producto</a></li>
+                         <% } %>
+                     <li>
+                         <form action="/user/logoff?_method=PUT" method="post">
+                             <a href="#"><button type="submit">Cerrar sesión</button></a>
+                         </form>
+                     </li>
+                     <% } else { %>
+                     <li><a href="/user/login"><i class="fas fa-user"></i>Iniciar sesión</a></li>
+                     <li><a href="/user/register">Registrarse</a></li>
+                     <% } %>
+                 </ul>
+             </li>
+               <!-- carrito -->
+             <li class="item icon-menu"></li>
+               <!--<li><a href="/products/productCart"><i class="fas fa-shopping-cart"></i></a></li>-->
+                 <a href="/products/cart"><i class="fas fa-shopping-cart"></i>
+                     <span class="palabra">
+                         &nbsp;&nbsp;Compras
+                     </span>
+                 </a>
+             </li>
+             <!-- carrito -->
+             <!-- acceder -->
+   <li class="item icon-servicio">
+     <a href="/service">
+         <i class="fas fa-hands-helping"></i>
+         <span class="palabra">
+             &nbsp;&nbsp;Servicio al cliente
+         </span>
+     </a>
+ </li>
+ <!-- acceder -->
+         </ul>
+     </nav>
+ </header>
+ 
+ 
+       
