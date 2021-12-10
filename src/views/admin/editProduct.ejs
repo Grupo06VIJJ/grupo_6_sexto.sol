@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head.ejs') %>
+    <link rel="stylesheet" href="/css/editProduct.css">
+    <title>Editando producto</title>
+</head>
+<body>
+    <%- include('../partials/header') %>
+    <main>
+        <h1>Editar producto</h1>
+        <div class="register-product">
+            <section class="informacion-actual">
+
+                <h1>Información actual</h1>
+
+                <div class="informacion-actual-imgs">
+                    <div>
+                        <img src="/img/<%=product.category%>/<%=product.images[0]%>" alt="<%=product.name%>">
+                        <p>Imagen 1</p>
+                    </div>
+
+                    <div>
+                        <img src="/img/<%=product.category%>/<%=product.images[1]%>" alt="<%=product.name%>">
+                        <p>Imagen 2</p>
+                    </div>
+                    
+                   
+                </div>
+    
+                <div class="datos-actual">
+                    <p class="titulo">Nombre del producto:</p>
+                    <p><%=product.name%></p>
+                    <p class="titulo">Descripción:</p>
+                    <p><%=product.description%></p>
+                    <p class="titulo">Precio: </p>
+                    <p>$<%=product.price%></p>
+                </div>
+            </section>
+    
+    
+                <form action="/products/<%=product.id%>?_method=PATCH" method="POST" enctype="multipart/form-data">
+                    <section class="nombre">
+                        <label for="name">Nombre del producto: </label>
+                        <input type="text" name ="name" id="name" value="<%=product.name%>">
+                    </section>
+    
+                    <section class="descripcion">  
+                        <label for="description">Descripción:</label>
+                        <textarea name ="description" id="description" rows="5"><%=product.description%></textarea>
+                    </section>
+    
+                    <section class="precio">
+                        <label for="price">Precio: $</label>
+                        <input type="text" name ="price" id="price" value="<%=product.price%>">
+                    </section>
+
+                    <section class="descuento">
+                        <label for="discount">Descuento:</label>
+                        <input type="number" name="discount" id="discount" value="<%=product.discount%>">
+                    </section>
+    
+                    <section class="categoria">
+                        <label for="category">Categoría: </label>
+                        <div class="cat-opcion">
+                            <input type="radio" name="category" id = "sinflor" value="sinflor" <%= product.category == "anillos" ? "checked" : ""%>>
+                            <label for="sinflor">Plantas sin flor</label>
+                        </div>
+                        <div class="cat-opcion">
+                            <input type="radio" name="category" id = "conflor" value="conflor" <%= product.category == "collares" ? "checked" : ""%>> 
+                            <label for="conflor">Plantas con flor</label>
+                        </div>
+                    </section>
+
+                    <section class="materials">
+                        <label for="materials">Material: </label>
+                        <div class="mat-opcion">
+                            <input type="radio" name="materials" id = "porcelana" value="porcelana" <%= product.material == "oro" ? "checked" : ""%>>
+                            <label for="porcelana">Porcelana</label>
+                        </div>
+                        <div class="mat-opcion">
+                            <input type="radio" name="materials" id = "cerámica" value="cerámica" <%= product.material == "plata" ? "checked" : ""%>> 
+                            <label for="cerámica">Cerámica</label>
+                        </div>
+                        <div class="mat-opcion">
+                            <input type="radio" name="materials" id = "plástico" value="plástico" <%= product.material == "acero" ? "checked" : ""%>>
+                            <label for="Plástico"> Plástico</label>
+                        </div>
+                    </section>
+    
+                    <section class="tallas">
+                        <p><strong>Tamaño de maceta:</strong></p>
+                            
+                            <div class="tallas-text">
+                                <div class="quant">
+                                    <label for="quantityS">S:</label>
+                                    <input type="number" name ="quantityS" id="quantityS" value=0 min="0">
+                                </div>
+                                <div class="quant">
+                                    <label for="quantityM">M:</label>
+                                    <input type="number" name ="quantityM" id="quantityM" value=0 min="0">
+                                </div>
+                                <div class="quant">
+                                    <label for="quantityL">L:</label>
+                                    <input type="number" name ="quantityL" id="quantityL" value=0 min="0">
+                                </div>
+                            </div>
+                    </section>
+                    <section class="agregar-img">
+                        <p><strong>Imágenes:</strong></p>
+                        <div class="imagenes">
+                            <ul>
+                                <li>
+                                    <input type="file" name="image1" id="image"><label>Imagen 1</label>
+                                </li>
+                                <li>
+                                    <input type="file" name="image2" id="image"><label>Imagen 2</label>
+                                </li>
+                            </ul> 
+                        </div>
+                    </section>                   
+    
+                    <section class="botones">
+                        <button>Cancelar</button>
+                        <button  type="reset">Borrar todo</button>
+                        <button type="submit">Guardar cambios</button>
+                    </section>
+                </form>
+        </div>
+        
+    </main>
+</body>
+</html>
