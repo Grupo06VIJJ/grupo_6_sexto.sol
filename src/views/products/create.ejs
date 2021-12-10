@@ -5,50 +5,38 @@
 
     <body>
         <%- include("../partials/header.ejs")%>
-
-            <main class="crear-producto">
-                <h1 class="titulo">
-                    Crear producto
-                </h1>
-
-                <form action="/products/create" method="POST">
-
-                    <div class="elemento">
-                        <label>Nombre</label>
-                        <input type="text" name="productName">
+            <main>
+                <section>
+                    <div>
+                        &nbsp;
+                        <h2 clas=form-ingreso>Ingrese un producto nuevo</h2>
+                        <form action="/products/create" method="POST">
+                            <label>Categoria</label>
+                            <input type="text" name="productCategory">
+                            <br>
+                            <label>Nombre</label>
+                            <input type="text" name="productName">
+                            <br>
+                            <label>Descripcion</label>
+                            <input type="text" name="productDescription">
+                            <br>
+                            <label>Imagen</label>
+                            <input type="file" name="productFile">
+                            <br>
+                            <label>Tamaño</label>
+                            <input type="text" name="productSize">
+                            <br>
+                            <label>Precio</label>
+                            <input type="text" name="productPrice">
+                            <br>
+                            <button type="submit">Cargar</button>
+                            <button type="reset">Reset</button>
+                        </form>
                     </div>
+                </section>
 
-                    <div class="elemento">
-                        <label>Categoria</label>
-                        <input type="text" name="productCategory">
-                    </div>
-
-                    <div class="elemento">
-                        <label>Imagen</label>
-                        <input type="file" name="productFile">
-                    </div>
-
-                    <div class="elemento">
-                        <label>Precio</label>
-                        <input type="text" name="productPrice">
-                    </div>
-
-                    <div class="elemento">
-                        <label>Descripcion</label>
-                        <input type="text" name="productDescription">
-                    </div>
-
-                    <div class="elemento centrado">
-                        <button class="mi-btn" type="reset">Reset</button>
-                    </div>
-
-                    <div class="elemento centrado">
-                        <button class="mi-btn" type="submit">Cargar</button>
-                    </div>
-                </form>
 
             </main>
-
             <%- include("../partials/footer.ejs")%>
     </body>
 

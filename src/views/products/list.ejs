@@ -1,125 +1,162 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<%- include("../partials/head.ejs")%>
+<%- include("../partials/head-b.ejs")%>
 
     <body>
         <%- include("../partials/header.ejs")%>
+            <!-- contenedor -->
+            <div class="container">
 
-            <main class="listado-productos">
+                <!-- fila -->
+                <div class="row">
 
-                <h1 class="titulo">
-                    Todos los productos
-                </h1>
+                    <!-- col -->
+                    <div class="col-12">
 
-                <% if (productList=="" ) { %>
+                        <h1 class="my-5">
+                            Listado de productos
+                        </h1>
 
-                    <div class="elemento">
-                        <a class="mi-btn" href="/products/create">
-                            Crear producto
-                        </a>
                     </div>
 
-                    <% } else{ %>
+                    <!-- col -->
+                    <div class="col-12 mb-5">
 
-                        <div class="elemento">
-                            <a class="mi-btn" href="/products/create">
-                                Añadir producto
-                            </a>
-                        </div>
+                        <% if (productList=="" ) { %>
 
-                        <% for (let i=0; i< productList.length; i++) {%>
+                            <div class="col-12">
+                                <a type="button" class="mi-btn btn btn-primary btn-lg mb-5" href="/products/create">
+                                    Crear producto
+                                </a>
+                            </div>
 
-                            <!-- Tabla -->
-                            <table class="tabla">
+                            <% } else{ %>
 
-                                <thead>
-                                    <tr>
-                                        <td class="columna">
-                                            Id
-                                        </td>
+                                <div class="col-12">
+                                    <a type="button" class="mi-btn btn btn-primary btn-lg mb-5" href="/products/create">
+                                        Añadir producto
+                                    </a>
+                                </div>
 
-                                        <td class="columna-nombre">
-                                            Nombre
-                                        </td>
+                                <% for (let i=0; i< productList.length; i++) {%>
 
-                                        <td class="columna">
-                                            Precio
-                                        </td>
+                                    <!-- Tabla -->
+                                    <div class="table-responsive">
 
-                                        <td class="columna">
-                                            Categoría
-                                        </td>
+                                        <table class="table table-striped table-borderless">
 
-                                        <td class="columna">
-                                            Descuento
-                                        </td>
+                                            <thead class="text-center">
+                                                <tr>
+                                                    <th scope="col">
+                                                        Id
+                                                    </th>
+                                                    <th scope="col">
+                                                        Nombre
+                                                    </th>
+                                                    <th scope="col">
+                                                        Descripción
+                                                    </th>
+                                                    <th scope="col">
+                                                      Cantidad
+                                                    </th>
+                                                    <th scope="col">
+                                                        Material
+                                                    </th>
+                                                    <th scope="col">
+                                                        Tamaño de maceta
+                                                    </th>
+                                                    <th scope="col">
+                                                        Precio
+                                                    </th>
+                                                    <th scope="col">
+                                                        Editar
+                                                    </th>
+                                                    <th scope="col">
+                                                        Borrar
+                                                    </th>
+                                                </tr>
+                                            </thead>
 
-                                        <td class="columna">
-                                            Detalle
-                                        </td>
+                                            <tbody class="text-center">
+                                                <tr>
+                                                    <th scope="row">
+                                                        <%= productList[i].id %>
+                                                    </th>
+                                                    <td>
+                                                        <%= productList[i].name %>
+                                                    </td>
+                                                    <td>
+                                                        <%= productList[i].desc %>
+                                                    </td>
+                                                    <td>
+                                                        <% productList[i].img %>
+                                                    </td>
+                                                    <td>
+                                                        <% productList[i].category %>
+                                                    </td>
+                                                    <td>
+                                                        <%= productList[i].size %>
+                                                    </td>
 
-                                        <td class="columna">
-                                            Editar
-                                        </td>
+                                                    <td>
+                                                        <%= productList[i].price %>
+                                                    </td>
 
-                                        <td class="columna">
-                                            Borrar
-                                        </td>
+                                                    <td>
+                                                        <form action="/products/<%=productList[i].id %>/update" method="GET">
+                                                            <button type="submit" class="btn-accion">
+                                                                <i class="btn-accion-icono fas fa-edit"></i>
+                                                            </button>
+                                                        </form>
+                                                    </td>
 
-                                    </tr>
-                                </thead>
+                                                    <td>
+                                                        <form action="/products/<%=productList[i].id %>/delete?_method=delete" method="POST">
+                                                            <button type="submit" class="btn-accion">
+                                                                <i class="btn-accion-icono fas fa-trash-alt"></i>
+                                                            </button>
+                                                        </form>
+                                                    </td>
+                                                    <% } %>
+
+                                                </tr>
+
+                                            </tbody>
+
+                                        </table>
+
+                                    </div>
+                                    <!-- Tabla -->
+                                    <% } %>
+                    </div>
+                    <!-- col -->
 
 
-                                <tbody>
-                                    <tr>
-                                        <td class="columna">
-                                            <%= productList[i].id %>
-                                        </td>
 
-                                        <td class="columna-nombre">
-                                            <%= productList[i].name %>
-                                        </td>
 
-                                        <td class="columna">
-                                            <%= productList[i].price %>
-                                        </td>
 
-                                        <td class="columna">
-                                            <% productList[i].category %>
-                                        </td>
+                </div>
+                <!-- fila -->
 
-                                        <td class="columna">
-                                            <%= productList[i].desc %>
-                                        </td>
+                <div class="col-12">
+                    <a type="button" class="mi-btn btn btn-primary btn-lg mb-5" href="/">
+                        Inicio
+                    </a>
+                </div>
 
-                                        <td class="columna">
-                                            <% productList[i].img %>
-                                        </td>
 
-                                        <td class="columna">
-                                            <form action="/products/<%=productList[i].id %>/update" method="GET">
-                                                <button type="submit" class="btn-crud">
-                                                    <i class="btn-crud-editar-borrar fas fa-edit"></i>
-                                                </button>
-                                            </form>
-                                        </td>
 
-                                        <td class="columna">
-                                            <form action="/products/<%=productList[i].id %>/delete?_method=delete" method="POST">
-                                                <button type="submit" class="btn-crud">
-                                                    <i class="btn-crud-editar-borrar fas fa-trash-alt"></i>
-                                                </button>
-                                            </form>
-                                        </td>
-                                    </tr>
-                                </tbody>
+                <!-- fila -->
+                <div class="row">
 
-                            </table>
-                            <!-- Tabla -->
-                            <% } %>
-                                <% } %>
-            </main>
+
+
+                </div>
+                <!-- fila -->
+
+            </div>
+            <!-- contenedor -->
 
             <%- include("../partials/footer.ejs")%>
 

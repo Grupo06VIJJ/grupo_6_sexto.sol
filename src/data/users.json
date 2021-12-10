@@ -1,0 +1,56 @@
+[
+ {
+  "id": 1,
+  "first_name": "Valeria",
+  "last_name": "alsmdkkdkk",
+  "email": "mrishworth0@surveymonkey.com",
+  "password": "S725s5haDw1",
+  "category": "user",
+  "image": "https://robohash.org/hicquoqui.png?size=50x50&set=set1"
+ },
+ {
+  "id": 2,
+  "first_name": "Juan",
+  "last_name": "Ssksms",
+  "email": "msuspslss1@ucoz.ru",
+  "password": "hIWJsG",
+  "category": "user",
+  "image": "https://robohash.org/numquamconsequaturest.png?size=50x50&set=set1"
+ },
+ {
+  "id": 3,
+  "first_name": "Juan",
+  "last_name": "Ssksms",
+  "email": "msuspslss1@ucoz.ru",
+  "password": "hIWJsG",
+  "category": "user",
+  "image": "https://robohash.org/numquamconsequaturest.png?size=50x50&set=set1"
+ },
+ {
+  "id": 4,
+  "first_name": "Valeria",
+  "last_name": "Yashan",
+  "email": "valeriayashan@hotmail.com",
+  "password": "$2b$10$OphKy0lWmKJlpxyX7oG6fOXDCC168qy23ckN1c8PMoUjp8yIiOh/C",
+  "category": "user",
+  "image": "default-user"
+ },
+ {
+  "id": 5,
+  "first_name": "Sarita",
+  "last_name": "Bonita",
+  "email": "saritabonita@hotmail.com",
+  "password": "$2b$10$HnFWeO4QYhlfG0aYkXA.uOFOpk/a6lrSEPxKZoRJqkFz7ylq19w5W",
+  "category": "user",
+  "image": "default-user"
+ },
+ {
+  "id": 6,
+  "first_name": "Valeria",
+  "last_name": "Yashan",
+  "email": "valeriayashan@hotmail.com",
+  "password": "$2b$10$sNSS/UaY5oJhHk/QeXmGKOS3GH4LKGvfAzW2IwWUpiTC2u.Yv1Ne6",
+  "category": "user",
+  "image": "img-valeria-52944.png"
+ }
+]

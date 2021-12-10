@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <%- include('../partials/head.ejs') %>
+    <link rel="stylesheet" href="/css/productDetail.css">
+    <title>Detalle de productos</title>
+</head>
+<body>
+    <%- include('../partials/header') %>
+    <main>
+
+        <section class="descripcion-producto">
+
+            <div class="imagenes">
+                <!-- Vista de producto actual -->
+                <div>
+ <img class="imagen-principal" src="/img/<%=product.category%>/<%=product.images[0]%>" alt="">
+                </div>
+          
+            </div>
+            <!-- </div> -->
+            <div class="descripciones">
+                <!-- Descripcion del producto -->
+                <div class="datos-producto">
+                    <h1 class="nombre-producto"><%=product.name%></h1>
+                    <p class="descripcion-producto"><%=product.description%></p>
+                </div>
+
+                <!-- Seleccion de tallas y cantidades -->
+             
+               <section>
+                <div class="resalta-campo">
+                    <label  for="cantidad">Cantidad:</label>
+                    <select name="quantity" id="cantidad" class="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select> 
+                </div>
+               </section>  
+                         <div class="datos-compra">
+                    <form action="">
+                        <div class="resalta-campo">
+                            <p><strong>Material: </strong> <span><%= product.material%></span></p>
+                        </div>
+                        <div class="resalta-campo">
+                            <label for="seleccionTalla">Tamaño de maceta: </label>
+                            <select name="size" id="seleccionTalla">
+                                <option value="S">Chica</option>
+                                <option value="M">Mediana</option>
+                                <option value="L">Grande</option>
+                            </select>
+                        </div>
+                        <p><strong>Precio: </strong> <span>$<%=product.price%></span></p>
+                        <div class="contenedor-btn">
+                            <button type="submit" class="submit btn">Añadir al carrito</button>
+                        </div>
+                    </form>
+                    <% if(locals.user && user.category == "admin") { %>
+                    <section class="user-options">
+                        <a href="/products/<%=product.id%>/edit" class="editar"><button class="editar-btn">Editar</button></a>
+                        <form action="/products/<%=product.id%>?_method=DELETE" method="POST">
+                            <button type="submit" class="borrar-btn">Borrar</button>
+                        </form>
+                    </section>
+                    <% } %>
+                </div>
+            </div>
+        </section>
+        <section class="comment-section">
+            <section class="add-comment">
+                <form action="#">
+                    <label for="add-comment">Dejanos tu comentario, nos ayudará a seguir mejorando</label>
+                    <input type="text" class="comment-title" placeholder="Título del comentario">
+                    <textarea name="comment" id="add-comment" cols="20" rows="10" placeholder="Escribe aquí tu comentario"></textarea>
+                    <div class="comment-buttons">
+                        <button type="reset">Borrar</button>
+                        <button type="submit">Guardar</button>
+                    </div>
+                </form>
+            </section>
+            
+    </main>
+    <%- include('../partials/footer') %>
+
+
+    
+</body>
+</html>

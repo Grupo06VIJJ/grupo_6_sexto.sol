@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head') %>
+    <link rel="stylesheet" href="/css/products-pages.css">
+    <title>Sin flor</title>
+</head>
+<body>
+    <%- include('../partials/header') %>
+    <main>
+        
+            <h1>Elegí la planta que más te guste</h1>
+            <a href="/">Regresar a inicio</a>
+        </section>
+        <section class="products-container">
+            <% products.forEach( product => { %>
+                <%- include('../partials/product-card.ejs', {product: product}) %>
+            <% }) %>
+        </section>
+    </main>
+    
+    <%- include('../partials/footer') %>
+</body>
+</html>

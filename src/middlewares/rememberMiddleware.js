@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const usersPath = path.join(__dirname, '../db/usuarios.json');
+const usersPath = path.join(__dirname, '../data/users.json');
 
 const remember = (req, res, next) => {
     if(req.cookies.remember != undefined && req.session.user == undefined) {
@@ -12,4 +12,4 @@ const remember = (req, res, next) => {
     next();
 }
 
-module.exports = router;
+module.exports = remember
