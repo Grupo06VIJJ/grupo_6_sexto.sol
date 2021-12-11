@@ -1,5 +1,14 @@
 @import url('./general.css');
+/*formulario*/
+.add-product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
 /* Estilos de la seccion de nombre */
+
 .nombre{
     margin-bottom: 20px;
 }
@@ -62,15 +71,6 @@
     width: 100%;
     border-radius: 5px;
     
-}
-
-/* Estilos de la seccion de precio */
-.descuento{
-    margin-top: 20px;
-}
-#descuento, #precio{
-    margin-right: 3px;
-    max-width: 120px;
 }
 
 

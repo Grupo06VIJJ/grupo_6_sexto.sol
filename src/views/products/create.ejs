@@ -3,13 +3,14 @@
 <head>
     <%- include('../partials/head.ejs') %>
     <link rel="stylesheet" href="/css/create.css">
+  
     <title>Agregar productos</title>
 </head>
 <body>
     <%- include('../partials/header') %>
     <main>
         <h1>Agregar producto</h1>
-        <div class="agregar-product">
+        <div class="add-product">
                 <form action="/products" method="POST" enctype="multipart/form-data">
     
                     <section class="nombre">
@@ -38,11 +39,10 @@
                         <input type="text" name ="price" id="precio">
                     </section>
 
-                   
-                       
-                        
+                  
                     <section class="materials">
-                        <label for="materials">Material: </label>
+                        <p><strong>Material de la maceta:</strong></p>
+                        <label for="materials"> </label>
                         <div class="mat-opcion">
                             <input type="radio" name="materials" id = "porcelana" value="porcelana" checked>
                             <label for="Porcelana">Porcelana</label>
@@ -57,36 +57,22 @@
                         </div>
                     </section>
     
-                    <section class="tallas">
-                        <p><strong>Tallas:</strong></p>
-                            <div class="tallas-check">
-                                <div class="check">
-                                    <input type="checkbox" name="tamaño" id ="chica" value="C">
-                                    <label for="tamaño-C">C</label>
-                                </div>
-                                <div class="check">
-                                    <input type="checkbox" name="tamaño" id ="mediana" value="M">
-                                    <label for="tamaño-M">M</label>
-                                </div>
-                                <div class="check">
-                                    <input type="checkbox" name="tamaño" id ="grande" value="G">
-                                    <label for="tamaño-G">G</label>
-                                </div>
-                            </div>
-                            <div class="tallas-text">
-                                <div class="quant">
-                                    <label for="cant-S">Cantidad:</label>
-                                    <input type="number" name ="quantityS" id="cant-S">
-                                </div>
-                                <div class="quant">
-                                    <label for="cant-M">Cantidad:</label>
-                                    <input type="number" name ="quantityM" id="cant-M">
-                                </div>
-                                <div class="quant">
-                                    <label for="cant-L">Cantidad:</label>
-                                    <input type="number" name ="quantityL" id="cant-L">
-                                </div>
-                            </div>
+                    <p><strong>Tamaño de maceta y cantidad de cada una:</strong></p>
+                            
+                    <div class="tallas-text">
+                        <div class="quant">
+                            <label for="quantityS">S:</label>
+                            <input type="number" name ="quantityS" id="quantityS" value=0 min="0">
+                        </div>
+                        <div class="quant">
+                            <label for="quantityM">M:</label>
+                            <input type="number" name ="quantityM" id="quantityM" value=0 min="0">
+                        </div>
+                        <div class="quant">
+                            <label for="quantityL">L:</label>
+                            <input type="number" name ="quantityL" id="quantityL" value=0 min="0">
+                        </div>   
+                    </div>                         
                     </section>
                     <section class="agregar-img">
                         <p><strong>Imágenes:</strong></p>
@@ -98,13 +84,16 @@
                                 <li>
                                     <input type="file" name="image2" id="image"><label>Imagen 2</label>
                                 </li>
+                                <li>
+                                    <input type="file" name="image2" id="image"><label>Imagen 3-maceta</label>
+                                </li>
                             </ul> 
                         </div>
                     </section>                   
                     <section class="botones">
-                        <button>Cancelar</button>
-                        <button  type="reset">Borrar todo</button>
-                        <button type="submit">Guardar cambios</button>
+                        <button>Cancelar la operación</button>
+                        <button  type="reset">Borrar </button>
+                        <button type="submit">Guardar producto ingresado</button>
                     </section>
                 </form>
         </div>
