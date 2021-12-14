@@ -1,205 +1,216 @@
 [
- {
-  "id": 1,
-  "name": "Cola de Tigre",
-  "description": "La sansevieria trifasciata es una planta muy utilizada en el interior y que destaca por su fácil cuidado. A menudo es llamada también cola de lucio, lengua de suegra, lengua de gato, lengua de tigre o espada de San Jorge. Cuenta con muchas subespecies, como la sansevieria laurentii.",
-  "price": 800,
-  "discount": 20,
-  "category": "sinflor",
-  "size": {
-   "S": 20,
-   "M": 20,
-   "L": 20
-  },
-  "images": [
-   "img-cola-de-tigre.jpg"
-  ],
-  "material": "cerámica"
- },
- {
-  "id": 2,
-  "name": "Monstera deliciosa",
-  "description": "Monstera deliciosa, llamada comúnmente cerimán o costilla de Adán, es una especie de planta trepadora de la familia Araceae, endémica de selvas tropicales, que se distribuye desde el centro y sur de México hasta el norte de Argentina.",
-  "price": 600,
-  "discount": 20,
-  "category": "sinflor",
-  "size": {
-   "S": 20,
-   "M": 20,
-   "L": 20
-  },
-  "images": [
-   "img-monstera-deliciosa.jpg"
-  ],
-  "material": "cerámica"
- },
- {
-  "id": 3,
-  "name": "Potus",
-  "description": "Epipremnum aureum, comúnmente conocido como potus, pothos o potos es una especie de la familia Araceae nativa del sudeste asiático y Nueva Guinea. En ocasiones es confundida con philodendron en las floristerías. ",
-  "price": 1500,
-  "discount": 20,
-  "category": "sinflor",
-  "size": {
-   "S": 20,
-   "M": 20,
-   "L": 20
-  },
-  "images": [
-   "img-potus.jpg"
-  ],
-  "material": "porcelana"
- },
- {
-  "id": 4,
-  "name": "Begonia",
-  "description": "Son plantas terrestres (a veces epífitas) herbáceas, algunas de porte semiarbustivo o incluso pequeños árboles y otras trepadoras, perennes excepto en climas fríos, es el aérea donde la planta muere. Las flores son muy diversas tanto en forma y tamaño como en color; son unisexuales, la masculina contiene numerosos estambres, la femenina posee un ovario inferior con 2 o 4 estigmas ramificados. El fruto es una cápsula alada que contiene gran cantidad de diminutas semillas. Las hojas son asimétricas y al igual que las flores, difieren mucho de una a otra especie, desde variadas como las de Begonia brevirimosa a verde brillante en Begonia ulmifolia.",
-  "price": 700,
-  "discount": 20,
-  "category": "conflor",
-  "size": {
-   "S": 20,
-   "M": 20,
-   "L": 20
-  },
-  "images": [
-   "img-begonia.jpg"
-  ],
-  "material": "cerámica"
- },
- {
-  "id": 5,
-  "name": "Bromelia",
-  "description": "Bromelia es un género tropical americano de plantas de la familia Bromeliaceae, aunque comúnmente se llama con el mismo nombre a plantas de otros géneros de la misma familia. Sus flores tienen un cáliz muy profundo.",
-  "price": 349,
-  "discount": 20,
-  "category": "conflor",
-  "size": {
-   "S": 20,
-   "M": 20,
-   "L": 20
-  },
-  "images": [
-   "img-bromelia.jpg"
-  ],
-  "material": "cerámica"
- },
- {
-  "id": 6,
-  "name": "Crisantemo amarillo",
-  "description": "Su nombre proviene de las palabras griegas cyrsos (oro) y anthemon (flor) y en el antiguo Japón esta planta era símbolo de la felicidad. Está disponible en formato pequeño y produce vistosas flores en distintos colores como amarillo, blanco, violeta, rojo y morado.",
-  "price": 800,
-  "discount": 20,
-  "category": "conflor",
-  "size": {
-   "S": 20,
-   "M": 20,
-   "L": 20
-  },
-  "images": [
-   "img-crisantemo-amarillo.jpg"
-  ],
-  "material": "cerámica"
- },
- {
-  "id": 7,
-  "name": "Rosas blancas",
-  "description": "Por su significado de paz y tranquilidad, las flores blancas son también las más utilizadas para dar ánimos a una persona que padece una enfermedad. Nada como la frescura de las rosas blancas o de cualquier otro tipo de flor de este color para demostrar tu apoyo en los malos momentos.",
-  "price": 1500,
-  "discount": 20,
-  "category": "conflor",
-  "size": {
-   "S": 20,
-   "M": 20,
-   "L": 20
-  },
-  "images": [
-   "img-rosas-blancas.jpg"
-  ],
-  "material": "cerámica"
- },
- {
-  "id": 8,
-  "name": "Rosas rojas",
-  "description": "Este tipo de flores se ha considerado siempre un símbolo de amor, pasión, belleza y respeto. Lo más frecuente es que sea un regalo a una pareja, por ser un color pasional, excitante y que muestra respeto y amor unidos.",
-  "price": 982,
-  "discount": 20,
-  "category": "conflor",
-  "size": {
-   "S": 20,
-   "M": 20,
-   "L": 20
-  },
-  "images": [
-   "img-rosas-rojas.jpg"
-  ],
-  "material": "cerámica"
- },
- {
-  "id": 9,
-  "name": "Santa Rita",
-  "description": "Este tipo de flores ",
-  "price": 982,
-  "discount": 20,
-  "category": "conflor",
-  "size": {
-   "S": 20,
-   "M": 20,
-   "L": 20
-  },
-  "images": [
-   "img-rosas-rojas.jpg"
-  ],
-  "material": "cerámica"
- },
- {
-  "id": 10,
-  "category": "sinflor",
-  "name": "Santa Rita",
-  "description": "Este tipo de flores ",
-  "price": 982,
-  "size": {
-   "S": 20,
-   "M": 21,
-   "L": 20
-  },
-  "images": [
-   "img-rosas-rojas.jpg"
-  ],
-  "material": "plástico"
- },
- {
-  "id": 11,
-  "category": "sinflor",
-  "name": "prueba",
-  "description": "lalala",
-  "price": 8000,
-  "size": {
-   "S": 1,
-   "M": 0,
-   "L": 0
-  },
-  "images": [
-   "default-image.svg",
-   "default-image.svg"
-  ],
-  "material": "porcelana"
- },
- {
-  "id": 12,
-  "category": "conflor",
-  "name": "prueba 2",
-  "description": "juja",
-  "price": 1000,
-  "size": {
-   "S": 0,
-   "M": 0,
-   "L": 0
-  },
-  "images": [
-   "default-image.svg",
-   "default-image.svg"
-  ],
-  "material": "porcelana"
- }
-]
+    {
+     "id": 1,
+     "category": "sinflor",
+     "name": "Cola de Tigre",
+     "description": "La sansevieria trifasciata es una planta muy utilizada en el interior y que destaca por su fácil cuidado. A menudo es llamada también cola de lucio, lengua de suegra, lengua de gato, lengua de tigre o espada de San Jorge. Cuenta con muchas subespecies, como la sansevieria laurentii.",
+     "price": 1800,
+     "size": {
+      "S": 1,
+      "M": 3,
+      "L": 1
+     },
+     "images": [
+      "img-cola-de-tigre.jpg",
+      "img-sinflor-25046-cerámica.jpg"
+     ],
+     "material": "cerámica"
+    },
+    {
+     "id": 2,
+     "name": "Monstera deliciosa",
+     "category": "sinflor",
+     "description": "Monstera deliciosa, llamada comúnmente cerimán o costilla de Adán, es una especie de planta trepadora de la familia Araceae, endémica de selvas tropicales, que se distribuye desde el centro y sur de México hasta el norte de Argentina.",
+     "price": 600,
+     "size": {
+      "S": 1,
+      "M": 1,
+      "L": 1
+     },
+     "images": [
+      "img-potus.jpg"
+     ],
+     "material": "porcelana"
+    },
+    {
+     "id": 3,
+     "name": "Potus",
+     "category": "sinflor",
+     "description": "Epipremnum aureum, comúnmente conocido como potus, pothos o potos es una especie de la familia Araceae nativa del sudeste asiático y Nueva Guinea. En ocasiones es confundida con philodendron en las floristerías. ",
+     "price": 1500,
+     "size": {
+      "S": 20,
+      "M": 20,
+      "L": 20
+     },
+     "images": [
+      "img-potus.jpg"
+     ],
+     "material": "porcelana"
+    },
+    {
+     "id": 4,
+     "category": "conflor",
+     "name": "Begonia",
+     "description": "Son plantas terrestres (a veces epífitas) herbáceas, algunas de porte semiarbustivo o incluso pequeños árboles y otras trepadoras, perennes excepto en climas fríos, es el aérea donde la planta muere. Las flores son muy diversas tanto en forma y tamaño como en color; son unisexuales, la masculina contiene numerosos estambres, la femenina posee un ovario inferior con 2 o 4 estigmas ramificados. El fruto es una cápsula alada que contiene gran cantidad de diminutas semillas. Las hojas son asimétricas y al igual que las flores, difieren mucho de una a otra especie, desde variadas como las de Begonia brevirimosa a verde brillante en Begonia ulmifolia.",
+     "price": 800,
+     "size": {
+      "S": 25,
+      "M": 22,
+      "L": 23
+     },
+     "images": [
+      "img-begonia.jpg",
+      "img-conflor-66952-cerámica.jpg"
+     ],
+     "material": "cerámica"
+    },
+    {
+     "id": 5,
+     "name": "Bromelia",
+     "category": "conflor",
+     "description": "Bromelia es un género tropical americano de plantas de la familia Bromeliaceae, aunque comúnmente se llama con el mismo nombre a plantas de otros géneros de la misma familia. Sus flores tienen un cáliz muy profundo.",
+     "price": 349,
+     "size": {
+      "S": 20,
+      "M": 20,
+      "L": 20
+     },
+     "images": [
+      "img-bromelia.jpg"
+     ],
+     "material": "cerámica"
+    },
+    {
+     "id": 6,
+     "name": "Crisantemo amarillo",
+     "category": "conflor",
+     "description": "Su nombre proviene de las palabras griegas cyrsos (oro) y anthemon (flor) y en el antiguo Japón esta planta era símbolo de la felicidad. Está disponible en formato pequeño y produce vistosas flores en distintos colores como amarillo, blanco, violeta, rojo y morado.",
+     "price": 800,
+     "size": {
+      "S": 20,
+      "M": 20,
+      "L": 20
+     },
+     "images": [
+      "img-crisantemo-amarillo.jpg"
+     ],
+     "material": "cerámica"
+    },
+    {
+     "id": 7,
+     "name": "Rosas blancas",
+     "category": "conflor",
+     "description": "Por su significado de paz y tranquilidad, las flores blancas son también las más utilizadas para dar ánimos a una persona que padece una enfermedad. Nada como la frescura de las rosas blancas o de cualquier otro tipo de flor de este color para demostrar tu apoyo en los malos momentos.",
+     "price": 1500,
+     "size": {
+      "S": 20,
+      "M": 20,
+      "L": 20
+     },
+     "images": [
+      "img-rosas-blancas.jpg"
+     ],
+     "material": "cerámica"
+    },
+    {
+     "id": 8,
+     "name": "Rosas rojas",
+     "category": "conflor",
+     "description": "Este tipo de flores se ha considerado siempre un símbolo de amor, pasión, belleza y respeto. Lo más frecuente es que sea un regalo a una pareja, por ser un color pasional, excitante y que muestra respeto y amor unidos.",
+     "price": 982,
+     "size": {
+      "S": 20,
+      "M": 20,
+      "L": 20
+     },
+     "images": [
+      "img-rosas-rojas.jpg"
+     ],
+     "material": "cerámica"
+    },
+    {
+     "id": 9,
+     "category": "conflor",
+     "name": "Santa Rita",
+     "description": "Este tipo de flores ",
+     "price": 982,
+     "size": {
+      "S": 20,
+      "M": 20,
+      "L": 20
+     },
+     "images": [
+      null,
+      "img-conflor-99365-cerámica.jpg"
+     ],
+     "material": "cerámica"
+    },
+    {
+     "id": 10,
+     "name": "Santa Rita",
+     "category": "conflor",
+     "description": "Este tipo de flores ",
+     "price": 982,
+     "size": {
+      "S": 20,
+      "M": 20,
+      "L": 20
+     },
+     "images": [
+      "img-rosas-rojas.jpg"
+     ],
+     "material": "cerámica"
+    },
+    {
+     "id": 11,
+     "name": "Rosas rojas en ramo",
+     "category": "conflor",
+     "description": "",
+     "price": 2500,
+     "size": {
+      "S": 1,
+      "M": 2,
+      "L": 3
+     },
+     "images": [
+      "img-conflor-60853-porcelana.jpg",
+      "default-image.svg"
+     ],
+     "material": "porcelana"
+    },
+    {
+     "id": 12,
+     "category": "conflor",
+     "name": "Claveles sin imagen",
+     "description": "Completar",
+     "price": 1500,
+     "size": {
+      "S": 0,
+      "M": 2,
+      "L": 0
+     },
+     "images": [
+      "default-image.svg",
+      "img-conflor-35206-cerámica.jpg"
+     ],
+     "material": "cerámica"
+    },
+    {
+     "id": 13,
+     "category": "sinflor",
+     "name": "Crisantemos en maceta",
+     "description": "",
+     "price": 80000,
+     "size": {
+      "S": 2,
+      "M": 2,
+      "L": 7
+     },
+     "images": [
+      "default-image.svg",
+      "img-sinflor-74468-plástico.jpg"
+     ],
+     "material": "plástico"
+    }
+   ]

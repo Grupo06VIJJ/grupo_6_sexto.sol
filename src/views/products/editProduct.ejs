@@ -58,11 +58,11 @@
                     <section class="categoria">
                         <label for="category">Categoría: </label>
                         <div class="cat-opcion">
-                            <input type="radio" name="category" id = "sinflor" value="sinflor" <%= product.category == "anillos" ? "checked" : ""%>>
+                            <input type="radio" name="category" id = "sinflor" value="sinflor" <%= product.category == "sinflor" ? "checked" : ""%>>
                             <label for="sinflor">Plantas sin flor</label>
                         </div>
                         <div class="cat-opcion">
-                            <input type="radio" name="category" id = "conflor" value="conflor" <%= product.category == "collares" ? "checked" : ""%>> 
+                            <input type="radio" name="category" id = "conflor" value="conflor" <%= product.category == "conflor" ? "checked" : ""%>> 
                             <label for="conflor">Plantas con flor</label>
                         </div>
                     </section>
@@ -71,15 +71,15 @@
                     <section class="materials">
                         <label for="materials"> </label>
                         <div class="mat-opcion">
-                            <input type="radio" name="materials" id = "porcelana" value="porcelana" <%= product.material == "oro" ? "checked" : ""%>>
+                            <input type="radio" name="materials" id = "porcelana" value="porcelana" <%= product.material == "porcelana" ? "checked" : ""%>>
                             <label for="porcelana">Porcelana</label>
                         </div>
                         <div class="mat-opcion">
-                            <input type="radio" name="materials" id = "cerámica" value="cerámica" <%= product.material == "plata" ? "checked" : ""%>> 
+                            <input type="radio" name="materials" id = "cerámica" value="cerámica" <%= product.material == "cerámica" ? "checked" : ""%>> 
                             <label for="cerámica">Cerámica</label>
                         </div>
                         <div class="mat-opcion">
-                            <input type="radio" name="materials" id = "plástico" value="plástico" <%= product.material == "acero" ? "checked" : ""%>>
+                            <input type="radio" name="materials" id = "plástico" value="plástico" <%= product.material == "plástico" ? "checked" : ""%>>
                             <label for="Plástico"> Plástico</label>
                         </div>
                     </section>
@@ -110,17 +110,13 @@
                         <div class="imagenes">
                             <ul>
                                 <li>
-                                    <input type="file" name="image1" id="image"><label>Imagen 1</label>
+                                    <input type="file" name="upload_img" id="upload_img" placeholder="Subir">
+                                    <label for="upload_img">Upload Image1</label>
                                 </li>
-                                <li>
-                                    <input type="file" name="image2" id="image"><label>Imagen 2</label>
-                                </li>
-                                <li>
-                                    <input type="file" name="image3" id="image"><label>Imagen 3-maceta</label>
-                                </li>
-                            </ul> 
+                                
+                            </ul>
                         </div>
-                    </section>                   
+                    </section>
       <!-- botones -->
       <section class="botones">
         <button>Cancelar la operación</button>
