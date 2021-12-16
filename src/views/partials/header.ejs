@@ -50,14 +50,16 @@
                      <% if(locals.user) { %>
                      <li>Hola <%=user.first_name%></li>
                      <li><a href="/user/<%=user.id%>/profile">Ir a perfil</a></li>
+
                          <% if(user.category == "admin") { %>
                      <li><a href="/products/product/create">Crear producto</a></li>
                          <% } %>
                      <li>
                          <form action="/user/logoff?_method=PUT" method="post">
-                             <a href="#"><button type="submit">Cerrar sesión</button></a>
+                             <a href="/home"><button type="submit">Cerrar sesión</button></a>
                          </form>
                      </li>
+
                      <% } else { %>
                      <li><a href="/user/login"><i class="fas fa-user"></i>Iniciar sesión</a></li>
                      <li><a href="/user/register">Registrarse</a></li>
