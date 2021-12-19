@@ -15,26 +15,20 @@
                 <h1>Información actual</h1>
 
                 <div class="informacion-actual-imgs">
-                    <div>
-                        <img src="/img/<%=product.category%>/<%=product.images[0]%>" alt="<%=product.name%>">
-                        <p>Imagen 1</p>
-                    </div>
 
-                    <div>
-                        <img src="/img/<%=product.category%>/<%=product.images[1]%>" alt="<%=product.name%>">
-                        <p>Imagen 2</p>
-                    </div>
-                    
-                   
-                </div>
-    
-                <div class="datos-actual">
+                    <div class="datos-actual">
+                
+                    <img src="/img/<%=product.category%>/<%=product.images[0]%>" alt="<%=product.name%>">
+                    <p>Imagen 1</p>
+                
+              
                     <p class="titulo">Nombre del producto:</p>
                     <p><%=product.name%></p>
                     <p class="titulo">Descripción:</p>
                     <p><%=product.description%></p>
                     <p class="titulo">Precio: </p>
                     <p>$<%=product.price%></p>
+                    
                 </div>
             </section>
     
@@ -58,11 +52,11 @@
                     <section class="categoria">
                         <label for="category">Categoría: </label>
                         <div class="cat-opcion">
-                            <input type="radio" name="category" id = "sinflor" value="sinflor" <%= product.category == "sinflor" ? "checked" : ""%>>
+                            <input type="radio" name="category" id = "categoria" value="sinflor" <%= product.category == "sinflor" ? "checked" : ""%>>
                             <label for="sinflor">Plantas sin flor</label>
                         </div>
                         <div class="cat-opcion">
-                            <input type="radio" name="category" id = "conflor" value="conflor" <%= product.category == "conflor" ? "checked" : ""%>> 
+                            <input type="radio" name="category" id = "categoria" value="conflor" <%= product.category == "conflor" ? "checked" : ""%>> 
                             <label for="conflor">Plantas con flor</label>
                         </div>
                     </section>
@@ -71,15 +65,15 @@
                     <section class="materials">
                         <label for="materials"> </label>
                         <div class="mat-opcion">
-                            <input type="radio" name="materials" id = "porcelana" value="porcelana" <%= product.material == "porcelana" ? "checked" : ""%>>
+                            <input type="radio" name="materials" id = "materials" value="porcelana" <%= product.material == "porcelana" ? "checked" : ""%>>
                             <label for="porcelana">Porcelana</label>
                         </div>
                         <div class="mat-opcion">
-                            <input type="radio" name="materials" id = "cerámica" value="cerámica" <%= product.material == "cerámica" ? "checked" : ""%>> 
+                            <input type="radio" name="materials" id = "materials" value="cerámica" <%= product.material == "cerámica" ? "checked" : ""%>> 
                             <label for="cerámica">Cerámica</label>
                         </div>
                         <div class="mat-opcion">
-                            <input type="radio" name="materials" id = "plástico" value="plástico" <%= product.material == "plástico" ? "checked" : ""%>>
+                            <input type="radio" name="materials" id = "materials" value="plástico" <%= product.material == "plástico" ? "checked" : ""%>>
                             <label for="Plástico"> Plástico</label>
                         </div>
                     </section>
@@ -91,7 +85,7 @@
                             <div class="tallas-text">
                                 <div class="quant">
                                     <label for="quantityS">S:</label>
-                                    <input type="number" name ="quantityS" id="quantityS" value=0 min="0">
+                                    <input type="number" name ="quantityS" id="quantityS" value=0 min="0"><%= product.quantityS == "" ? "checked" : ""%>>
                                 </div>
                                 <div class="quant">
                                     <label for="quantityM">M:</label>
@@ -110,7 +104,7 @@
                         <div class="imagenes">
                             <ul>
                                 <li>
-                                    <input type="file" name="upload_img" id="upload_img" placeholder="Subir">
+                                    <input type="file" name="upload_img" id="imágenes" placeholder="Subir">
                                     <label for="upload_img">Upload Image1</label>
                                 </li>
                                 

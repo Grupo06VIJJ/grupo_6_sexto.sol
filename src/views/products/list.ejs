@@ -63,7 +63,8 @@
                                                         Material
                                                     </th>
                                                     <th scope="col">
-                                                       imagenes
+                                                       imagen
+                                                       
                                                     </th>
                                                     <th scope="col">
                                                         Editar
@@ -92,14 +93,16 @@
                                                     </td>
                                     
                                                     <td>
-                                                        <%= productList[i].size %>
+                                                        <%= productList[i].quantityS %>
+                                                        <%= productList[i].quantityM %>
+                                                        <%= productList[i].quantityL %>
                                                     </td>
                                                     <td>
                                                         <%= productList[i].material %>
                                                     </td>
                                                     <td>
-                                                        <%= productList[i].image %>
-                         
+                                            
+                                                        <%= productList[i].images[0]%> 
                                                     <td>
                                                         <form action="/products/<%=productList[i].id %>/update" method="GET">
                                                             <button type="submit" class="btn-accion">
