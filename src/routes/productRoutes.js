@@ -3,14 +3,14 @@ const express = require('express');
 const router = express.Router();
 const path = require('path');
 const adminMiddleware = require('../middlewares/adminMiddleware');
-const logMiddleware = require('../middlewares/logMiddleware');
+const logMiddleware = require('../middlewares/logmiddleware');
 
 //Requerimos multer para traer archivos
 const multer = require('multer');
 
 //Configuramos destino y nombre de archivos
 const multerDiskStorage = multer.diskStorage({
-    destination: (req, file, callback) =>{
+    destination: (req, file, callback) => {
         let productCategory = req.body.category;
         const filePath = path.join(__dirname, `../../public/img/${productCategory}`)
         callback(null, filePath);
@@ -23,7 +23,7 @@ const multerDiskStorage = multer.diskStorage({
     }
 })
 
-const fileUpload = multer({storage: multerDiskStorage})
+const fileUpload = multer({ storage: multerDiskStorage })
 
 //Requerimos el controlador para llamar a las funciones
 const productController = require('../controllers/productController');
@@ -32,13 +32,13 @@ const productController = require('../controllers/productController');
 /*router.get('/', productController.productos);*/
 
 /*----Rutas para vista de plantas sin flor----*/
-router.get('/sinflor',productController.sinflor);
+router.get('/sinflor', productController.sinflor);
 
 /*----Rutas para vista de plantas con flor----*/
-router.get('/conflor',productController.conflor);
+router.get('/conflor', productController.conflor);
 
 /*----Rutas para creación de producto----*/
-router.get('/product/create',logMiddleware, adminMiddleware, productController.create);
+router.get('/product/create', logMiddleware, adminMiddleware, productController.create);
 router.post('/', fileUpload.any(), productController.store);
 
 /*----Rutas para edición de producto----*/
@@ -60,8 +60,8 @@ router.delete("/:id/delete", productController.delete);
 
 //Actualizar productos
 
- router.get("/:id/update", productController.edit);
- router.patch("/:id/update", productController.edit);
+router.get("/:id/update", productController.edit);
+router.patch("/:id/update", productController.edit);
 
 /*----Rutas para vista de detalle de producto----*/
 router.get('/:id', productController.productDetail);

@@ -2,9 +2,9 @@ const express = require('express');
 const router = express.Router();
 const userController = require('../controllers/userController');
 const path = require('path');
-const {check, body, validationResult} = require('express-validator');
-const guestMiddleware = require ('../middlewares/guestMiddleware');
-const logMiddleware = require ('../middlewares/logMiddleware');
+const { check, body, validationResult } = require('express-validator');
+const guestMiddleware = require('../middlewares/guestMiddleware');
+const logMiddleware = require('../middlewares/logmiddleware');
 
 //Requerimos multer para traer archivos
 const multer = require('multer');
@@ -12,33 +12,33 @@ const multer = require('multer');
 //Campos a validar en el formulario de registro
 const validateRegister = [
     body('user')
-        .isLength({min: 4}).withMessage('Debes colocar un nombre válido'),
+        .isLength({ min: 4 }).withMessage('Debes colocar un nombre válido'),
     body('lastname')
-        .isLength({min: 4}).withMessage('Debes colocar un apellido válido'), 
+        .isLength({ min: 4 }).withMessage('Debes colocar un apellido válido'),
     body('email')
-        .isEmail().withMessage('Debes colocar email válido'),    
+        .isEmail().withMessage('Debes colocar email válido'),
     body('password')
-        .isStrongPassword({minSymbols: 0, minLength: 8}).withMessage('Escribe un formato de contraseña válido')    
+        .isStrongPassword({ minSymbols: 0, minLength: 8 }).withMessage('Escribe un formato de contraseña válido')
 ];
 //Validar que la contraseña y la confirmacion de la contraseña coincidan
- const validatePassword = [ 
-     body('passwordConfirm').custom(( value, { req }) => {
+const validatePassword = [
+    body('passwordConfirm').custom((value, { req }) => {
         if (value !== req.body.password) {
             throw new Error('Las contraseñas introducidas no coinciden');
-    }
-    return true;
-  })];
+        }
+        return true;
+    })];
 
 //Configuramos destino y nombre de archivos
 const multerDiskStorage = multer.diskStorage({
-    destination: (req, file, callback) =>{
+    destination: (req, file, callback) => {
         let folder = path.join(__dirname, `../../public/img/users`);
-        callback(null,folder);
+        callback(null, folder);
     },
     filename: (req, file, callback) => {
         let userName = req.body.user;
         const imageName = `img-${userName.toLowerCase().replace(/ /g, '-')}-${Date.now().toString().slice(8)}${path.extname(file.originalname)}`;
-        callback(null,imageName);
+        callback(null, imageName);
     }
 })
 
@@ -48,7 +48,7 @@ const fileUpload = multer({
     fileFilter: function (req, file, callback) {
         const errors = validationResult(req)
         const ext = path.extname(file.originalname);
-        if(ext !== '.png' && ext !== '.jpg' && ext !== '.gif' && ext !== '.jpeg') {
+        if (ext !== '.png' && ext !== '.jpg' && ext !== '.gif' && ext !== '.jpeg') {
             req.fileValidationError = {
                 msg: 'Debes subir un archivo de imagen válido'
             }

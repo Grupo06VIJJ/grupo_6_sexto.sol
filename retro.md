@@ -36,3 +36,10 @@ Hacer menos
 Subidas sin que los demás lo sepan
 Avisar antes de reliazar cambios en el repo
 ```
+
+# Retro 5 y 6
+```
+home: detalle
+login: btn cerrar sesion
+registro: como nos conociste
+```
