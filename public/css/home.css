@@ -1,12 +1,184 @@
 
-@import url("main.css");
+* BANNER TOP */
 
-/*Texto inicio*/
+section.banner-top{
+    text-align: center;
+    margin-top: 110px;
+}
+
+section.banner-top img {
+    width: 85%;
+    height: 150px;
+    border: 5px #fdd3d3 solid;
+    box-shadow: 0px 0px 14px rgb(100, 100, 100);
+    margin-bottom: 25px;
+}
+
+/* BANNER TOP */
+
+/* main */
+
 main section h2 {
     margin: 8px 20px;
     color: brown;
     font-size: 27px;
 }
+
+article {
+    background-color: white;
+    padding: 5px;
+    border-radius: 8px;
+    border: 5px #fdd3d3 solid;
+    transition: all 0.4s;
+}
+
+/*HOVER ARTICLE*/
+
+article:hover{
+    border: 5px #eb7b7b inset;
+    box-shadow: 0px 0px 14px rgb(219, 88, 88);
+    transform: scale(1.045);
+    background-color: rgb(255, 252, 249);
+}
+
+/*HOVER ARTICLE*/
+
+main article div.main-article {
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 5px 5px 0px;
+    height: 100px;
+}
+
+main section article img {
+    width: 170px;
+    border-radius: 8px;
+    height: 200px;
+}
+
+main section article i {
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 20px;
+    border: 1px solid #39b54a;
+    background-color: white;
+    border-radius: 50%;
+    color: #39b54a;
+    transition: 0.7s;
+}
+.search bar{
+    display: block;
+    height: 35px;
+}
+/*HOVER CAMIONCITO*/
+
+main section article i:hover {
+    transform: rotate(360deg);
+    box-shadow: 0 0 5px #39b54a;
+    cursor: pointer;
+}
+
+/*HOVER CAMIONCITO*/
+
+main .box-price {
+    display:flex;
+}
+
+main .price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 3px;
+}
+
+main .discount {
+    font-size: 18px;
+    margin-top: 3px;
+    color: #39b54a;
+    font-weight: bold;
+    margin-left: 12px;
+}
+
+main .description {
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 6px;
+}
+
+/* main */
+
+/* BANNER BOTTOM */
+
+section.banner-bottom{
+    text-align: center;
+}
+
+section.banner-bottom img {
+    width: 85%;
+    height: 200px;
+    border: 5px #fdd3d3 solid;
+    box-shadow: 0px 0px 14px rgb(100, 100, 100);
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+/* BANNER BOTTOM */
+
+/* MENSAJE */
+
+.mensaje {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 90px;
+    height: 70px;
+    border: 5px solid brown;
+    background-color: rgb(255, 182, 182);
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0px 0px 14px rgb(100, 100, 100);
+    transition: all 0.4s;
+}
+
+body div.mensaje i {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+
+.mensaje:hover {
+    box-shadow: 0 0 5px rgb(230, 47, 47);
+    cursor: pointer;
+    transform: scale(0.90);
+}
+
+/* MENSAJE */
+
+@media (min-width: 361px) {
+    main .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    main .products article {
+        width: 45%;
+        margin: 18px 0px;
+    }
+    main section article .description {
+        display: block;
+    }
+    main section article {
+        box-shadow: 0px 0px 14px rgb(100, 100, 100);
+    }
+}
+.description{
+    color:#39b54a;
+   
+}
+
+
 .container-02{
     width: 100%;
     padding: 10px;
@@ -73,18 +245,7 @@ h1.titulo{
     background: var(--gold);
     color: var(--light);
 }
-.container-04{
-    width: 100%;
-    position: relative;
-    padding-top: 15px;
-    margin-bottom: 40px;
-}
-.container-04 h1{   
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    top: -25px;
-}
+
 .products-container{
     display: grid;
     grid-template-columns: 1fr;
@@ -161,4 +322,47 @@ h1.titulo{
         grid-template-columns: repeat(4,1fr);
     }
 
+}
+
+
+.container-04{
+    width: 100%;
+    position: relative;
+    padding-top: 15px;
+    margin-bottom: 40px;
+}
+.container-04 h1{   
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: -25px;
+}
+
+
+
+/*en vista desktop se deben ver los cuatro productos*/
+
+@media (min-width: 769px) {
+    main .products article {
+        width: 22%;
+        height: auto;/*ver si hace que no se deforme imagen vale*/
+    }
+}
+
+/*para ocultar en vista mobile*/
+
+@media screen and (max-width: 640px) {
+    /*footer*/
+    footer section {
+        text-align: center;
+        margin-bottom: 4px;
+    }
+    footer section i {
+        font-size: 24px;
+        color: blueviolet;
+        margin-bottom: 6px;
+    }
+    footer p {
+        margin: 10px;
+    }
 }
