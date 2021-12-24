@@ -4,7 +4,7 @@ const userController = require('../controllers/userController');
 const path = require('path');
 const { check, body, validationResult } = require('express-validator');
 const guestMiddleware = require('../middlewares/guestMiddleware');
-const logMiddleware = require('../middlewares/logmiddleware');
+const logMiddleware = require('../middlewares/logMiddleware');
 
 //Requerimos multer para traer archivos
 const multer = require('multer');

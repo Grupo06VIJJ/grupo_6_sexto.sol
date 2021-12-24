@@ -52,5 +52,23 @@
   "password": "$2b$10$sNSS/UaY5oJhHk/QeXmGKOS3GH4LKGvfAzW2IwWUpiTC2u.Yv1Ne6",
   "category": "user",
   "image": "img-valeria-52944.png"
+ },
+ {
+  "id": 7,
+  "first_name": "Valeria",
+  "last_name": "Yashan",
+  "email": "valeriayashan@hotmail.com",
+  "password": "$2a$10$uExWtBtLohmMee./v/vw9e3XdlqjZlryc0Vi8OexVbtNmZav3quX.",
+  "category": "user",
+  "image": "img-valeria-09547.png"
+ },
+ {
+  "id": 8,
+  "first_name": "Valeria",
+  "last_name": "Yashan",
+  "email": "valeriayashan@hotmail.com",
+  "password": "$2a$10$EeSjQ75JbirinJLljeLEo.qy7FNuCXw1JXs2k/DIa.ho.NLEo.dY.",
+  "category": "user",
+  "image": "default-user"
  }
 ]
