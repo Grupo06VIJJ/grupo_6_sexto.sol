@@ -6,6 +6,7 @@
     
     <title>Sexto Sol</title>
 </head>
+
 <body>
     <% if(locals.user) { %>
         <%- include('./partials/header', {user: user}) %> 
@@ -15,9 +16,7 @@
     <!-- BANNER TOP-->
 
     <section class= 'banner-top'>
-
         <img src="/img/banner-top.jpg" alt="Banner Top">
-
     </section>
 
     <!-- BANNER TOP-->
@@ -31,129 +30,29 @@
             <div><i class="fas fa-search"></i></div>
         </div>
     <!-- plantas sin flor -->
-       
+       <section>
         <div class="face face2">
             <div class="content">
+                <p>Aprovechá nuestros descuentos comprando más de 5 productos de la misma categoría</p>
                 <p>Descubre nuestras plantas con macetas personalizadas, te van a encantar</p>
-                    <a href="/products/sinflor">Ir a categoría</a>
+                                    <h2> IR A CATEGORIAS</h2>
+                    <a href="/products/sinflor">PLANTAS CON FLOR</a>
+                    &nbsp; <a href="/products/conflor">PLANTAS SIN FLOR</a>
             </div>
-    </section>
-    <main> 
-            <!-- plantas sin flor -->
-            <section>
-                <h2>Plantas sin flor</h2>
-        
-                <div class='products'>
-                    <article>
-                        <h3 class='description'>Aloe Vera</h3>
-                        <div class='box-price'>
-                            <p class='price'>$450</p>
-                            <p class='discount'>20% off</p>
-                        </div>
-                        <li><a href="/cart">Agregar al carro<i class="fas fa-shopping-basket"></i></a></li>
-                        <img src='img/aloe-vera.jpg' width='360' alt='Aloe Vera'>
-                        <div class='main-article'>
-                            <li><a href="products/sinflor">Ver otras de su categoría<i class='fas fa-truck'></i></a></li>
-                        </div>
-                    </article>
-                    <article>
-                        <h3 class='description'>Arbol de Jade</h3>
-                        <div class='box-price'>
-                            <p class='price'>$750</p>
-                            <p class='discount'>15% off</p>
-                        </div>
-                        <li><a href="/cart">Agregar al carro<i class="fas fa-shopping-basket"></i></a></li>
-                        <img src='/img/arbol-jade.jpg' width='360' alt='Arbol de Jade'>
-                        <div class='main-article'>
-                            <li><a href="products/sinflor">Ver otras de su categoría<i class='fas fa-truck'></i></a></li>
-                        </div>
-                    </article>
-                    <article>
-                        <h3 class='description'>Cola de Tigre</h3>
-                        <div class='box-price'>
-                            <p class='price'>$700</p>
-                            <p class='discount'>10% off</p>
-                        </div>
-                        <li><a href="/cart">Agregar al carro<i class="fas fa-shopping-basket"></i></a></li>
-                        <img src='/img/cola-de-tigre.jpg' width='360' alt='Cola de Tigre'>
-                        <div class='main-article'>
-                            <li><a href="products/sinflor">Ver otras de su categoría<i class='fas fa-truck'></i></a></li>
-                        </div>
-                    </article>
-                    <article>
-                        <h3 class='description'>Monstera Deliciosa</h3>
-                        <div class='box-price'>
-                            <p class='price'>$650</p>
-                            <p class='discount'>5% off</p>
-                        </div>
-                        <li><a href="/cart">Agregar al carro<i class="fas fa-shopping-basket"></i></a></li>
-                        <img src='/img/monstera-deliciosa.jpg' width='360' alt='Monstera Deliciosa'>
-                        <div class='main-article'>
-                            <li><a href="/#">Envío a domicilio<i class='fas fa-truck'></i></a></li>
-                        </div>
-                    </article>
-                </div>
-            </section>
-            <!-- plantas sin flor -->
+       </section>
+  
+            <!-- Todos los productos -->
+  
+<section class="container-04">
+    <h1>Todos los productos</h1>
+    <div class="products-container">
+        <% products.forEach(product => { %>
+            <%- include('./partials/product-card.ejs', {product: product}) %>
+        <% }) %>
+    </div>
+</section>
 
-            <!-- plantas con flor -->
-            <section>
-                <h2>Plantas con flor</h2>
-                <div class='products'>
-                    <article>
-                        <h3 class='description'>Begonia</h3>
-                        <div class='box-price'>
-                            <p class='price'>$300</p>
-                            <p class='discount'>20% off</p>
-                        </div>
-                        <li><a href="/cart">Agregar al carro<i class="fas fa-shopping-basket"></i></a></li>
-                        <img src='/img/begonia.jpg' width='360' alt='Begonia'>
-                        <div class='main-article'>
-                            <li><a href="products/conflor">Ver otras de su categoría<<i class='fas fa-truck'></i></a></li>
-                    </article>
-                    <article>
-                        <h3 class='description'>Rosas Blancas</h3>
-                        <div class='box-price'>
-                            <p class='price'>$400</p>
-                            <p class='discount'>15% off</p>
-                        </div>
-                        <li><a href="/cart">Agregar al carro<i class="fas fa-shopping-basket"></i></a></li>
-                        <img src='/img/rosas-blancas.jpg' width='360' alt='Rosas Blancas'>
-                        <div class='main-article'>
-                            <li><a href="/#">Envío a domicilio<i class='fas fa-truck'></i></a></li>
-                    </article>
-                    <article>
-                        <h3 class='description'>Rosas Rojas</h3>
-                        <div class='box-price'>
-                            <p class='price'>$450</p>
-                            <p class='discount'>10% off</p>
-                        </div>
-                        <li><a href="/cart">Agregar al carro<i class="fas fa-shopping-basket"></i></a></li>
-                        <img src='/img/rosas-rojas.jpg' width='360' alt='Rosas Rojas'>
-                        <div class='main-article'>    
-                    </article>
-                    <article>
-                        <h3 class='description'>Crisantemo Amarillo</h3>
-                        <div class='box-price'>
-                            <p class='price'>$350</p>
-                            <p class='discount'>5% off</p>
-                        </div>
-                        <li><a href="/cart">Agregar al carro<i class="fas fa-shopping-basket"></i></a></li>
-                        <img src='/img/crisantemo-amarillo.jpg' width='360' alt='Crisantemo Amarillo'>
-                        <div class='main-article'>
-                            <li><a href="/#">Envío a domicilio<i class='fas fa-truck'></i></a></li>
-                    </article>
-                    </div>
-            </section>
-            <!-- plantas con flor -->
-       
-                <div class="face face2">
-                    <div class="content">
-                        <p>Aprovechá nuestros descuentos comprando más de 5 productos de la misma categoría</p>
-                            <a href="/products/conflor">Ir a categoría </a>
-                    </div>
-                </div>
-<!-- BANNER TOP-->
+<!-- BANNER BOTTOM-->
 
 <section class= 'banner-bottom'>
 
@@ -161,9 +60,9 @@
 
 </section>
 
-<!-- BANNER TOP-->
-
-    </main>
+<!-- BANNER BOTTOM-->
+</main>
+    
     <%- include('./partials/footer') %>
 </body>
 </html>

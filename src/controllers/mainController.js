@@ -14,16 +14,16 @@ const mainController = {
     },
     
     service: (req, res) => {
-        res.render('service');
+        res.render('servicio');
     },
     sobrenosotros: (req, res) => {
-        res.render('sobrenosotros', {user: req.session.user ? req.session.user : undefined});
+        res.render('sobrenosotros');
     },
     contacto: (req, res) => {
-        res.render('contacto', {user: req.session.user ? req.session.user : undefined});
+        res.render('contacto')
     },
-    arrepentimiento: (req, res) => {
-        res.render('arrepentimiento', {user: req.session.user ? req.session.user : undefined});
+        arrepentimiento: (req, res) => {
+        res.render('arrepentimiento');
     },
 }
 module.exports = mainController;
