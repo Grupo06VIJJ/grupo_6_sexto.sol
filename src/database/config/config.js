@@ -1,16 +1,10 @@
-module.exports={
-
+module.exports = {
   "development": {
     "username": "root",
     "password": null,
- 
-    "database": "vivero_db",
+    "database": "database_development",
     "host": "127.0.0.1",
-    "dialect": "mysql",
-    "define": {
-      "timestamps": false,
-      "undescored" : true
-    }
+    "dialect": "mysql"
   },
   "test": {
     "username": "root",
