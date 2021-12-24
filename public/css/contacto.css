@@ -1,0 +1,70 @@
+@import url("general.css");
+
+#nombre, #email, #celular{
+    width: 100%;
+    border-radius: 40px;
+    border: solid 1px #C4C4C4;
+}
+
+.contacto-form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nombre, .email, .celular, .mensaje{
+    width: 100%;
+}
+
+#mensaje{
+    width: 100%;
+    border-radius: 10px;
+    border: solid 1px #C4C4C4;
+}
+
+section, p{
+    margin-bottom: 20px;
+}
+
+
+h2{
+    font-weight: normal;
+    text-align: center;
+}
+
+
+.boton-contacto button{
+    width: 100%;
+}
+
+/* Estilos para media querie */
+@media(min-width: 768px) {
+    #nombre, #email, #celular{
+        width: 80%;
+    }
+
+    #mensaje{
+        width: 90%;
+    }
+
+    .nombre, .email , .celular{
+        width: 50%;
+    }
+
+    .contacto-form{
+        border: solid 1px #C4C4C4;
+        border-radius: 10px;
+        padding: 30px;
+        margin-bottom: 20px;
+    }
+
+    .boton-contacto{
+        display: flex;
+        justify-content: center;
+    }
+
+    .boton-contacto div{
+        width: 20%;
+    }
+
+
+}

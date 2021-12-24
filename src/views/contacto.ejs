@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head') %>
+    <title>Contacto</title>
+    <link rel="stylesheet" href="/css/contacto.css">
+</head>
+<body>
+    <%- include('./partials/header') %>
+    <main>
+        <h1>Contacto</h1>
+        <h2>Escribinos para contarnos tu experiencia con nuestras plantas</h2>
+
+        <form class= "contacto-form" action="#" method="">
+            <section class="nombre">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                </div>
+                <div>
+                    <input type="text" name ="nombre" id="nombre" required>
+                </div>
+            </section>
+
+            <section class="email">
+                <div>
+                    <label for="email">Correo electrónico:</label>
+                </div>
+
+                <div>
+                    <input type="email" name ="email" id="email" required>
+                </div>
+            </section>
+
+            <section class="celular">
+                <div>
+                    <label for="celular">Celular:</label>
+                </div>
+                <div>
+                    <input type="text" name ="celular" id="celular" maxlength="10" required>
+                </div>
+            </section>
+
+            <section class="mensaje">  
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                </div>
+                <div>
+                    <textarea name ="mensaje" id="mensaje" rows="5" required></textarea>
+                </div>
+            </section>
+        </form>
+
+        <section class="boton-contacto">
+            <div>
+                <button class="submit" type="submit">Enviar</button>
+            </div>
+        </section>
+    </main>
+    <%- include('./partials/footer') %>
+</body>
+</html>

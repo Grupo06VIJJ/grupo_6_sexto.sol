@@ -2,22 +2,25 @@ const fs = require('fs');
 const path = require('path');
 
 const productsPath = path.join(__dirname, '../data/products.json');
-const products = JSON.parse(fs.readFileSync(productsPath, 'utf-8'));
-/*const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));*/
-let mainController = {
-    //Pagina principal
-  /* En la constante "products" ya tienen los productos que están 
-guardados en la carpeta Data como Json (un array de objetos literales) */
 
-
+const mainController = {
     home: (req, res) => {
-        res.render(path.join(__dirname, '../views/home.ejs'));
-     res.render('home');
-    
-
+        const products = JSON.parse(fs.readFileSync(productsPath, 'utf-8'));
+        let catProducts =[];
+        for(let i = 0; i<=3; i++){
+            catProducts[i]= products[i]
+        }
+        res.render('home', {products: catProducts, user: req.session.user ? req.session.user : undefined});        
     },
+    
     service: (req, res) => {
         res.render('service');
+    },
+    sobrenosotros: (req, res) => {
+        res.render('sobrenosotros', {user: req.session.user ? req.session.user : undefined});
+    },
+    contacto: (req, res) => {
+        res.render('contacto', {user: req.session.user ? req.session.user : undefined});
     },
 }
 module.exports = mainController;

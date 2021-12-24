@@ -1,0 +1,37 @@
+@import url('general.css');
+
+.nosotros img{
+    display: block;
+    width: 95%;
+    margin: 20px auto;
+    border-radius: 15px;
+    object-fit: cover;
+    object-position: center;
+}
+.nosotros .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.nosotros p{
+    text-align: justify;
+    margin: 10px 0;
+}
+
+
+
+@media(min-width: 1025px){
+    .nosotros{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: stretch;
+    }
+    .nosotros img{
+        width: 40%;
+        order: 1;
+    }
+    .nosotros .text{
+        width: 50%;
+    }
+
+}
