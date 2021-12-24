@@ -15,23 +15,6 @@ section.banner-top img {
 }
 
 /* BANNER TOP */
-
-/* main */
-
-main section h2 {
-    margin: 8px 20px;
-    color: brown;
-    font-size: 27px;
-}
-
-article {
-    background-color: white;
-    padding: 5px;
-    border-radius: 8px;
-    border: 5px #fdd3d3 solid;
-    transition: all 0.4s;
-}
-
 /*HOVER ARTICLE*/
 
 article:hover{
@@ -40,8 +23,6 @@ article:hover{
     transform: scale(1.045);
     background-color: rgb(255, 252, 249);
 }
-
-/*HOVER ARTICLE*/
 
 main article div.main-article {
     width: 100%;
@@ -79,8 +60,6 @@ main section article i:hover {
     cursor: pointer;
 }
 
-/*HOVER CAMIONCITO*/
-
 main .box-price {
     display:flex;
 }
@@ -91,21 +70,11 @@ main .price {
     margin-top: 3px;
 }
 
-main .discount {
-    font-size: 18px;
-    margin-top: 3px;
-    color: #39b54a;
-    font-weight: bold;
-    margin-left: 12px;
-}
-
 main .description {
     font-weight: bold;
     font-size: 17px;
     margin-top: 6px;
 }
-
-/* main */
 
 /* BANNER BOTTOM */
 
@@ -153,8 +122,33 @@ body div.mensaje i {
     cursor: pointer;
     transform: scale(0.90);
 }
+/* main */
+
+main section h2 {
+    margin: 8px 20px;
+    color: brown;
+    font-size: 27px;
+}
+
+article {
+    background-color: white;
+    padding: 5px;
+    border-radius: 8px;
+    border: 5px #fdd3d3 solid;
+    transition: all 0.4s;
+}
+.description{
+    color:#39b54a;
+   
+}
+
 
 /* MENSAJE */
+
+
+
+
+
 
 @media (min-width: 361px) {
     main .products {
@@ -173,22 +167,11 @@ body div.mensaje i {
         box-shadow: 0px 0px 14px rgb(100, 100, 100);
     }
 }
-.description{
-    color:#39b54a;
-   
-}
-
-
 .container-02{
     width: 100%;
     padding: 10px;
 }
-h1.titulo{
-    font-weight:bold;
-    font-style: italic;
-    font-size: 26px;
-    text-align: center;
-}
+
 .container-02 p{
     font-size: 20px;
 }
@@ -223,13 +206,20 @@ h1.titulo{
     text-align: center;
     font-size: 1.5em;
 }
-.face.face2 .content p{
+.contenido h1.titulo{
+    font-weight:bold;
+    font-style: italic;
+    font-size: 26px;
+    text-align: center;
+    color:#39b54a
+}
+.contenido .content p{
     padding: 10px 20px;
     max-height: 80px;
     overflow-y: hidden;
     color:var(--light);
 }
-.face.face2 .content a{
+.contenido .content a{
     display: block;
     width: 35%;
     text-align: center;
@@ -241,7 +231,7 @@ h1.titulo{
     background-color: var(--light);
     border-radius: 5px;
 } 
-.container-03 .card .face.face2 .content a:hover{
+.container-03 .card .contenido .content a:hover{
     background: var(--gold);
     color: var(--light);
 }
@@ -262,6 +252,7 @@ h1.titulo{
     }
     
     .container-04{
+        margin-top: 30px;
         border-top: 0.5px solid var(--light-border);
     }
     .container-04 h1{
@@ -293,7 +284,7 @@ h1.titulo{
         justify-content: center;
         align-items: center;
     }
-    .container-03 .card .face.face2{
+    .container-03 .card .contenido{
         position: absolute;
         display: flex;
         flex-direction: column;
@@ -308,18 +299,18 @@ h1.titulo{
         border-radius: 20px;
         transition: opacity 0.5s linear;
     }
-    .container-03 .card:hover .face.face2{
+    .container-03 .card:hover .contenido{
         opacity: 1;
     }
-    .face.face2 .content p{
+    .contenido .content p{
         text-align: center;
     }
-    .face.face2 .content a{
+    .contenido .content a{
         margin-left: auto;
         margin-right: auto;
     }
     .products-container{
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(5,1fr);
     }
 
 }
@@ -337,6 +328,8 @@ h1.titulo{
     text-align: center;
     top: -25px;
 }
+
+
 
 
 
