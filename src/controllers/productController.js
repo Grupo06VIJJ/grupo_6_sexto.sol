@@ -87,7 +87,6 @@ const productController = {
         const productName = req.body.name,
         productDescription = req.body.description,
         productPrice = parseFloat(req.body.price),
-        productDiscount = parseFloat(req.body.discount),
         productCategory = req.body.category,
         productMaterial = req.body.materials,
         productQuantS = parseInt(req.body.quantityS) || 0,

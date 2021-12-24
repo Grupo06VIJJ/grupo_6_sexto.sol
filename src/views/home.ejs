@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
      <%- include('./partials/head') %>
-    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/main.css">
     
     <title>Sexto Sol</title>
 </head>
@@ -12,22 +12,26 @@
     <% } else { %>
     <%- include('./partials/header') %>
     <% } %>
-    <div class="busqueda">
-        <form class="form-search">
-          <div class="input-group">
-            <input class="form-control form-text" maxlength="128" placeholder="Buscar" size="15" type="text" />
-            <span class="input-group-btn"><button class="btn btn-primary"><i class="fa fa-search fa-lg">&nbsp;</i></button></span>
-          </div>
-        </form>
-      </div>
-        <!--Carrusel de imagenes en home todas las plantas-->
-        <section class="container-02">
-         <div class="slider">
-            <div class="slide-1"></div>
-            <div class="slide-2"></div>
-            <div class="slide-3"></div>
-            <div class="slide-1"></div>
+    <!-- BANNER TOP-->
+
+    <section class= 'banner-top'>
+
+        <img src="/img/banner-top.jpg" alt="Banner Top">
+
+    </section>
+
+    <!-- BANNER TOP-->
+<!-- main -->
+<main>
+    <header class="header">
+        <div class="search-bar">
+            <form action="search">
+            <input type="text" name="search" class="form-search" placeholder="Buscar productos">
+            </form>
+            <div><i class="fas fa-search"></i></div>
         </div>
+    <!-- plantas sin flor -->
+       
         <div class="face face2">
             <div class="content">
                 <p>Descubre nuestras plantas con macetas personalizadas, te van a encantar</p>
@@ -38,6 +42,7 @@
             <!-- plantas sin flor -->
             <section>
                 <h2>Plantas sin flor</h2>
+        
                 <div class='products'>
                     <article>
                         <h3 class='description'>Aloe Vera</h3>
@@ -148,7 +153,15 @@
                             <a href="/products/conflor">Ir a categoría </a>
                     </div>
                 </div>
+<!-- BANNER TOP-->
 
+<section class= 'banner-bottom'>
+
+    <img src="/img/banner-bottom.jpg" alt="Banner Bottom">
+
+</section>
+
+<!-- BANNER TOP-->
 
     </main>
     <%- include('./partials/footer') %>

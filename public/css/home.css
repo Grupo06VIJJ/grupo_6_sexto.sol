@@ -1,56 +1,6 @@
-@import url("general.css");
-@import url("main.css");
-/* Carrusel*/
-.container-01{
-    width: 100%;
-    overflow-x: hidden;
-    position: relative;
-    z-index: -1;
-}
-.slider{
-    width: 400vw;
-    display: flex;
-    flex-wrap: nowrap;
-    animation: banner 10s 5s linear infinite normal;
-}
-.slider > div{
-    width: 100%;
-    height: 200px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 218px;
-}
-.slide-1{
-    background-image: url('../img/cola-de-tigre.jpg');
-}
-.slide-2{
-    background-image: url('../img/begonia.jpg');
-}
-.slide-3{
-    background-image: url('../img/flor.jpg');
-}
 
-@keyframes banner {
-    16%{
-        transform: translateX(-100vw);
-    }
-    32%{
-        transform: translateX(-100vw);
-    }
-    50%{
-        transform: translateX(-200vw);
-    }
-    66%{
-        transform: translateX(-200vw);
-    }
-    83%{
-        transform: translateX(-300vw);
-    }
-    100%{
-        transform: translateX(-300vw);
-    }
-}
+@import url("main.css");
+
 /*Texto inicio*/
 .container-02{
     width: 100%;
