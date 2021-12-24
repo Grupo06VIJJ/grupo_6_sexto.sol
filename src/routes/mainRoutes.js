@@ -7,5 +7,5 @@ router.get("/", mainController.home)
 router.get('/service', mainController.service);
 router.get('/sobrenosotros', mainController.sobrenosotros);
 router.get('/contacto',mainController.contacto);
-
+router.get('/arrepentimiento',mainController.arrepentimiento);
 module.exports = router;

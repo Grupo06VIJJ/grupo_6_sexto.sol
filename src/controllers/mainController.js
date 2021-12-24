@@ -22,5 +22,8 @@ const mainController = {
     contacto: (req, res) => {
         res.render('contacto', {user: req.session.user ? req.session.user : undefined});
     },
+    arrepentimiento: (req, res) => {
+        res.render('arrepentimiento', {user: req.session.user ? req.session.user : undefined});
+    },
 }
 module.exports = mainController;
