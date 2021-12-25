@@ -67,7 +67,7 @@ router.patch("/:id/update", productController.edit);
 router.get('/:id', productController.productDetail);
 
 
-
+  
 
 
 

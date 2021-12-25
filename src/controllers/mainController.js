@@ -20,7 +20,7 @@ const mainController = {
         res.render('sobrenosotros');
     },
     contacto: (req, res) => {
-        res.render('contacto')
+        res.render('contacto');
     },
         arrepentimiento: (req, res) => {
         res.render('arrepentimiento');

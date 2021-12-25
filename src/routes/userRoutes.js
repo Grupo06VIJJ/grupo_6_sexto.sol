@@ -77,4 +77,6 @@ router.get('/:id/profile', logMiddleware, userController.profile);
 /*----Ruta para cerrar sesion-----*/
 router.put('/logoff', userController.logoff);
 
+
+
 module.exports = router;

@@ -87,6 +87,7 @@ const userController = {
         }
        
     },
+  
     logoff: (req, res) => {
         req.session.destroy();
         res.clearCookie('remember');

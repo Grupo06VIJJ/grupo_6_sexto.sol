@@ -51,7 +51,23 @@
         <% }) %>
     </div>
 </section>
+<section class="container-04">
+    <h1>Plantas más vendidas</h1>
+    <div class="products-container">
+         <% products.forEach(product => { %>
+            <%- include('./partials/product-card.ejs', {product: product}) %>
+        <% }) %>               
+    </div>
+</section>
 
+<section class="container-04">
+    <h1>Novedades</h1>
+    <div class="products-container">
+        <% products.forEach(product => { %>
+            <%- include('./partials/product-card.ejs', {product: product}) %>
+        <% }) %>
+    </div>
+</section>
 <!-- BANNER BOTTOM-->
 
 <section class= 'banner-bottom'>
