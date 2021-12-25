@@ -71,8 +71,8 @@
     margin: 10px auto;
 }
 .check input{
-    /* width: 30px;
-    height: 30px; */
+    width: 30px;
+    height: 30px; 
     margin-right: 25px;
 }
 .register p{
@@ -83,6 +83,13 @@ main p a{
     color: var(--dark);
     font-weight: bold;
 }
+
+ .conociste{
+     margin-bottom: 30px;
+background-color: pink;
+ }
+
+
 /*-------------------Media querie para tablet---------------------*/
 @media(min-width: 768px){
     .register{
