@@ -25,5 +25,8 @@ const mainController = {
         arrepentimiento: (req, res) => {
         res.render('arrepentimiento');
     },
+    comocomprar:(req, res) => {
+        res.render('como-comprar');
+},
 }
 module.exports = mainController;

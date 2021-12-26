@@ -11,4 +11,5 @@ router.get('/service', mainController.service);
 router.get('/sobrenosotros', mainController.sobrenosotros);
 router.get('/contacto',mainController.contacto);
 router.get('/arrepentimiento',mainController.arrepentimiento);
+router.get('/como-comprar',mainController.comocomprar);
 module.exports = router;
