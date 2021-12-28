@@ -1,0 +1,12 @@
+Administrador (carga, modificación y baja de productos)
+Usuario:
+Password:
+
+Usuario (visualización, compra de productos)
+Usuario:
+Password:
+
+
+Puertos:
+Heroku:3000
+Base de datos:8080
