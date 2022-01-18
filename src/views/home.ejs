@@ -23,12 +23,13 @@
 <!-- main -->
 <main>
     <header class="header">
-        <div class="search-bar">
-            <form action="search">
-            <input type="text" name="search" class="form-search" placeholder="Buscar productos">
-            </form>
-            <div><i class="fas fa-search"></i></div>
-        </div>
+        
+        <div class="buscar-titulo">
+            <form action="/productos" method="POST">
+                <input type="text" name="titulo" id="titulo">
+                <button class="boton-buscar" type="submit">Buscar</button>
+            </form>  
+        </div>  
     <!-- plantas sin flor -->
        <section>
         <div class="contenido">
