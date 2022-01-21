@@ -1,8 +1,8 @@
 [
  {
   "id": 1,
-  "first_name": "Valeria",
-  "last_name": "alsmdkkdkk",
+  "first_name": "Felicitas",
+  "last_name": "Gonzalez",
   "email": "mrishworth0@surveymonkey.com",
   "password": "S725s5haDw1",
   "category": "user",
@@ -10,9 +10,9 @@
  },
  {
   "id": 2,
-  "first_name": "Juan",
-  "last_name": "Ssksms",
-  "email": "msuspslss1@ucoz.ru",
+  "first_name": "Horacio",
+  "last_name": "Quiroga",
+  "email": "horacio@ucoz.com",
   "password": "hIWJsG",
   "category": "user",
   "image": "https://robohash.org/numquamconsequaturest.png?size=50x50&set=set1"
@@ -20,8 +20,8 @@
  {
   "id": 3,
   "first_name": "Juan",
-  "last_name": "Ssksms",
-  "email": "msuspslss1@ucoz.ru",
+  "last_name": "Pérez",
+  "email": "juan@ucoz.com",
   "password": "hIWJsG",
   "category": "user",
   "image": "https://robohash.org/numquamconsequaturest.png?size=50x50&set=set1"
@@ -32,7 +32,7 @@
   "last_name": "Yashan",
   "email": "valeriayashan@hotmail.com",
   "password": "$2b$10$OphKy0lWmKJlpxyX7oG6fOXDCC168qy23ckN1c8PMoUjp8yIiOh/C",
-  "category": "user",
+  "category": "admin",
   "image": "default-user"
  },
  {
@@ -46,29 +46,47 @@
  },
  {
   "id": 6,
-  "first_name": "Valeria",
+  "first_name": "Alejandra",
   "last_name": "Yashan",
-  "email": "valeriayashan@hotmail.com",
+  "email": "alejandra@hotmail.com",
   "password": "$2b$10$sNSS/UaY5oJhHk/QeXmGKOS3GH4LKGvfAzW2IwWUpiTC2u.Yv1Ne6",
   "category": "user",
   "image": "img-valeria-52944.png"
  },
  {
   "id": 7,
-  "first_name": "Valeria",
+  "first_name": "Olivia",
   "last_name": "Yashan",
-  "email": "valeriayashan@hotmail.com",
+  "email": "olivia@hotmail.com",
   "password": "$2a$10$uExWtBtLohmMee./v/vw9e3XdlqjZlryc0Vi8OexVbtNmZav3quX.",
   "category": "user",
   "image": "img-valeria-09547.png"
  },
  {
   "id": 8,
-  "first_name": "Valeria",
+  "first_name": "Juana",
   "last_name": "Yashan",
-  "email": "valeriayashan@hotmail.com",
+  "email": "juana@hotmail.com",
   "password": "$2a$10$EeSjQ75JbirinJLljeLEo.qy7FNuCXw1JXs2k/DIa.ho.NLEo.dY.",
   "category": "user",
   "image": "default-user"
+ },
+ {
+  "id": 9,
+  "first_name": "Administrador",
+  "last_name": "SextoSol",
+  "email": "admin@mail.com",
+  "password": "$2a$10$Z8UWrf4s9u.su6wiOMcIFuUMBcuO8hCZ1wElzcC3YhmiTlQ877qde",
+  "category": "user",
+  "image": "img-administrador-70341.jpg"
+ },
+ {
+  "id": 10,
+  "first_name": "Cliente",
+  "last_name": "habitual",
+  "email": "cliente@mail.com",
+  "password": "$2a$10$RmLV.aRP4BrmgRfOuhgieOMj1l6J4sNldsrGOeHmTgCYe98x/7sQa",
+  "category": "user",
+  "image": "img-cliente-17444.jpg"
  }
 ]

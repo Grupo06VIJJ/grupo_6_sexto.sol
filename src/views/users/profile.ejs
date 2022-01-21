@@ -3,10 +3,43 @@
 <head>
     <%- include('../partials/head') %>
     <title>Mi perfil</title>
+    <link rel="stylesheet" href="/css/profile.css">
 </head>
 <body>
     <%- include('../partials/header') %>
-    <h1>Mi perfil</h1>
-    <%- include('../partials/footer') %>
+    <main class="userprof"> 
+        <h3 class="userprofile">Hola <%= user.first_name %>!  </h3>
+        <form action="">    
+            
+            <div class="user-info">
+                <div class="img-avatar"><img src="/img/avatars/<%= user.avatar %>" alt="avatar de usuario" width="100" style="border-radius: 100%;"></div>  
+                <table class="user-info">
+                    <tr>
+                        <td>Nombre:</td>
+                        <td><%= user.first_name %></td>
+                    </tr>
+                    <tr>
+                        <td>Apellido:</td>
+                        <td><%= user.last_name %></td>
+                    </tr>
+                    <tr>
+                        <td>Correo electronico:</td>
+                        <td><%= user.email %></td>
+                    </tr>
+                    
+                </table>
+            
+            
+                <div class="buttons">
+                <a href="/users/edituser/<%= user.id %>" class="action-buttonedit">Editar</a>
+                </form> 
+                <form action="/users/<%=user.id %>?_method=DELETE" method="post" >
+                    <button class="action-buttondelete">Borrar</button>
+            </form>       
+    </main>
+
+
+    <%- include('../partials/footer')  %> 
+   
 </body>
 </html>
