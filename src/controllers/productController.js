@@ -1,5 +1,11 @@
-const fs = require('fs');
-const path = require('path');
+const path=require('path');
+const fs = require('fs'); 
+const { validationResult, body } = require('express-validator');
+const db = require ('../database/models')
+const { Sequelize } = require('../database/models');
+const { Op } = require('sequelize');
+const sequelize = require("sequelize");
+
 
 const productsPath = path.join(__dirname, '../data/products.json');
 
