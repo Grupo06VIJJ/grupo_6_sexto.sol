@@ -30,7 +30,7 @@ const productController = require('../controllers/productController');
 
 /*----Rutas para vista de productos clientes----*/
 
-/*router.get('/todos', productController.); completar con vista todos*/
+router.get('/all', productController.todos);/*completar con vista todos*/
 
 /*----Rutas para vista de plantas sin flor----*/
 router.get('/sinflor', productController.sinflor);
@@ -38,8 +38,9 @@ router.get('/sinflor', productController.sinflor);
 /*----Rutas para vista de plantas con flor----*/
 router.get('/conflor', productController.conflor);
 
+
 /*----Rutas para creación de producto----*/
-router.get('/product/create', logMiddleware, adminMiddleware, productController.create);
+router.get('/products/create', logMiddleware, adminMiddleware, productController.create);
 router.post('/', fileUpload.any(), productController.store);
 
 /*----Rutas para edición de producto----*/

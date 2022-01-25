@@ -16,10 +16,10 @@ const productController = {
         const product = products.find(article => article.id == IdProduct);
         res.render('./products/productDetail', {product: product, user: req.session.user ? req.session.user : undefined });     
     },
-    /* : (req, res) => {
-        res.render('./products/todos')
-     }, */
-
+    todos : (req, res) => {
+        res.render('./products/all')  
+    },
+  
     productCart : (req, res) => {
         res.render('./products/productCart')
     },
@@ -28,6 +28,9 @@ const productController = {
     },
     cart : (req, res) => {
         res.render('./products/productCart', {user: req.session.user ? req.session.user : undefined});
+    },
+    todos: (req, res) => {
+        res.render('./products/all')
     },
     sinflor : (req, res) => {
         const products = JSON.parse(fs.readFileSync(productsPath, 'utf-8'));
