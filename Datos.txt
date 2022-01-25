@@ -1,10 +1,10 @@
 Administrador (carga, modificación y baja de productos)
-Usuario:
-Password:
+Usuario:admin@mail.com
+Password:Administrador123
 
 Usuario (visualización, compra de productos)
-Usuario:
-Password:
+Usuario:cliente@mail.com
+Password:Clientehabitual123
 
 
 Puertos:

@@ -10,9 +10,10 @@ const productController = {
         const product = products.find(article => article.id == IdProduct);
         res.render('./products/productDetail', {product: product, user: req.session.user ? req.session.user : undefined });     
     },
-    detail: (req, res) => {
-        res.render('products/detail');
-    },
+    /* : (req, res) => {
+        res.render('./products/todos')
+     }, */
+
     productCart : (req, res) => {
         res.render('./products/productCart')
     },
@@ -34,7 +35,7 @@ const productController = {
     },
     
     create: (req,res) => {
-        res.render('./admin/addProduct', {user: req.session.user ? req.session.user : undefined });
+        res.render('./products/create', {user: req.session.user ? req.session.user : undefined });
     },
   
 
@@ -206,10 +207,7 @@ const productController = {
 
     },
     
-    productos: (req,res) => {
-        const allProducts = JSON.parse(fs.readFileSync(productsPath, 'utf-8'));
-        res.render('./products/products', { products: allProducts, user: req.session.user ? req.session.user : undefined });
-    }
+    
 }
 
     //Actualizar producto en backup

@@ -28,8 +28,9 @@ const fileUpload = multer({ storage: multerDiskStorage })
 //Requerimos el controlador para llamar a las funciones
 const productController = require('../controllers/productController');
 
-/*----Rutas para vista de productos----*/
-/*router.get('/', productController.productos);*/
+/*----Rutas para vista de productos clientes----*/
+
+/*router.get('/todos', productController.); completar con vista todos*/
 
 /*----Rutas para vista de plantas sin flor----*/
 router.get('/sinflor', productController.sinflor);
@@ -67,7 +68,6 @@ router.patch("/:id/update", productController.edit);
 router.get('/:id', productController.productDetail);
 
 
-  
 
 
 

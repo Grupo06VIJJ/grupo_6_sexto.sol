@@ -19,10 +19,6 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.DECIMAL(7,2),
             allowNull: false      
         },
-        discount: {
-            type: dataTypes.DECIMAL(4,2),
-            allowNull: false      
-        },
         quantity_S: {
             type: dataTypes.INTEGER.UNSIGNED,
             allowNull: true,
@@ -38,12 +34,7 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: true,
             defaultValue: 0
         },
-        image_1: {
-            type: dataTypes.STRING(100),
-            allowNull: false,
-            defaultValue: "default-image.svg",
-        },
-        image_2: {
+        image: {
             type: dataTypes.STRING(100),
             allowNull: false,
             defaultValue: "default-image.svg",
