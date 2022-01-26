@@ -1,10 +1,11 @@
 const path=require('path');
 const fs = require('fs'); 
 const { validationResult, body } = require('express-validator');
+
 const db = require ('../database/models')
 const { Sequelize } = require('../database/models');
 const { Op } = require('sequelize');
-const sequelize = require("sequelize");
+
 
 
 const productsPath = path.join(__dirname, '../data/products.json');
@@ -19,7 +20,7 @@ const productController = {
     todos : (req, res) => {
         res.render('./products/all')  
     },
-  
+          
     productCart : (req, res) => {
         res.render('./products/productCart')
     },
@@ -227,13 +228,20 @@ const productController = {
             if (boxValue[i].id == req.params.id) {
                 let id = boxValue[i].id - 1;
                 res.render("products/edit", { "boxValue": boxValue, "id": id, });
-              
             }
         }
-        
-
+        /*mostrar:  (req,res)=> {
+            db.Product.findAll()
+            .then(function(mostrar){
+                res.render('products/inventory',{mostrar})
+            })
+         }*/
+        }
+    
+      
+    
        
-    },
+  
    
 
 

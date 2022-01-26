@@ -1,11 +1,10 @@
 
-const path=require('path');
-const {validationResult, body}=require('express-validator');
+
 const fs = require('fs');
+const path = require('path');
+const usersPath = path.join(__dirname, '../data/users.json');
 const bcrypt = require('bcryptjs');
-const db = require ('../database/models') // creo q esta ruta pisaria a la de arriba a la hora de quitar el CRUD con JSON
-const { Sequelize } = require('../database/models');
-const { Op } = require('sequelize');
+const { validationResult } = require('express-validator');
 
 const userController = {
     login: (req, res) => {

@@ -65,6 +65,10 @@ router.delete("/:id/delete", productController.delete);
 router.get("/:id/update", productController.edit);
 router.patch("/:id/update", productController.edit);
 
+
+/*router.get("/mostrar", productController.mostrar); */
+
+
 /*----Rutas para vista de detalle de producto----*/
 router.get('/:id', productController.productDetail);
 

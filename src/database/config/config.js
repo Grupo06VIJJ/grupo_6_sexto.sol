@@ -1,7 +1,7 @@
 module.exports = {
   "development": {
     "username": "root",
-    "password": "",
+    "password": '',
     "database": "viverodb",
     "host": "localhost",
     "dialect": "mysql"
