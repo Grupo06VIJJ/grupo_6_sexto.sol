@@ -17,7 +17,8 @@ const productController = {
         const product = products.find(article => article.id == IdProduct);
         res.render('./products/productDetail', {product: product, user: req.session.user ? req.session.user : undefined });     
     },
-    todos : (req, res) => {
+    todos : (req,res) => {
+        
         res.render('./products/all')  
     },
           
@@ -230,12 +231,7 @@ const productController = {
                 res.render("products/edit", { "boxValue": boxValue, "id": id, });
             }
         }
-        /*mostrar:  (req,res)=> {
-            db.Product.findAll()
-            .then(function(mostrar){
-                res.render('products/inventory',{mostrar})
-            })
-         }*/
+       
         }
     
       
